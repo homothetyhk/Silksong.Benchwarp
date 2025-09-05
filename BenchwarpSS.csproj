@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<SS>C:\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong</SS>
+		<BepinCore>$(SS)\BepInEx\core</BepinCore>
+		<Managed>$(SS)\Hollow Knight Silksong_Data\Managed</Managed>
+		<OutputFolder>$(SS)\BepInEx\plugins</OutputFolder>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>BenchwarpSS</AssemblyName>
+		<Description>My first plugin</Description>
+		<Version>1.0.0</Version>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.Core" Version="5.*" />
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+		<PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="$(Managed)\Assembly-CSharp.dll"></Reference>
+		<Reference Include="$(Managed)\UnityEngine.UI.dll"></Reference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+	</ItemGroup>
+
+	<Target Name="MoveDllToMods" AfterTargets="Build" Condition="Exists('$(TargetDir)$(TargetName).dll')">
+		<Message Text="Copying $(ProjectName).dll to $(OutputFolder) Folder..." Importance="High" />
+
+		<Delete Condition="Exists('$(OutputFolder)\$(ProjectName).dll')" Files="$(OutputFolder)\$(ProjectName).dll" />
+
+		<Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFiles="$(OutputFolder)\$(ProjectName).dll" />
+	</Target>
+</Project>
