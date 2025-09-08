@@ -2,6 +2,11 @@
   "profiles": {
     "BenchwarpSS": {
       "commandName": "Project"
+    },
+    "Run SS": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hollow Knight Silksong\\Hollow Knight Silksong.exe",
+      "workingDirectory": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hollow Knight Silksong"
     }
   }
 }

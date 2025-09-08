@@ -23,5 +23,10 @@ namespace BenchwarpSS
 
             GUIController.Instance.canvas.SetActive(false);
         }
+
+        private void Update()
+        {
+            GUIController.Instance.GUIUpdate();
+        }
     }
 }

@@ -21,4 +21,14 @@ namespace BenchwarpSS.Patches
             }
         }
     }
+
+    [HarmonyPatch(typeof(GameManager), nameof(GameManager.ReturnToMainMenu))]
+    internal class HideWarpMenu
+    {
+        [HarmonyPostfix]
+        public static void Postfix()
+        {
+            GUIController.Instance.canvas.SetActive(false);
+        }
+    }
 }
