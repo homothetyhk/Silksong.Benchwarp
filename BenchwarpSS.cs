@@ -1,13 +1,12 @@
-﻿using BenchwarpSS.Utils;
+using BenchwarpSS.Utils;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using UnityEngine;
 
 namespace BenchwarpSS
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    public class Plugin : BaseUnityPlugin
+    public class BenchwarpSS : BaseUnityPlugin
     {
         public static ManualLogSource logSource;
 

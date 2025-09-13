@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using BenchwarpSS.Utils;
+﻿using BenchwarpSS.Utils;
 using HarmonyLib;
 
 namespace BenchwarpSS.Patches
@@ -15,7 +12,8 @@ namespace BenchwarpSS.Patches
             if (!__instance.isPaused)
             {
                 GUIController.Instance.canvas.SetActive(true);
-            } else
+            }
+            else
             {
                 GUIController.Instance.canvas.SetActive(false);
             }
