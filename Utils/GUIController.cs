@@ -119,18 +119,22 @@ namespace BenchwarpSS.Utils
             btnOffsetX += btnWidth + 20;
             warpButton.GetComponent<Button>().onClick.AddListener(SaveReload);
 
+            int pageToSet = 1;
+
             for (int i = 0; i < Dropdown.dropdowns.Count; i++)
             {
                 if (i == 13)
                 {
                     btnOffsetX = baseDropdownRowXOffset;
                     btnOffsetY += (btnHeight + btnOffsetY) * 5;
+                    pageToSet++;
                 }
 
                 Dropdown.DropdownData data = Dropdown.dropdowns[i];
 
                 GameObject dropdownObj = BuildButton(canvas, data.name, btnOffsetX, -btnOffsetY);
                 Dropdown dropdown = dropdownObj.AddComponent<Dropdown>();
+                dropdown.page = pageToSet;
                 dropdown.Init(dropdownObj, data.name, data.benches);
                 btnOffsetX += btnWidth + 10;
                 dropdownObj.GetComponent<Button>().onClick.AddListener(dropdown.ToggleDropdown);
@@ -234,6 +238,7 @@ namespace BenchwarpSS.Utils
         public List<Bench> benches = new([]);
         public List<GameObject> buttons = new([]);
         public bool open = false;
+        public int page = 1;
 
         public class DropdownData(string name, List<Bench.BenchData> benches)
         {
@@ -320,6 +325,9 @@ namespace BenchwarpSS.Utils
             new("Mount Fay", []),
             new("Sands of Karak", [
                 new("Bellshrine", "RestBench", "Bellshrine_Coral", 1, MapZone.JUDGE_STEPS)    
+            ]),
+            new("The Cradle", [
+                new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG)
             ])
         ]);
 
