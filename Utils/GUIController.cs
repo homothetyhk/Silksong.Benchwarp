@@ -12,14 +12,29 @@ namespace BenchwarpSS.Utils
         public static Font BenchwarpFont;
         public static Font Fallback = Font.CreateDynamicFontFromOSFont("Consolas", 16);
         public static Dictionary<string, Texture2D> images = new();
+        public GameObject warpButton;
         public List<GameObject> dropdowns = new([]);
+        public List<GameObject> benchButtons
+        {
+            get
+            {
+                List<GameObject> benchButtons = new([]);
 
-        public static int btnWidth = 100;
-        public static int btnHeight = 40;
-        public static int btnOffsetX = 10;
-        public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20;
-        public static int btnOffsetY = 10;
-        public static int baseDropdownYOffset = btnOffsetY;
+                foreach (GameObject dropdownObj in dropdowns)
+                {
+                    Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                    benchButtons.AddRange(dropdown.buttons);
+                }
+                return benchButtons;
+            }
+        }
+
+        public static int btnWidth = 110; //Controls Button Size Universally
+        public static int btnHeight = 40; //Controls Button Size Universally
+        public static int btnOffsetX = 10; //Initial X Offset
+        public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
+        public static int btnOffsetY = 10; //Y Offset for Dropdowns
+        public static int baseDropdownYOffset = btnOffsetY; //Y Offset for Bench Buttons
 
         public static void Setup()
         {
@@ -37,32 +52,46 @@ namespace BenchwarpSS.Utils
         public void LoadResources()
         {
             images.Add("ButtonRect", ModHelper.LoadTexFromAssembly("BenchwarpSS.Resources.Images.ButtonRect.png"));
+            SetBenchwarpFont();
+        }
+
+        public void SetBenchwarpFont()
+        {
+            foreach (Font f in Resources.FindObjectsOfTypeAll(typeof(Font)))
+            {
+                if (f.name == "TrajanPro-Bold")
+                {
+                    BenchwarpFont = f;
+
+                    Text warpText = warpButton.GetComponentInChildren<Text>();
+                    warpText.font = BenchwarpFont;
+
+                    foreach(GameObject benchObj in benchButtons)
+                    {
+                        Text text = benchObj.GetComponentInChildren<Text>();
+                        text.font = BenchwarpFont;
+                    }
+
+                    foreach(GameObject dropdownObj in dropdowns)
+                    {
+                        Text text = dropdownObj.GetComponentInChildren<Text>();
+                        text.font = BenchwarpFont;
+                    }
+                }
+            }
         }
 
         public void GUIUpdate()
         {
             if (BenchwarpFont == null)
             {
-                foreach (Font f in Resources.FindObjectsOfTypeAll(typeof(Font)))
-                {
-                    if (f.name == "TrajanPro-Regular")
-                    {
-                        BenchwarpFont = f;
-                    }
-                }
-            }
-
-            List<GameObject> benchButtons = new([]);
-            foreach (GameObject dropdownObj in dropdowns)
-            {
-                Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
-                benchButtons.AddRange(dropdown.buttons);
+                SetBenchwarpFont();
             }
 
             foreach (GameObject buttonObj in benchButtons)
             {
                 Bench bench = buttonObj.GetComponent<Bench>();
-                Text text = buttonObj.transform.GetChild(0).GetComponent<Text>();
+                Text text = buttonObj.GetComponentInChildren<Text>();
                 if (bench.sceneName == PlayerData.instance.respawnScene)
                 {
                     text.color = Color.yellow;
@@ -86,13 +115,13 @@ namespace BenchwarpSS.Utils
             scaler.referenceResolution = new Vector2(1920f, 1080f);
             canvas.AddComponent<GraphicRaycaster>();
 
-            GameObject warpButton = BuildButton(canvas, "WARP", btnOffsetX, -btnOffsetY); //Warp Button
+            warpButton = BuildButton(canvas, "WARP", btnOffsetX, -btnOffsetY); //Warp Button
             btnOffsetX += btnWidth + 20;
             warpButton.GetComponent<Button>().onClick.AddListener(SaveReload);
 
             for (int i = 0; i < Dropdown.dropdowns.Count; i++)
             {
-                if (i == 14)
+                if (i == 13)
                 {
                     btnOffsetX = baseDropdownRowXOffset;
                     btnOffsetY += (btnHeight + btnOffsetY) * 5;
@@ -137,7 +166,13 @@ namespace BenchwarpSS.Utils
 
             Text text = buttonTxt.AddComponent<Text>();
             text.text = name;
-            text.font = Fallback;
+            if (BenchwarpFont == null)
+            {
+                text.font = Fallback;
+            } else
+            {
+                text.font = BenchwarpFont;
+            }
             text.alignment = TextAnchor.MiddleCenter;
             text.color = Color.white;
 
