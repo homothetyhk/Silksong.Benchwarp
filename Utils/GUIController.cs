@@ -8,12 +8,18 @@ namespace BenchwarpSS.Utils
     public class GUIController : MonoBehaviour
     {
         public GameObject canvas;
+
         private static GUIController _instance;
         public static Font BenchwarpFont;
         public static Font Fallback = Font.CreateDynamicFontFromOSFont("Consolas", 16);
         public static Dictionary<string, Texture2D> images = new();
+
         public GameObject warpButton;
         public List<GameObject> dropdowns = new([]);
+        public GameObject benchDebugString;
+
+        public bool DebugUI = true;
+
         public List<GameObject> benchButtons
         {
             get
@@ -66,6 +72,12 @@ namespace BenchwarpSS.Utils
                     Text warpText = warpButton.GetComponentInChildren<Text>();
                     warpText.font = BenchwarpFont;
 
+                    if (DebugUI)
+                    {
+                        Text debugText = benchDebugString.GetComponent<Text>();
+                        debugText.font = BenchwarpFont;
+                    }
+
                     foreach(GameObject benchObj in benchButtons)
                     {
                         Text text = benchObj.GetComponentInChildren<Text>();
@@ -99,6 +111,15 @@ namespace BenchwarpSS.Utils
                 else
                 {
                     text.color = Color.white;
+                }
+            }
+
+            if (DebugUI)
+            {
+                if (PlayerData.instance != null)
+                {
+                    Text debugText = benchDebugString.GetComponent<Text>();
+                    debugText.text = $"{PlayerData.instance.respawnMarkerName}, {PlayerData.instance.respawnScene}, {PlayerData.instance.respawnType}, {PlayerData.instance.mapZone}";
                 }
             }
         }
@@ -140,6 +161,25 @@ namespace BenchwarpSS.Utils
                 dropdownObj.GetComponent<Button>().onClick.AddListener(dropdown.ToggleDropdown);
 
                 dropdowns.Add(dropdownObj);
+            }
+
+            if (DebugUI)
+            {
+                benchDebugString = new("Benchwarp Debug", [typeof(RectTransform),typeof(Text)]);
+                RectTransform rt = benchDebugString.GetComponent<RectTransform>();
+                Text text = benchDebugString.GetComponent<Text>();
+
+                text.font = Fallback;
+                text.color = Color.white;
+                text.fontSize = 20;
+
+                rt.sizeDelta = new Vector2(1000, 20);
+                rt.anchorMin = new Vector2(0, 0);
+                rt.anchorMax = new Vector2(0, 0);
+                rt.pivot = new Vector2(0, 0);
+                rt.anchoredPosition = new Vector2(10, 10);
+
+                benchDebugString.transform.SetParent(canvas.transform, false);
             }
 
             DontDestroyOnLoad(canvas);
@@ -275,7 +315,8 @@ namespace BenchwarpSS.Utils
             new("Greymoor", [
                 new("Bellshrine", "RestBench", "Bellshrine_02", 1, MapZone.GREYMOOR),
                 new("Halfway House", "RestBench", "Halfway_01", 1, MapZone.HALFWAY_HOUSE),
-                new("Flea Caravan", "RestBench", "Greymoor_08", 1, MapZone.GREYMOOR)
+                new("Flea Caravan", "RestBench", "Greymoor_08", 1, MapZone.GREYMOOR),
+                new("Wisp Thicket", "RestBench", "Wisp_04", 1, MapZone.WISP)
             ]),
             new("Bellheart", [
                 new("Bellheart", "RestBench", "Belltown", 1, MapZone.BELLTOWN),
@@ -290,7 +331,8 @@ namespace BenchwarpSS.Utils
             new("Blasted Steps", [
                 new("Bell Bench", "RestBench", "Coral_02", 1, MapZone.JUDGE_STEPS),
                 new("Bellway", "RestBench", "Bellway_08", 1, MapZone.JUDGE_STEPS),
-                new("Pinstress", "RestBench", "Room_Pinstress", 1, MapZone.JUDGE_STEPS)
+                new("Pinstress", "RestBench", "Room_Pinstress", 1, MapZone.JUDGE_STEPS),
+                new("Sands of Karak", "RestBench", "Bellshrine_Coral", 1, MapZone.JUDGE_STEPS)
             ]),
             new("Wormways", [
                 new("Lifeblood Lab", "RestBench", "Crawl_08", 1, MapZone.CRAWLSPACE)
@@ -323,9 +365,6 @@ namespace BenchwarpSS.Utils
             ]),
             new("The Slab", []),
             new("Mount Fay", []),
-            new("Sands of Karak", [
-                new("Bellshrine", "RestBench", "Bellshrine_Coral", 1, MapZone.JUDGE_STEPS)    
-            ]),
             new("The Cradle", [
                 new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG)
             ])
