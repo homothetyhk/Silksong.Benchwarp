@@ -14,9 +14,12 @@ namespace BenchwarpSS.Utils
         public static Dictionary<string, Texture2D> images = new();
         public List<GameObject> dropdowns = new([]);
 
-        public static int btnWidth = 80;
+        public static int btnWidth = 100;
         public static int btnHeight = 40;
-        public static int btnOffset = 10;
+        public static int btnOffsetX = 10;
+        public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20;
+        public static int btnOffsetY = 10;
+        public static int baseDropdownYOffset = btnOffsetY;
 
         public static void Setup()
         {
@@ -50,7 +53,7 @@ namespace BenchwarpSS.Utils
             }
 
             List<GameObject> benchButtons = new([]);
-            foreach(GameObject dropdownObj in dropdowns)
+            foreach (GameObject dropdownObj in dropdowns)
             {
                 Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
                 benchButtons.AddRange(dropdown.buttons);
@@ -63,7 +66,8 @@ namespace BenchwarpSS.Utils
                 if (bench.sceneName == PlayerData.instance.respawnScene)
                 {
                     text.color = Color.yellow;
-                } else
+                }
+                else
                 {
                     text.color = Color.white;
                 }
@@ -82,16 +86,24 @@ namespace BenchwarpSS.Utils
             scaler.referenceResolution = new Vector2(1920f, 1080f);
             canvas.AddComponent<GraphicRaycaster>();
 
-            GameObject warpButton = BuildButton(canvas, "WARP", btnOffset, -btnOffset); //Warp Button
+            GameObject warpButton = BuildButton(canvas, "WARP", btnOffsetX, -btnOffsetY); //Warp Button
+            btnOffsetX += btnWidth + 20;
             warpButton.GetComponent<Button>().onClick.AddListener(SaveReload);
 
-            for(int i = 0; i < Dropdown.dropdowns.Count; i++)
+            for (int i = 0; i < Dropdown.dropdowns.Count; i++)
             {
+                if (i == 14)
+                {
+                    btnOffsetX = baseDropdownRowXOffset;
+                    btnOffsetY += (btnHeight + btnOffsetY) * 5;
+                }
+
                 Dropdown.DropdownData data = Dropdown.dropdowns[i];
 
-                GameObject dropdownObj = BuildButton(canvas, data.name, (btnWidth+btnOffset*2) + ((btnWidth+btnOffset)*i), -btnOffset);
+                GameObject dropdownObj = BuildButton(canvas, data.name, btnOffsetX, -btnOffsetY);
                 Dropdown dropdown = dropdownObj.AddComponent<Dropdown>();
                 dropdown.Init(dropdownObj, data.name, data.benches);
+                btnOffsetX += btnWidth + 10;
                 dropdownObj.GetComponent<Button>().onClick.AddListener(dropdown.ToggleDropdown);
 
                 dropdowns.Add(dropdownObj);
@@ -107,7 +119,7 @@ namespace BenchwarpSS.Utils
             Button button_component = button.AddComponent<Button>();
 
             RectTransform rt = button.GetComponent<RectTransform>();
-            rt.sizeDelta = new Vector2(80, 40);
+            rt.sizeDelta = new Vector2(btnWidth, btnHeight);
             rt.anchorMin = new Vector2(0, 1);
             rt.anchorMax = new Vector2(0, 1);
             rt.pivot = new Vector2(0, 1);
@@ -231,33 +243,63 @@ namespace BenchwarpSS.Utils
                 new("Bellhome", "RestBench", "Belltown_Room_Spare", 1, MapZone.BELLTOWN)
             ]),
             new("Shellwood", [
-                new("Bell Bench", "RestBench", "Shellwood_01b", 1, MapZone.SHELLWOOD_THICKET)    
+                new("Bell Bench", "RestBench", "Shellwood_01b", 1, MapZone.SHELLWOOD_THICKET),
+                new("Bellshrine", "RestBench", "Bellshrine_03", 1, MapZone.SHELLWOOD_THICKET),
+                new("Overgrown Bench", "RestBench", "Shellwood_08c", 1, MapZone.SHELLWOOD_THICKET)
             ]),
-            new("Blasted Steps", []),
-            new("Wormways", []),
-            new("Sinner's Road", []),
-            new("Underworks", []),
-            new("Choral Chambers", [
-                new("Grand Bellway", "RestBench", "Bellway_City", 1, MapZone.CITY_OF_SONG)
+            new("Blasted Steps", [
+                new("Bell Bench", "RestBench", "Coral_02", 1, MapZone.JUDGE_STEPS),
+                new("Bellway", "RestBench", "Bellway_08", 1, MapZone.JUDGE_STEPS),
+                new("Pinstress", "RestBench", "Room_Pinstress", 1, MapZone.JUDGE_STEPS)
             ]),
-            new("Cogwork Core", []),
-            new("High Halls", []),
-            new("Whispering Vaults", []),
+            new("Wormways", [
+                new("Lifeblood Lab", "RestBench", "Crawl_08", 1, MapZone.CRAWLSPACE)
+            ]),
+            new("Sinner's Road", [
+                new("Broken Bench", "RestBench", "Dust_10", 1, MapZone.DUSTPENS),
+                new("Styx", "RestBench", "Dust_11", 1, MapZone.DUSTPENS)
+            ]),
+            new("Underworks", [
+                new("Broken Elevator", "RestBench", "Under_01b", 1, MapZone.UNDERSTORE),
+                new("Confession Toll", "RestBench", "Under_08", 1, MapZone.UNDERSTORE),
+                new("Architect 12", "RestBench", "Under_17", 1, MapZone.UNDERSTORE),
+                new("Whiteward", "RestBench", "Ward_01", 1, MapZone.WARD)
+            ]),
+            new("Citadel", [
+                new("Underworks", "RestBench", "Under_07b", 1, MapZone.CITY_OF_SONG),
+                new("Below Dining", "RestBench", "Song_18", 1, MapZone.CITY_OF_SONG),
+                new("Spa", "RestBench", "Song_10", 1, MapZone.CITY_OF_SONG),
+                new("Cogwork Core", "RestBench", "Cog_Bench", 1, MapZone.COG_CORE),
+                new("High Hall Entrance", "RestBench", "Hang_01", 1, MapZone.CITY_OF_SONG),
+                new("High Halls Ventricle", "RestBench", "Hang_06b", 1, MapZone.HANG),
+                new("Songclave Bellshrine", "RestBench", "Bellshrine_Enclave", 1, MapZone.CITY_OF_SONG),
+                new("Songclave Outside", "RestBench", "Song_Enclave", 1, MapZone.CITY_OF_SONG),
+                new("Grand Bellway", "RestBench", "Bellway_City", 1, MapZone.CITY_OF_SONG),
+                new("Memoriam", "RestBench", "Arborium_04", 1, MapZone.ARBORIUM),
+            ]),
+            new("Whispering Vaults", [
+                new("Library", "RestBench", "Library_08", 1, MapZone.CITY_OF_SONG),
+                new("Cauldron Entrance", "RestBench", "Library_10", 1, MapZone.CITY_OF_SONG),
+            ]),
             new("The Slab", []),
             new("Mount Fay", []),
+            new("Sands of Karak", [
+                new("Bellshrine", "RestBench", "Bellshrine_Coral", 1, MapZone.JUDGE_STEPS)    
+            ])
         ]);
 
         public void Init(GameObject canvas, string name, List<Bench.BenchData> benches)
         {
             dropdownName = name;
 
-            int btnOffset = GUIController.btnOffset;
+            int btnOffsetX = GUIController.btnOffsetX;
+            int btnOffsetY = GUIController.baseDropdownYOffset;
             int btnHeight = GUIController.btnHeight;
 
             for (int i = 0; i < benches.Count; i++)
             {
                 Bench.BenchData benchData = benches[i];
-                buttons.Add(GUIController.BuildButton(canvas, benchData.benchName, 0, -(btnHeight+btnOffset + (btnOffset+btnHeight)*i), false));
+                buttons.Add(GUIController.BuildButton(canvas, benchData.benchName, 0, -(btnHeight + btnOffsetY + (btnOffsetY + btnHeight) * i), false));
                 Bench bench = buttons[i].AddComponent<Bench>();
                 bench.Init(benchData);
                 buttons[i].GetComponent<Button>().onClick.AddListener(bench.SetBench);
