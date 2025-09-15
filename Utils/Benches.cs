@@ -5,36 +5,125 @@ namespace BenchwarpSS.Utils
 {
     public class Bench : MonoBehaviour
     {
-        public string benchName;
-        public string objName;
-        public string sceneName;
-        public int respawnType;
-        public MapZone mapZone;
+        public BenchData data;
+        public BenchData act3Data;
 
-        public class BenchData(string name, string objName, string sceneName, int respawnType, MapZone mapZone)
+        public string benchName
         {
-            public string benchName = name;
-            public string objName = objName;
-            public string sceneName = sceneName;
-            public int respawnType = respawnType;
-            public MapZone mapZone = mapZone;
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.benchName;
+                }
+                else
+                {
+                    return data.benchName;
+                }
+            }
+        }
+        public string objName
+        {
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.objName;
+                }
+                else
+                {
+                    return data.objName;
+                }
+            }
+        }
+        public string sceneName
+        {
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.sceneName;
+                }
+                else
+                {
+                    return data.sceneName;
+                }
+            }
+        }
+        public int respawnType
+        {
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.respawnType;
+                } else
+                {
+                    return data.respawnType;
+                }
+            }
+        }
+        public MapZone mapZone
+        {
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.mapZone;
+                } else
+                {
+                    return data.mapZone;
+                }
+            }
+        }
+
+        public class BenchData
+        {
+            public string benchName;
+            public string objName;
+            public string sceneName;
+            public int respawnType;
+            public MapZone mapZone;
+            public BenchData act3Data;
+
+            public BenchData(string name, string objName, string sceneName, int respawnType, MapZone mapZone, BenchData act3Data = null)
+            {
+                benchName = name;
+                this.objName = objName;
+                this.sceneName = sceneName;
+                this.respawnType = respawnType;
+                this.mapZone = mapZone;
+                if (act3Data != null )
+                {
+                    this.act3Data = act3Data;
+                } else
+                {
+                    this.act3Data = this;
+                }
+            }
         }
 
         public void Init(BenchData benchData)
         {
-            benchName = benchData.benchName;
-            objName = benchData.objName;
-            sceneName = benchData.sceneName;
-            respawnType = benchData.respawnType;
-            mapZone = benchData.mapZone;
+            data = new(benchData.benchName, benchData.objName, benchData.sceneName, benchData.respawnType, benchData.mapZone);
+            act3Data = benchData.act3Data;
         }
 
         public void SetBench()
         {
-            PlayerData.instance.respawnMarkerName = objName;
-            PlayerData.instance.respawnScene = sceneName;
-            PlayerData.instance.respawnType = respawnType;
-            PlayerData.instance.mapZone = mapZone;
+            if (PlayerData.instance.act3_wokeUp)
+            {
+                PlayerData.instance.respawnMarkerName = act3Data.objName;
+                PlayerData.instance.respawnScene = act3Data.sceneName;
+                PlayerData.instance.respawnType = act3Data.respawnType;
+                PlayerData.instance.mapZone = act3Data.mapZone;
+            } else
+            {
+                PlayerData.instance.respawnMarkerName = data.objName;
+                PlayerData.instance.respawnScene = data.sceneName;
+                PlayerData.instance.respawnType = data.respawnType;
+                PlayerData.instance.mapZone = data.mapZone;
+            }
         }
     }
 }

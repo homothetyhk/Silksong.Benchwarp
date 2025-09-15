@@ -143,6 +143,7 @@ namespace BenchwarpSS.Utils
             {
                 Bench bench = buttonObj.GetComponent<Bench>();
                 Text text = buttonObj.GetComponentInChildren<Text>();
+                text.text = bench.benchName;
                 if (bench.sceneName == PlayerData.instance.respawnScene && bench.objName == PlayerData.instance.respawnMarkerName)
                 {
                     text.color = Color.yellow;
@@ -371,6 +372,7 @@ namespace BenchwarpSS.Utils
                 new("Ruined Chapel", "RestBench", "Tut_03", 1, MapZone.BONECHURCH),
                 new("Bone Bottom", "RestBench", "Bonetown", 1, MapZone.BONETOWN),
                 new("Moss Druid", "RestBench", "Mosstown_02c", 1, MapZone.MOSSTOWN),
+                new("Snail Shamans", "RestBench", "Tut_04", 1, MapZone.BONECHURCH)
             ]),
             new("The Marrow", [
                 new("Bell Bench", "RestBench", "Bone_01c", 1, MapZone.PATH_OF_BONE),
@@ -385,7 +387,9 @@ namespace BenchwarpSS.Utils
                 new("Bell Bench", "RestBench", "Dock_01", 1, MapZone.DOCKS),
                 new("Forge", "RestBench", "Room_Forge", 1, MapZone.DOCKS),
                 new("Bellshrine", "RestBench", "Bellshrine_05", 1, MapZone.DOCKS),
-                new("Sauna", "RestBench", "Dock_10", 1, MapZone.DOCKS)
+                new("Sauna", "RestBench", "Dock_10", 1, MapZone.DOCKS),
+                new("Diving Bell", "RestBench", "Room_Diving_Bell", 1, MapZone.DOCKS),
+                new("Abyss Exit", "RestBench (1)", "Dock_06_Church", 1, MapZone.DOCKS)
             ]),
             new("Far Fields", [
                 new("Bellway", "RestBench", "Bellway_03", 1, MapZone.WILDS),
@@ -432,17 +436,17 @@ namespace BenchwarpSS.Utils
                 new("Underworks", "RestBench", "Under_07b", 1, MapZone.CITY_OF_SONG),
                 new("Below Dining", "RestBench", "Song_18", 1, MapZone.CITY_OF_SONG),
                 new("Spa", "RestBench", "Song_10", 1, MapZone.CITY_OF_SONG),
-                new("Cogwork Core", "RestBench", "Cog_Bench", 1, MapZone.COG_CORE),
                 new("High Hall Entrance", "RestBench", "Hang_01", 1, MapZone.CITY_OF_SONG),
-                new("High Halls Ventricle", "RestBench", "Hang_06b", 1, MapZone.HANG),
                 new("Songclave Bellshrine", "RestBench", "Bellshrine_Enclave", 1, MapZone.CITY_OF_SONG),
                 new("Songclave Outside", "RestBench", "Song_Enclave", 1, MapZone.CITY_OF_SONG),
                 new("Grand Bellway", "RestBench", "Bellway_City", 1, MapZone.CITY_OF_SONG),
-                new("Memoriam", "RestBench", "Arborium_04", 1, MapZone.ARBORIUM),
             ]),
-            new("Whispering Vaults", [
+            new("Citadel Other", [
+                new("Cogwork Core", "RestBench", "Cog_Bench", 1, MapZone.COG_CORE),
+                new("High Halls Ventricle", "RestBench", "Hang_06b", 1, MapZone.HANG),
+                new("Memoriam", "RestBench", "Arborium_04", 1, MapZone.ARBORIUM),
                 new("Library", "RestBench", "Library_08", 1, MapZone.CITY_OF_SONG),
-                new("Cauldron Entrance", "RestBench", "Library_10", 1, MapZone.CITY_OF_SONG),
+                new("Cauldron Entrance", "RestBench", "Library_10", 1, MapZone.CITY_OF_SONG)
             ]),
             new("Bilewater", [
                 new("Bellway", "RestBench", "Bellway_Shadow", 1, MapZone.SWAMP),
@@ -453,7 +457,9 @@ namespace BenchwarpSS.Utils
             new("Putrified Ducts", [
                 new("Bellway", "RestBench", "Bellway_Aqueduct", 1, MapZone.AQUEDUCT),
                 new("Huntress", "RestBench", "Room_Huntress", 1, MapZone.AQUEDUCT),
-                new("Fleatopia", "RestBench", "Aqueduct_05", 1, MapZone.AQUEDUCT)
+                new("Fleatopia", "RestBench", "Aqueduct_05", 1, MapZone.AQUEDUCT,
+                    new("Festival", "RestBench Festival", "Aqueduct_05", 1, MapZone.AQUEDUCT)
+                )
             ]),
             new("The Slab", [
                 new("Bellway", "RestBench", "Slab_06", 1, MapZone.THE_SLAB),
@@ -473,6 +479,10 @@ namespace BenchwarpSS.Utils
             ]),
             new("The Cradle", [
                 new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG)
+            ]),
+            new("Abyss", [
+                new("Void Tendrils", "RestBench", "Abyss_12", 1, MapZone.ABYSS),
+                new("Top Abyss", "RestBench", "Abyss_09", 1, MapZone.ABYSS)
             ]),
             new("Weavenest", [
                 new("Atla", "RestBench", "Weave_07", 1, MapZone.WEAVER_SHRINE)
