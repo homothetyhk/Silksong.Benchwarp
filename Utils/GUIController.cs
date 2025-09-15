@@ -18,8 +18,11 @@ namespace BenchwarpSS.Utils
 
         public GameObject warpButton;
         public GameObject toggleAllBtn;
+        public GameObject nextPageBtn;
         public List<GameObject> dropdowns = new([]);
         public GameObject benchDebugString;
+        public int page = 1;
+        public int maxPages = 2;
 
         public bool DebugUI = true;
 
@@ -95,6 +98,9 @@ namespace BenchwarpSS.Utils
                     Text toggleAll = toggleAllBtn.GetComponentInChildren<Text>();
                     toggleAll.font = BenchwarpFont;
 
+                    Text nextPage = nextPageBtn.GetComponentInChildren<Text>();
+                    nextPage.font = BenchwarpFont;
+
                     if (DebugUI)
                     {
                         Text debugText = benchDebugString.GetComponent<Text>();
@@ -113,6 +119,16 @@ namespace BenchwarpSS.Utils
                         text.font = BenchwarpFont;
                     }
                 }
+            }
+        }
+
+
+        public void NextPage()
+        {
+            page++;
+            if (page > maxPages)
+            {
+                page = 1;
             }
         }
 
@@ -137,6 +153,18 @@ namespace BenchwarpSS.Utils
                 }
             }
 
+            foreach(GameObject dropdownObj in dropdowns)
+            {
+                Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                if (dropdown.page == page)
+                {
+                    dropdownObj.SetActive(true);
+                } else
+                {
+                    dropdownObj.SetActive(false);
+                }
+            }
+
             Text toggleAll = toggleAllBtn.GetComponentInChildren<Text>();
             if (toggleAllDir)
             {
@@ -146,6 +174,9 @@ namespace BenchwarpSS.Utils
             {
                 toggleAll.text = "Close All";
             }
+
+            Text nextPageText = nextPageBtn.GetComponentInChildren<Text>();
+            nextPageText.text = $"Page {page}/{maxPages}";
 
             if (DebugUI)
             {
@@ -176,6 +207,9 @@ namespace BenchwarpSS.Utils
             toggleAllBtn = BuildButton(canvas, "Toggle All", -10, -10, new Vector2(1,1));
             toggleAllBtn.GetComponent<Button>().onClick.AddListener(ToggleDropdowns);
 
+            nextPageBtn = BuildButton(canvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1));
+            nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
+
             int pageToSet = 1;
 
             for (int i = 0; i < Dropdown.dropdowns.Count; i++)
@@ -183,7 +217,6 @@ namespace BenchwarpSS.Utils
                 if (i == 13)
                 {
                     btnOffsetX = baseDropdownRowXOffset;
-                    btnOffsetY += (btnHeight + btnOffsetY) * 6;
                     pageToSet++;
                 }
 
@@ -352,7 +385,7 @@ namespace BenchwarpSS.Utils
                 new("Bell Bench", "RestBench", "Dock_01", 1, MapZone.DOCKS),
                 new("Forge", "RestBench", "Room_Forge", 1, MapZone.DOCKS),
                 new("Bellshrine", "RestBench", "Bellshrine_05", 1, MapZone.DOCKS),
-                new("Sauna", "RestBench", "Docks_10", 1, MapZone.DOCKS)
+                new("Sauna", "RestBench", "Dock_10", 1, MapZone.DOCKS)
             ]),
             new("Far Fields", [
                 new("Bellway", "RestBench", "Bellway_03", 1, MapZone.WILDS),
