@@ -378,7 +378,9 @@ namespace BenchwarpSS.Utils
                 new("Bell Bench", "RestBench", "Bone_01c", 1, MapZone.PATH_OF_BONE),
                 new("Beast Battle", "RestBench", "Bone_04", 1, MapZone.MOSSTOWN),
                 new("Bellshrine", "RestBench", "Bellshrine", 1, MapZone.PATH_OF_BONE),
-                new("Ladybug", "RestBench", "Bone_12", 1, MapZone.PATH_OF_BONE)
+                new("Shooting Gallery", "RestBench", "Bone_12", 1, MapZone.PATH_OF_BONE, 
+                    new("Shooting Gallery?", "RestBench (1)", "Bone_12", 1, MapZone.PATH_OF_BONE)
+                )
             ]),
             new("Hunter's March", [
                 new("Trap Bench", "RestBench", "Ant_17", 1, MapZone.HUNTERS_NEST)
@@ -396,6 +398,7 @@ namespace BenchwarpSS.Utils
                 new("Seamstress", "RestBench", "Bone_East_Umbrella", 1, MapZone.WILDS),
                 new("Pilgrim's Rest", "RestBench", "Bone_East_10_Room", 1, MapZone.PILGRIMS_REST),
                 new("Post-Claw", "RestBench", "Bone_East_15", 1, MapZone.WILDS),
+                new("Sprintmaster", "RestBench", "Sprintmaster_Cave", 1, MapZone.WILDS)
             ]),
             new("Greymoor", [
                 new("Bellshrine", "RestBench", "Bellshrine_02", 1, MapZone.GREYMOOR),
