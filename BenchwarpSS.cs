@@ -24,8 +24,8 @@ namespace BenchwarpSS
 
             harmony.PatchAll(typeof(ToggleWarpMenu));
             harmony.PatchAll(typeof(SetBenchUnlocksForProfile));
+            harmony.PatchAll(typeof(HideWarpMenu));
             SaveModdedSaveData.Apply(harmony);
-            UnlockBench.Apply(harmony);
         }
 
         private void Update()

@@ -219,6 +219,7 @@ namespace BenchwarpSS.Utils
                 if (bench.sceneName == PlayerData.instance.respawnScene && bench.objName == PlayerData.instance.respawnMarkerName)
                 {
                     text.color = Color.yellow;
+                    bench.isUnlocked = true;
                 } else if (!(bench.isUnlocked || ForceUnlock))
                 {
                     text.color = new() { r = 0.25f, g = 0.15f, b = 0.38f, a = 1 };

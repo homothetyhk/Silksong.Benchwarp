@@ -163,7 +163,7 @@ namespace BenchwarpSS.Utils
 
         public void SetBench()
         {
-            if (isUnlocked)
+            if (isUnlocked || GUIController.Instance.ForceUnlock)
             {
                 if (PlayerData.instance.act3_wokeUp)
                 {
