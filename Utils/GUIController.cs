@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using GlobalEnums;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,13 +21,16 @@ namespace BenchwarpSS.Utils
         public GameObject warpButton;
         public GameObject toggleAllBtn;
         public GameObject nextPageBtn;
+        public GameObject forceUnlockButton;
         public List<GameObject> dropdowns = new([]);
         public GameObject benchDebugString;
         public int page = 1;
         public int maxPages = 2;
 
         public bool DebugUI = true;
+        public bool ForceUnlock = false;
 
+        public static int buttons = 0;
         public List<GameObject> benchButtons
         {
             get
@@ -38,6 +43,62 @@ namespace BenchwarpSS.Utils
                     benchButtons.AddRange(dropdown.buttons);
                 }
                 return benchButtons;
+            }
+        }
+        public static string SavePath
+        {
+            get
+            {
+                if (GameManager.instance != null)
+                {
+                    DesktopPlatform platform = Platform.Current as DesktopPlatform;
+                    string accId = "default";
+                    if (platform != null)
+                    {
+                        if (platform.onlineSubsystem != null)
+                        {
+                            string userId = platform.onlineSubsystem.UserId;
+                            if (!string.IsNullOrEmpty(userId))
+                            {
+                                accId = userId;
+                            }
+                        }
+                    }
+                    string benchwarpSavePath = Path.Combine(Application.persistentDataPath, accId, $"user{GameManager.instance.profileID}", $"BenchwarpSS.dat");
+                    return benchwarpSavePath;
+                }
+                return "";
+            }
+        }
+        public static Bench.BenchSaveData[] saveFile
+        {
+            get
+            {
+                if (File.Exists(SavePath) && SavePath != "")
+                {
+                    string json = File.ReadAllText(SavePath);
+                    Bench.BenchSaveData[] data = JsonConvert.DeserializeObject<Bench.BenchSaveData[]>(json);
+                    return data;
+                }
+                else
+                {
+                    return [];
+                }
+            }
+        }
+        public Bench.BenchSaveData[] dataToSave
+        {
+            get
+            {
+                List<Bench.BenchSaveData> data = new();
+                
+                foreach (GameObject benchButton in benchButtons)
+                {
+                    Bench bench = benchButton.GetComponent<Bench>();
+                    data.Add(bench.saveData);
+                }
+
+                return data.ToArray();
             }
         }
 
@@ -84,6 +145,14 @@ namespace BenchwarpSS.Utils
             SetBenchwarpFont();
         }
 
+        public void SaveData()
+        {
+            string saveDataJson = JsonConvert.SerializeObject(dataToSave, Formatting.Indented);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(SavePath));
+            File.WriteAllText(SavePath, saveDataJson);
+        }
+
         public void SetBenchwarpFont()
         {
             foreach (Font f in Resources.FindObjectsOfTypeAll(typeof(Font)))
@@ -100,6 +169,9 @@ namespace BenchwarpSS.Utils
 
                     Text nextPage = nextPageBtn.GetComponentInChildren<Text>();
                     nextPage.font = BenchwarpFont;
+
+                    Text forceUnlockText = forceUnlockButton.GetComponentInChildren<Text>();
+                    forceUnlockText.font = BenchwarpFont;
 
                     if (DebugUI)
                     {
@@ -147,6 +219,10 @@ namespace BenchwarpSS.Utils
                 if (bench.sceneName == PlayerData.instance.respawnScene && bench.objName == PlayerData.instance.respawnMarkerName)
                 {
                     text.color = Color.yellow;
+                } else if (!(bench.isUnlocked || ForceUnlock))
+                {
+                    text.color = new() { r = 0.25f, g = 0.15f, b = 0.38f, a = 1 };
+                    text.text = "???";
                 }
                 else
                 {
@@ -210,6 +286,12 @@ namespace BenchwarpSS.Utils
 
             nextPageBtn = BuildButton(canvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1));
             nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
+
+            forceUnlockButton = BuildButton(canvas, "Force Unlocked", -10, -(30 + btnHeight * 2), new Vector2(1, 1));
+            forceUnlockButton.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                ForceUnlock = !ForceUnlock;
+            });
 
             int pageToSet = 1;
 

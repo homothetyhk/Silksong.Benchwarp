@@ -1,4 +1,5 @@
-﻿using GlobalEnums;
+﻿using System;
+using GlobalEnums;
 using UnityEngine;
 
 namespace BenchwarpSS.Utils
@@ -76,6 +77,45 @@ namespace BenchwarpSS.Utils
                 }
             }
         }
+        
+        public bool isUnlocked
+        {
+            get
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    return act3Data.isUnlocked;
+                }
+                else
+                {
+                    return data.isUnlocked;
+                }
+            }
+            set
+            {
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    act3Data.isUnlocked = value;
+                }
+                else
+                {
+                    data.isUnlocked = value;
+                }
+            }
+        }
+        public BenchSaveData saveData
+        {
+            get
+            {
+                BenchSaveData data = new()
+                {
+                    objName = objName,
+                    sceneName = sceneName,
+                    isUnlocked = isUnlocked,
+                };
+                return data;
+            }
+        }
 
         public class BenchData
         {
@@ -84,6 +124,7 @@ namespace BenchwarpSS.Utils
             public string sceneName;
             public int respawnType;
             public MapZone mapZone;
+            public bool isUnlocked = false;
             public BenchData act3Data;
 
             public BenchData(string name, string objName, string sceneName, int respawnType, MapZone mapZone, BenchData act3Data = null)
@@ -93,14 +134,25 @@ namespace BenchwarpSS.Utils
                 this.sceneName = sceneName;
                 this.respawnType = respawnType;
                 this.mapZone = mapZone;
-                if (act3Data != null )
+
+                if (act3Data != null)
                 {
                     this.act3Data = act3Data;
-                } else
+                }
+                else
                 {
                     this.act3Data = this;
                 }
+
+                GUIController.buttons++;
             }
+        }
+        [Serializable]
+        public struct BenchSaveData
+        {
+            public string objName;
+            public string sceneName;
+            public bool isUnlocked;
         }
 
         public void Init(BenchData benchData)
@@ -111,18 +163,36 @@ namespace BenchwarpSS.Utils
 
         public void SetBench()
         {
-            if (PlayerData.instance.act3_wokeUp)
+            if (isUnlocked)
             {
-                PlayerData.instance.respawnMarkerName = act3Data.objName;
-                PlayerData.instance.respawnScene = act3Data.sceneName;
-                PlayerData.instance.respawnType = act3Data.respawnType;
-                PlayerData.instance.mapZone = act3Data.mapZone;
-            } else
+                if (PlayerData.instance.act3_wokeUp)
+                {
+                    PlayerData.instance.respawnMarkerName = act3Data.objName;
+                    PlayerData.instance.respawnScene = act3Data.sceneName;
+                    PlayerData.instance.respawnType = act3Data.respawnType;
+                    PlayerData.instance.mapZone = act3Data.mapZone;
+                }
+                else
+                {
+                    PlayerData.instance.respawnMarkerName = data.objName;
+                    PlayerData.instance.respawnScene = data.sceneName;
+                    PlayerData.instance.respawnType = data.respawnType;
+                    PlayerData.instance.mapZone = data.mapZone;
+                }
+            }
+        }
+
+        public void SetUnlockStatus()
+        {
+            if (GUIController.saveFile.Length != 0)
             {
-                PlayerData.instance.respawnMarkerName = data.objName;
-                PlayerData.instance.respawnScene = data.sceneName;
-                PlayerData.instance.respawnType = data.respawnType;
-                PlayerData.instance.mapZone = data.mapZone;
+                foreach (var item in GUIController.saveFile)
+                {
+                    if (item.objName == objName && item.sceneName == sceneName)
+                    {
+                        isUnlocked = item.isUnlocked;
+                    }
+                }
             }
         }
     }

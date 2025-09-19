@@ -1,3 +1,4 @@
+using BenchwarpSS.Patches;
 using BenchwarpSS.Utils;
 using BepInEx;
 using BepInEx.Logging;
@@ -15,12 +16,16 @@ namespace BenchwarpSS
             logSource = Logger;
             Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
             Harmony harmony = new("com.example.patch");
-            harmony.PatchAll();
 
             GUIController.Setup();
             GUIController.Instance.BuildMenus();
 
             GUIController.Instance.canvas.SetActive(false);
+
+            harmony.PatchAll(typeof(ToggleWarpMenu));
+            harmony.PatchAll(typeof(SetBenchUnlocksForProfile));
+            SaveModdedSaveData.Apply(harmony);
+            UnlockBench.Apply(harmony);
         }
 
         private void Update()

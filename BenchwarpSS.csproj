@@ -8,6 +8,7 @@
 		<RestoreAdditionalProjectSources>
 			https://nuget.bepinex.dev/v3/index.json
 		</RestoreAdditionalProjectSources>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<PropertyGroup>
