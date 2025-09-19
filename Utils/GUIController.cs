@@ -414,7 +414,8 @@ namespace BenchwarpSS.Utils
             new("Shellwood", [
                 new("Bell Bench", "RestBench", "Shellwood_01b", 1, MapZone.SHELLWOOD_THICKET),
                 new("Bellshrine", "RestBench", "Bellshrine_03", 1, MapZone.SHELLWOOD_THICKET),
-                new("Overgrown Bench", "RestBench", "Shellwood_08c", 1, MapZone.SHELLWOOD_THICKET)
+                new("Overgrown Bench", "RestBench", "Shellwood_08c", 1, MapZone.SHELLWOOD_THICKET),
+                new("Witch Exit", "RestBench", "Mosstown_03", 1, MapZone.SHELLWOOD_THICKET)
             ]),
             new("Blasted Steps", [
                 new("Bell Bench", "RestBench", "Coral_02", 1, MapZone.JUDGE_STEPS),
