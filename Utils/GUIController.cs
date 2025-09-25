@@ -315,6 +315,7 @@ namespace BenchwarpSS.Utils
                 if (worked)
                 {
                     gm.LoadGameFromUI(gm.profileID);
+                    gm.TimePasses();
                 }
             });
 
@@ -398,13 +399,15 @@ namespace BenchwarpSS.Utils
                 new("Seamstress", "RestBench", "Bone_East_Umbrella", 1, MapZone.WILDS),
                 new("Pilgrim's Rest", "RestBench", "Bone_East_10_Room", 1, MapZone.PILGRIMS_REST),
                 new("Post-Claw", "RestBench", "Bone_East_15", 1, MapZone.WILDS),
-                new("Sprintmaster", "RestBench", "Sprintmaster_Cave", 1, MapZone.WILDS)
+                new("Sprintmaster", "RestBench", "Sprintmaster_Cave", 1, MapZone.WILDS),
+                new("Karmelita", "RestBench", "Bone_East_27", 1, MapZone.WILDS)
             ]),
             new("Greymoor", [
                 new("Bellshrine", "RestBench", "Bellshrine_02", 1, MapZone.GREYMOOR),
                 new("Halfway House", "RestBench", "Halfway_01", 1, MapZone.HALFWAY_HOUSE),
                 new("Flea Caravan", "RestBench", "Greymoor_08", 1, MapZone.GREYMOOR),
-                new("Wisp Thicket", "RestBench", "Wisp_04", 1, MapZone.WISP)
+                new("Wisp Thicket", "RestBench", "Wisp_04", 1, MapZone.WISP),
+                new("Verdania", "RestBench", "Clover_20", 1, MapZone.CLOVER),
             ]),
             new("Bellheart", [
                 new("Bellheart", "RestBench", "Belltown", 1, MapZone.BELLTOWN),
@@ -482,14 +485,16 @@ namespace BenchwarpSS.Utils
                 new("Coral Tower", "RestBench", "Coral_Tower_01", 1, MapZone.JUDGE_STEPS)
             ]),
             new("The Cradle", [
-                new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG)
+                new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG),
+                new("Mr. Mushroom", "RestBench", "Cradle_Destroyed_Challenge_Bench", 1, MapZone.CRADLE)
             ]),
             new("Abyss", [
                 new("Void Tendrils", "RestBench", "Abyss_12", 1, MapZone.ABYSS),
                 new("Top Abyss", "RestBench", "Abyss_09", 1, MapZone.ABYSS)
             ]),
             new("Weavenest", [
-                new("Atla", "RestBench", "Weave_07", 1, MapZone.WEAVER_SHRINE)
+                new("Atla", "RestBench", "Weave_07", 1, MapZone.WEAVER_SHRINE),
+                new("Cindril", "RestBench", "Bone_East_Weavehome", 1, MapZone.WILDS)
             ])
         ]);
 
