@@ -80,7 +80,7 @@ namespace BenchwarpSS.Utils
 
         public void LoadResources()
         {
-            images.Add("ButtonRect", ModHelper.LoadTexFromAssembly("BenchwarpSS.Resources.Images.ButtonRect.png"));
+            images.Add("ButtonRect", ModHelper.LoadTexFromAssembly("Benchwarp.Resources.Images.ButtonRect.png"));
             SetBenchwarpFont();
         }
 

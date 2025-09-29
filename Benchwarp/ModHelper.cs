@@ -8,17 +8,18 @@ namespace BenchwarpSS
     {
         public static void Log(string msg)
         {
-            BenchwarpSS.logSource.LogInfo(msg);
+            Benchwarp.Instance.Logger.LogInfo(msg);
         }
 
         public static void LogError(string msg)
         {
-            BenchwarpSS.logSource.LogError(msg);
+            Benchwarp.Instance.Logger.LogError(msg);
         }
 
         public static Texture2D LoadTexFromAssembly(string resourceName)
         {
             var asm = Assembly.GetExecutingAssembly();
+
 
             using (Stream stream = asm.GetManifestResourceStream(resourceName))
             {
