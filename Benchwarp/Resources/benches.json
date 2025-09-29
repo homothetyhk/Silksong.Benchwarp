@@ -1,0 +1,648 @@
+[
+  {
+    "BenchName": "Ruined Chapel",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Tut_03",
+    "RespawnType": 1,
+    "MapZone": "BONECHURCH",
+    "MenuArea": "Moss Grotto"
+  },
+  {
+    "BenchName": "Bone Bottom",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bonetown",
+    "RespawnType": 1,
+    "MapZone": "BONETOWN",
+    "MenuArea": "Moss Grotto"
+  },
+  {
+    "BenchName": "Moss Druid",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Mosstown_02c",
+    "RespawnType": 1,
+    "MapZone": "MOSSTOWN",
+    "MenuArea": "Moss Grotto"
+  },
+  {
+    "BenchName": "Snail Shamans",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Tut_04",
+    "RespawnType": 1,
+    "MapZone": "BONECHURCH",
+    "MenuArea": "Moss Grotto"
+  },
+  {
+    "BenchName": "Bell Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_01c",
+    "RespawnType": 1,
+    "MapZone": "PATH_OF_BONE",
+    "MenuArea": "The Marrow"
+  },
+  {
+    "BenchName": "Beast Battle",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_04",
+    "RespawnType": 1,
+    "MapZone": "MOSSTOWN",
+    "MenuArea": "The Marrow"
+  },
+  {
+    "BenchName": "Bellshrine",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine",
+    "RespawnType": 1,
+    "MapZone": "PATH_OF_BONE",
+    "MenuArea": "The Marrow"
+  },
+  {
+    "BenchName": "Shooting Gallery",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_12",
+    "RespawnType": 1,
+    "MapZone": "PATH_OF_BONE",
+    "MenuArea": "The Marrow",
+    "Act3Data": {
+      "BenchName": "Shooting Gallery?",
+      "SceneName": "RestBench (1)",
+      "RespawnMarker": "Bone_12",
+      "RespawnType": 1,
+      "MapZone": "PATH_OF_BONE"
+    }
+  },
+  {
+    "BenchName": "Trap Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Ant_17",
+    "RespawnType": 1,
+    "MapZone": "HUNTERS_NEST",
+    "MenuArea": "Hunter's March"
+  },
+  {
+    "BenchName": "Bell Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Dock_01",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Forge",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Room_Forge",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Bellshrine",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine_05",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Sauna",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Dock_10",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Diving Bell",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Room_Diving_Bell",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Abyss Exit",
+    "SceneName": "RestBench (1)",
+    "RespawnMarker": "Dock_06_Church",
+    "RespawnType": 1,
+    "MapZone": "DOCKS",
+    "MenuArea": "Deep Docks"
+  },
+  {
+    "BenchName": "Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_03",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Seamstress",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_East_Umbrella",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Pilgrim's Rest",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_East_10_Room",
+    "RespawnType": 1,
+    "MapZone": "PILGRIMS_REST",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Post-Claw",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_East_15",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Sprintmaster",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Sprintmaster_Cave",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Karmelita",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_East_27",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Far Fields"
+  },
+  {
+    "BenchName": "Bellshrine",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine_02",
+    "RespawnType": 1,
+    "MapZone": "GREYMOOR",
+    "MenuArea": "Greymoor"
+  },
+  {
+    "BenchName": "Halfway House",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Halfway_01",
+    "RespawnType": 1,
+    "MapZone": "HALFWAY_HOUSE",
+    "MenuArea": "Greymoor"
+  },
+  {
+    "BenchName": "Flea Caravan",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Greymoor_08",
+    "RespawnType": 1,
+    "MapZone": "GREYMOOR",
+    "MenuArea": "Greymoor"
+  },
+  {
+    "BenchName": "Wisp Thicket",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Wisp_04",
+    "RespawnType": 1,
+    "MapZone": "WISP",
+    "MenuArea": "Greymoor"
+  },
+  {
+    "BenchName": "Verdania",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Clover_20",
+    "RespawnType": 1,
+    "MapZone": "CLOVER",
+    "MenuArea": "Greymoor"
+  },
+  {
+    "BenchName": "Bellheart",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Belltown",
+    "RespawnType": 1,
+    "MapZone": "BELLTOWN",
+    "MenuArea": "Bellheart"
+  },
+  {
+    "BenchName": "Widow",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Belltown_Shrine",
+    "RespawnType": 1,
+    "MapZone": "BELLTOWN",
+    "MenuArea": "Bellheart"
+  },
+  {
+    "BenchName": "Bellhome",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Belltown_Room_Spare",
+    "RespawnType": 1,
+    "MapZone": "BELLTOWN",
+    "MenuArea": "Bellheart"
+  },
+  {
+    "BenchName": "Bell Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Shellwood_01b",
+    "RespawnType": 1,
+    "MapZone": "SHELLWOOD_THICKET",
+    "MenuArea": "Shellwood"
+  },
+  {
+    "BenchName": "Bellshrine",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine_03",
+    "RespawnType": 1,
+    "MapZone": "SHELLWOOD_THICKET",
+    "MenuArea": "Shellwood"
+  },
+  {
+    "BenchName": "Overgrown Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Shellwood_08c",
+    "RespawnType": 1,
+    "MapZone": "SHELLWOOD_THICKET",
+    "MenuArea": "Shellwood"
+  },
+  {
+    "BenchName": "Witch Exit",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Mosstown_03",
+    "RespawnType": 1,
+    "MapZone": "SHELLWOOD_THICKET",
+    "MenuArea": "Shellwood"
+  },
+  {
+    "BenchName": "Bell Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Coral_02",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Blasted Steps"
+  },
+  {
+    "BenchName": "Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_08",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Blasted Steps"
+  },
+  {
+    "BenchName": "Flea Caravan",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Coral_Judge_Arena",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Blasted Steps"
+  },
+  {
+    "BenchName": "Pinstress",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Room_Pinstress",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Blasted Steps"
+  },
+  {
+    "BenchName": "Lifeblood Lab",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Crawl_08",
+    "RespawnType": 1,
+    "MapZone": "CRAWLSPACE",
+    "MenuArea": "Wormways"
+  },
+  {
+    "BenchName": "Broken Bench",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Dust_10",
+    "RespawnType": 1,
+    "MapZone": "DUSTPENS",
+    "MenuArea": "Sinner's Road"
+  },
+  {
+    "BenchName": "Styx",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Dust_11",
+    "RespawnType": 1,
+    "MapZone": "DUSTPENS",
+    "MenuArea": "Sinner's Road"
+  },
+  {
+    "BenchName": "Broken Elevator",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Under_01b",
+    "RespawnType": 1,
+    "MapZone": "UNDERSTORE",
+    "MenuArea": "Underworks"
+  },
+  {
+    "BenchName": "Confession Toll",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Under_08",
+    "RespawnType": 1,
+    "MapZone": "UNDERSTORE",
+    "MenuArea": "Underworks"
+  },
+  {
+    "BenchName": "Architect 12",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Under_17",
+    "RespawnType": 1,
+    "MapZone": "UNDERSTORE",
+    "MenuArea": "Underworks"
+  },
+  {
+    "BenchName": "Whiteward",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Ward_01",
+    "RespawnType": 1,
+    "MapZone": "WARD",
+    "MenuArea": "Underworks"
+  },
+  {
+    "BenchName": "Underworks",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Under_07b",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Below Dining",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Song_18",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Spa",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Song_10",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "High Hall Entrance",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Hang_01",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Songclave Bellshrine",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine_Enclave",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Songclave Outside",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Song_Enclave",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Grand Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_City",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel"
+  },
+  {
+    "BenchName": "Cogwork Core",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Cog_Bench",
+    "RespawnType": 1,
+    "MapZone": "COG_CORE",
+    "MenuArea": "Citadel Other"
+  },
+  {
+    "BenchName": "High Halls Ventricle",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Hang_06b",
+    "RespawnType": 1,
+    "MapZone": "HANG",
+    "MenuArea": "Citadel Other"
+  },
+  {
+    "BenchName": "Memoriam",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Arborium_04",
+    "RespawnType": 1,
+    "MapZone": "ARBORIUM",
+    "MenuArea": "Citadel Other"
+  },
+  {
+    "BenchName": "Library",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Library_08",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel Other"
+  },
+  {
+    "BenchName": "Cauldron Entrance",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Library_10",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Citadel Other"
+  },
+  {
+    "BenchName": "Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_Shadow",
+    "RespawnType": 1,
+    "MapZone": "SWAMP",
+    "MenuArea": "Bilewater"
+  },
+  {
+    "BenchName": "Shortcut",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Shadow_08",
+    "RespawnType": 1,
+    "MapZone": "SWAMP",
+    "MenuArea": "Bilewater"
+  },
+  {
+    "BenchName": "Bilehaven",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Shadow_18",
+    "RespawnType": 1,
+    "MapZone": "SWAMP",
+    "MenuArea": "Bilewater"
+  },
+  {
+    "BenchName": "Exhaust Organ",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Organ_01",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "Bilewater"
+  },
+  {
+    "BenchName": "Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_Aqueduct",
+    "RespawnType": 1,
+    "MapZone": "AQUEDUCT",
+    "MenuArea": "Putrified Ducts"
+  },
+  {
+    "BenchName": "Huntress",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Room_Huntress",
+    "RespawnType": 1,
+    "MapZone": "AQUEDUCT",
+    "MenuArea": "Putrified Ducts"
+  },
+  {
+    "BenchName": "Fleatopia",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Aqueduct_05",
+    "RespawnType": 1,
+    "MapZone": "AQUEDUCT",
+    "MenuArea": "Putrified Ducts",
+    "Act3Data": {
+      "BenchName": "Festival",
+      "SceneName": "RestBench Festival",
+      "RespawnMarker": "Aqueduct_05",
+      "RespawnType": 1,
+      "MapZone": "AQUEDUCT"
+    }
+  },
+  {
+    "BenchName": "Bellway",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Slab_06",
+    "RespawnType": 1,
+    "MapZone": "THE_SLAB",
+    "MenuArea": "The Slab"
+  },
+  {
+    "BenchName": "Prison",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Slab_20",
+    "RespawnType": 1,
+    "MapZone": "THE_SLAB",
+    "MenuArea": "The Slab"
+  },
+  {
+    "BenchName": "Outside",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Slab_16",
+    "RespawnType": 1,
+    "MapZone": "THE_SLAB",
+    "MenuArea": "The Slab"
+  },
+  {
+    "BenchName": "After Arena",
+    "SceneName": "RestBench (1)",
+    "RespawnMarker": "Slab_16",
+    "RespawnType": 1,
+    "MapZone": "THE_SLAB",
+    "MenuArea": "The Slab"
+  },
+  {
+    "BenchName": "Shakra",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Peak_02",
+    "RespawnType": 1,
+    "MapZone": "PEAK",
+    "MenuArea": "Mount Fay"
+  },
+  {
+    "BenchName": "Half-Way",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellway_Peak",
+    "RespawnType": 1,
+    "MapZone": "PEAK",
+    "MenuArea": "Mount Fay"
+  },
+  {
+    "BenchName": "Final Climb",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Peak_07",
+    "RespawnType": 1,
+    "MapZone": "PEAK",
+    "MenuArea": "Mount Fay"
+  },
+  {
+    "BenchName": "Workbench",
+    "SceneName": "RestBench (1)",
+    "RespawnMarker": "Peak_12",
+    "RespawnType": 1,
+    "MapZone": "PEAK",
+    "MenuArea": "Mount Fay"
+  },
+  {
+    "BenchName": "Sands of Karak",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bellshrine_Coral",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Sands of Karak"
+  },
+  {
+    "BenchName": "Coral Tower",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Coral_Tower_01",
+    "RespawnType": 1,
+    "MapZone": "JUDGE_STEPS",
+    "MenuArea": "Sands of Karak"
+  },
+  {
+    "BenchName": "Terminus",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Tube_Hub",
+    "RespawnType": 1,
+    "MapZone": "CITY_OF_SONG",
+    "MenuArea": "The Cradle"
+  },
+  {
+    "BenchName": "Mr. Mushroom",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Cradle_Destroyed_Challenge_Bench",
+    "RespawnType": 1,
+    "MapZone": "CRADLE",
+    "MenuArea": "The Cradle"
+  },
+  {
+    "BenchName": "Void Tendrils",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Abyss_12",
+    "RespawnType": 1,
+    "MapZone": "ABYSS",
+    "MenuArea": "Abyss"
+  },
+  {
+    "BenchName": "Top Abyss",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Abyss_09",
+    "RespawnType": 1,
+    "MapZone": "ABYSS",
+    "MenuArea": "Abyss"
+  },
+  {
+    "BenchName": "Atla",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Weave_07",
+    "RespawnType": 1,
+    "MapZone": "WEAVER_SHRINE",
+    "MenuArea": "Weavenest"
+  },
+  {
+    "BenchName": "Cindril",
+    "SceneName": "RestBench",
+    "RespawnMarker": "Bone_East_Weavehome",
+    "RespawnType": 1,
+    "MapZone": "WILDS",
+    "MenuArea": "Weavenest"
+  }
+]

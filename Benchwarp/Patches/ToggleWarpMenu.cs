@@ -1,7 +1,7 @@
-﻿using BenchwarpSS.Utils;
+﻿    using Benchwarp.Components;
 using HarmonyLib;
 
-namespace BenchwarpSS.Patches
+namespace Benchwarp.Patches
 {
     [HarmonyPatch(typeof(GameManager), nameof(GameManager.PauseGameToggle))]
     internal class ToggleWarpMenu

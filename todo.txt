@@ -1,0 +1,12 @@
+- bench warp
+  - track visited benches
+  - hotkey integration
+  - hardlock prevention
+- door warp
+  - hotkey integration
+  - softlock prevention
+- deploy
+  - bench assets
+- settings
+  - serialization
+  - menu integration
