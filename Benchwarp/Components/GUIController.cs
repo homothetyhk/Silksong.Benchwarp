@@ -58,8 +58,8 @@ namespace Benchwarp.Components
             }
         }
 
-        public static int btnWidth = 110; //Controls Button Size Universally
-        public static int btnHeight = 40; //Controls Button Size Universally
+        public static int btnWidth = 115; //Controls Button Size Universally
+        public static int btnHeight = 45; //Controls Button Size Universally
         public static int btnOffsetX = 10; //Initial X Offset
         public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
         public static int btnOffsetY = 10; //Y Offset for Dropdowns
@@ -109,14 +109,20 @@ namespace Benchwarp.Components
 
                     foreach(GameObject benchObj in benchButtons)
                     {
-                        Text text = benchObj.GetComponentInChildren<Text>();
-                        text.font = BenchwarpFont;
+                        Text[] texts = benchObj.GetComponentsInChildren<Text>();
+                        foreach(Text text in texts)
+                        {
+                            text.font = BenchwarpFont;
+                        }
                     }
 
                     foreach(GameObject dropdownObj in dropdowns)
                     {
-                        Text text = dropdownObj.GetComponentInChildren<Text>();
-                        text.font = BenchwarpFont;
+                        Text[] texts = dropdownObj.GetComponentsInChildren<Text>();
+                        foreach (Text text in texts)
+                        {
+                            text.font = BenchwarpFont;
+                        }
                     }
                 }
             }
@@ -142,15 +148,22 @@ namespace Benchwarp.Components
             foreach (GameObject buttonObj in benchButtons)
             {
                 BenchComponent bench = buttonObj.GetComponent<BenchComponent>();
-                Text text = buttonObj.GetComponentInChildren<Text>();
-                text.text = bench.benchName;
+                Text[] texts = buttonObj.GetComponentsInChildren<Text>();
+
+                Color color = Color.white;
+
                 if (bench.sceneName == PlayerData.instance.respawnScene && bench.objName == PlayerData.instance.respawnMarkerName)
                 {
-                    text.color = Color.yellow;
+                    color = Color.yellow;
                 }
-                else
+
+                foreach (Text text in texts)
                 {
-                    text.color = Color.white;
+                    if (!text.text.Any(char.IsDigit))
+                    {
+                        text.text = bench.benchName;
+                    }
+                    text.color = color;
                 }
             }
 
@@ -196,6 +209,7 @@ namespace Benchwarp.Components
             canvas = new("BenchwarpGUI");
             Canvas canvas_component = canvas.AddComponent<Canvas>();
             canvas_component.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas_component.pixelPerfect = true;
             CanvasScaler scaler = canvas.AddComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920f, 1080f);
@@ -226,17 +240,17 @@ namespace Benchwarp.Components
                 }
             }
 
-            int i = -1;
+            int i = 0;
             foreach ((string menuArea, List<BenchData> benches) in benchesByMenuArea)
             {
                 i++;
-                if (i == 13)
+                if (i == 14)
                 {
                     btnOffsetX = baseDropdownRowXOffset;
                     pageToSet++;
                 }
 
-                GameObject dropdownObj = BuildButton(canvas, menuArea, btnOffsetX, -btnOffsetY, TopLeftCorner);
+                GameObject dropdownObj = BuildButton(canvas, menuArea, btnOffsetX, -btnOffsetY, TopLeftCorner, hotkey: ((char)('A' + i - 1)).ToString());
                 Dropdown dropdown = dropdownObj.AddComponent<Dropdown>();
                 dropdown.page = pageToSet;
                 dropdown.Init(dropdownObj, menuArea, benches);
@@ -268,7 +282,7 @@ namespace Benchwarp.Components
             DontDestroyOnLoad(canvas);
         }
 
-        public static GameObject BuildButton(GameObject canvas, string name, int x, int y, Vector2 corner, bool bg = true)
+        public static GameObject BuildButton(GameObject canvas, string name, int x, int y, Vector2 corner, bool bg = true, string hotkey = "")
         {
             GameObject button = new($"{name} Button", [typeof(RectTransform)]);
             button.transform.SetParent(canvas.transform, false);
@@ -291,17 +305,26 @@ namespace Benchwarp.Components
             GameObject buttonTxt = new("ButtonText", typeof(RectTransform));
             buttonTxt.transform.SetParent(button.transform, false);
 
-            Text text = buttonTxt.AddComponent<Text>();
-            text.text = name;
-            if (BenchwarpFont == null)
-            {
-                text.font = Fallback;
-            } else
-            {
-                text.font = BenchwarpFont;
-            }
-            text.alignment = TextAnchor.MiddleCenter;
-            text.color = Color.white;
+            GameObject buttonHotkeyLabel = new("ButtonHotkey", typeof(RectTransform));
+            buttonHotkeyLabel.transform.SetParent(button.transform, false);
+
+            Text benchHotkeyText = buttonHotkeyLabel.AddComponent<Text>();
+            benchHotkeyText.text = hotkey;
+            benchHotkeyText.font = Fallback;
+            benchHotkeyText.alignment = TextAnchor.UpperLeft;
+            benchHotkeyText.color = Color.white;
+
+            RectTransform hotkeyRT = benchHotkeyText.GetComponent<RectTransform>();
+            hotkeyRT.anchorMin = Vector2.zero;
+            hotkeyRT.anchorMax = Vector2.one;
+            hotkeyRT.offsetMin = new(5, 0);
+            hotkeyRT.offsetMax = new(0, -5);
+
+            Text benchNameText = buttonTxt.AddComponent<Text>();
+            benchNameText.text = name;
+            benchNameText.font = Fallback;
+            benchNameText.alignment = TextAnchor.MiddleCenter;
+            benchNameText.color = Color.white;
 
             RectTransform textRT = buttonTxt.GetComponent<RectTransform>();
             textRT.anchorMin = Vector2.zero;
@@ -328,7 +351,6 @@ namespace Benchwarp.Components
                 if (worked)
                 {
                     gm.LoadGameFromUI(gm.profileID);
-                    gm.TimePasses();
                 }
             });
 

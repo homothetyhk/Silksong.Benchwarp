@@ -13,7 +13,7 @@ namespace Benchwarp.Components
         {
             get
             {
-                if (PlayerData.instance.act3_wokeUp)
+                if (PlayerData.instance.act3_wokeUp && act3Data != null)
                 {
                     return act3Data.BenchName;
                 }
@@ -27,7 +27,7 @@ namespace Benchwarp.Components
         {
             get
             {
-                if (PlayerData.instance.act3_wokeUp)
+                if (PlayerData.instance.act3_wokeUp && act3Data != null)
                 {
                     return act3Data.RespawnMarker;
                 }
@@ -41,7 +41,7 @@ namespace Benchwarp.Components
         {
             get
             {
-                if (PlayerData.instance.act3_wokeUp)
+                if (PlayerData.instance.act3_wokeUp && act3Data != null)
                 {
                     return act3Data.SceneName;
                 }
@@ -55,10 +55,11 @@ namespace Benchwarp.Components
         {
             get
             {
-                if (PlayerData.instance.act3_wokeUp)
+                if (PlayerData.instance.act3_wokeUp && act3Data != null)
                 {
                     return act3Data.RespawnType;
-                } else
+                }
+                else
                 {
                     return data.RespawnType;
                 }
@@ -68,10 +69,11 @@ namespace Benchwarp.Components
         {
             get
             {
-                if (PlayerData.instance.act3_wokeUp)
+                if (PlayerData.instance.act3_wokeUp && act3Data != null)
                 {
                     return act3Data.MapZone;
-                } else
+                }
+                else
                 {
                     return data.MapZone;
                 }
@@ -79,7 +81,7 @@ namespace Benchwarp.Components
         }
 
 
-        
+
 
         public void Init(BenchData benchData)
         {
@@ -89,19 +91,10 @@ namespace Benchwarp.Components
 
         public void SetBench()
         {
-            if (PlayerData.instance.act3_wokeUp)
-            {
-                PlayerData.instance.respawnMarkerName = act3Data.RespawnMarker;
-                PlayerData.instance.respawnScene = act3Data.SceneName;
-                PlayerData.instance.respawnType = act3Data.RespawnType;
-                PlayerData.instance.mapZone = act3Data.MapZone;
-            } else
-            {
-                PlayerData.instance.respawnMarkerName = data.RespawnMarker;
-                PlayerData.instance.respawnScene = data.SceneName;
-                PlayerData.instance.respawnType = data.RespawnType;
-                PlayerData.instance.mapZone = data.MapZone;
-            }
+            PlayerData.instance.respawnMarkerName = objName;
+            PlayerData.instance.respawnScene = sceneName;
+            PlayerData.instance.respawnType = respawnType;
+            PlayerData.instance.mapZone = mapZone;
         }
     }
 }
