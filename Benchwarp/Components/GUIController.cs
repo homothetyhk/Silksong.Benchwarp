@@ -1,5 +1,6 @@
 ﻿using Benchwarp.Data;
 using Benchwarp.Util;
+using GlobalEnums;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,7 +60,7 @@ namespace Benchwarp.Components
         }
 
         public static int btnWidth = 115; //Controls Button Size Universally
-        public static int btnHeight = 45; //Controls Button Size Universally
+        public static int btnHeight = 40; //Controls Button Size Universally
         public static int btnOffsetX = 10; //Initial X Offset
         public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
         public static int btnOffsetY = 10; //Y Offset for Dropdowns
@@ -107,16 +108,16 @@ namespace Benchwarp.Components
                         debugText.font = BenchwarpFont;
                     }
 
-                    foreach(GameObject benchObj in benchButtons)
+                    foreach (GameObject benchObj in benchButtons)
                     {
                         Text[] texts = benchObj.GetComponentsInChildren<Text>();
-                        foreach(Text text in texts)
+                        foreach (Text text in texts)
                         {
                             text.font = BenchwarpFont;
                         }
                     }
 
-                    foreach(GameObject dropdownObj in dropdowns)
+                    foreach (GameObject dropdownObj in dropdowns)
                     {
                         Text[] texts = dropdownObj.GetComponentsInChildren<Text>();
                         foreach (Text text in texts)
@@ -167,13 +168,14 @@ namespace Benchwarp.Components
                 }
             }
 
-            foreach(GameObject dropdownObj in dropdowns)
+            foreach (GameObject dropdownObj in dropdowns)
             {
                 Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
                 if (dropdown.page == page)
                 {
                     dropdownObj.SetActive(true);
-                } else
+                }
+                else
                 {
                     dropdownObj.SetActive(false);
                 }
@@ -219,7 +221,7 @@ namespace Benchwarp.Components
             btnOffsetX += btnWidth + 20;
             warpButton.GetComponent<Button>().onClick.AddListener(SaveReload);
 
-            toggleAllBtn = BuildButton(canvas, "Toggle All", -10, -10, new Vector2(1,1));
+            toggleAllBtn = BuildButton(canvas, "Toggle All", -10, -10, new Vector2(1, 1));
             toggleAllBtn.GetComponent<Button>().onClick.AddListener(ToggleDropdowns);
 
             nextPageBtn = BuildButton(canvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1));
@@ -227,18 +229,162 @@ namespace Benchwarp.Components
 
             int pageToSet = 1;
 
-            Dictionary<string, List<BenchData>> benchesByMenuArea = [];
-            foreach (BenchData b in BenchList.Benches)
+            Dictionary<string, List<BenchData>> benchesByMenuArea = new()
             {
-                if (benchesByMenuArea.TryGetValue(b.MenuArea, out List<BenchData> l))
-                {
-                    l.Add(b);
+                { "Moss Grotto", new([
+                        new("Ruined Chapel", "RestBench", "Tut_03", 1, MapZone.BONECHURCH),
+                        new("Bone Bottom", "RestBench", "Bonetown", 1, MapZone.BONETOWN),
+                        new("Moss Druid", "RestBench", "Mosstown_02c", 1, MapZone.MOSSTOWN),
+                        new("Snail Shamans", "RestBench", "Tut_04", 1, MapZone.BONECHURCH)
+                    ])
+                },
+                { "The Marrow", new([
+                        new("Bell Bench", "RestBench", "Bone_01c", 1, MapZone.PATH_OF_BONE),
+                        new("Beast Battle", "RestBench", "Bone_04", 1, MapZone.MOSSTOWN),
+                        new("Bellshrine", "RestBench", "Bellshrine", 1, MapZone.PATH_OF_BONE),
+                        new("Shooting Gallery", "RestBench", "Bone_12", 1, MapZone.PATH_OF_BONE,
+                            Act3Data: new("Shooting Gallery?", "RestBench (1)", "Bone_12", 1, MapZone.PATH_OF_BONE)
+                        ),
+                        new("Flea Caravan", "RestBench", "Bone_10", 1, MapZone.PATH_OF_BONE,
+                            Act3Data: new("Survivor Camp", "RestBench", "Bone_10", 1, MapZone.PATH_OF_BONE)
+                        ),
+                    ])
+                },
+                { "Hunter's March", new([
+                        new("Trap Bench", "RestBench", "Ant_17", 1, MapZone.HUNTERS_NEST)
+                    ])
+                },
+                { "Deep Docks", new([
+                        new("Bell Bench", "RestBench", "Dock_01", 1, MapZone.DOCKS),
+                        new("Forge", "RestBench", "Room_Forge", 1, MapZone.DOCKS),
+                        new("Bellshrine", "RestBench", "Bellshrine_05", 1, MapZone.DOCKS),
+                        new("Sauna", "RestBench", "Dock_10", 1, MapZone.DOCKS),
+                        new("Diving Bell", "RestBench", "Room_Diving_Bell", 1, MapZone.DOCKS),
+                        new("Abyss Exit", "RestBench (1)", "Dock_06_Church", 1, MapZone.DOCKS)
+                    ])
+                },
+                { "Far Fields", new([
+                        new("Bellway", "RestBench", "Bellway_03", 1, MapZone.WILDS),
+                        new("Seamstress", "RestBench", "Bone_East_Umbrella", 1, MapZone.WILDS),
+                        new("Pilgrim's Rest", "RestBench", "Bone_East_10_Room", 1, MapZone.PILGRIMS_REST),
+                        new("Post-Claw", "RestBench", "Bone_East_15", 1, MapZone.WILDS),
+                        new("Sprintmaster", "RestBench", "Sprintmaster_Cave", 1, MapZone.WILDS),
+                        new("Karmelita", "RestBench", "Bone_East_27", 1, MapZone.WILDS)
+                    ])
+                },
+                { "Greymoor", new([
+                        new("Shakra", "RestBench", "Greymoor_02", 1, MapZone.GREYMOOR),
+                        new("Halfway House", "RestBench", "Halfway_01", 1, MapZone.HALFWAY_HOUSE),
+                        new("Bellshrine", "RestBench", "Bellshrine_02", 1, MapZone.GREYMOOR),
+                        new("Flea Caravan", "RestBench", "Greymoor_08", 1, MapZone.GREYMOOR),
+                        new("Wisp Thicket", "RestBench", "Wisp_04", 1, MapZone.WISP),
+                        new("Verdania", "RestBench", "Clover_20", 1, MapZone.CLOVER),
+                    ])
+                },
+                { "Bellheart", new([
+                        new("Bellheart", "RestBench", "Belltown", 1, MapZone.BELLTOWN),
+                        new("Widow", "RestBench", "Belltown_Shrine", 1, MapZone.BELLTOWN),
+                        new("Bellhome", "RestBench", "Belltown_Room_Spare", 1, MapZone.BELLTOWN)
+                    ])
+                },
+                { "Shellwood", new([
+                        new("Bell Bench", "RestBench", "Shellwood_01b", 1, MapZone.SHELLWOOD_THICKET),
+                        new("Bellshrine", "RestBench", "Bellshrine_03", 1, MapZone.SHELLWOOD_THICKET),
+                        new("Overgrown Bench", "RestBench", "Shellwood_08c", 1, MapZone.SHELLWOOD_THICKET),
+                        new("Witch Exit", "RestBench", "Mosstown_03", 1, MapZone.SHELLWOOD_THICKET)
+                    ])
+                },
+                { "Blasted Steps", new([
+                        new("Bell Bench", "RestBench", "Coral_02", 1, MapZone.JUDGE_STEPS),
+                        new("Bellway", "RestBench", "Bellway_08", 1, MapZone.JUDGE_STEPS),
+                        new("Flea Caravan", "RestBench", "Coral_Judge_Arena", 1, MapZone.JUDGE_STEPS),
+                        new("Pinstress", "RestBench", "Room_Pinstress", 1, MapZone.JUDGE_STEPS),
+                    ])
+                },
+                { "Wormways", new([
+                        new("Lifeblood Lab", "RestBench", "Crawl_08", 1, MapZone.CRAWLSPACE)
+                    ])
+                },
+                { "Sinner's Road", new([
+                        new("Broken Bench", "RestBench", "Dust_10", 1, MapZone.DUSTPENS),
+                        new("Styx", "RestBench", "Dust_11", 1, MapZone.DUSTPENS),
+                    ])
+                },
+                { "Underworks", new([
+                        new("Broken Elevator", "RestBench", "Under_01b", 1, MapZone.UNDERSTORE),
+                        new("Confession Toll", "RestBench", "Under_08", 1, MapZone.UNDERSTORE),
+                        new("Architect 12", "RestBench", "Under_17", 1, MapZone.UNDERSTORE),
+                        new("Whiteward", "RestBench", "Ward_01", 1, MapZone.WARD)
+                    ])
+                },
+                { "Citadel", new([
+                        new("Underworks", "RestBench", "Under_07b", 1, MapZone.CITY_OF_SONG),
+                        new("Below Dining", "RestBench", "Song_18", 1, MapZone.CITY_OF_SONG),
+                        new("Spa", "RestBench", "Song_10", 1, MapZone.CITY_OF_SONG),
+                        new("High Hall Entrance", "RestBench", "Hang_01", 1, MapZone.CITY_OF_SONG),
+                        new("Songclave Bellshrine", "RestBench", "Bellshrine_Enclave", 1, MapZone.CITY_OF_SONG),
+                        new("Songclave Outside", "RestBench", "Song_Enclave", 1, MapZone.CITY_OF_SONG),
+                        new("Grand Bellway", "RestBench", "Bellway_City", 1, MapZone.CITY_OF_SONG),
+                    ])
+                },
+                { "Citadel Other", new([
+                        new("Cogwork Core", "RestBench", "Cog_Bench", 1, MapZone.COG_CORE),
+                        new("High Halls Ventricle", "RestBench", "Hang_06b", 1, MapZone.HANG),
+                        new("Memoriam", "RestBench", "Arborium_04", 1, MapZone.ARBORIUM),
+                        new("Library", "RestBench", "Library_08", 1, MapZone.CITY_OF_SONG),
+                        new("Cauldron Entrance", "RestBench", "Library_10", 1, MapZone.CITY_OF_SONG)
+                    ])
+                },
+                { "Bilewater", new([
+                        new("Bellway", "RestBench", "Bellway_Shadow", 1, MapZone.SWAMP),
+                        new("Shortcut", "RestBench", "Shadow_08", 1, MapZone.SWAMP),
+                        new("Bilehaven", "RestBench", "Shadow_18", 1, MapZone.SWAMP),
+                        new("Exhaust Organ", "RestBench", "Organ_01", 1, MapZone.CITY_OF_SONG),
+                    ])
+                },
+                { "Putrified Ducts", new([
+                        new("Bellway", "RestBench", "Bellway_Aqueduct", 1, MapZone.AQUEDUCT),
+                        new("Huntress", "RestBench", "Room_Huntress", 1, MapZone.AQUEDUCT),
+                        new("Fleatopia", "RestBench", "Aqueduct_05", 1, MapZone.AQUEDUCT,
+                            Act3Data: new("Festival", "RestBench Festival", "Aqueduct_05", 1, MapZone.AQUEDUCT)
+                        )
+                    ])
+                },
+                { "The Slab", new([
+                        new("Bellway", "RestBench", "Slab_06", 1, MapZone.THE_SLAB),
+                        new("Prison", "RestBench", "Slab_20", 1, MapZone.THE_SLAB),
+                        new("Outside", "RestBench", "Slab_16", 1, MapZone.THE_SLAB),
+                        new("After Arena", "RestBench (1)", "Slab_16", 1, MapZone.THE_SLAB),
+                    ])
+                },
+                { "Mount Fay", new([
+                        new("Shakra", "RestBench", "Peak_02", 1, MapZone.PEAK),
+                        new("Half-Way", "RestBench", "Bellway_Peak", 1, MapZone.PEAK),
+                        new("Final Climb", "RestBench", "Peak_07", 1, MapZone.PEAK),
+                        new("Workbench", "RestBench (1)", "Peak_12", 1, MapZone.PEAK)
+                    ])
+                },
+                { "Sands of Karak", new([
+                        new("Sands of Karak", "RestBench", "Bellshrine_Coral", 1, MapZone.JUDGE_STEPS),
+                        new("Coral Tower", "RestBench", "Coral_Tower_01", 1, MapZone.JUDGE_STEPS)
+                    ])
+                },
+                { "The Cradle", new([
+                        new("Terminus", "RestBench", "Tube_Hub", 1, MapZone.CITY_OF_SONG),
+                        new("Mr. Mushroom", "RestBench", "Cradle_Destroyed_Challenge_Bench", 1, MapZone.CRADLE)
+                    ])
+                },
+                { "Abyss", new([
+                        new("Void Tendrils", "RestBench", "Abyss_12", 1, MapZone.ABYSS),
+                        new("Top Abyss", "RestBench", "Abyss_09", 1, MapZone.ABYSS)
+                    ])
+                },
+                { "Weavenest", new([
+                        new("Atla", "RestBench", "Weave_07", 1, MapZone.WEAVER_SHRINE),
+                        new("Cindril", "RestBench", "Bone_East_Weavehome", 1, MapZone.WILDS)
+                    ])
                 }
-                else
-                {
-                    benchesByMenuArea.Add(b.MenuArea, [b]);
-                }
-            }
+            };
 
             int i = 0;
             foreach ((string menuArea, List<BenchData> benches) in benchesByMenuArea)
@@ -262,7 +408,7 @@ namespace Benchwarp.Components
 
             if (DebugUI)
             {
-                benchDebugString = new("Benchwarp Debug", [typeof(RectTransform),typeof(Text)]);
+                benchDebugString = new("Benchwarp Debug", [typeof(RectTransform), typeof(Text)]);
                 RectTransform rt = benchDebugString.GetComponent<RectTransform>();
                 Text text = benchDebugString.GetComponent<Text>();
 
@@ -360,7 +506,7 @@ namespace Benchwarp.Components
         public void ToggleDropdowns()
         {
             bool TempToggleDir = toggleAllDir;
-            foreach(GameObject dropdownObj in dropdowns)
+            foreach (GameObject dropdownObj in dropdowns)
             {
                 Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
                 dropdown.open = TempToggleDir;
