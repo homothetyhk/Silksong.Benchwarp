@@ -24,8 +24,14 @@ namespace Benchwarp.Data
                 PlayerDataBoolName: nameof(PlayerData.act3_wokeUp),
                 TrueRespawn: new RespawnInfo(SceneName: "Bone_12", RespawnMarkerName: "RestBench (1)", RespawnType: 1, MapZone: MapZone.PATH_OF_BONE),
                 FalseRespawn: new RespawnInfo(SceneName: "Bone_12", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.PATH_OF_BONE))); // TODO: survivor's camp?
+        public static BenchData SurvivorCamp { get; } = new(BenchName: "Flea Caravan", MenuArea: "The Marrow",
+            RespawnInfo: new RespawnInfo(SceneName: "Bone_10", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.PATH_OF_BONE));
         public static BenchData TrapBenchMarch { get; } = new(BenchName: "Trap Bench", MenuArea: "Hunter's March",
-            RespawnInfo: new RespawnInfo(SceneName: "Ant_17", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.HUNTERS_NEST)); // TODO: stuck
+            RespawnInfo: new PDConditionalRespawnInfo(
+                PlayerDataBoolName: nameof(PlayerData.antBenchTrapDefused),
+                TrueRespawn: new RespawnInfo(SceneName: "Ant_17", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.HUNTERS_NEST),
+                FalseRespawn: new RespawnInfo(SceneName: "Ant_17", RespawnMarkerName: "RestBench", RespawnType: 0, MapZone: MapZone.HUNTERS_NEST)
+                ));
         public static BenchData BellBenchDocks { get; } = new(BenchName: "Bell Bench", MenuArea: "Deep Docks",
                     RespawnInfo: new RespawnInfo(SceneName: "Dock_01", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.DOCKS));
         public static BenchData Forge { get; } = new(BenchName: "Forge", MenuArea: "Deep Docks",
@@ -179,6 +185,7 @@ namespace Benchwarp.Data
             BellBeastBattle,
             BellshrineMarrow,
             ShootingGallery,
+            SurvivorCamp,
             TrapBenchMarch,
             BellBenchDocks,
             Forge,

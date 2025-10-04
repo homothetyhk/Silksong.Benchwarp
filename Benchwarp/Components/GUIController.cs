@@ -223,8 +223,8 @@ namespace Benchwarp.Components
             warpButton = BuildButton(canvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("LB")); //Warp Button
             warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
-            setStartButton = BuildButton(canvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("SB")); //Warp Button
-            setStartButton.GetComponent<Button>().onClick.AddListener((UnityEngine.Events.UnityAction)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn);
+            setStartButton = BuildButton(canvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("SB")); //Set Start
+            setStartButton.GetComponent<Button>().onClick.AddListener(Events.BenchListModifiers.SetToStart);
             setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
 
             btnOffsetX += btnWidth + 20;
