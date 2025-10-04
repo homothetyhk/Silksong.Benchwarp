@@ -13,7 +13,7 @@ namespace Benchwarp.Components
         public bool open = false;
         public int page = 1;
 
-        public void Init(GameObject canvas, string name, List<BenchData> benches)
+        public void Init(GameObject canvas, string name, IReadOnlyList<BenchData> benches)
         {
             dropdownName = name;
 
@@ -26,8 +26,9 @@ namespace Benchwarp.Components
                 BenchData benchData = benches[i];
                 buttons.Add(GUIController.BuildButton(canvas, benchData.BenchName, 0, -(btnHeight + btnOffsetY + (btnOffsetY + btnHeight) * i), GUIController.TopLeftCorner, false, i.ToString()));
                 BenchComponent bench = buttons[i].AddComponent<BenchComponent>();
-                bench.Init(benchData);
-                buttons[i].GetComponent<Button>().onClick.AddListener(bench.SetBench);
+                bench.data = benchData;
+                bench.buttonText = buttons[i].transform.Find("ButtonText").GetComponent<Text>();
+                buttons[i].GetComponent<Button>().onClick.AddListener(() => benchData.MenuSetBench());
             }
 
             DropdownInteract(open);

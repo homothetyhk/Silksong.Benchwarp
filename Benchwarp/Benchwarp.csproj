@@ -30,6 +30,7 @@
     <Using Remove="System.Threading" />
     <Using Remove="System.Threading.Tasks" />
     <Using Include="Benchwarp.Util.LogHelper" Static="true" />
+    <Using Include="Benchwarp.Util.Localization" Static="true" />
   </ItemGroup>
   
   <ItemGroup>
@@ -49,6 +50,19 @@
     <PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" />
     <!--If you're unable resolve this dependency, check that you're using the nuget v3 package feed instead of v2.-->
     <PackageReference Include="Silksong.GameLibs" Version="1.1.0-silksong1.0.28650" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="MMHOOK_Assembly-CSharp">
+      <HintPath>$(SilksongFolder)\BepInEx\plugins\MMHOOK\Managed\MMHOOK_Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MMHOOK_TeamCherry.Localization">
+      <HintPath>$(SilksongFolder)\BepInEx\plugins\MMHOOK\Managed\MMHOOK_TeamCherry.Localization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Resources\Langs\" />
   </ItemGroup>
 
   <Target Name="CopyMod" AfterTargets="PostBuildEvent" Condition="'$(SilksongFolder)' != ''">

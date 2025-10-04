@@ -11,22 +11,13 @@ namespace Benchwarp.Patches
         {
             if (!__instance.isPaused)
             {
-                GUIController.Instance.canvas.SetActive(true);
+                // runs after coroutine is created, but before isPaused is set.
+                GUIController.Instance.ToggleDisplay(true);
             }
             else
             {
-                GUIController.Instance.canvas.SetActive(false);
+                GUIController.Instance.ToggleDisplay(false);
             }
-        }
-    }
-
-    [HarmonyPatch(typeof(GameManager), nameof(GameManager.ReturnToMainMenu))]
-    internal class HideWarpMenu
-    {
-        [HarmonyPostfix]
-        public static void Postfix()
-        {
-            GUIController.Instance.canvas.SetActive(false);
         }
     }
 }

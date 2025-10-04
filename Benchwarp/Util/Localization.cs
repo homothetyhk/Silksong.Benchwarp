@@ -1,67 +1,30 @@
-﻿using HarmonyLib;
-using TeamCherry.Localization;
-
-namespace Benchwarp.Util;
+﻿namespace Benchwarp.Util;
 
 public static class Localization
 {
-    /*
-    [HarmonyPatch(typeof(Language), nameof(Language.SwitchLanguage), [typeof(LanguageCode)])]
-    static class LocalizationPatch
-    {
-        [HarmonyPostfix]
-        static void Postfix(LanguageCode code)
-        {
-            SetLanguage(code);
-        }
-    }
-    */
-
-
     private static Dictionary<string, string>? _map;
 
-    internal static void HookLocalization()
-    {
-        //On.Language.Language.DoSwitch += OnSwitchLanguage;
-        SetLanguage(Language.CurrentLanguage());
-    }
+    internal static void Clear() => _map = null;
 
-    internal static void UnhookLocalization()
+    internal static void SetLanguage(string? code)
     {
-        //On.Language.Language.DoSwitch -= OnSwitchLanguage;
-        //_map = null;
-    }
-
-    private static void SetLanguage(LanguageCode code)
-    {
-        if (GetBenchwarpLanguageCode(code) is string name)
-        {
-            try
-            {
-                _map = JsonUtil.Deserialize<Dictionary<string, string>>($"Benchwarp.Resources.Langs.{name}.json");
-            }
-            catch (Exception e)
-            {
-                LogError($"Error changing language to {code}: {e}");
-            }
-        }
-        else
+        if (code is null)
         {
             _map = null;
+            return;
+        }
+
+        try
+        {
+            _map = JsonUtil.Deserialize<Dictionary<string, string>>($"Benchwarp.Resources.Langs.{code}.json");
+        }
+        catch (Exception e)
+        {
+            LogError($"Error changing language to {code}: {e}");
         }
     }
 
-    private static string? GetBenchwarpLanguageCode(LanguageCode newLang)
-    {
-        return newLang switch
-        {
-            LanguageCode.ZH => "zh",
-            LanguageCode.PT => "pt",
-            _ => null
-        };
-    }
-
-    public static string Localize(string text)
+    public static string Localize(this string text)
     {
         if (BenchwarpPlugin.GS.OverrideLocalization) return text;
 

@@ -1,29 +1,102 @@
-﻿namespace Benchwarp.Settings
+﻿using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
+
+namespace Benchwarp.Settings
 {
-    public class GlobalSettings
+    public class GlobalSettings(GlobalSettingsData data)
     {
-        public bool ShowMenu = true;
-        public bool WarpOnly = false;
-        //public bool UnlockAllBenches = false;
-        public bool ShowScene = false;
-        public int MaxSceneNames = 1;
-        public bool SwapNames = false;
-        public bool AlwaysToggleAll = false;
+        private readonly GlobalSettingsData data = data;
 
-        //public bool EnableDeploy = true;
-        //public bool DeployInUnsafeRooms = false;
-        //public bool ModifyVanillaBenchStyles = false;
-        //public string nearStyle = "Right";
-        //public string farStyle = "Right";
-        //public bool DeployCooldown = true;
-        //public bool Noninteractive = true;
-        //public bool NoMidAirDeploy = true;
+        public bool ShowMenu
+        {
+            get => data.ShowMenu;
+            set
+            {
+                data.ShowMenu = value;
+                Invoke(OnShowMenuChanged);
+            }
+        }
+        internal static event Action? OnShowMenuChanged;
 
-        //public bool NoPreload = false;
-        public bool DoorWarp = false;
-        public bool EnableHotkeys = false;
-        public bool OverrideLocalization = false;
+        public MenuMode MenuMode
+        {
+            get => data.MenuMode;
+            set
+            {
+                data.MenuMode = value;
+                Invoke(OnMenuModeChanged);
+            }
+        }
+        internal static event Action? OnMenuModeChanged;
 
-        public Dictionary<string, string> HotkeyOverrides = [];
+        public bool ShowScene
+        {
+            get => data.ShowScene;
+            set
+            {
+                data.ShowScene = value;
+                Invoke(OnShowSceneChanged);
+            }
+        }
+        internal static event Action? OnShowSceneChanged;
+
+        public bool AlwaysToggleAll
+        {
+            get => data.AlwaysToggleAll;
+            set
+            {
+                data.AlwaysToggleAll = value;
+                Invoke(OnAlwaysToggleAllChanged);
+            }
+        }
+        internal static event Action? OnAlwaysToggleAllChanged;
+        
+        public bool EnableHotkeys
+        {
+            get => data.EnableHotkeys;
+            set
+            {
+                data.EnableHotkeys = value;
+                Invoke(OnEnableHotkeysChanged);
+            }
+        }
+        internal static event Action? OnEnableHotkeysChanged;
+
+        public bool OverrideLocalization
+        {
+            get => data.OverrideLocalization;
+            set
+            {
+                data.OverrideLocalization = value;
+                Invoke(OnOverrideLocalizationChanged);
+            }
+        }
+        internal static event Action? OnOverrideLocalizationChanged;
+
+        public ReadOnlyDictionary<string, string> HotkeyOverrides { get; } = new(data.HotkeyOverrides);
+
+        internal static void Invoke(Action? a, [CallerMemberName] string? caller = "")
+        {
+            try
+            {
+                a?.Invoke();
+            }
+            catch (Exception e)
+            {
+                LogError($"Error in update event for {caller}:\n{e}");
+            }
+        }
+
+        internal static void Invoke<T>(Action<T>? a, T arg, [CallerMemberName] string? caller = "")
+        {
+            try
+            {
+                a?.Invoke(arg);
+            }
+            catch (Exception e)
+            {
+                LogError($"Error in update event for {caller}:\n{e}");
+            }
+        }
     }
 }

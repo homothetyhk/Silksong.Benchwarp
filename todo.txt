@@ -2,11 +2,17 @@
   - track visited benches
   - hotkey integration
   - hardlock prevention
+  - test that WarpToRespawn resets all relevant state
 - door warp
   - hotkey integration
   - softlock prevention
+  - test WarpToDoor functionality
 - deploy
   - bench assets
 - settings
   - serialization
   - menu integration
+- events
+  - start def, start button
+  - text modifiers
+  - on bench selected

@@ -1,5 +1,6 @@
 ﻿using Benchwarp.Data;
 using Benchwarp.Util;
+using System.Collections.ObjectModel;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ namespace Benchwarp.Components
 {
     public class GUIController : MonoBehaviour
     {
-        public GameObject canvas;
+        private GameObject canvas;
 
         private static GUIController _instance;
         public static Font BenchwarpFont;
@@ -25,6 +26,8 @@ namespace Benchwarp.Components
         public int maxPages = 2;
 
         public bool DebugUI = true;
+
+        public bool IsDisplaying { get; private set; }
 
         public List<GameObject> benchButtons
         {
@@ -82,6 +85,12 @@ namespace Benchwarp.Components
         {
             images.Add("ButtonRect", SpriteManager.LoadTexFromAssembly("Benchwarp.Resources.Images.ButtonRect.png"));
             SetBenchwarpFont();
+        }
+
+        public void ToggleDisplay(bool active)
+        {
+            canvas.SetActive(active);
+            IsDisplaying = active;
         }
 
         public void SetBenchwarpFont()
@@ -145,28 +154,6 @@ namespace Benchwarp.Components
                 SetBenchwarpFont();
             }
 
-            foreach (GameObject buttonObj in benchButtons)
-            {
-                BenchComponent bench = buttonObj.GetComponent<BenchComponent>();
-                Text[] texts = buttonObj.GetComponentsInChildren<Text>();
-
-                Color color = Color.white;
-
-                if (bench.sceneName == PlayerData.instance.respawnScene && bench.objName == PlayerData.instance.respawnMarkerName)
-                {
-                    color = Color.yellow;
-                }
-
-                foreach (Text text in texts)
-                {
-                    if (!text.text.Any(char.IsDigit))
-                    {
-                        text.text = bench.benchName;
-                    }
-                    text.color = color;
-                }
-            }
-
             foreach(GameObject dropdownObj in dropdowns)
             {
                 Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
@@ -215,9 +202,11 @@ namespace Benchwarp.Components
             scaler.referenceResolution = new Vector2(1920f, 1080f);
             canvas.AddComponent<GraphicRaycaster>();
 
+            canvas.AddComponent<HotkeyListener>();
+
             warpButton = BuildButton(canvas, "WARP", btnOffsetX, -btnOffsetY, TopLeftCorner); //Warp Button
             btnOffsetX += btnWidth + 20;
-            warpButton.GetComponent<Button>().onClick.AddListener(SaveReload);
+            warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
             toggleAllBtn = BuildButton(canvas, "Toggle All", -10, -10, new Vector2(1,1));
             toggleAllBtn.GetComponent<Button>().onClick.AddListener(ToggleDropdowns);
@@ -227,21 +216,8 @@ namespace Benchwarp.Components
 
             int pageToSet = 1;
 
-            Dictionary<string, List<BenchData>> benchesByMenuArea = [];
-            foreach (BenchData b in BenchList.Benches)
-            {
-                if (benchesByMenuArea.TryGetValue(b.MenuArea, out List<BenchData> l))
-                {
-                    l.Add(b);
-                }
-                else
-                {
-                    benchesByMenuArea.Add(b.MenuArea, [b]);
-                }
-            }
-
             int i = 0;
-            foreach ((string menuArea, List<BenchData> benches) in benchesByMenuArea)
+            foreach ((string menuArea, ReadOnlyCollection<BenchData> benches) in BenchList.BenchGroups)
             {
                 i++;
                 if (i == 14)
@@ -333,28 +309,6 @@ namespace Benchwarp.Components
             textRT.offsetMax = Vector2.zero;
 
             return button;
-        }
-
-        public static void SaveReload()
-        {
-            GameManager gm = GameManager.instance;
-            if (gm == null)
-            {
-                LogWarn("GM IS NULL HERE");
-                return;
-            }
-
-            PlayerData.instance.atBench = false;
-
-            gm.SaveGame((worked) =>
-            {
-                if (worked)
-                {
-                    gm.LoadGameFromUI(gm.profileID);
-                }
-            });
-
-            gm.PauseGameToggle(false);
         }
 
         public void ToggleDropdowns()

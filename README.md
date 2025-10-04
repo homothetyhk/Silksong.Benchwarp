@@ -2,6 +2,10 @@
 
 Work-in-progress port of Hollow Knight's [Benchwarp mod](https://github.com/homothetyhk/HollowKnight.BenchwarpMod) to Hollow Knight: Silksong.
 
+## Dependencies
+
+- AutoHookGenPatcher, available on Thunderstore.
+
 ## Credits
 
 - Special thanks: GamingInfinite (VoidBaroness) for bench research and UI design!
