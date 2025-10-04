@@ -1,8 +1,5 @@
 ﻿using Benchwarp.Components;
-using PlayMaker.ConditionalExpression.Ast;
 using System.Collections.ObjectModel;
-using System.Threading;
-using UnityEngine;
 
 namespace Benchwarp.Data
 {
@@ -20,11 +17,15 @@ namespace Benchwarp.Data
             ["SB"] = (Action)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn,
             //["WD"], // warp deploy
             //["TM"], // toggle menu
-            //["DW"], // toggle door warp
+            ["DW"] = () => BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.DoorWarp,
             //["DB"], // deploy bench
-            ["PP"] = () => GUIController.Instance.NextPage(),
+            ["NP"] = () => GUIController.Instance.NextPage(),
         });
 
+        static HotkeyActions()
+        {
+            RefreshHotkeys();
+        }
 
         public static void RefreshHotkeys()
         {
@@ -40,20 +41,11 @@ namespace Benchwarp.Data
 
         internal static void AddHotkey(Dictionary<string, Action> dict, string code, Action a)
         {
-            if (BenchwarpPlugin.GS.HotkeyOverrides.TryGetValue(code, out string? altCode))
+            code = BenchwarpPlugin.GS.GetHotkey(code);
+            if (code.Length != 2 || !char.IsLetter(code[0]) || !char.IsLetter(code[1]))
             {
-                if (altCode.Length != 2 || !char.IsLetter(altCode[0]) || !char.IsLetter(altCode[1]))
-                {
-                    LogError($"Invalid hotkey override {altCode} for {code}: hotkeys must consist of exactly two letters.");
-                }
-                else
-                {
-                    code = altCode;
-                }
-            }
-            else if (code.Length != 2 || !char.IsLetter(code[0]) || !char.IsLetter(code[1]))
-            {
-                LogError($"Invalid custom hotkey {code}: hotkeys must consist of exactly two letters.");
+                LogError($"Invalid hotkey {code}: hotkeys must consist of exactly two letters.");
+                return;
             }
             dict[code] = a;
         }

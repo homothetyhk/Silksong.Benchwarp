@@ -5,6 +5,19 @@ Work-in-progress port of Hollow Knight's [Benchwarp mod](https://github.com/homo
 ## Dependencies
 
 - AutoHookGenPatcher, available on Thunderstore.
+- ConfigurationManager, available on Thunderstore.
+
+## Features
+### Hotkeys
+Benchwarp supports hotkeys which can be used in place of menu buttons while the game is paused. All hotkeys consist of two sequential button presses. The presses do not need to be simultaneous. There are two types of hotkey commands:
+1. Letter, followed by a number: selects a bench from the menu, and warps to it (or to current respawn, if the bench is not selectable). Labels for these hotkey combinations are displayed when hotkeys are enabled.
+2. A pair of letters, which executes a special command, such as:
+- **LB**: **L**ast **B**ench (equivalent to just clicking Warp).
+- **SB**: **S**tart **B**ench (equivalent to clicking Set Start, then Warp).
+- **DW**: **D**oor **W**arp (equivalent to selecting Door Warp as the menu mode). If used while Door Warp is enabled, switches the mode to Standard Benchwarp.
+- **NP**: **N**ext **P**age (equivalent to clicking the pages button).
+
+Tip: by default, some letters such as **A** are bound to actions that can cancel the menu. To enter the hotkeys including these letters, you can move the mouse to deselect the Resume button. Alternatively, you can input the hotkey by pressing the buttons nearly simultaneously.
 
 ## Credits
 

@@ -1,6 +1,5 @@
 - bench warp
-  - track visited benches
-  - hotkey integration
+  - track visited benches (done, but not serialized yet)
   - hardlock prevention
   - test that WarpToRespawn resets all relevant state
 - door warp
@@ -11,8 +10,5 @@
   - bench assets
 - settings
   - serialization
-  - menu integration
 - events
-  - start def, start button
-  - text modifiers
-  - on bench selected
+  - text modifier

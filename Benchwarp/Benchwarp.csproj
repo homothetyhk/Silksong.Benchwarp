@@ -53,6 +53,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Reference Include="ConfigurationManager">
+      <HintPath>$(SilksongFolder)\BepInEx\plugins\Yukikaco-BepinExConfigurationManager\ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>$(SilksongFolder)\BepInEx\plugins\MMHOOK\Managed\MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>

@@ -1,5 +1,4 @@
 ﻿using Benchwarp.Data;
-using IL.InControl.UnityDeviceProfiles;
 using UnityEngine;
 
 namespace Benchwarp.Components
@@ -9,11 +8,11 @@ namespace Benchwarp.Components
         private HotkeyCode code;
 
         private void ClearCode() => code = HotkeyCode.None;
+        private void ClipCode() => code = new(HotkeyInput.None, code.Second);
 
-        // TODO: finish testing
-        //public void Update() => DetectHotkeys();
+        public void Update() => DetectHotkeys();
 
-        //public void OnEnable() => ClearCode();
+        public void OnEnable() => ClearCode();
 
         private void DetectHotkeys()
         {
@@ -49,10 +48,12 @@ namespace Benchwarp.Components
                 if (code.TryGetLetterNumCode(out int i1, out int i2))
                 {
                     if (HotkeyActions.TryDoHotkeyAction(i1, i2)) ClearCode();
+                    else ClipCode();
                 }
                 else if (code.TryGetStringCode(out string s))
                 {
                     if (HotkeyActions.TryDoHotkeyAction(s)) ClearCode();
+                    else ClipCode();
                 }
             }
         }

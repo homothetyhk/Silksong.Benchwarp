@@ -20,6 +20,7 @@ namespace Benchwarp.Components
             Events.WorldEvents.OnRespawnChanged += OnRespawnChanged;
             Settings.LocalSettings.OnSetVisitedLocal.Add(data, OnSetVisited);
             Settings.LocalSettings.OnSetLockedLocal.Add(data, OnSetLocked);
+            Settings.GlobalSettings.OnMenuModeChanged += QueueRecolor;
         }
 
         private void OnDestroy()
@@ -27,6 +28,7 @@ namespace Benchwarp.Components
             Events.WorldEvents.OnRespawnChanged -= OnRespawnChanged;
             Settings.LocalSettings.OnSetVisitedLocal.Remove(data, OnSetVisited);
             Settings.LocalSettings.OnSetLockedLocal.Remove(data, OnSetLocked);
+            Settings.GlobalSettings.OnMenuModeChanged -= QueueRecolor;
         }
 
         private void Update()
@@ -50,6 +52,9 @@ namespace Benchwarp.Components
             Visited = BenchwarpPlugin.LS.IsVisited(data);
             IsCurrentBench = data.RespawnInfo.IsCurrentRespawn();
         }
+
+        private void QueueRecolor() => queueRecolor = true;
+        private void QueueRefetchData() => queueRefetchData = true;
 
         private void UpdateTextColor()
         {

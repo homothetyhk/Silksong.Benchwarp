@@ -1,5 +1,4 @@
 ﻿using Benchwarp.Data;
-using GlobalEnums;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,6 +35,8 @@ namespace Benchwarp.Components
 
         public void ToggleDropdown()
         {
+            if (BenchwarpPlugin.GS.AlwaysToggleAll) return;
+
             if (open)
             {
                 open = false;
@@ -44,6 +45,13 @@ namespace Benchwarp.Components
             {
                 open = true;
             }
+            DropdownInteract(open);
+        }
+
+        public void ToggleDropdown(bool open)
+        {
+            if (this.open == open) return;
+            this.open = open;
             DropdownInteract(open);
         }
 

@@ -74,6 +74,8 @@ namespace Benchwarp.Settings
         internal static event Action? OnOverrideLocalizationChanged;
 
         public ReadOnlyDictionary<string, string> HotkeyOverrides { get; } = new(data.HotkeyOverrides);
+        internal string GetHotkey(string code) => HotkeyOverrides.TryGetValue(code, out string? altcode) ? altcode : code;
+
 
         internal static void Invoke(Action? a, [CallerMemberName] string? caller = "")
         {
