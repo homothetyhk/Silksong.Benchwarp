@@ -12,3 +12,7 @@
   - serialization
 - events
   - text modifier
+
+- Add back Act 3 flavor text:
+  - "Shooting Gallery?"
+  - "Fleatopia" -> "Festival"

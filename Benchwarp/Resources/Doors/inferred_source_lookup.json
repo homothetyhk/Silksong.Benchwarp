@@ -1,0 +1,65 @@
+{
+  // Source lookup is missing the following (relative to the data in target lookup)
+  "Bonetown[bot1]": [
+    "Tut_03[door1]"
+  ],
+  "Bellway_City[left1]": [
+    "Song_20[right6]"
+  ],
+  "Slab_Cell_Quiet[left1]": [
+    "Slab_23[door2]",
+    "Slab_06[door1]"
+  ],
+  "Peak_07[top2]": [
+    "Peak_08b[bot5]"
+  ],
+  "Peak_01[top3]": [
+    "Peak_07[bot3]",
+    "Peak_07[bot4]"
+  ],
+  "Peak_07[bot3]": [
+    "Peak_01[top3]"
+  ],
+  "Room_Caravan_Spa[left1]": [
+    "Greymoor_08[door2]",
+    "Coral_Judge_Arena[door2]",
+    "Bone_10[door2]"
+  ],
+  "Coral_19[top3]": [
+    "Coral_19[top7]",
+    "Coral_19[top5]",
+    "Coral_19[top6]",
+    "Coral_19[top4]",
+    "Coral_19[top3]",
+    "Coral_19[top8]"
+  ],
+  "Clover_04b[door1]": [
+    "Clover_10_web[left1]"
+  ],
+  "Bone_04[bot2]": [
+    "Bone_01[top2]"
+  ],
+  "Aspid_01[bot1]": [
+    "Bonetown[top1]",
+    "Bonetown[top6]",
+    "Bonetown[top4]",
+    "Bonetown[top3]",
+    "Bonetown[top5]",
+    "Aspid_01[top7]",
+    "Aspid_01[top2]",
+    "Aspid_01[top6]",
+    "Aspid_01[top5]",
+    "Aspid_01[top3]",
+    "Aspid_01[top4]"
+  ],
+  "Tut_03[top1]": [
+    "Bonetown[bot1 firstEntry]"
+  ],
+  "Bonetown[top3]": [
+    "Aspid_01[bot1]"
+  ],
+  "Bonetown[top6]": [
+    "Aspid_01[bot8]",
+    "Aspid_01[bot7]"
+  ]
+}

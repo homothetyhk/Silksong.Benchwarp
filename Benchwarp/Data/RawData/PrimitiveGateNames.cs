@@ -1,0 +1,55 @@
+﻿namespace Benchwarp.Data.RawData;
+
+public static class PrimitiveGateNames
+{
+    public const string bot1 = "bot1";
+    public const string bot1_firstEntry = "bot1 firstEntry";
+    public const string bot2 = "bot2";
+    public const string bot3 = "bot3";
+    public const string bot4 = "bot4";
+    public const string bot5 = "bot5";
+    public const string bot6 = "bot6";
+    public const string bot7 = "bot7";
+    public const string bot8 = "bot8";
+    public const string door_enterRedMemory_Beast = "door_enterRedMemory Beast";
+    public const string door_enterRedMemory_Hive = "door_enterRedMemory Hive";
+    public const string door_enterRedMemory_Weaver = "door_enterRedMemory Weaver";
+    public const string door_entry = "door_entry";
+    public const string door_test = "door_test";
+    public const string door_wakeInRedMemory_Beast = "door_wakeInRedMemory Beast";
+    public const string door_wakeInRedMemory_Hive = "door_wakeInRedMemory Hive";
+    public const string door_wakeInRedMemory_Weaver = "door_wakeInRedMemory Weaver";
+    public const string door1 = "door1";
+    public const string door1_firstExit = "door1 firstExit";
+    public const string door2 = "door2";
+    public const string door3 = "door3";
+    public const string door4 = "door4";
+    public const string door5 = "door5";
+    public const string left1 = "left1";
+    public const string left2 = "left2";
+    public const string left3 = "left3";
+    public const string left4 = "left4";
+    public const string left5 = "left5";
+    public const string left6 = "left6";
+    public const string left7 = "left7";
+    public const string left8 = "left8";
+    public const string right_cutsceneEntry = "right_cutsceneEntry";
+    public const string right1 = "right1";
+    public const string right2 = "right2";
+    public const string right3 = "right3";
+    public const string right4 = "right4";
+    public const string right5 = "right5";
+    public const string right6 = "right6";
+    public const string right7 = "right7";
+    public const string right8 = "right8";
+    public const string right9 = "right9";
+    public const string top1 = "top1";
+    public const string top2 = "top2";
+    public const string top2_extra = "top2 extra";
+    public const string top3 = "top3";
+    public const string top4 = "top4";
+    public const string top5 = "top5";
+    public const string top6 = "top6";
+    public const string top7 = "top7";
+    public const string top8 = "top8";
+}

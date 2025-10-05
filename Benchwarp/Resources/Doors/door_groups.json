@@ -1,0 +1,5301 @@
+[
+  {
+    "MenuArea": "Under",
+    "Rooms": [
+      {
+        "Name": "Under_23",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "bot1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_17",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "door1",
+          "bot1",
+          "bot2",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_08",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Under_01",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left2",
+          "left3",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_05",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left3",
+          "right2",
+          "right1",
+          "right3",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Under_13",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left4",
+          "left3",
+          "right3",
+          "right2",
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Under_19",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_19b",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_18",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "top2",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_19c",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left2",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_20",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_02",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left3",
+          "right4",
+          "right1",
+          "right2",
+          "right3",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_10",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_22",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_11",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_21",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_06",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_07b",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_07",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "right2",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Under_07c",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "top1",
+          "bot1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Under_04",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_12",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_03d",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Under_03c",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Under_03",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_03b",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_16",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Under_14",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_01b",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Under_27",
+        "MapArea": "Under",
+        "TitledArea": "Under",
+        "Gates": [
+          "right1",
+          "right2",
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Wisp",
+    "Rooms": [
+      {
+        "Name": "Wisp_05",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Wisp_07",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Wisp_04",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "right1",
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Wisp_08",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Wisp_03",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "top1",
+          "right1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Wisp_09",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "right1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Wisp_02",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Wisp_06",
+        "MapArea": "Wisp",
+        "TitledArea": "Wisp",
+        "Gates": [
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Greymoor",
+    "Rooms": [
+      {
+        "Name": "Greymoor_06",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "top1",
+          "left1",
+          "right1",
+          "right2",
+          "left2",
+          "left3",
+          "right3",
+          "right4"
+        ]
+      },
+      {
+        "Name": "Greymoor_15b",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "door1",
+          "top1",
+          "left3",
+          "left2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_08",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "door1",
+          "right1",
+          "top1",
+          "left2",
+          "door2"
+        ]
+      },
+      {
+        "Name": "Greymoor_03",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "right4",
+          "left3",
+          "right5",
+          "right3",
+          "right2",
+          "left1",
+          "left2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_13",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "bot1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_20b",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "door1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_07",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "bot1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Greymoor_20c",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Greymoor_02",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "right2",
+          "right1",
+          "right3",
+          "left1",
+          "left3",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Greymoor_15",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "right3",
+          "right2",
+          "left1",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Greymoor_22",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Greymoor_01",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left2",
+          "left1",
+          "right1",
+          "right3",
+          "bot1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Greymoor_21",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "top1"
+        ]
+      },
+      {
+        "Name": "Greymoor_04",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "left2",
+          "left3",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Greymoor_16",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Greymoor_05",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "left2",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Greymoor_11",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_10",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_12",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Greymoor_24",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Greymoor_17",
+        "MapArea": "Greymoor",
+        "TitledArea": "Greymoor",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Belltown",
+    "Rooms": [
+      {
+        "Name": "Belltown_Room_doctor",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Belltown_08",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Belltown_04",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left2",
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Belltown_07",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Belltown_Room_shellwood",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Belltown_06",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "right1",
+          "left3",
+          "left1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Belltown_basement_03",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Belltown",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "door5",
+          "door4",
+          "door3",
+          "door1",
+          "left3",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Belltown_basement",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Belltown_Room_Fisher",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Belltown_Shrine",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "right1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Belltown_Room_Spare",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Belltown_Room_Relic",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Belltown_Room_pinsmith",
+        "MapArea": "Belltown",
+        "TitledArea": "Belltown",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Weave",
+    "Rooms": [
+      {
+        "Name": "Weave_11",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Weave_08",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Weave_02",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "right2",
+          "right1",
+          "left3",
+          "right3",
+          "left4",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Weave_14",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Weave_05b",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Weave_13",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Weave_03",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Weave_07",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Weave_04",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "right2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Weave_12",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Weave_10",
+        "MapArea": "Weave",
+        "TitledArea": "Weave",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Tut",
+    "Rooms": [
+      {
+        "Name": "Tut_01b",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Tut_04",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Tut_03",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "door2",
+          "right1",
+          "top1",
+          "door1 firstExit",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Tut_05",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Tut_01",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "left1",
+          "left3",
+          "left2",
+          "right1",
+          "right2",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Tut_02",
+        "MapArea": "Tut",
+        "TitledArea": "Tut",
+        "Gates": [
+          "right2",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Ward",
+    "Rooms": [
+      {
+        "Name": "Ward_03",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "door1",
+          "top1",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ward_01",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "right3",
+          "right2",
+          "right1",
+          "left2",
+          "left3",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ward_07",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Ward_06",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Ward_09",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ward_02",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "top1",
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Ward_02b",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "bot1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ward_04",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ward_05",
+        "MapArea": "Ward",
+        "TitledArea": "Ward",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Song",
+    "Rooms": [
+      {
+        "Name": "Song_05",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right3",
+          "right4",
+          "right2",
+          "left3",
+          "left4",
+          "left5"
+        ]
+      },
+      {
+        "Name": "Song_01",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right2",
+          "bot1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Song_19_entrance",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right2",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_Tower_01",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_Enclave",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "top1",
+          "left1",
+          "bot1",
+          "left2",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Song_Enclave_Tube",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Song_25",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "bot1",
+          "left1",
+          "top2",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Song_20b",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left2",
+          "top1",
+          "bot1",
+          "right2",
+          "right3",
+          "left4"
+        ]
+      },
+      {
+        "Name": "Song_12",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left4",
+          "left2",
+          "right1",
+          "right2",
+          "right3",
+          "left3",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_20",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "left2",
+          "top1",
+          "right5",
+          "right4",
+          "right6",
+          "right_cutsceneEntry"
+        ]
+      },
+      {
+        "Name": "Song_18",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_29",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_24",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_27",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_01c",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Song_11",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "left2",
+          "left3",
+          "left4",
+          "right1",
+          "right3",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Song_13",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_14",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_28",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_08",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_15",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_04",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "right2",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_26",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_09b",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Song_10",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_17",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Song_09",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "bot1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_07",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Song_02",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "right1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Song_03",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Song_01b",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "top1",
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Song_Tower_Destroyed",
+        "MapArea": "Song",
+        "TitledArea": "Song",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Shellwood",
+    "Rooms": [
+      {
+        "Name": "Shellwood_22",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Shellwood_02",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left3",
+          "left2",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shellwood_18",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_10",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "right2",
+          "right3",
+          "left1",
+          "left2",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Shellwood_25",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "door1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_25b",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_11b",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shellwood_01b",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "right3",
+          "right1",
+          "left2",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shellwood_03",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "right3",
+          "right2",
+          "right1",
+          "left3",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Shellwood_26",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_13",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "left2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shellwood_11",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shellwood_20",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shellwood_04b",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "top1",
+          "right1",
+          "top2"
+        ]
+      },
+      {
+        "Name": "Shellwood_04c",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Shellwood_08",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "bot1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shellwood_08c",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_16",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shellwood_14",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_19",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shellwood_01",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left2",
+          "left1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shellwood_Witch",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "right1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Shellwood_15",
+        "MapArea": "Shellwood",
+        "TitledArea": "Shellwood",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Library",
+    "Rooms": [
+      {
+        "Name": "Library_11b",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left3",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Library_04",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "top1",
+          "left4",
+          "right6",
+          "left3",
+          "right5",
+          "right1",
+          "right2",
+          "right3",
+          "right4",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Library_02",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right2",
+          "left2",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Library_13",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Library_03",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Library_07",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "bot2",
+          "bot1",
+          "bot3",
+          "top1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Library_12",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "door1",
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Library_01",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left3",
+          "right1",
+          "right2",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_11",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1",
+          "right2",
+          "right1",
+          "left3",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Library_13b",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Library_10",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_12b",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Library_09",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_06",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Library_08",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_05",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right1",
+          "right2",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_16",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Library_14",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Library_15",
+        "MapArea": "Library",
+        "TitledArea": "Library",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Bonetown",
+    "Rooms": [
+      {
+        "Name": "Bonetown",
+        "MapArea": "Bonetown",
+        "TitledArea": "Bonetown",
+        "Gates": [
+          "bot1",
+          "bot1 firstEntry",
+          "bot2",
+          "right1",
+          "right2",
+          "left2",
+          "left1",
+          "door1",
+          "top3",
+          "top6",
+          "top2",
+          "top5",
+          "top4",
+          "top1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Cradle",
+    "Rooms": [
+      {
+        "Name": "Cradle_03",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "right2",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Cradle_01",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Cradle_01_Destroyed",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "bot1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Cradle_Destroyed_Challenge_02",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Cradle_Destroyed_Challenge_01",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Cradle_03_Destroyed",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "door1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Cradle_Destroyed_Challenge_Bench",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "bot1",
+          "right1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Cradle_02",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "right1",
+          "left2",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Cradle_02b",
+        "MapArea": "Cradle",
+        "TitledArea": "Cradle",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Bone",
+    "Rooms": [
+      {
+        "Name": "Bone_East_18b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "door1",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_12",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "bot1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_06",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_05b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_05",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "bot1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_11",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "bot1",
+          "right1",
+          "right2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_11",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "right1",
+          "right2",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_09",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right2",
+          "right1",
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Bone_East_01",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right2",
+          "left1",
+          "right3",
+          "right1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Bone_East_13",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_07",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left3",
+          "right4",
+          "right5",
+          "left4",
+          "top1",
+          "right1",
+          "right3",
+          "left2",
+          "left1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Bone_East_05",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_East_14b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "door1",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_09",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "door1",
+          "left3",
+          "right1",
+          "right2",
+          "top1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Bone_East_24",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_25",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Bone_East_26",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_East_27",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_18",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_East_10",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1",
+          "door1",
+          "right2",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Bone_East_18c",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_17",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "bot1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_East_16",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_East_17b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_15",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_East_02b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top3",
+          "right1",
+          "right2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_02",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_04",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "right2",
+          "left1",
+          "bot1",
+          "top2"
+        ]
+      },
+      {
+        "Name": "Bone_East_Weavehome",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_LavaChallenge",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_14",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "right2",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Bone_East_09b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_10_Room",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_East_10_Church",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_East_Umbrella",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_08",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_20",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_East_21",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_22",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_04b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "right1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Bone_East_04c",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_East_03",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_07",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "left1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Bone_03",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left4",
+          "right1",
+          "right3",
+          "top1",
+          "left2",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_15",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_02",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "top2",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_16",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_10",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1",
+          "bot1",
+          "door2"
+        ]
+      },
+      {
+        "Name": "Bone_08",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "door1",
+          "bot1",
+          "left2",
+          "left3",
+          "right2",
+          "right3"
+        ]
+      },
+      {
+        "Name": "Bone_01b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Bone_04",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1",
+          "left2",
+          "top1",
+          "right1",
+          "bot2"
+        ]
+      },
+      {
+        "Name": "Bone_11b",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_12",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_19",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Bone_14",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_18",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_01",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "top2",
+          "right2",
+          "right1",
+          "left2",
+          "top2 extra"
+        ]
+      },
+      {
+        "Name": "Bone_17",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bone_01c",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bone_Steel_Servant",
+        "MapArea": "Bone",
+        "TitledArea": "Bone",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Cog",
+    "Rooms": [
+      {
+        "Name": "Cog_09_Destroyed",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Cog_Dancers",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "right1",
+          "left1",
+          "door1",
+          "top1",
+          "bot2",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Cog_10_Destroyed",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Cog_06",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "right1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Cog_05",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "left1",
+          "top1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Cog_11_Destroyed",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Cog_04",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "door2",
+          "top2",
+          "top1",
+          "door1",
+          "right3",
+          "right2",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Cog_08",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "bot1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Cog_Pass",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Cog_09",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Cog_10",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Cog_Bench",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Cog_07",
+        "MapArea": "Cog",
+        "TitledArea": "Cog",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Tube",
+    "Rooms": [
+      {
+        "Name": "Tube_Hub",
+        "MapArea": "Tube",
+        "TitledArea": "Tube",
+        "Gates": [
+          "left1",
+          "left3",
+          "left4"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Bellshrine",
+    "Rooms": [
+      {
+        "Name": "Bellshrine_Enclave",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellshrine_03",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellshrine_02",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellshrine_Coral",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellshrine_05",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bellshrine",
+        "MapArea": "Bellshrine",
+        "TitledArea": "Bellshrine",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Arborium",
+    "Rooms": [
+      {
+        "Name": "Arborium_01",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "bot1",
+          "left3",
+          "left2",
+          "left1",
+          "right1",
+          "right2",
+          "right3",
+          "right5",
+          "right4"
+        ]
+      },
+      {
+        "Name": "Arborium_03",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "right2",
+          "right1",
+          "left1",
+          "left2",
+          "left4",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Arborium_07",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_08",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_05",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Arborium_06",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_11",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Arborium_10",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_04",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_02",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Arborium_09",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Arborium_Tube",
+        "MapArea": "Arborium",
+        "TitledArea": "Arborium",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Bellway",
+    "Rooms": [
+      {
+        "Name": "Bellway_City",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bellway_Shadow",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellway_Peak",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "top1",
+          "left1",
+          "left2",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Bellway_04",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellway_02",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bellway_08",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Bellway_03",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellway_01",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellway_Peak_02",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Bellway_Aqueduct",
+        "MapArea": "Bellway",
+        "TitledArea": "Bellway",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Coral",
+    "Rooms": [
+      {
+        "Name": "Coral_10",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_19",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "top1",
+          "top3",
+          "top7",
+          "top5",
+          "top4",
+          "top8",
+          "top6",
+          "top2",
+          "bot6",
+          "bot4",
+          "bot5",
+          "bot3",
+          "bot7",
+          "bot2",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Coral_34",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "door1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_28",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "door1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_32",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_26",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left2",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_35b",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "left5",
+          "left4",
+          "bot1",
+          "door1",
+          "left2",
+          "right2",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Coral_33",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_35",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "left2",
+          "right2",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_23",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left2",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_12",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "left3",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Coral_27",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_40",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_44",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_41",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_24",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_29",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_43",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_42",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_36",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_25",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "bot1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_11b",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_Judge_Arena",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "right1",
+          "door2"
+        ]
+      },
+      {
+        "Name": "Coral_38",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "bot1",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_03",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1",
+          "right3",
+          "right2",
+          "left2",
+          "left3",
+          "left1",
+          "bot1",
+          "bot5",
+          "bot3",
+          "bot2",
+          "bot6",
+          "bot4"
+        ]
+      },
+      {
+        "Name": "Coral_Tower_01",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_39",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_02",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "bot2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Coral_19b",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Coral_37",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Coral_11",
+        "MapArea": "Coral",
+        "TitledArea": "Coral",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Hang",
+    "Rooms": [
+      {
+        "Name": "Hang_01",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_07",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1",
+          "bot1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_08",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1",
+          "left4",
+          "left1",
+          "left3",
+          "left2",
+          "bot1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Hang_14",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_03",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left2",
+          "right1",
+          "right2",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_16",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "door1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_04",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_13",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_09",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_17b",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_06",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "top1",
+          "bot1",
+          "door1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_10",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_06b",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_06_bank",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_12",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_02",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Hang_15",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Hang_03_top",
+        "MapArea": "Hang",
+        "TitledArea": "Hang",
+        "Gates": [
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Slab",
+    "Rooms": [
+      {
+        "Name": "Slab_01",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_08",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "door1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_23",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "door2",
+          "door1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_13",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "door1",
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_Cell_Quiet",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Slab_Cell_Creature",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_21",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left3",
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_03",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "right4",
+          "right3",
+          "right7",
+          "right2",
+          "right1",
+          "left1",
+          "left2",
+          "left3",
+          "left4",
+          "right9",
+          "right8",
+          "left7",
+          "left8",
+          "left6",
+          "left5",
+          "right5"
+        ]
+      },
+      {
+        "Name": "Slab_16",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "top1",
+          "door1",
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_18",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_22",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "bot2",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Slab_10c",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Slab_16b",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_15",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "top1",
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_14",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Slab_Cell",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_04",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "top1",
+          "bot1",
+          "right1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Slab_19b",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_10b",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_05",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "bot1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Slab_06",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "top1",
+          "left1",
+          "door1"
+        ]
+      },
+      {
+        "Name": "Slab_12",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_07",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Slab_02",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Slab_17",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Slab_20",
+        "MapArea": "Slab",
+        "TitledArea": "Slab",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Peak",
+    "Rooms": [
+      {
+        "Name": "Peak_01",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1",
+          "right2",
+          "right3",
+          "right4",
+          "top3",
+          "top2",
+          "top1",
+          "left3",
+          "left2",
+          "left1",
+          "left4",
+          "top4"
+        ]
+      },
+      {
+        "Name": "Peak_05d",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "door1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Peak_08b",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "left2",
+          "left1",
+          "bot4",
+          "bot5",
+          "bot6"
+        ]
+      },
+      {
+        "Name": "Peak_02",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "left2",
+          "left3",
+          "left1",
+          "right1",
+          "right2",
+          "right3",
+          "right4"
+        ]
+      },
+      {
+        "Name": "Peak_07",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "top2",
+          "top1",
+          "bot1",
+          "bot3",
+          "bot2",
+          "bot5",
+          "bot4"
+        ]
+      },
+      {
+        "Name": "Peak_08",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1",
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Peak_12",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Peak_05",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "top2",
+          "right3",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Peak_06",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Peak_05e",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right2",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Peak_06b",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "door1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Peak_05c",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Peak_Mask_Maker",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Peak_04",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Peak_04d",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Peak_10",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Peak_04c",
+        "MapArea": "Peak",
+        "TitledArea": "Peak",
+        "Gates": [
+          "right2",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Room",
+    "Rooms": [
+      {
+        "Name": "Room_Witch",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_CrowCourt",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_CrowCourt_02",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "top1"
+        ]
+      },
+      {
+        "Name": "Room_Caravan_Spa",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_Caravan_Interior",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Room_Diving_Bell",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_Forge",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1",
+          "right1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Room_Pinstress",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_Huntress",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_Diving_Bell_Abyss_Fixed",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Room_Diving_Bell_Abyss",
+        "MapArea": "Room",
+        "TitledArea": "Room",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Mosstown",
+    "Rooms": [
+      {
+        "Name": "Mosstown_03",
+        "MapArea": "Mosstown",
+        "TitledArea": "Mosstown",
+        "Gates": [
+          "right2",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Mosstown_02",
+        "MapArea": "Mosstown",
+        "TitledArea": "Mosstown",
+        "Gates": [
+          "right1",
+          "bot1",
+          "bot2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Mosstown_02c",
+        "MapArea": "Mosstown",
+        "TitledArea": "Mosstown",
+        "Gates": [
+          "left2"
+        ]
+      },
+      {
+        "Name": "Mosstown_01",
+        "MapArea": "Mosstown",
+        "TitledArea": "Mosstown",
+        "Gates": [
+          "top1",
+          "bot1",
+          "right2",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Aspid",
+    "Rooms": [
+      {
+        "Name": "Aspid_01",
+        "MapArea": "Aspid",
+        "TitledArea": "Aspid",
+        "Gates": [
+          "right2",
+          "right3",
+          "left2",
+          "left1",
+          "top6",
+          "top4",
+          "top5",
+          "top3",
+          "top7",
+          "top2",
+          "top1",
+          "right4",
+          "bot1",
+          "bot2",
+          "bot3",
+          "bot6",
+          "bot5",
+          "bot4",
+          "bot8",
+          "bot7"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Shellgrave",
+    "Rooms": [
+      {
+        "Name": "Shellgrave",
+        "MapArea": "Shellgrave",
+        "TitledArea": "Shellgrave",
+        "Gates": [
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Shadow",
+    "Rooms": [
+      {
+        "Name": "Shadow_09",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "left3",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_18",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "door1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_08",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Shadow_26",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right2",
+          "right1",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_27",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shadow_11",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shadow_02",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "right3",
+          "left1",
+          "left2",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shadow_01",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right2",
+          "right3",
+          "right1",
+          "left1",
+          "left3",
+          "left2",
+          "top1"
+        ]
+      },
+      {
+        "Name": "Shadow_19",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "right2",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Shadow_20",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Shadow_03",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_22",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "bot1",
+          "top1",
+          "top3",
+          "top2"
+        ]
+      },
+      {
+        "Name": "Shadow_04",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "top1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Shadow_10",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Shadow_25",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_24",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_12",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_Bilehaven_Room",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_13",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_16",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_05",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_28",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shadow_Weavehome",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_04b",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shadow_21",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Shadow_14",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Shadow_23",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Shadow_15",
+        "MapArea": "Shadow",
+        "TitledArea": "Shadow",
+        "Gates": [
+          "right1",
+          "right2"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Dust",
+    "Rooms": [
+      {
+        "Name": "Dust_06",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "right1",
+          "right3",
+          "right2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dust_09",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "door2",
+          "door1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Dust_11",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dust_01",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dust_04",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "door1",
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Dust_05",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1",
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Dust_03",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "top1",
+          "bot1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dust_02",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1",
+          "top1",
+          "right1",
+          "right2",
+          "right3",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Dust_12",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dust_Shack",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dust_Chef",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "left1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Dust_Barb",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "top1"
+        ]
+      },
+      {
+        "Name": "Dust_10",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dust_Maze_08_completed",
+        "MapArea": "Dust",
+        "TitledArea": "Dust",
+        "Gates": [
+          "right1",
+          "right2"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Aqueduct",
+    "Rooms": [
+      {
+        "Name": "Aqueduct_04",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "bot1",
+          "door1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_06",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "left1",
+          "left2",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_02",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "right2",
+          "right3",
+          "left3",
+          "left2",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_01",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_08",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_03",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "top1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Aqueduct_05",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "left1",
+          "door2"
+        ]
+      },
+      {
+        "Name": "Aqueduct_07",
+        "MapArea": "Aqueduct",
+        "TitledArea": "Aqueduct",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Dock",
+    "Rooms": [
+      {
+        "Name": "Dock_04",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1",
+          "right3",
+          "left1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Dock_02",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1",
+          "left2",
+          "right2",
+          "right1",
+          "right3"
+        ]
+      },
+      {
+        "Name": "Dock_12",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "door1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_11",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dock_09",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dock_13",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dock_14",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_10",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_15",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right2",
+          "left2",
+          "right3",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dock_01",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1",
+          "right1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Dock_06_Church",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Dock_03c",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "top1",
+          "top2",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Dock_02b",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right2",
+          "right1",
+          "left2",
+          "left3",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_03d",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Dock_03",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "bot1",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_03b",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Dock_08",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Dock_05",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Dock_16",
+        "MapArea": "Dock",
+        "TitledArea": "Dock",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Abyss",
+    "Rooms": [
+      {
+        "Name": "Abyss_03",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "door2",
+          "door1",
+          "left2",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Abyss_09",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Abyss_Cocoon",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "door_entry",
+          "door_test"
+        ]
+      },
+      {
+        "Name": "Abyss_11",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "right1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Abyss_07",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Abyss_05",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "left2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Abyss_02b",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "top1",
+          "right1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Abyss_13",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "left1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Abyss_12",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "left1",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Abyss_01",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "right4",
+          "left1",
+          "right3",
+          "right2"
+        ]
+      },
+      {
+        "Name": "Abyss_08",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Abyss_02",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Abyss_04",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Abyss_06",
+        "MapArea": "Abyss",
+        "TitledArea": "Abyss",
+        "Gates": [
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Memory",
+    "Rooms": [
+      {
+        "Name": "Memory_Red",
+        "MapArea": "Memory",
+        "TitledArea": "Memory",
+        "Gates": [
+          "door_wakeInRedMemory Hive",
+          "door_wakeInRedMemory Beast",
+          "door_wakeInRedMemory Weaver",
+          "door_enterRedMemory Hive",
+          "door_enterRedMemory Beast",
+          "door_enterRedMemory Weaver"
+        ]
+      },
+      {
+        "Name": "Memory_Needolin",
+        "MapArea": "Memory",
+        "TitledArea": "Memory",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Organ",
+    "Rooms": [
+      {
+        "Name": "Organ_01",
+        "MapArea": "Organ",
+        "TitledArea": "Organ",
+        "Gates": [
+          "left3",
+          "left1",
+          "left2"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Ant",
+    "Rooms": [
+      {
+        "Name": "Ant_08",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "top1"
+        ]
+      },
+      {
+        "Name": "Ant_Queen",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_09",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_05b",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "bot1",
+          "bot2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_02",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_14",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1",
+          "left5",
+          "right3",
+          "left2",
+          "right2",
+          "left4",
+          "left3"
+        ]
+      },
+      {
+        "Name": "Ant_19",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_20",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "door1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_21",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_04",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_05c",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_17",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_Merchant",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_04_left",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Ant_04_mid",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Ant_03",
+        "MapArea": "Ant",
+        "TitledArea": "Ant",
+        "Gates": [
+          "right3",
+          "left2"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Clover",
+    "Rooms": [
+      {
+        "Name": "Clover_01",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_05c",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left2",
+          "right2",
+          "left1",
+          "right1",
+          "right3"
+        ]
+      },
+      {
+        "Name": "Clover_06",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "bot2",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Clover_03",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "right1",
+          "left1",
+          "left2"
+        ]
+      },
+      {
+        "Name": "Clover_04b",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1",
+          "door1",
+          "left2",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_16",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_19",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "top1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Clover_02c",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left2",
+          "right1",
+          "left1"
+        ]
+      },
+      {
+        "Name": "Clover_21",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_11",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_18",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Clover_01b",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Clover_20",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Clover_10",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Clover_10_web",
+        "MapArea": "Clover",
+        "TitledArea": "Clover",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Halfway",
+    "Rooms": [
+      {
+        "Name": "Halfway_01",
+        "MapArea": "Halfway",
+        "TitledArea": "Halfway",
+        "Gates": [
+          "left1",
+          "right1",
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Crawl",
+    "Rooms": [
+      {
+        "Name": "Crawl_09",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_10",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_07",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "left1",
+          "top1",
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Crawl_03",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "top1",
+          "left1",
+          "bot1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_03b",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "bot1",
+          "top1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_02",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "right3",
+          "right2",
+          "left2",
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_05",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_08",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "bot1"
+        ]
+      },
+      {
+        "Name": "Crawl_06",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "left1"
+        ]
+      },
+      {
+        "Name": "Crawl_01",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      },
+      {
+        "Name": "Crawl_04",
+        "MapArea": "Crawl",
+        "TitledArea": "Crawl",
+        "Gates": [
+          "left1",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Bonegrave",
+    "Rooms": [
+      {
+        "Name": "Bonegrave",
+        "MapArea": "Bonegrave",
+        "TitledArea": "Bonegrave",
+        "Gates": [
+          "top1",
+          "door1",
+          "left1",
+          "right2",
+          "right1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Abandoned",
+    "Rooms": [
+      {
+        "Name": "Abandoned_town",
+        "MapArea": "Abandoned",
+        "TitledArea": "Abandoned",
+        "Gates": [
+          "door1",
+          "bot1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Sprintmaster",
+    "Rooms": [
+      {
+        "Name": "Sprintmaster_Cave",
+        "MapArea": "Sprintmaster",
+        "TitledArea": "Sprintmaster",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  },
+  {
+    "MenuArea": "Chapel",
+    "Rooms": [
+      {
+        "Name": "Chapel_Wanderer",
+        "MapArea": "Chapel",
+        "TitledArea": "Chapel",
+        "Gates": [
+          "left1"
+        ]
+      }
+    ]
+  }
+]

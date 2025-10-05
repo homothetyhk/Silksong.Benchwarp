@@ -23,6 +23,7 @@ namespace Benchwarp
                 _instance = this;
                 Log($"Plugin {Name} ({Id}) has loaded!");
                 Log($"BenchList has loaded with {Data.BenchList.Benches.Count} benches in {Data.BenchList.BenchGroups.Count} groups.");
+                Log($"DoorList has loaded with {Data.DoorList.RoomGroups.Count} groups.");
                 gameObject.AddComponent<RespawnChangeListener>();
 
             }

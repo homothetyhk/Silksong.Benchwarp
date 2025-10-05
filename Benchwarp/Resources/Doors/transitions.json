@@ -1,0 +1,8384 @@
+[
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Wisp_09",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_23"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Wisp_09",
+    "TargetGate": "left1",
+    "TargetScene": "Wisp_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Wisp_08",
+    "TargetGate": "left1",
+    "TargetScene": "Wisp_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Wisp_08",
+    "TargetGate": "right1",
+    "TargetScene": "Wisp_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Wisp_07",
+    "TargetGate": "right1",
+    "TargetScene": "Wisp_08"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Wisp_06",
+    "TargetGate": "top1",
+    "TargetScene": "Wisp_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Wisp_05",
+    "TargetGate": "right1",
+    "TargetScene": "Wisp_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Wisp_05",
+    "TargetGate": "top1",
+    "TargetScene": "Wisp_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Wisp_04",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Wisp_04",
+    "TargetGate": "left1",
+    "TargetScene": "Wisp_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Wisp_04",
+    "TargetGate": "right1",
+    "TargetScene": "Wisp_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Wisp_03",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Wisp_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Wisp_06"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Wisp_03",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_Room_doctor"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Wisp_02",
+    "TargetGate": "right1",
+    "TargetScene": "Belltown_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Wisp_02",
+    "TargetGate": "left1",
+    "TargetScene": "Wisp_04"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Wisp_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Wisp_05"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Weave_14",
+    "TargetGate": "top1",
+    "TargetScene": "Weave_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_13",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_13",
+    "TargetGate": "right2",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_12",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Weave_11",
+    "TargetGate": "bot1",
+    "TargetScene": "Weave_14"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_11",
+    "TargetGate": "left3",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_10",
+    "TargetGate": "right3",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_08",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_05b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_08",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_07",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_07",
+    "TargetGate": "left4",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_05b",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Weave_04",
+    "TargetGate": "right1",
+    "TargetScene": "Tut_01b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Weave_04",
+    "TargetGate": "left2",
+    "TargetScene": "Weave_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_03",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_07"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Weave_02",
+    "TargetGate": "right2",
+    "TargetScene": "Weave_04"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Weave_02",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Weave_02",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_12"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Weave_02",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_10"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Weave_02",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_07"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Weave_02",
+    "TargetGate": "right1",
+    "TargetScene": "Weave_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ward_09",
+    "TargetGate": "door1",
+    "TargetScene": "Ward_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ward_07",
+    "TargetGate": "top1",
+    "TargetScene": "Ward_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ward_06",
+    "TargetGate": "top1",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Ward_06",
+    "TargetGate": "bot1",
+    "TargetScene": "Ward_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ward_05",
+    "TargetGate": "right3",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ward_04",
+    "TargetGate": "right2",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Ward_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Ward_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ward_03",
+    "TargetGate": "right1",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ward_03",
+    "TargetGate": "top1",
+    "TargetScene": "Ward_06"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Ward_03",
+    "TargetGate": "left1",
+    "TargetScene": "Ward_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ward_02b",
+    "TargetGate": "left2",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ward_02b",
+    "TargetGate": "top1",
+    "TargetScene": "Ward_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Ward_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Ward_02b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ward_02",
+    "TargetGate": "top1",
+    "TargetScene": "Under_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ward_02",
+    "TargetGate": "left3",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ward_01",
+    "TargetGate": "left1",
+    "TargetScene": "Ward_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Ward_01",
+    "TargetGate": "left1",
+    "TargetScene": "Ward_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Ward_01",
+    "TargetGate": "right1",
+    "TargetScene": "Ward_02b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ward_01",
+    "TargetGate": "right3",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Ward_01",
+    "TargetGate": "left1",
+    "TargetScene": "Ward_05"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Ward_01",
+    "TargetGate": "right1",
+    "TargetScene": "Ward_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_27",
+    "TargetGate": "left2",
+    "TargetScene": "Under_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Under_27",
+    "TargetGate": "left3",
+    "TargetScene": "Under_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_27",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_22"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_23",
+    "TargetGate": "top1",
+    "TargetScene": "Wisp_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_23",
+    "TargetGate": "left3",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_22",
+    "TargetGate": "left4",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_21",
+    "TargetGate": "left3",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_20",
+    "TargetGate": "door1",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_19c",
+    "TargetGate": "top1",
+    "TargetScene": "Under_19"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_19c",
+    "TargetGate": "right1",
+    "TargetScene": "Under_19b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_19c",
+    "TargetGate": "right1",
+    "TargetScene": "Under_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_19b",
+    "TargetGate": "left2",
+    "TargetScene": "Under_19c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_19",
+    "TargetGate": "right3",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_19",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_19c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_18",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_18",
+    "TargetGate": "left1",
+    "TargetScene": "Under_19c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_18",
+    "TargetGate": "right2",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Under_18",
+    "TargetGate": "bot2",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_17",
+    "TargetGate": "bot1",
+    "TargetScene": "Ward_06"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Under_17",
+    "TargetGate": "top2",
+    "TargetScene": "Under_18"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Under_17",
+    "TargetGate": "left1",
+    "TargetScene": "Under_20"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_17",
+    "TargetGate": "top1",
+    "TargetScene": "Under_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_17",
+    "TargetGate": "left3",
+    "TargetScene": "Library_11b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_17",
+    "TargetGate": "right1",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_16",
+    "TargetGate": "left3",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_14",
+    "TargetGate": "right4",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_13",
+    "TargetGate": "right1",
+    "TargetScene": "Under_10"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Under_13",
+    "TargetGate": "left1",
+    "TargetScene": "Under_18"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Under_13",
+    "TargetGate": "right1",
+    "TargetScene": "Under_22"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_13",
+    "TargetGate": "left1",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_13",
+    "TargetGate": "right1",
+    "TargetScene": "Under_11"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Under_13",
+    "TargetGate": "left1",
+    "TargetScene": "Under_19"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Under_13",
+    "TargetGate": "right1",
+    "TargetScene": "Under_21"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_12",
+    "TargetGate": "right2",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_11",
+    "TargetGate": "left1",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_11",
+    "TargetGate": "right1",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_10",
+    "TargetGate": "left2",
+    "TargetScene": "Under_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_10",
+    "TargetGate": "right3",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_08",
+    "TargetGate": "top1",
+    "TargetScene": "Under_06"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Ward_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_07c",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_07b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_07c",
+    "TargetGate": "right1",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_07c",
+    "TargetGate": "top1",
+    "TargetScene": "Under_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_07b",
+    "TargetGate": "right2",
+    "TargetScene": "Song_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_07b",
+    "TargetGate": "top1",
+    "TargetScene": "Under_07c"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Under_07",
+    "TargetGate": "right2",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_07c"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Under_07",
+    "TargetGate": "left1",
+    "TargetScene": "Under_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_06",
+    "TargetGate": "left1",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_06",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_06",
+    "TargetGate": "right2",
+    "TargetScene": "Under_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_05",
+    "TargetGate": "left1",
+    "TargetScene": "Under_11"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Under_05",
+    "TargetGate": "right1",
+    "TargetScene": "Under_23"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Under_05",
+    "TargetGate": "left1",
+    "TargetScene": "Under_10"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_05",
+    "TargetGate": "right1",
+    "TargetScene": "Under_04"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Under_05",
+    "TargetGate": "left1",
+    "TargetScene": "Under_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_05",
+    "TargetGate": "right1",
+    "TargetScene": "Under_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_04",
+    "TargetGate": "left2",
+    "TargetScene": "Under_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Under_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Under_03d"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_04",
+    "TargetGate": "right1",
+    "TargetScene": "Under_03c"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Under_03d",
+    "TargetGate": "top1",
+    "TargetScene": "Under_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_03c",
+    "TargetGate": "left1",
+    "TargetScene": "Under_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_03c",
+    "TargetGate": "right1",
+    "TargetScene": "Under_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_03c",
+    "TargetGate": "right1",
+    "TargetScene": "Under_03b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_03b",
+    "TargetGate": "left1",
+    "TargetScene": "Under_03c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_03b",
+    "TargetGate": "right3",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_03",
+    "TargetGate": "left2",
+    "TargetScene": "Under_03c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_02",
+    "TargetGate": "left2",
+    "TargetScene": "Under_07c"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Under_02",
+    "TargetGate": "right1",
+    "TargetScene": "Under_16"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Under_02",
+    "TargetGate": "left1",
+    "TargetScene": "Under_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_02",
+    "TargetGate": "right1",
+    "TargetScene": "Under_01b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Under_02",
+    "TargetGate": "left3",
+    "TargetScene": "Under_07"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Under_02",
+    "TargetGate": "left1",
+    "TargetScene": "Under_03b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_01b",
+    "TargetGate": "left1",
+    "TargetScene": "Under_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Under_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Under_01",
+    "TargetGate": "left1",
+    "TargetScene": "Under_01b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Under_01",
+    "TargetGate": "right1",
+    "TargetScene": "Under_27"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Under_01",
+    "TargetGate": "right2",
+    "TargetScene": "Under_27"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Under_01",
+    "TargetGate": "right2",
+    "TargetScene": "Song_19_entrance"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Tut_05",
+    "TargetGate": "right1",
+    "TargetScene": "Tut_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Tut_04",
+    "TargetGate": "door2",
+    "TargetScene": "Tut_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Tut_04",
+    "TargetGate": "left1",
+    "TargetScene": "Tut_05"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Tut_03",
+    "TargetGate": "left1",
+    "TargetScene": "Tut_04"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Tut_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Tut_03",
+    "TargetGate": "left1",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "door1 firstExit",
+    "SourceScene": "Tut_03",
+    "TargetGate": "bot1 firstEntry",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Tut_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Tut_02",
+    "TargetGate": "left3",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Tut_02",
+    "TargetGate": "left2",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Tut_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Tut_01b",
+    "TargetGate": "right2",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Tut_01b",
+    "TargetGate": "left1",
+    "TargetScene": "Weave_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Tut_01",
+    "TargetGate": "left1",
+    "TargetScene": "Tut_01b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Tut_01",
+    "TargetGate": "right1",
+    "TargetScene": "Tut_03"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Tut_01",
+    "TargetGate": "right2",
+    "TargetScene": "Tut_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Tut_01",
+    "TargetGate": "left2",
+    "TargetScene": "Tut_01b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Tut_01",
+    "TargetGate": "right1",
+    "TargetScene": "Tut_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Tut_01",
+    "TargetGate": "bot2",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Tube_Hub",
+    "TargetGate": "right2",
+    "TargetScene": "Cradle_03"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Tube_Hub",
+    "TargetGate": "right1",
+    "TargetScene": "Cradle_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Tube_Hub",
+    "TargetGate": "right1",
+    "TargetScene": "Song_Tower_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Sprintmaster_Cave",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_East_18b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_Tower_Destroyed",
+    "TargetGate": "bot1",
+    "TargetScene": "Cradle_01_Destroyed"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_Tower_Destroyed",
+    "TargetGate": "top1",
+    "TargetScene": "Cog_09_Destroyed"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_Tower_01",
+    "TargetGate": "left1",
+    "TargetScene": "Tube_Hub"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_Enclave_Tube",
+    "TargetGate": "top1",
+    "TargetScene": "Song_Enclave"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Song_Enclave",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine_Enclave"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_Enclave",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_Enclave_Tube"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_Enclave",
+    "TargetGate": "top1",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_Enclave",
+    "TargetGate": "right1",
+    "TargetScene": "Song_25"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_Enclave",
+    "TargetGate": "right2",
+    "TargetScene": "Library_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_29",
+    "TargetGate": "left2",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_28",
+    "TargetGate": "left4",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_27",
+    "TargetGate": "right4",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_27",
+    "TargetGate": "left1",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_27",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_26",
+    "TargetGate": "left2",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_25",
+    "TargetGate": "right1",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_25",
+    "TargetGate": "left1",
+    "TargetScene": "Song_Enclave"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Song_25",
+    "TargetGate": "bot1",
+    "TargetScene": "Cog_10_Destroyed"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_25",
+    "TargetGate": "top1",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_25",
+    "TargetGate": "bot1",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_24",
+    "TargetGate": "left2",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Song_20b",
+    "TargetGate": "right1",
+    "TargetScene": "Cog_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_20b",
+    "TargetGate": "left2",
+    "TargetScene": "Library_02"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Song_20b",
+    "TargetGate": "left1",
+    "TargetScene": "Library_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_20b",
+    "TargetGate": "top1",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_20b",
+    "TargetGate": "right1",
+    "TargetScene": "Song_29"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_20b",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_25"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_20",
+    "TargetGate": "right1",
+    "TargetScene": "Song_24"
+  },
+  {
+    "SourceGate": "right6",
+    "SourceScene": "Song_20",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_City"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Song_20",
+    "TargetGate": "left1",
+    "TargetScene": "Library_13"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Song_20",
+    "TargetGate": "left1",
+    "TargetScene": "Library_03"
+  },
+  {
+    "SourceGate": "right_cutsceneEntry",
+    "SourceScene": "Song_20",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_City"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_20",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_20",
+    "TargetGate": "right1",
+    "TargetScene": "Song_27"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_19_entrance",
+    "TargetGate": "left1",
+    "TargetScene": "Under_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_19_entrance",
+    "TargetGate": "left1",
+    "TargetScene": "Song_01c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_19_entrance",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_10"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_18",
+    "TargetGate": "top1",
+    "TargetScene": "Song_27"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_18",
+    "TargetGate": "right2",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_17",
+    "TargetGate": "right2",
+    "TargetScene": "Hang_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_17",
+    "TargetGate": "left1",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_15",
+    "TargetGate": "right1",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_15",
+    "TargetGate": "left2",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_14",
+    "TargetGate": "right2",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_13",
+    "TargetGate": "right3",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_13",
+    "TargetGate": "left3",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Song_12",
+    "TargetGate": "left1",
+    "TargetScene": "Song_13"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_12",
+    "TargetGate": "left1",
+    "TargetScene": "Song_14"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Song_12",
+    "TargetGate": "right1",
+    "TargetScene": "Song_28"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Song_12",
+    "TargetGate": "right1",
+    "TargetScene": "Song_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_12",
+    "TargetGate": "left1",
+    "TargetScene": "Song_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_12",
+    "TargetGate": "right1",
+    "TargetScene": "Song_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_12",
+    "TargetGate": "right1",
+    "TargetScene": "Song_26"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_11",
+    "TargetGate": "left1",
+    "TargetScene": "Song_09b"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Song_11",
+    "TargetGate": "right1",
+    "TargetScene": "Song_13"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Song_11",
+    "TargetGate": "left3",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Song_11",
+    "TargetGate": "right1",
+    "TargetScene": "Song_10"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_11",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_07"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_11",
+    "TargetGate": "right1",
+    "TargetScene": "Song_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_11",
+    "TargetGate": "right1",
+    "TargetScene": "Song_17"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_10",
+    "TargetGate": "left4",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_10",
+    "TargetGate": "right2",
+    "TargetScene": "Song_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_09b",
+    "TargetGate": "right1",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_09b",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_09",
+    "TargetGate": "top1",
+    "TargetScene": "Song_09b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_09",
+    "TargetGate": "bot1",
+    "TargetScene": "Hang_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_09",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_08",
+    "TargetGate": "left3",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_07",
+    "TargetGate": "left4",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_05",
+    "TargetGate": "left1",
+    "TargetScene": "Song_18"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Song_05",
+    "TargetGate": "right3",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Song_05",
+    "TargetGate": "right1",
+    "TargetScene": "Song_07"
+  },
+  {
+    "SourceGate": "left5",
+    "SourceScene": "Song_05",
+    "TargetGate": "right1",
+    "TargetScene": "Song_02"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Song_05",
+    "TargetGate": "left1",
+    "TargetScene": "Ward_01"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Song_05",
+    "TargetGate": "left1",
+    "TargetScene": "Song_27"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_04",
+    "TargetGate": "left1",
+    "TargetScene": "Song_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_04",
+    "TargetGate": "left1",
+    "TargetScene": "Song_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_04",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_04",
+    "TargetGate": "top1",
+    "TargetScene": "Song_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_03",
+    "TargetGate": "top1",
+    "TargetScene": "Song_01b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Song_02",
+    "TargetGate": "right1",
+    "TargetScene": "Song_01b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_02",
+    "TargetGate": "left5",
+    "TargetScene": "Song_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_01c",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Song_01c",
+    "TargetGate": "right1",
+    "TargetScene": "Song_19_entrance"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_01b",
+    "TargetGate": "top1",
+    "TargetScene": "Song_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Song_01b",
+    "TargetGate": "left2",
+    "TargetScene": "Song_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_01b",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Song_01",
+    "TargetGate": "left1",
+    "TargetScene": "Under_07b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Song_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_01b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Song_01",
+    "TargetGate": "top1",
+    "TargetScene": "Song_01c"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Slab_Cell_Quiet",
+    "TargetGate": "door1",
+    "TargetScene": "Slab_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_Cell_Quiet",
+    "TargetGate": "door2",
+    "TargetScene": "Slab_23"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_Cell_Creature",
+    "TargetGate": "door1",
+    "TargetScene": "Slab_23"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_Cell",
+    "TargetGate": "door1",
+    "TargetScene": "Slab_13"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Slab_23",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_Cell_Quiet"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_23",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_Cell_Creature"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_23",
+    "TargetGate": "left3",
+    "TargetScene": "Slab_21"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_23",
+    "TargetGate": "right4",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Slab_22",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_21"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_22",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_21",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_18"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_21",
+    "TargetGate": "bot2",
+    "TargetScene": "Slab_22"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Slab_21",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_23"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_20",
+    "TargetGate": "right3",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_19b",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_10c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_19b",
+    "TargetGate": "right7",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_18",
+    "TargetGate": "right2",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_18",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_21"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_17",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_16b",
+    "TargetGate": "door1",
+    "TargetScene": "Slab_16"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_16b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_22"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_16b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_16",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_15",
+    "TargetGate": "left2",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_15",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_16"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_15",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_15",
+    "TargetGate": "right2",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_14",
+    "TargetGate": "left3",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_14",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_15"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_13",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_Cell"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_13",
+    "TargetGate": "left4",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_13",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_13",
+    "TargetGate": "right3",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_12",
+    "TargetGate": "right9",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_10c",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_19b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_10c",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_10b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_10b",
+    "TargetGate": "door1",
+    "TargetScene": "Slab_10c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_08",
+    "TargetGate": "right8",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_08",
+    "TargetGate": "left2",
+    "TargetScene": "Slab_Cell_Quiet"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_07",
+    "TargetGate": "left7",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Slab_07",
+    "TargetGate": "left8",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_06",
+    "TargetGate": "right4",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_06",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_Cell_Quiet"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_06",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_05",
+    "TargetGate": "left6",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_05",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_05",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_06"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Slab_04",
+    "TargetGate": "top1",
+    "TargetScene": "Slab_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Slab_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Slab_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_04",
+    "TargetGate": "left5",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Slab_04",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_Cell_Quiet"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_18"
+  },
+  {
+    "SourceGate": "right8",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_08"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_23"
+  },
+  {
+    "SourceGate": "right9",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_12"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_14"
+  },
+  {
+    "SourceGate": "left7",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_07"
+  },
+  {
+    "SourceGate": "left8",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right2",
+    "TargetScene": "Slab_07"
+  },
+  {
+    "SourceGate": "left6",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_05"
+  },
+  {
+    "SourceGate": "right7",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_19b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_15"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_17"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_13"
+  },
+  {
+    "SourceGate": "left5",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_04"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Slab_03",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_20"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_03",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_16"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_02",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_02",
+    "TargetGate": "right5",
+    "TargetScene": "Slab_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Slab_01",
+    "TargetGate": "left1",
+    "TargetScene": "Song_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Slab_01",
+    "TargetGate": "right1",
+    "TargetScene": "Slab_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_Witch",
+    "TargetGate": "left3",
+    "TargetScene": "Shellwood_02"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Shellwood_Witch",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Witch"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shellwood_26",
+    "TargetGate": "top1",
+    "TargetScene": "Shellwood_18"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_26",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_25b",
+    "TargetGate": "door1",
+    "TargetScene": "Shellwood_25"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Shellwood_25",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_25b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_25",
+    "TargetGate": "right2",
+    "TargetScene": "Mosstown_03"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Shellwood_22",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_11b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_22",
+    "TargetGate": "left1",
+    "TargetScene": "Under_27"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_20",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_20",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_01b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_19",
+    "TargetGate": "right1",
+    "TargetScene": "Bellshrine_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_19",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shellwood_18",
+    "TargetGate": "bot1",
+    "TargetScene": "Shellwood_26"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_18",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_18",
+    "TargetGate": "right3",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_16",
+    "TargetGate": "left2",
+    "TargetScene": "Shellwood_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_16",
+    "TargetGate": "right3",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_15",
+    "TargetGate": "left2",
+    "TargetScene": "Belltown_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_15",
+    "TargetGate": "right3",
+    "TargetScene": "Shellwood_01b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_14",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shellwood_13",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_01b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_13",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_13",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_11b",
+    "TargetGate": "door1",
+    "TargetScene": "Shellwood_22"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_11",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_11",
+    "TargetGate": "left2",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_18"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_11"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_11"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_20"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_10",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_26"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_08c",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_08c",
+    "TargetGate": "right2",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shellwood_08",
+    "TargetGate": "top1",
+    "TargetScene": "Shellwood_04c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_08",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_08",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shellwood_04c",
+    "TargetGate": "top1",
+    "TargetScene": "Shellwood_04b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shellwood_04c",
+    "TargetGate": "bot1",
+    "TargetScene": "Shellwood_08"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shellwood_04b",
+    "TargetGate": "bot1",
+    "TargetScene": "Shellwood_04c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_04b",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_08c"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Shellwood_04b",
+    "TargetGate": "bot1",
+    "TargetScene": "Shellgrave"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_04b",
+    "TargetGate": "left3",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_16"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "left3",
+    "TargetScene": "Shellwood_10"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_04b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_14"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "top1",
+    "TargetScene": "Mosstown_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_03",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_19"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_02",
+    "TargetGate": "left2",
+    "TargetScene": "Shellwood_01"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Shellwood_02",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_Witch"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shellwood_02",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_16"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_02",
+    "TargetGate": "left2",
+    "TargetScene": "Shellwood_01b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shellwood_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_20"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Shellwood_01b",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_01b",
+    "TargetGate": "left2",
+    "TargetScene": "Shellwood_13"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_01b",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shellwood_01",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shellwood_01",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shellwood_01",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_01b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shellwood_01",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_Room_shellwood"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shellgrave",
+    "TargetGate": "top2",
+    "TargetScene": "Shellwood_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_Weavehome",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_Bilehaven_Room",
+    "TargetGate": "door1",
+    "TargetScene": "Shadow_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_28",
+    "TargetGate": "left3",
+    "TargetScene": "Shadow_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_27",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_27",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_26"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_26",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_27"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_26",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_11"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shadow_26",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_26",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_25",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_24",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_23",
+    "TargetGate": "right3",
+    "TargetScene": "Shadow_02"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Shadow_22",
+    "TargetGate": "bot2",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_22",
+    "TargetGate": "bot1",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Shadow_22",
+    "TargetGate": "bot3",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shadow_22",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_20"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shadow_21",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_20",
+    "TargetGate": "bot1",
+    "TargetScene": "Shadow_22"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shadow_20",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shadow_19",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_19",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_25"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_19",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_24"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_19",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_18",
+    "TargetGate": "right3",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Shadow_18",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_Bilehaven_Room"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_18",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_16",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_16",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_15",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_15",
+    "TargetGate": "left3",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_14",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_14",
+    "TargetGate": "left2",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_13",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_12",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_12",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_11",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_26"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_11",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_10",
+    "TargetGate": "left2",
+    "TargetScene": "Shadow_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_10",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_16"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Shadow_10",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_08"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shadow_09",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_09",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_03"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Shadow_09",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_28"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_09",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_Weavehome"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_08",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_27"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Shadow_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_05",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_05",
+    "TargetGate": "left2",
+    "TargetScene": "Shadow_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_04b",
+    "TargetGate": "left2",
+    "TargetScene": "Shadow_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_04b",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_04",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_04b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Shadow_20"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_04",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_Shadow"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_03",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Shadow_21"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_03",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_02",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_14"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Shadow_02",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_23"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shadow_02",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_04b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_02",
+    "TargetGate": "left2",
+    "TargetScene": "Shadow_26"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_02",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aqueduct_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "right1",
+    "TargetScene": "Shadow_15"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_15"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_26"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_18"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Shadow_01",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Witch",
+    "TargetGate": "door1",
+    "TargetScene": "Shellwood_Witch"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Pinstress",
+    "TargetGate": "door1",
+    "TargetScene": "Coral_34"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Huntress",
+    "TargetGate": "door1",
+    "TargetScene": "Aqueduct_04"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Room_Forge",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Forge",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Room_Forge",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Diving_Bell_Abyss_Fixed",
+    "TargetGate": "door2",
+    "TargetScene": "Abyss_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Diving_Bell_Abyss",
+    "TargetGate": "door1",
+    "TargetScene": "Abyss_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_Diving_Bell",
+    "TargetGate": "door1",
+    "TargetScene": "Dock_12"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Room_CrowCourt_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Room_CrowCourt"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Room_CrowCourt",
+    "TargetGate": "door1",
+    "TargetScene": "Greymoor_15b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Room_CrowCourt",
+    "TargetGate": "top1",
+    "TargetScene": "Room_CrowCourt_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Room_Caravan_Interior",
+    "TargetGate": "door1",
+    "TargetScene": "Greymoor_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_Mask_Maker",
+    "TargetGate": "door1",
+    "TargetScene": "Peak_05d"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_12",
+    "TargetGate": "left2",
+    "TargetScene": "Peak_08b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_10",
+    "TargetGate": "left2",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "bot5",
+    "SourceScene": "Peak_08b",
+    "TargetGate": "top2",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "bot4",
+    "SourceScene": "Peak_08b",
+    "TargetGate": "top1",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_08b",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_08"
+  },
+  {
+    "SourceGate": "bot6",
+    "SourceScene": "Peak_08b",
+    "TargetGate": "top2",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Peak_08b",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_08",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_08b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Peak_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Peak_05d"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Peak_08",
+    "TargetGate": "top2",
+    "TargetScene": "Peak_05"
+  },
+  {
+    "SourceGate": "bot3",
+    "SourceScene": "Peak_07",
+    "TargetGate": "top3",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "bot4",
+    "SourceScene": "Peak_07",
+    "TargetGate": "top3",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Peak_07",
+    "TargetGate": "top2",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Peak_07",
+    "TargetGate": "bot4",
+    "TargetScene": "Peak_08b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Peak_07",
+    "TargetGate": "top1",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "bot5",
+    "SourceScene": "Peak_07",
+    "TargetGate": "top3",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Peak_07",
+    "TargetGate": "bot5",
+    "TargetScene": "Peak_08b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Peak_06b",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_06b",
+    "TargetGate": "right2",
+    "TargetScene": "Peak_05e"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_06",
+    "TargetGate": "door1",
+    "TargetScene": "Peak_06b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_05e",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_05c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_05e",
+    "TargetGate": "left3",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Peak_05e",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_06b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Peak_05d",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_Mask_Maker"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Peak_05d",
+    "TargetGate": "top1",
+    "TargetScene": "Peak_08"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Peak_05c",
+    "TargetGate": "right3",
+    "TargetScene": "Peak_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_05c",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_05e"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Peak_05",
+    "TargetGate": "left2",
+    "TargetScene": "Peak_05c"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Peak_05",
+    "TargetGate": "bot1",
+    "TargetScene": "Peak_08"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Peak_05",
+    "TargetGate": "top1",
+    "TargetScene": "Bellway_Peak"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_04d",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_04d",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_04c",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_Peak"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Peak_04c",
+    "TargetGate": "left2",
+    "TargetScene": "Bellway_Peak"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_04",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_04d"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_04",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_Peak"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Peak_02",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_05e"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Peak_02",
+    "TargetGate": "left3",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_02",
+    "TargetGate": "left2",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Peak_02",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_02",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_04d"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Peak_02",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Peak_02",
+    "TargetGate": "left4",
+    "TargetScene": "Peak_01"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Peak_01",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Peak_01",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_15"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Peak_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Peak_01",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_16"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Peak_01",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Peak_01",
+    "TargetGate": "right2",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Peak_01",
+    "TargetGate": "right3",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Peak_01",
+    "TargetGate": "right4",
+    "TargetScene": "Peak_02"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Peak_01",
+    "TargetGate": "bot3",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Peak_01",
+    "TargetGate": "bot2",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "top4",
+    "SourceScene": "Peak_01",
+    "TargetGate": "bot3",
+    "TargetScene": "Peak_07"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Peak_01",
+    "TargetGate": "left1",
+    "TargetScene": "Slab_13"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Organ_01",
+    "TargetGate": "door2",
+    "TargetScene": "Dust_09"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Organ_01",
+    "TargetGate": "door1",
+    "TargetScene": "Library_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Organ_01",
+    "TargetGate": "door1",
+    "TargetScene": "Dust_09"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Mosstown_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Shellwood_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Mosstown_03",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Mosstown_03",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_25"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Mosstown_02c",
+    "TargetGate": "right1",
+    "TargetScene": "Mosstown_02"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Mosstown_02",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_05b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Mosstown_02",
+    "TargetGate": "left2",
+    "TargetScene": "Mosstown_02c"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Mosstown_02",
+    "TargetGate": "top1",
+    "TargetScene": "Mosstown_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Mosstown_02",
+    "TargetGate": "right3",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Mosstown_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_05b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Mosstown_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Mosstown_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Mosstown_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_05"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Mosstown_01",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_11"
+  },
+  {
+    "SourceGate": "door_enterRedMemory Hive",
+    "SourceScene": "Memory_Red",
+    "TargetGate": "door_wakeInRedMemory Hive",
+    "TargetScene": "Memory_Red"
+  },
+  {
+    "SourceGate": "door_enterRedMemory Beast",
+    "SourceScene": "Memory_Red",
+    "TargetGate": "door_wakeInRedMemory Beast",
+    "TargetScene": "Memory_Red"
+  },
+  {
+    "SourceGate": "door_enterRedMemory Weaver",
+    "SourceScene": "Memory_Red",
+    "TargetGate": "door_wakeInRedMemory Weaver",
+    "TargetScene": "Memory_Red"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Memory_Needolin",
+    "TargetGate": "right1",
+    "TargetScene": "Memory_Needolin"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Memory_Needolin",
+    "TargetGate": "left1",
+    "TargetScene": "Memory_Needolin"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_16",
+    "TargetGate": "left4",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_15",
+    "TargetGate": "left3",
+    "TargetScene": "Library_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_14",
+    "TargetGate": "right6",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_13b",
+    "TargetGate": "left3",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_13b",
+    "TargetGate": "right1",
+    "TargetScene": "Library_13"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_13",
+    "TargetGate": "left1",
+    "TargetScene": "Library_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_13",
+    "TargetGate": "right5",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_13",
+    "TargetGate": "left1",
+    "TargetScene": "Library_13b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Library_12b",
+    "TargetGate": "bot1",
+    "TargetScene": "Library_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_12b",
+    "TargetGate": "right1",
+    "TargetScene": "Library_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_12",
+    "TargetGate": "left1",
+    "TargetScene": "Library_12b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Library_12",
+    "TargetGate": "left3",
+    "TargetScene": "Organ_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_12",
+    "TargetGate": "right2",
+    "TargetScene": "Library_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_12",
+    "TargetGate": "right1",
+    "TargetScene": "Library_11"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Library_11b",
+    "TargetGate": "right1",
+    "TargetScene": "Under_17"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_11b",
+    "TargetGate": "left3",
+    "TargetScene": "Library_11"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_11",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_City"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_11",
+    "TargetGate": "left1",
+    "TargetScene": "Library_12"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Library_11",
+    "TargetGate": "right1",
+    "TargetScene": "Library_11b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_11",
+    "TargetGate": "right2",
+    "TargetScene": "Library_13"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_11",
+    "TargetGate": "left2",
+    "TargetScene": "Library_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_10",
+    "TargetGate": "right5",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Library_10",
+    "TargetGate": "top1",
+    "TargetScene": "Library_12b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_09",
+    "TargetGate": "right1",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Library_09",
+    "TargetGate": "top1",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_08",
+    "TargetGate": "right2",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_08",
+    "TargetGate": "left1",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Library_07",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_22"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Library_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Library_09"
+  },
+  {
+    "SourceGate": "bot3",
+    "SourceScene": "Library_07",
+    "TargetGate": "top3",
+    "TargetScene": "Shadow_22"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Library_07",
+    "TargetGate": "top2",
+    "TargetScene": "Shadow_22"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_07",
+    "TargetGate": "right1",
+    "TargetScene": "Library_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_07",
+    "TargetGate": "right1",
+    "TargetScene": "Library_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_06",
+    "TargetGate": "right1",
+    "TargetScene": "Library_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_06",
+    "TargetGate": "left2",
+    "TargetScene": "Library_07"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_06",
+    "TargetGate": "right2",
+    "TargetScene": "Library_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_05",
+    "TargetGate": "right3",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_05",
+    "TargetGate": "left1",
+    "TargetScene": "Library_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_05",
+    "TargetGate": "left2",
+    "TargetScene": "Library_06"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_05",
+    "TargetGate": "right4",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_04",
+    "TargetGate": "left1",
+    "TargetScene": "Library_08"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Library_04",
+    "TargetGate": "left1",
+    "TargetScene": "Library_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_04",
+    "TargetGate": "right1",
+    "TargetScene": "Library_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_04",
+    "TargetGate": "left1",
+    "TargetScene": "Library_09"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Library_04",
+    "TargetGate": "left2",
+    "TargetScene": "Library_05"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_04",
+    "TargetGate": "right2",
+    "TargetScene": "Library_01"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Library_04",
+    "TargetGate": "right1",
+    "TargetScene": "Library_13b"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Library_04",
+    "TargetGate": "right1",
+    "TargetScene": "Library_16"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Library_04",
+    "TargetGate": "left1",
+    "TargetScene": "Library_05"
+  },
+  {
+    "SourceGate": "right6",
+    "SourceScene": "Library_04",
+    "TargetGate": "left1",
+    "TargetScene": "Library_14"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Library_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_Enclave"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_03",
+    "TargetGate": "left2",
+    "TargetScene": "Library_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_03",
+    "TargetGate": "right4",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_02",
+    "TargetGate": "left1",
+    "TargetScene": "Library_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_02",
+    "TargetGate": "left2",
+    "TargetScene": "Song_Enclave"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_02",
+    "TargetGate": "right2",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_02",
+    "TargetGate": "right3",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Library_01",
+    "TargetGate": "right1",
+    "TargetScene": "Library_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Library_01",
+    "TargetGate": "right1",
+    "TargetScene": "Library_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Library_01",
+    "TargetGate": "left1",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Library_01",
+    "TargetGate": "right1",
+    "TargetScene": "Library_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Library_01",
+    "TargetGate": "left2",
+    "TargetScene": "Library_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_17b",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Hang_16",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_14"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_16",
+    "TargetGate": "left4",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_15",
+    "TargetGate": "left2",
+    "TargetScene": "Hang_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_14",
+    "TargetGate": "door1",
+    "TargetScene": "Hang_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_13",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_13",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_12",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_10",
+    "TargetGate": "left3",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_10",
+    "TargetGate": "right2",
+    "TargetScene": "Hang_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_09",
+    "TargetGate": "left2",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_08",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_13"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Hang_08",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_08",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_17b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Hang_08",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_11_Destroyed"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Hang_08",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_16"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Hang_08",
+    "TargetGate": "top1",
+    "TargetScene": "Hang_06"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Hang_08",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_10"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Hang_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Hang_06"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Hang_07",
+    "TargetGate": "top1",
+    "TargetScene": "Song_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_07",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_07",
+    "TargetGate": "right2",
+    "TargetScene": "Song_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_06_bank",
+    "TargetGate": "door1",
+    "TargetScene": "Hang_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_06b",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_06"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Hang_06",
+    "TargetGate": "bot1",
+    "TargetScene": "Hang_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_06",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_06b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Hang_06",
+    "TargetGate": "top1",
+    "TargetScene": "Hang_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_06",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_04"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Hang_06",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_06_bank"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_04",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_04",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_12"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Hang_03_top",
+    "TargetGate": "top1",
+    "TargetScene": "Hang_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_03",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Hang_03",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_10"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Hang_03",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_03",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_13"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Hang_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Hang_03_top"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Hang_02",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_02",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Hang_01",
+    "TargetGate": "left1",
+    "TargetScene": "Hang_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Hang_01",
+    "TargetGate": "left1",
+    "TargetScene": "Song_17"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Halfway_01",
+    "TargetGate": "top1",
+    "TargetScene": "Ant_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Halfway_01",
+    "TargetGate": "right4",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Halfway_01",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_24",
+    "TargetGate": "right5",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Greymoor_22",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_15b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_21",
+    "TargetGate": "bot1",
+    "TargetScene": "Greymoor_13"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_20c",
+    "TargetGate": "door1",
+    "TargetScene": "Greymoor_20b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_20b",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_07"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Greymoor_20b",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_20c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_17",
+    "TargetGate": "bot1",
+    "TargetScene": "Dust_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_17",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_16",
+    "TargetGate": "bot1",
+    "TargetScene": "Bellway_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_16",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_08"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_15b",
+    "TargetGate": "right3",
+    "TargetScene": "Greymoor_15"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Greymoor_15b",
+    "TargetGate": "left1",
+    "TargetScene": "Room_CrowCourt"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_15b",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_15b",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_15"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_15b",
+    "TargetGate": "bot1",
+    "TargetScene": "Greymoor_22"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Greymoor_15",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_15b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_15",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_15",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_15b"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_15",
+    "TargetGate": "right3",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_13",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Greymoor_13",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_21"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_13",
+    "TargetGate": "right3",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_12",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_12",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_11",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_11",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_10",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_10",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Greymoor_08",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Caravan_Spa"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Greymoor_08",
+    "TargetGate": "right1",
+    "TargetScene": "Room_Caravan_Interior"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_08",
+    "TargetGate": "right1",
+    "TargetScene": "Belltown_06"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Greymoor_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_08",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_16"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Greymoor_07",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_07",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_20b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_07",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_07",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_07"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "bot1",
+    "TargetScene": "Wisp_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "right1",
+    "TargetScene": "Wisp_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_11"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_10"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_07"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Greymoor_06",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_05",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_05",
+    "TargetGate": "right3",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_05",
+    "TargetGate": "right4",
+    "TargetScene": "Greymoor_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_05",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_04",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_11"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_04",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_04",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_04",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_04",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_10"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "left1",
+    "TargetScene": "Halfway_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_04"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_13"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_01"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "right1",
+    "TargetScene": "Halfway_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_12"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_04"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Greymoor_03",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_24"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_15"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_17"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "right3",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_02",
+    "TargetGate": "right1",
+    "TargetScene": "Bellshrine_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "left1",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_12"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_13"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "left3",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Greymoor_01",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_Shack",
+    "TargetGate": "door1",
+    "TargetScene": "Dust_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_Maze_08_completed",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_05"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dust_Maze_08_completed",
+    "TargetGate": "left2",
+    "TargetScene": "Dust_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_Chef",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dust_Chef",
+    "TargetGate": "top1",
+    "TargetScene": "Dust_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Dust_Barb",
+    "TargetGate": "bot1",
+    "TargetScene": "Dust_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_12",
+    "TargetGate": "right3",
+    "TargetScene": "Dust_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_11",
+    "TargetGate": "right2",
+    "TargetScene": "Dust_06"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dust_11",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_17"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_10",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Dust_09",
+    "TargetGate": "left1",
+    "TargetScene": "Organ_01"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Dust_09",
+    "TargetGate": "left2",
+    "TargetScene": "Organ_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_06",
+    "TargetGate": "left1",
+    "TargetScene": "Shadow_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_06",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_05"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dust_06",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_11"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Dust_06",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_05",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_06"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dust_05",
+    "TargetGate": "top1",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_04",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dust_04",
+    "TargetGate": "right2",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Dust_04",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_Shack"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_04",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_Chef"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_03",
+    "TargetGate": "right3",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dust_03",
+    "TargetGate": "top1",
+    "TargetScene": "Dust_Barb"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Dust_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Dust_Chef"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_02",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_02",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_10"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Dust_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Dust_05"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dust_02",
+    "TargetGate": "right1",
+    "TargetScene": "Dust_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dust_02",
+    "TargetGate": "left2",
+    "TargetScene": "Dust_04"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Dust_02",
+    "TargetGate": "left1",
+    "TargetScene": "Dust_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dust_01",
+    "TargetGate": "left2",
+    "TargetScene": "Dust_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dust_01",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_16",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_02"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Dock_15",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_15",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_09"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dock_15",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_13"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dock_15",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_15",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_14",
+    "TargetGate": "right2",
+    "TargetScene": "Dock_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_13",
+    "TargetGate": "left2",
+    "TargetScene": "Dock_15"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Dock_12",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Diving_Bell"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Dock_12",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Diving_Bell"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_12",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_11",
+    "TargetGate": "right3",
+    "TargetScene": "Dock_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_11",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_10",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_10",
+    "TargetGate": "right3",
+    "TargetScene": "Dock_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_09",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_09",
+    "TargetGate": "left2",
+    "TargetScene": "Dock_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_08",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dock_08",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_08",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dock_06_Church",
+    "TargetGate": "top1",
+    "TargetScene": "Abyss_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_06_Church",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_05",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_04",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Forge"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dock_04",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_13"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Dock_04",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_04",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_06_Church"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dock_03d",
+    "TargetGate": "top1",
+    "TargetScene": "Dock_03c"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dock_03c",
+    "TargetGate": "right2",
+    "TargetScene": "Dock_02b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Dock_03c",
+    "TargetGate": "bot1",
+    "TargetScene": "Dock_03d"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Dock_03c",
+    "TargetGate": "bot1",
+    "TargetScene": "Dock_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_03b",
+    "TargetGate": "left3",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_03b",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_03",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_03b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Dock_03",
+    "TargetGate": "top2",
+    "TargetScene": "Dock_03c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_03",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_02b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dock_02b",
+    "TargetGate": "left2",
+    "TargetScene": "Dock_03c"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dock_02b",
+    "TargetGate": "right2",
+    "TargetScene": "Dock_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_02b",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_02"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Dock_02b",
+    "TargetGate": "right3",
+    "TargetScene": "Dock_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_02b",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dock_02",
+    "TargetGate": "left2",
+    "TargetScene": "Dock_02b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_02",
+    "TargetGate": "right1",
+    "TargetScene": "Room_Forge"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Dock_02",
+    "TargetGate": "left3",
+    "TargetScene": "Dock_02b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_02",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_02b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Dock_02",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Dock_01",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Dock_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_05"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Dock_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_10",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_09",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_09",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_07"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Crawl_08",
+    "TargetGate": "top1",
+    "TargetScene": "Crawl_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Crawl_07",
+    "TargetGate": "top1",
+    "TargetScene": "Bonegrave"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_07",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_09"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Crawl_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Crawl_03b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_06",
+    "TargetGate": "right3",
+    "TargetScene": "Crawl_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_05",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_04",
+    "TargetGate": "right2",
+    "TargetScene": "Crawl_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_04",
+    "TargetGate": "left2",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Crawl_03b",
+    "TargetGate": "bot1",
+    "TargetScene": "Crawl_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_03b",
+    "TargetGate": "left2",
+    "TargetScene": "Crawl_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Crawl_03b",
+    "TargetGate": "top1",
+    "TargetScene": "Crawl_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_03",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Crawl_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Crawl_08"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Crawl_03",
+    "TargetGate": "top1",
+    "TargetScene": "Crawl_03b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_03",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Crawl_02",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_03b"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Crawl_02",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_02",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_02",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Crawl_02",
+    "TargetGate": "left1",
+    "TargetScene": "Crawl_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Crawl_01",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Crawl_01",
+    "TargetGate": "left1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Cradle_Destroyed_Challenge_Bench",
+    "TargetGate": "door1",
+    "TargetScene": "Abandoned_town"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cradle_Destroyed_Challenge_Bench",
+    "TargetGate": "top1",
+    "TargetScene": "Cradle_Destroyed_Challenge_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cradle_Destroyed_Challenge_Bench",
+    "TargetGate": "left1",
+    "TargetScene": "Cradle_Destroyed_Challenge_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cradle_Destroyed_Challenge_02",
+    "TargetGate": "door1",
+    "TargetScene": "Cradle_03_Destroyed"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cradle_Destroyed_Challenge_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Cradle_Destroyed_Challenge_Bench"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cradle_Destroyed_Challenge_01",
+    "TargetGate": "right1",
+    "TargetScene": "Cradle_Destroyed_Challenge_Bench"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cradle_Destroyed_Challenge_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Abandoned_town"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Cradle_03_Destroyed",
+    "TargetGate": "left1",
+    "TargetScene": "Cradle_Destroyed_Challenge_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cradle_03_Destroyed",
+    "TargetGate": "top1",
+    "TargetScene": "Cradle_01_Destroyed"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Cradle_03",
+    "TargetGate": "left3",
+    "TargetScene": "Tube_Hub"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Cradle_03",
+    "TargetGate": "right1",
+    "TargetScene": "Cradle_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cradle_02b",
+    "TargetGate": "left2",
+    "TargetScene": "Cradle_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Cradle_02",
+    "TargetGate": "left1",
+    "TargetScene": "Cradle_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Cradle_02",
+    "TargetGate": "right1",
+    "TargetScene": "Cradle_02b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cradle_02",
+    "TargetGate": "left2",
+    "TargetScene": "Cradle_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cradle_01_Destroyed",
+    "TargetGate": "bot1",
+    "TargetScene": "Cradle_03_Destroyed"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cradle_01_Destroyed",
+    "TargetGate": "top1",
+    "TargetScene": "Song_Tower_Destroyed"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cradle_01",
+    "TargetGate": "left4",
+    "TargetScene": "Tube_Hub"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cradle_01",
+    "TargetGate": "right2",
+    "TargetScene": "Cradle_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_Tower_01",
+    "TargetGate": "door1",
+    "TargetScene": "Coral_28"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_Judge_Arena",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_32"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_Judge_Arena",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_10"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Coral_Judge_Arena",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Caravan_Spa"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_44",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_26"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_44",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_43",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_33"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_43",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_35"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_42",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_35"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_41",
+    "TargetGate": "left5",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_40",
+    "TargetGate": "left4",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_39",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_23"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_38",
+    "TargetGate": "top1",
+    "TargetScene": "Coral_32"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_38",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine_Coral"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_38",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_26"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_37",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_36",
+    "TargetGate": "right2",
+    "TargetScene": "Coral_35"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_27"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_40"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_44"
+  },
+  {
+    "SourceGate": "left5",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_41"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_24"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "top1",
+    "TargetScene": "Coral_35"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_23"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Coral_35b",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_29"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_35",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_43"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_35",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_42"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Coral_35",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_36"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Coral_35",
+    "TargetGate": "bot1",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_35",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_08"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Coral_34",
+    "TargetGate": "bot1",
+    "TargetScene": "Coral_25"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_34",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_11b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Coral_34",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Pinstress"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_33",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_43"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_32",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_Judge_Arena"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Coral_32",
+    "TargetGate": "bot1",
+    "TargetScene": "Coral_38"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_32",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_29",
+    "TargetGate": "door1",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Coral_28",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_Tower_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_28",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_27"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_27",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_27",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_28"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_26",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_38"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_26",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_24"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_26",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_44"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_25",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_23"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_25",
+    "TargetGate": "top1",
+    "TargetScene": "Coral_34"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_24",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_26"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_24",
+    "TargetGate": "right2",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_23",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_25"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_23",
+    "TargetGate": "left3",
+    "TargetScene": "Coral_35b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_23",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_39"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_19b",
+    "TargetGate": "top1",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot6",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top6",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Coral_19",
+    "TargetGate": "bot2",
+    "TargetScene": "Coral_02"
+  },
+  {
+    "SourceGate": "bot4",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top4",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot5",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top5",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot3",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top7",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot7",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top7",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top5",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "top6",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top2",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top4",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Coral_19",
+    "TargetGate": "bot1",
+    "TargetScene": "Coral_19b"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_19",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_08"
+  },
+  {
+    "SourceGate": "top8",
+    "SourceScene": "Coral_19",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Coral_12",
+    "TargetGate": "right3",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_12",
+    "TargetGate": "right2",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_12",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_37"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_11b",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_11b",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_34"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_11",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_11b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_11",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_10",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_Judge_Arena"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_10",
+    "TargetGate": "left1",
+    "TargetScene": "Song_19_entrance"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Coral_03",
+    "TargetGate": "left3",
+    "TargetScene": "Coral_12"
+  },
+  {
+    "SourceGate": "bot5",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top7",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top3",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Coral_03",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_08"
+  },
+  {
+    "SourceGate": "bot3",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top5",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top4",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Coral_03",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_02"
+  },
+  {
+    "SourceGate": "bot6",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top8",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Coral_03",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_11"
+  },
+  {
+    "SourceGate": "bot4",
+    "SourceScene": "Coral_03",
+    "TargetGate": "top6",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_03",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_32"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Coral_03",
+    "TargetGate": "left2",
+    "TargetScene": "Coral_12"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Coral_02",
+    "TargetGate": "top2",
+    "TargetScene": "Coral_19"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Coral_02",
+    "TargetGate": "left3",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_Pass",
+    "TargetGate": "door1",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Cog_Pass",
+    "TargetGate": "door2",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "bot1",
+    "TargetScene": "Cog_08"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "top2",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "top1",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "right1",
+    "TargetScene": "Hang_07"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_Pass"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cog_Dancers",
+    "TargetGate": "left1",
+    "TargetScene": "Song_25"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_Bench",
+    "TargetGate": "door1",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_10_Destroyed",
+    "TargetGate": "right1",
+    "TargetScene": "Cog_09_Destroyed"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cog_10_Destroyed",
+    "TargetGate": "top2",
+    "TargetScene": "Song_25"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cog_10",
+    "TargetGate": "top1",
+    "TargetScene": "Cog_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cog_09_Destroyed",
+    "TargetGate": "bot1",
+    "TargetScene": "Song_Tower_Destroyed"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cog_09_Destroyed",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_10_Destroyed"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cog_09",
+    "TargetGate": "top1",
+    "TargetScene": "Cog_08"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cog_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Cog_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Cog_08",
+    "TargetGate": "top1",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_07",
+    "TargetGate": "right3",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Cog_06",
+    "TargetGate": "right2",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Cog_06",
+    "TargetGate": "left4",
+    "TargetScene": "Song_20b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cog_05",
+    "TargetGate": "bot1",
+    "TargetScene": "Cog_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Cog_05",
+    "TargetGate": "right1",
+    "TargetScene": "Song_09"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Cog_05",
+    "TargetGate": "left2",
+    "TargetScene": "Cog_04"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Cog_04",
+    "TargetGate": "bot2",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Cog_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Cog_Dancers"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Cog_04",
+    "TargetGate": "left2",
+    "TargetScene": "Cog_06"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Cog_04",
+    "TargetGate": "left2",
+    "TargetScene": "Cog_Pass"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Cog_04",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_Bench"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Cog_04",
+    "TargetGate": "right2",
+    "TargetScene": "Cog_05"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Cog_04",
+    "TargetGate": "left1",
+    "TargetScene": "Cog_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_21",
+    "TargetGate": "left2",
+    "TargetScene": "Clover_05c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_20",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_19",
+    "TargetGate": "right2",
+    "TargetScene": "Clover_05c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Clover_19",
+    "TargetGate": "bot2",
+    "TargetScene": "Clover_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_18",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_16",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_05c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Clover_16",
+    "TargetGate": "bot1",
+    "TargetScene": "Clover_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_11",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_10_web",
+    "TargetGate": "door1",
+    "TargetScene": "Clover_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_10",
+    "TargetGate": "door1",
+    "TargetScene": "Clover_04b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Clover_06",
+    "TargetGate": "top1",
+    "TargetScene": "Clover_16"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Clover_06",
+    "TargetGate": "top1",
+    "TargetScene": "Clover_19"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Clover_05c",
+    "TargetGate": "left2",
+    "TargetScene": "Clover_02c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_05c",
+    "TargetGate": "left2",
+    "TargetScene": "Clover_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_05c",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_16"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Clover_05c",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_21"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Clover_05c",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_19"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Clover_04b",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_05c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_04b",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_04b",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_03",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_18"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Clover_03",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_02c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_03",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_02c",
+    "TargetGate": "right1",
+    "TargetScene": "Clover_01b"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Clover_02c",
+    "TargetGate": "right3",
+    "TargetScene": "Clover_05c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_02c",
+    "TargetGate": "left2",
+    "TargetScene": "Clover_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_01b",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_02c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Clover_01",
+    "TargetGate": "left1",
+    "TargetScene": "Clover_20"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Clover_01",
+    "TargetGate": "right1",
+    "TargetScene": "Greymoor_15b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Chapel_Wanderer",
+    "TargetGate": "door1",
+    "TargetScene": "Bonegrave"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_Steel_Servant",
+    "TargetGate": "left1",
+    "TargetScene": "Bonegrave"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_Weavehome",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_14b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_Umbrella",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_LavaChallenge",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_East_14b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_27",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_24"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_27",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_25"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_27",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_26"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_26",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_18b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_26",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_27"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_25",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_27"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_East_25",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_Queen"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_24",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_27"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_24",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_11"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_24",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_18"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_22",
+    "TargetGate": "right4",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_21",
+    "TargetGate": "right5",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_20",
+    "TargetGate": "left3",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_18c",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_18c",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_18"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_18b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_18"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_East_18b",
+    "TargetGate": "left1",
+    "TargetScene": "Sprintmaster_Cave"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_18b",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_26"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_18",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_18b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_18",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_18c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_18",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_24"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_17b",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_17"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_17b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_16"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_17",
+    "TargetGate": "left4",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_17",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_17b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_17",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_15"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_16",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_17b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_16",
+    "TargetGate": "top3",
+    "TargetScene": "Bone_East_02b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_15",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_17"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_15",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_15",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_14b",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_Weavehome"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_East_14b",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_LavaChallenge"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_14b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_14"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_14b",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_14",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_14",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_14",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_14b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_14",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_14b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_13",
+    "TargetGate": "right2",
+    "TargetScene": "Dock_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_12",
+    "TargetGate": "top1",
+    "TargetScene": "Room_Forge"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_12",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_12",
+    "TargetGate": "right3",
+    "TargetScene": "Bone_East_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_11",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_24"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_11",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_11",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_11",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_10"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_11",
+    "TargetGate": "bot1",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_10_Room",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_East_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_10_Church",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_10"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_10_Church",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_09b"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_East_10",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_10_Room"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_10",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_11"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_10",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_10_Church"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_10",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_10",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_18c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_09b",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_10_Church"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_09b",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_09b",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_03"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_Umbrella"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_14"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_08"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_14"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_20"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_09",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_09b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_08",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_08",
+    "TargetGate": "right3",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_10"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_17"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_02b"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_08"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_21"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_03b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_03"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_22"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_11"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_07",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_02b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_05",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_04b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_05",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_04c",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_04b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_05"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_04b",
+    "TargetGate": "bot1",
+    "TargetScene": "Ant_05b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_04b",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_04",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_04b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_04",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_04c"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_East_04",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_04",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_15"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Bone_East_04",
+    "TargetGate": "bot2",
+    "TargetScene": "Ant_05b"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_03",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_04"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Bone_East_02b",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_02b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_02b",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_02b",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_02",
+    "TargetGate": "right1",
+    "TargetScene": "Bellshrine_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_02",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_02b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_East_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_East_15"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_East_01",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_05"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_East_01",
+    "TargetGate": "right2",
+    "TargetScene": "Dock_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_East_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_03"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Bone_East_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_12"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_East_01",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_19",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_18",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_17",
+    "TargetGate": "left4",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_16",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_09"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_16",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_15"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_16",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_02"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_15",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_15",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_14",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_14",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_12",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_11b",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_11b",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_01b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_11",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_11",
+    "TargetGate": "right4",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_11",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_11b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_11",
+    "TargetGate": "bot1",
+    "TargetScene": "Mosstown_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_11",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_10",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_15"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Bone_10",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Caravan_Spa"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_10",
+    "TargetGate": "right3",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_10",
+    "TargetGate": "top2",
+    "TargetScene": "Bone_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_09",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_09",
+    "TargetGate": "left1",
+    "TargetScene": "Dock_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_09",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_16"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_09",
+    "TargetGate": "left2",
+    "TargetScene": "Dock_08"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_08",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_07"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bone_08",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_12"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Bone_08",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_07"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_08",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_09"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_08",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_basement_03"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Bone_08",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_19"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_07",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_07",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_14"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_07",
+    "TargetGate": "left3",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_06",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_18"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_06",
+    "TargetGate": "right1",
+    "TargetScene": "Mosstown_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_06",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_05b",
+    "TargetGate": "right2",
+    "TargetScene": "Mosstown_01"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_05b",
+    "TargetGate": "bot2",
+    "TargetScene": "Mosstown_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_05",
+    "TargetGate": "left1",
+    "TargetScene": "Bellshrine"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_05",
+    "TargetGate": "right1",
+    "TargetScene": "Mosstown_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_05",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_04",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_04",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_04",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_05"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Bone_04",
+    "TargetGate": "top2",
+    "TargetScene": "Bone_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_04",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_11"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Bone_03",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_10"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_03",
+    "TargetGate": "right1",
+    "TargetScene": "Bellshrine"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_06"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Bone_03",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_17"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_03",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_14"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_03",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bone_03",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bone_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_02",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_01c"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_02",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_16"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Bone_02",
+    "TargetGate": "bot1",
+    "TargetScene": "Bone_10"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_01c",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_01c",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_01c",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bone_01b",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_11b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bone_01",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_01c"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Bone_01",
+    "TargetGate": "bot2",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bone_01",
+    "TargetGate": "right2",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bone_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_01c"
+  },
+  {
+    "SourceGate": "top2 extra",
+    "SourceScene": "Bone_01",
+    "TargetGate": "bot2",
+    "TargetScene": "Bone_04"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bonetown",
+    "TargetGate": "right2",
+    "TargetScene": "Bonegrave"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bonetown",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_01b"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bonetown",
+    "TargetGate": "right1",
+    "TargetScene": "Bonegrave"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bonetown",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_01"
+  },
+  {
+    "SourceGate": "top6",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top4",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot2",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot1 firstEntry",
+    "SourceScene": "Bonetown",
+    "TargetGate": "top1",
+    "TargetScene": "Tut_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bonetown",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_01"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Bonetown",
+    "TargetGate": "top1",
+    "TargetScene": "Tut_01"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top5",
+    "SourceScene": "Bonetown",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bonetown",
+    "TargetGate": "top1",
+    "TargetScene": "Tut_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bonegrave",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_Steel_Servant"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bonegrave",
+    "TargetGate": "bot1",
+    "TargetScene": "Crawl_07"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Bonegrave",
+    "TargetGate": "left1",
+    "TargetScene": "Chapel_Wanderer"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bonegrave",
+    "TargetGate": "left2",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bonegrave",
+    "TargetGate": "left1",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_Shadow",
+    "TargetGate": "right2",
+    "TargetScene": "Shadow_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_Peak_02",
+    "TargetGate": "right2",
+    "TargetScene": "Bellway_Peak"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Bellway_Peak",
+    "TargetGate": "bot1",
+    "TargetScene": "Peak_05"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Bellway_Peak",
+    "TargetGate": "right2",
+    "TargetScene": "Peak_04c"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_Peak",
+    "TargetGate": "right1",
+    "TargetScene": "Peak_04c"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Bellway_Peak",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_Peak_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_Peak",
+    "TargetGate": "left1",
+    "TargetScene": "Peak_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_City",
+    "TargetGate": "right6",
+    "TargetScene": "Song_20"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_City",
+    "TargetGate": "left2",
+    "TargetScene": "Library_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_Aqueduct",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_Aqueduct",
+    "TargetGate": "right2",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_08",
+    "TargetGate": "left1",
+    "TargetScene": "Coral_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_08",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_35"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_04",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_05"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Bellway_04",
+    "TargetGate": "top1",
+    "TargetScene": "Greymoor_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_03",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_East_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_03",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_09b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellway_02",
+    "TargetGate": "left2",
+    "TargetScene": "Bone_East_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_02",
+    "TargetGate": "right1",
+    "TargetScene": "Dock_16"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellway_01",
+    "TargetGate": "door1",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Belltown_Shrine",
+    "TargetGate": "left3",
+    "TargetScene": "Belltown_06"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Belltown_Shrine",
+    "TargetGate": "bot1",
+    "TargetScene": "Belltown_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_Room_Spare",
+    "TargetGate": "door5",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_Room_shellwood",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_Room_Relic",
+    "TargetGate": "door4",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_Room_pinsmith",
+    "TargetGate": "door3",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_Room_doctor",
+    "TargetGate": "door1",
+    "TargetScene": "Wisp_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_basement_03",
+    "TargetGate": "right2",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Belltown_basement_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Belltown_basement"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_basement",
+    "TargetGate": "door1",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Belltown_basement",
+    "TargetGate": "top1",
+    "TargetScene": "Belltown_basement_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Belltown_08",
+    "TargetGate": "left1",
+    "TargetScene": "Wisp_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Belltown_07",
+    "TargetGate": "left3",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_07",
+    "TargetGate": "right2",
+    "TargetScene": "Shellwood_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Belltown_06",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_06",
+    "TargetGate": "right2",
+    "TargetScene": "Belltown"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Belltown_06",
+    "TargetGate": "right1",
+    "TargetScene": "Belltown_Room_Fisher"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Belltown_06",
+    "TargetGate": "right1",
+    "TargetScene": "Belltown_Shrine"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Belltown_04",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_13"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Belltown_04",
+    "TargetGate": "top1",
+    "TargetScene": "Belltown_Shrine"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Belltown_04",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_15"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Belltown",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_06"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Belltown",
+    "TargetGate": "right1",
+    "TargetScene": "Belltown_07"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Belltown",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_basement"
+  },
+  {
+    "SourceGate": "door5",
+    "SourceScene": "Belltown",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_Room_Spare"
+  },
+  {
+    "SourceGate": "door4",
+    "SourceScene": "Belltown",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_Room_Relic"
+  },
+  {
+    "SourceGate": "door3",
+    "SourceScene": "Belltown",
+    "TargetGate": "left1",
+    "TargetScene": "Belltown_Room_pinsmith"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine_Enclave",
+    "TargetGate": "door1",
+    "TargetScene": "Song_Enclave"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine_Coral",
+    "TargetGate": "right1",
+    "TargetScene": "Coral_38"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine_05",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_East_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellshrine_05",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine_03",
+    "TargetGate": "right1",
+    "TargetScene": "Shellwood_08"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellshrine_03",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine_02",
+    "TargetGate": "right2",
+    "TargetScene": "Greymoor_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellshrine_02",
+    "TargetGate": "left2",
+    "TargetScene": "Greymoor_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Bellshrine",
+    "TargetGate": "right1",
+    "TargetScene": "Bone_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Bellshrine",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_03"
+  },
+  {
+    "SourceGate": "top7",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top3",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "top2",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot8",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top6",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_01"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_11"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top2",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "bot5",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top5",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "top6",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot4",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top4",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "top5",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "left1",
+    "TargetScene": "Shellwood_08c"
+  },
+  {
+    "SourceGate": "top3",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "top4",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "right1",
+    "TargetScene": "Crawl_04"
+  },
+  {
+    "SourceGate": "bot3",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top3",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "left1",
+    "TargetScene": "Mosstown_02"
+  },
+  {
+    "SourceGate": "bot7",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top6",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "bot1",
+    "TargetScene": "Aspid_01"
+  },
+  {
+    "SourceGate": "bot6",
+    "SourceScene": "Aspid_01",
+    "TargetGate": "top6",
+    "TargetScene": "Bonetown"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_Tube",
+    "TargetGate": "left3",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_11",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_11",
+    "TargetGate": "right2",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_10",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Arborium_09",
+    "TargetGate": "left2",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_09",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_08",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Arborium_08",
+    "TargetGate": "top1",
+    "TargetScene": "Arborium_07"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Arborium_07",
+    "TargetGate": "bot1",
+    "TargetScene": "Arborium_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_07",
+    "TargetGate": "right2",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_06",
+    "TargetGate": "right3",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Arborium_06",
+    "TargetGate": "top1",
+    "TargetScene": "Arborium_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_06",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_05",
+    "TargetGate": "left2",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Arborium_05",
+    "TargetGate": "bot1",
+    "TargetScene": "Arborium_06"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_04",
+    "TargetGate": "left4",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_04",
+    "TargetGate": "right5",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_10"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_05"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_04"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_03",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_02",
+    "TargetGate": "right4",
+    "TargetScene": "Arborium_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_02",
+    "TargetGate": "left3",
+    "TargetScene": "Arborium_03"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_02"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_07"
+  },
+  {
+    "SourceGate": "right5",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_09"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "top1",
+    "TargetScene": "Song_25"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_08"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_Tube"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "left1",
+    "TargetScene": "Arborium_06"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Arborium_01",
+    "TargetGate": "right2",
+    "TargetScene": "Arborium_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_08",
+    "TargetGate": "left2",
+    "TargetScene": "Aqueduct_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_08",
+    "TargetGate": "right3",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_07",
+    "TargetGate": "left3",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Aqueduct_06",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_06",
+    "TargetGate": "right1",
+    "TargetScene": "Bellway_Aqueduct"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Aqueduct_06",
+    "TargetGate": "top1",
+    "TargetScene": "Aqueduct_03"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Aqueduct_05",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Caravan_Spa"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_05",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_03"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Aqueduct_04",
+    "TargetGate": "top1",
+    "TargetScene": "Shadow_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Aqueduct_04",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Huntress"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_04",
+    "TargetGate": "left2",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Aqueduct_03",
+    "TargetGate": "bot1",
+    "TargetScene": "Aqueduct_06"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_03",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_03",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_05"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_08"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "left1",
+    "TargetScene": "Bellway_Aqueduct"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_04"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "right1",
+    "TargetScene": "Aqueduct_07"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_02",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Aqueduct_01",
+    "TargetGate": "right1",
+    "TargetScene": "Arborium_11"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Aqueduct_01",
+    "TargetGate": "left1",
+    "TargetScene": "Aqueduct_02"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_Queen",
+    "TargetGate": "door1",
+    "TargetScene": "Bone_East_25"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_Merchant",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_21",
+    "TargetGate": "left5",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Ant_20",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_19"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_20",
+    "TargetGate": "right3",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_19",
+    "TargetGate": "door1",
+    "TargetScene": "Ant_20"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_17",
+    "TargetGate": "left2",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "left5",
+    "SourceScene": "Ant_14",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_21"
+  },
+  {
+    "SourceGate": "left3",
+    "SourceScene": "Ant_14",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_04"
+  },
+  {
+    "SourceGate": "left4",
+    "SourceScene": "Ant_14",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_05b"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Ant_14",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_05c"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Ant_14",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_20"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Ant_14",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_17"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_14",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_Merchant"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_09",
+    "TargetGate": "left1",
+    "TargetScene": "Bone_East_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_09",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_05c"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Ant_08",
+    "TargetGate": "bot1",
+    "TargetScene": "Halfway_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_05c",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_09"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_05c",
+    "TargetGate": "right2",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "bot2",
+    "SourceScene": "Ant_05b",
+    "TargetGate": "top2",
+    "TargetScene": "Bone_East_04"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Ant_05b",
+    "TargetGate": "top1",
+    "TargetScene": "Bone_East_04b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_05b",
+    "TargetGate": "left4",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_04_mid",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_04"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_04_mid",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_04_left"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_04_left",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_04_mid"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_04_left",
+    "TargetGate": "right3",
+    "TargetScene": "Ant_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_04",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_04_mid"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_04",
+    "TargetGate": "left3",
+    "TargetScene": "Ant_14"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Ant_03",
+    "TargetGate": "left1",
+    "TargetScene": "Ant_04_left"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Ant_03",
+    "TargetGate": "right1",
+    "TargetScene": "Ant_02"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Ant_02",
+    "TargetGate": "left2",
+    "TargetScene": "Ant_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Ant_02",
+    "TargetGate": "right3",
+    "TargetScene": "Bone_08"
+  },
+  {
+    "SourceGate": "door_test",
+    "SourceScene": "Abyss_Cocoon",
+    "TargetGate": "door_entry",
+    "TargetScene": "Abyss_Cocoon"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Abyss_13",
+    "TargetGate": "bot1",
+    "TargetScene": "Abyss_09"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_13",
+    "TargetGate": "left2",
+    "TargetScene": "Abyss_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_13",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_11"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_12",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_07"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Abyss_12",
+    "TargetGate": "left2",
+    "TargetScene": "Abyss_05"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Abyss_11",
+    "TargetGate": "top1",
+    "TargetScene": "Abyss_02b"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_11",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_13"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Abyss_09",
+    "TargetGate": "top1",
+    "TargetScene": "Abyss_13"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Abyss_09",
+    "TargetGate": "bot1",
+    "TargetScene": "Dock_06_Church"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_08",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_05"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_07",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_12"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_07",
+    "TargetGate": "right4",
+    "TargetScene": "Abyss_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_06",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_01"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Abyss_05",
+    "TargetGate": "right2",
+    "TargetScene": "Abyss_12"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_05",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_08"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_04",
+    "TargetGate": "right3",
+    "TargetScene": "Abyss_01"
+  },
+  {
+    "SourceGate": "door2",
+    "SourceScene": "Abyss_03",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Diving_Bell_Abyss_Fixed"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_03",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_02"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Abyss_03",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_13"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Abyss_03",
+    "TargetGate": "left1",
+    "TargetScene": "Room_Diving_Bell_Abyss"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_02b",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_02"
+  },
+  {
+    "SourceGate": "top1",
+    "SourceScene": "Abyss_02b",
+    "TargetGate": "bot1",
+    "TargetScene": "Abyss_11"
+  },
+  {
+    "SourceGate": "left2",
+    "SourceScene": "Abyss_02b",
+    "TargetGate": "right2",
+    "TargetScene": "Abyss_01"
+  },
+  {
+    "SourceGate": "right1",
+    "SourceScene": "Abyss_02",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_03"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_02",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_02b"
+  },
+  {
+    "SourceGate": "right3",
+    "SourceScene": "Abyss_01",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_04"
+  },
+  {
+    "SourceGate": "right4",
+    "SourceScene": "Abyss_01",
+    "TargetGate": "left1",
+    "TargetScene": "Abyss_07"
+  },
+  {
+    "SourceGate": "left1",
+    "SourceScene": "Abyss_01",
+    "TargetGate": "right1",
+    "TargetScene": "Abyss_06"
+  },
+  {
+    "SourceGate": "right2",
+    "SourceScene": "Abyss_01",
+    "TargetGate": "left2",
+    "TargetScene": "Abyss_02b"
+  },
+  {
+    "SourceGate": "bot1",
+    "SourceScene": "Abandoned_town",
+    "TargetGate": "top1",
+    "TargetScene": "Cradle_Destroyed_Challenge_01"
+  },
+  {
+    "SourceGate": "door1",
+    "SourceScene": "Abandoned_town",
+    "TargetGate": "door1",
+    "TargetScene": "Cradle_Destroyed_Challenge_Bench"
+  }
+]
