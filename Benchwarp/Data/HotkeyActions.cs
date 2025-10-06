@@ -17,7 +17,11 @@ namespace Benchwarp.Data
             ["SB"] = (Action)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn,
             //["WD"], // warp deploy
             //["TM"], // toggle menu
-            ["DW"] = () => BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.DoorWarp,
+            ["DW"] = () =>
+            {
+                if (BenchwarpPlugin.GS.MenuMode != Settings.MenuMode.DoorWarp) BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.DoorWarp;
+                else BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.StandardBenchwarp;
+            },
             //["DB"], // deploy bench
             ["NP"] = () => GUIController.Instance.NextPage(),
         });

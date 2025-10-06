@@ -8,12 +8,14 @@ namespace Benchwarp.Components
 {
     public class GUIController : MonoBehaviour
     {
-        private GameObject canvas;
+        private GameObject menuCanvasParent;
+        private GameObject benchMenuCanvas;
+        private GameObject doorMenuCanvas;
+        private GameObject sceneNameCanvas;
 
         private static GUIController _instance;
-        public static Font BenchwarpFont;
-        public static Font Fallback = Font.CreateDynamicFontFromOSFont("Consolas", 16);
-        public static Dictionary<string, Texture2D> images = new();
+        internal static FontManager FontManager;
+        private static Texture2D buttonRectImage;
 
         public static readonly Vector2 TopLeftCorner = new Vector2(0, 1);
 
@@ -23,16 +25,26 @@ namespace Benchwarp.Components
         public GameObject nextPageBtn;
         public List<GameObject> dropdowns = new([]);
         public GameObject sceneNamePanel;
+
+        public GameObject doorWarpButton;
+        public GameObject doorFlipButton;
+        public GameObject doorSelectPrevButton;
+        public GameObject doorAreaDropdown;
+        public GameObject doorRoomDropdown;
+        public GameObject doorDoorDropdown;
+        public GameObject doorConfigButton;
+
         public int page = 1;
         public static int maxPages = 2;
         public static int maxDropdowns = 12;
 
-        public static int btnWidth = 125; //Controls Button Size Universally
-        public static int btnHeight = 45; //Controls Button Size Universally
-        public static int btnOffsetX = 10; //Initial X Offset
-        public static int baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
-        public static int btnOffsetY = 10; //Y Offset for Dropdowns
-        public static int baseDropdownYOffset = btnOffsetY; //Y Offset for Bench Buttons
+        // see ResetBuildParameters()
+        public static int btnWidth; //Controls Button Size Universally
+        public static int btnHeight; //Controls Button Size Universally
+        public static int btnOffsetX; //Initial X Offset
+        public static int baseDropdownRowXOffset; //For Reset on Row Drop
+        public static int btnOffsetY; //Y Offset for Dropdowns
+        public static int baseDropdownYOffset; //Y Offset for Bench Buttons
 
         public bool IsDisplaying { get; private set; }
         public bool ScenePanelEnabled { get; private set; }
@@ -45,7 +57,7 @@ namespace Benchwarp.Components
 
                 foreach (GameObject dropdownObj in dropdowns)
                 {
-                    Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                    BenchDropdown dropdown = dropdownObj.GetComponent<BenchDropdown>();
                     benchButtons.AddRange(dropdown.buttons);
                 }
                 return benchButtons;
@@ -59,7 +71,7 @@ namespace Benchwarp.Components
                 bool toggleAll = false;
                 foreach (GameObject dropdownObj in dropdowns)
                 {
-                    Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                    BenchDropdown dropdown = dropdownObj.GetComponent<BenchDropdown>();
                     if (!dropdown.open)
                     {
                         toggleAll = true;
@@ -73,6 +85,7 @@ namespace Benchwarp.Components
         {
             GameObject GUIObj = new("Benchwarp GUIController");
             _instance = GUIObj.AddComponent<GUIController>();
+            FontManager = GUIObj.AddComponent<FontManager>();
             DontDestroyOnLoad(GUIObj);
             _instance.BuildMenus();
             _instance.ToggleDisplay(false);
@@ -82,25 +95,26 @@ namespace Benchwarp.Components
         {
             if (BenchwarpPlugin.GS.AlwaysToggleAll) Instance.ToggleDropdowns(true);
             Instance.ToggleScenePanel(BenchwarpPlugin.GS.ShowScene);
+            Instance.SelectMenu(BenchwarpPlugin.GS.MenuMode);
             Settings.GlobalSettings.OnShowSceneChanged += () => Instance.ToggleScenePanel(BenchwarpPlugin.GS.ShowScene);
             Settings.GlobalSettings.OnAlwaysToggleAllChanged += () => Instance.ToggleDropdowns(BenchwarpPlugin.GS.AlwaysToggleAll);
+            Settings.GlobalSettings.OnMenuModeChanged += () => Instance.SelectMenu(BenchwarpPlugin.GS.MenuMode);
         }
 
         public static void Unload()
         {
-            if (_instance.canvas) Destroy(_instance.canvas);
+            if (_instance.benchMenuCanvas) Destroy(_instance.benchMenuCanvas);
             if (_instance) Destroy(_instance);
         }
 
         public void LoadResources()
         {
-            images.Add("ButtonRect", SpriteManager.LoadTexFromAssembly("Benchwarp.Resources.Images.ButtonRect.png"));
-            SetBenchwarpFont();
+            buttonRectImage = SpriteManager.LoadTexFromAssembly("Benchwarp.Resources.Images.ButtonRect.png");
         }
 
         public void ToggleDisplay(bool active)
         {
-            canvas.SetActive(active);
+            menuCanvasParent.SetActive(active);
             IsDisplaying = active;
         }
 
@@ -110,48 +124,21 @@ namespace Benchwarp.Components
             ScenePanelEnabled = enabled;
         }
 
-        public void SetBenchwarpFont()
+        public void SelectMenu(Settings.MenuMode mode)
         {
-            foreach (Font f in Resources.FindObjectsOfTypeAll(typeof(Font)))
+            if (mode == Settings.MenuMode.DoorWarp)
             {
-                if (f.name == "TrajanPro-Bold")
-                {
-                    BenchwarpFont = f;
-
-                    Text warpText = warpButton.transform.Find("ButtonText").GetComponent<Text>();
-                    warpText.font = BenchwarpFont;
-
-                    Text setStartText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
-                    setStartText.font = BenchwarpFont;
-
-                    /*
-                    Text toggleAll = toggleAllBtn.GetComponentInChildren<Text>();
-                    toggleAll.font = BenchwarpFont;
-                    */
-
-                    Text cfgmgrText = cfgmgrBtn.transform.Find("ButtonText").GetComponent<Text>();
-                    cfgmgrText.font = BenchwarpFont;
-
-                    Text nextPage = nextPageBtn.transform.Find("ButtonText").GetComponent<Text>();
-                    nextPage.font = BenchwarpFont;
-
-                    Text debugText = sceneNamePanel.GetComponent<Text>();
-                    debugText.font = BenchwarpFont;
-
-                    foreach (GameObject benchObj in benchButtons)
-                    {
-                        benchObj.GetComponent<BenchComponent>().buttonText.font = BenchwarpFont;
-                    }
-
-                    foreach(GameObject dropdownObj in dropdowns)
-                    {
-                        dropdownObj.transform.Find("ButtonText").GetComponent<Text>().font = BenchwarpFont;
-                    }
-                }
+                benchMenuCanvas.SetActive(false);
+                doorMenuCanvas.SetActive(true);
+            }
+            else
+            {
+                benchMenuCanvas.SetActive(true);
+                doorMenuCanvas.SetActive(false);
             }
         }
 
-
+        
         public void NextPage()
         {
             page++;
@@ -163,53 +150,86 @@ namespace Benchwarp.Components
 
         public void Update()
         {
-            if (BenchwarpFont == null)
+            try
             {
-                SetBenchwarpFont();
-            }
-
-            foreach(GameObject dropdownObj in dropdowns)
-            {
-                Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
-                if (dropdown.page == page)
+                if (ScenePanelEnabled)
                 {
-                    dropdownObj.SetActive(true);
-                } else
-                {
-                    dropdownObj.SetActive(false);
+                    if (PlayerData.instance != null)
+                    {
+                        Text debugText = sceneNamePanel.GetComponent<Text>();
+                        debugText.text = $"{PlayerData.instance.respawnMarkerName}, {PlayerData.instance.respawnScene}, {PlayerData.instance.respawnType}, {PlayerData.instance.mapZone}";
+                    }
                 }
-            }
 
-            /*
-            Text toggleAll = toggleAllBtn.GetComponentInChildren<Text>();
-            if (toggleAllDir)
-            {
-                toggleAll.text = "Open All";
-            }
-            else
-            {
-                toggleAll.text = "Close All";
-            }
-            */
-
-            Text nextPageText = nextPageBtn.GetComponentInChildren<Text>();
-            nextPageText.text = $"Page {page}/{maxPages}";
-
-            if (ScenePanelEnabled)
-            {
-                if (PlayerData.instance != null)
+                if (GameManager.SilentInstance == null || !GameManager.instance.IsGamePaused() || GameManager.instance.IsNonGameplayScene())
                 {
-                    Text debugText = sceneNamePanel.GetComponent<Text>();
-                    debugText.text = $"{PlayerData.instance.respawnMarkerName}, {PlayerData.instance.respawnScene}, {PlayerData.instance.respawnType}, {PlayerData.instance.mapZone}";
+                    if (IsDisplaying) ToggleDisplay(false);
+                    return;
                 }
+                else if (!IsDisplaying) ToggleDisplay(true);
+
+
+                foreach (GameObject dropdownObj in dropdowns)
+                {
+                    BenchDropdown dropdown = dropdownObj.GetComponent<BenchDropdown>();
+                    if (dropdown.page == page)
+                    {
+                        dropdownObj.SetActive(true);
+                    }
+                    else
+                    {
+                        dropdownObj.SetActive(false);
+                    }
+                }
+
+                Text nextPageText = nextPageBtn.GetComponentInChildren<Text>();
+                nextPageText.text = $"Page {page}/{maxPages}";
             }
+            catch (Exception e)
+            {
+                LogError($"Error during GUIController.Update:\n{e}");
+            }
+
+            
         }
 
         public void BuildMenus()
         {
-            LoadResources();
+            try
+            {
+                LoadResources();
 
-            canvas = new("BenchwarpGUI");
+                menuCanvasParent = new("BenchwarpGUI");
+                BuildBenchMenu();
+                BuildDoorMenu();
+                BuildSceneNameCanvas();
+                menuCanvasParent.AddComponent<HotkeyListener>();
+
+                DontDestroyOnLoad(menuCanvasParent);
+                DontDestroyOnLoad(sceneNameCanvas);
+            }
+            catch (Exception e)
+            {
+                LogError($"Error building menus:\n{e}");
+            }
+        }
+
+        private void ResetBuildParameters()
+        {
+            btnWidth = 125; //Controls Button Size Universally
+            btnHeight = 45; //Controls Button Size Universally
+            btnOffsetX = 10; //Initial X Offset
+            baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
+            btnOffsetY = 10; //Y Offset for Dropdowns
+            baseDropdownYOffset = btnOffsetY; //Y Offset for Bench Buttons
+        }
+
+        private GameObject BuildCanvas(string name)
+        {
+            GameObject canvas = new(name);
+
+            canvas.transform.SetParent(menuCanvasParent.transform);
+
             Canvas canvas_component = canvas.AddComponent<Canvas>();
             canvas_component.renderMode = RenderMode.ScreenSpaceOverlay;
             canvas_component.pixelPerfect = true;
@@ -218,27 +238,26 @@ namespace Benchwarp.Components
             scaler.referenceResolution = new Vector2(1920f, 1080f);
             canvas.AddComponent<GraphicRaycaster>();
 
-            canvas.AddComponent<HotkeyListener>();
+            return canvas;
+        }
 
-            warpButton = BuildButton(canvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("LB")); //Warp Button
+        private void BuildBenchMenu()
+        {
+            benchMenuCanvas = BuildCanvas("Bench Menu Canvas");
+
+            ResetBuildParameters();
+
+            warpButton = BuildButton(benchMenuCanvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("LB")); //Warp Button
             warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
-            setStartButton = BuildButton(canvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("SB")); //Set Start
+            setStartButton = BuildButton(benchMenuCanvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("SB")); //Set Start
             setStartButton.GetComponent<Button>().onClick.AddListener(Events.BenchListModifiers.SetToStart);
             setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
 
             btnOffsetX += btnWidth + 20;
 
-            /*
-            toggleAllBtn = BuildButton(canvas, "Toggle All", -10, -10, new Vector2(1,1));
-            toggleAllBtn.GetComponent<Button>().onClick.AddListener(ToggleDropdowns);
-            */
 
-            cfgmgrBtn = BuildButton(canvas, "Config", -10, -10, new Vector2(1, 1));
-
-            nextPageBtn = BuildButton(canvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.GS.GetHotkey("NP"));
-            nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
-
+            cfgmgrBtn = BuildButton(benchMenuCanvas, "Config", -10, -10, new Vector2(1, 1));
             try
             {
                 var cfgmgr = FindAnyObjectByType<ConfigurationManager.ConfigurationManager>();
@@ -248,7 +267,11 @@ namespace Benchwarp.Components
             {
                 LogError(e);
             }
-            
+
+
+            nextPageBtn = BuildButton(benchMenuCanvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.GS.GetHotkey("NP"));
+            nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
+
 
             int pageToSet = 0;
 
@@ -262,8 +285,8 @@ namespace Benchwarp.Components
                     pageToSet++;
                 }
 
-                GameObject dropdownObj = BuildButton(canvas, menuArea, btnOffsetX, -btnOffsetY, TopLeftCorner, hotkey: ((char)('A' + i - 1)).ToString());
-                Dropdown dropdown = dropdownObj.AddComponent<Dropdown>();
+                GameObject dropdownObj = BuildButton(benchMenuCanvas, menuArea, btnOffsetX, -btnOffsetY, TopLeftCorner, hotkey: ((char)('A' + i - 1)).ToString());
+                BenchDropdown dropdown = dropdownObj.AddComponent<BenchDropdown>();
                 dropdown.page = pageToSet;
                 dropdown.Init(dropdownObj, menuArea, benches);
                 btnOffsetX += btnWidth + 10;
@@ -271,12 +294,64 @@ namespace Benchwarp.Components
 
                 dropdowns.Add(dropdownObj);
             }
+        }
+
+        private void BuildDoorMenu()
+        {
+            doorMenuCanvas = BuildCanvas("Door Menu Canvas");
+            DoorSelectorComponent doorSelector = doorMenuCanvas.AddComponent<DoorSelectorComponent>();
+
+            ResetBuildParameters();
+
+            doorWarpButton = BuildButton(doorMenuCanvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true); // Warp Button
+            doorWarpButton.GetComponent<Button>().onClick.AddListener(doorSelector.Warp);
+
+            doorFlipButton = BuildButton(doorMenuCanvas, "Flip", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true); // Flip Button
+            doorFlipButton.GetComponent<Button>().onClick.AddListener(doorSelector.Flip);
+
+            doorSelectPrevButton = BuildButton(doorMenuCanvas, "Last Entered", btnOffsetX, -btnOffsetY * 3 - btnHeight * 2, TopLeftCorner, true); // Prev Door Button
+            doorSelectPrevButton.GetComponent<Button>().onClick.AddListener(doorSelector.LastEntered);
+
+            cfgmgrBtn = BuildButton(doorMenuCanvas, "Config", -10, -10, new Vector2(1, 1));
+            try
+            {
+                var cfgmgr = FindAnyObjectByType<ConfigurationManager.ConfigurationManager>();
+                cfgmgrBtn.GetComponent<Button>().onClick.AddListener(() => cfgmgr.DisplayingWindow ^= true);
+            }
+            catch (Exception e)
+            {
+                LogError(e);
+            }
+
+            GameObject areaDropdown = BuildButton(doorMenuCanvas, "Areas", 11 * (btnOffsetX + btnWidth), -btnOffsetY, TopLeftCorner);
+            DropdownRadioSwitch areaSwitch = areaDropdown.AddComponent<DropdownRadioSwitch>();
+            areaSwitch.Init(areaDropdown, "Areas", 6, 9);
+            areaSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
+            areaSwitch.Populate(DoorList.RoomGroups.Select(g => g.MenuArea), false);
+
+            GameObject roomDropdown = BuildButton(doorMenuCanvas, "Rooms", 5 * (btnOffsetX + btnWidth), -btnOffsetY, TopLeftCorner);
+            DropdownRadioSwitch roomSwitch = roomDropdown.AddComponent<DropdownRadioSwitch>();
+            roomSwitch.Init(roomDropdown, "Rooms", 6, 19);
+            roomSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
+            
+            GameObject doorDropdown = BuildButton(doorMenuCanvas, "Doors", 3 * btnWidth / 2, -btnOffsetY, TopLeftCorner);
+            DropdownRadioSwitch doorSwitch = doorDropdown.AddComponent<DropdownRadioSwitch>();
+            doorSwitch.Init(doorDropdown, "Doors", 2, 10);
+            roomSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
+
+            doorSelector.Setup(areaSwitch, roomSwitch, doorSwitch, DoorList.RoomGroups);
+        }
+
+        private void BuildSceneNameCanvas()
+        {
+            sceneNameCanvas = BuildCanvas("Scene Name Canvas");
+            sceneNameCanvas.transform.SetParent(null); // always display
 
             sceneNamePanel = new("Benchwarp Debug", [typeof(RectTransform), typeof(Text)]);
             RectTransform rt = sceneNamePanel.GetComponent<RectTransform>();
             Text text = sceneNamePanel.GetComponent<Text>();
 
-            text.font = Fallback;
+            FontManager.SetTrajanFont(text);
             text.color = Color.white;
             text.fontSize = 20;
 
@@ -285,10 +360,7 @@ namespace Benchwarp.Components
             rt.anchorMax = new Vector2(0, 0);
             rt.pivot = new Vector2(0, 0);
             rt.anchoredPosition = new Vector2(10, 10);
-
-            sceneNamePanel.transform.SetParent(canvas.transform, false);
-
-            DontDestroyOnLoad(canvas);
+            sceneNamePanel.transform.SetParent(sceneNameCanvas.transform, false);
         }
 
         public static GameObject BuildButton(GameObject canvas, string name, int x, int y, Vector2 corner, bool bg = true, string hotkey = "")
@@ -306,7 +378,7 @@ namespace Benchwarp.Components
 
             if (bg)
             {
-                Texture2D tex = images["ButtonRect"];
+                Texture2D tex = buttonRectImage;
                 Image image = button.AddComponent<Image>();
                 image.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
             }
@@ -319,7 +391,7 @@ namespace Benchwarp.Components
 
             Text benchHotkeyText = buttonHotkeyLabel.AddComponent<Text>();
             benchHotkeyText.text = hotkey;
-            benchHotkeyText.font = Fallback;
+            FontManager.SetMonoFont(benchHotkeyText);
             benchHotkeyText.alignment = TextAnchor.UpperLeft;
             benchHotkeyText.color = Color.white.AlphaMultiplied(0.5f);
 
@@ -331,7 +403,7 @@ namespace Benchwarp.Components
 
             Text benchNameText = buttonTxt.AddComponent<Text>();
             benchNameText.text = name;
-            benchNameText.font = Fallback;
+            FontManager.SetTrajanFont(benchNameText);
             benchNameText.alignment = TextAnchor.MiddleCenter;
             benchNameText.color = Color.white;
 
@@ -348,7 +420,7 @@ namespace Benchwarp.Components
         {
             foreach (GameObject dropdownObj in dropdowns)
             {
-                Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                BenchDropdown dropdown = dropdownObj.GetComponent<BenchDropdown>();
                 dropdown.ToggleDropdown(expanded);
             }
         }
@@ -358,7 +430,7 @@ namespace Benchwarp.Components
             bool TempToggleDir = toggleAllDir;
             foreach(GameObject dropdownObj in dropdowns)
             {
-                Dropdown dropdown = dropdownObj.GetComponent<Dropdown>();
+                BenchDropdown dropdown = dropdownObj.GetComponent<BenchDropdown>();
                 dropdown.open = TempToggleDir;
                 dropdown.DropdownInteract(TempToggleDir);
             }

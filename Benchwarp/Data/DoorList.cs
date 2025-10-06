@@ -1,7 +1,5 @@
-﻿using Benchwarp.Util;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Reflection;
-using UnityEngine.Assertions.Must;
 
 namespace Benchwarp.Data;
 
@@ -23,7 +21,11 @@ public static class DoorList
     static DoorList()
     {
         RoomGroups = new([.. typeof(RawData.BaseRoomList).GetProperties(BindingFlags.Public | BindingFlags.Static).Where(p => p.PropertyType == typeof(Room))
-            .Select(p => (Room)p.GetValue(null)).GroupBy(r => r.TitledArea).Select(g => new AreaRoomGroup { MenuArea = g.Key, Rooms = new([.. g]) })]);
+            .Select(p => (Room)p.GetValue(null)).GroupBy(r => r.TitledArea).Select(g => new AreaRoomGroup { MenuArea = g.Key, Rooms = new([.. g]) }).OrderBy(g => g.MenuArea)]);
+        Log("Groups: " +  RoomGroups.Count);
+        Log("Max rooms: " + RoomGroups.Max(g => g.Rooms.Count));
+        Log("Max doors: " + RoomGroups.Max(g => g.Rooms.Max(r => r.Gates.Count)));
+
         /*
         SourceLookup = new(JsonUtil.Deserialize<Dictionary<string, string>>("Benchwarp.Resources.Doors.source_lookup.json")
             .ToDictionary(kvp => TransitionKey.FromName(kvp.Key), kvp => TransitionKey.FromName(kvp.Value)));

@@ -3,6 +3,7 @@ using HarmonyLib;
 
 namespace Benchwarp.Patches
 {
+    /*
     [HarmonyPatch(typeof(GameManager), nameof(GameManager.PauseGameToggle))]
     internal class ToggleWarpMenu
     {
@@ -20,4 +21,5 @@ namespace Benchwarp.Patches
             }
         }
     }
+    */
 }

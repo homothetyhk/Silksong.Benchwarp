@@ -37,6 +37,7 @@
     <EmbeddedResource Include="Resources\**\*.png"></EmbeddedResource>
     <EmbeddedResource Include="Resources\**\*.json"></EmbeddedResource>
     <EmbeddedResource Include="Resources\**\*.txt"></EmbeddedResource>
+    <None Include="\**\*.md"></None>
   </ItemGroup>
   
   <ItemGroup>

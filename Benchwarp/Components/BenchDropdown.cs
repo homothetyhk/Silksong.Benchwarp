@@ -4,11 +4,10 @@ using UnityEngine.UI;
 
 namespace Benchwarp.Components
 {
-    public class Dropdown : MonoBehaviour
+    public class BenchDropdown : MonoBehaviour
     {
         public string dropdownName = "";
-        public List<BenchComponent> benches = new([]);
-        public List<GameObject> buttons = new([]);
+        public List<GameObject> buttons = [];
         public bool open = false;
         public int page = 1;
 
