@@ -3,10 +3,11 @@ using System.Runtime.CompilerServices;
 
 namespace Benchwarp.Settings
 {
-    public class GlobalSettings(GlobalSettingsData data)
+    public class ConfigSettings(ConfigSettingsData data)
     {
-        private readonly GlobalSettingsData data = data;
+        private readonly ConfigSettingsData data = data;
 
+        /*
         public bool ShowMenu
         {
             get => data.ShowMenu;
@@ -17,6 +18,7 @@ namespace Benchwarp.Settings
             }
         }
         internal static event Action? OnShowMenuChanged;
+        */
 
         public MenuMode MenuMode
         {
@@ -73,8 +75,7 @@ namespace Benchwarp.Settings
         }
         internal static event Action? OnOverrideLocalizationChanged;
 
-        public ReadOnlyDictionary<string, string> HotkeyOverrides { get; } = new(data.HotkeyOverrides);
-        internal string GetHotkey(string code) => HotkeyOverrides.TryGetValue(code, out string? altcode) ? altcode : code;
+        
 
 
         internal static void Invoke(Action? a, [CallerMemberName] string? caller = "")

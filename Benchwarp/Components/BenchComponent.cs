@@ -18,17 +18,19 @@ namespace Benchwarp.Components
         private void Start()
         {
             Events.WorldEvents.OnRespawnChanged += OnRespawnChanged;
-            Settings.LocalSettings.OnSetVisitedLocal.Add(data, OnSetVisited);
-            Settings.LocalSettings.OnSetLockedLocal.Add(data, OnSetLocked);
-            Settings.GlobalSettings.OnMenuModeChanged += QueueRecolor;
+            Settings.SaveSettings.OnSetVisitedLocal.Add(data, OnSetVisited);
+            Settings.SaveSettings.OnSetLockedLocal.Add(data, OnSetLocked);
+            Settings.SaveSettings.OnNewSettingsLoaded += OnNewSettingsLoaded;
+            Settings.ConfigSettings.OnMenuModeChanged += QueueRecolor;
         }
 
         private void OnDestroy()
         {
             Events.WorldEvents.OnRespawnChanged -= OnRespawnChanged;
-            Settings.LocalSettings.OnSetVisitedLocal.Remove(data, OnSetVisited);
-            Settings.LocalSettings.OnSetLockedLocal.Remove(data, OnSetLocked);
-            Settings.GlobalSettings.OnMenuModeChanged -= QueueRecolor;
+            Settings.SaveSettings.OnSetVisitedLocal.Remove(data, OnSetVisited);
+            Settings.SaveSettings.OnSetLockedLocal.Remove(data, OnSetLocked);
+            Settings.SaveSettings.OnNewSettingsLoaded -= OnNewSettingsLoaded;
+            Settings.ConfigSettings.OnMenuModeChanged -= QueueRecolor;
         }
 
         private void Update()
@@ -48,8 +50,8 @@ namespace Benchwarp.Components
 
         private void RefetchData()
         {
-            Locked = BenchwarpPlugin.LS.IsLocked(data);
-            Visited = BenchwarpPlugin.LS.IsVisited(data);
+            Locked = BenchwarpPlugin.SaveSettings.IsLocked(data);
+            Visited = BenchwarpPlugin.SaveSettings.IsVisited(data);
             IsCurrentBench = data.RespawnInfo.IsCurrentRespawn();
         }
 
@@ -58,7 +60,7 @@ namespace Benchwarp.Components
 
         private void UpdateTextColor()
         {
-            if (BenchwarpPlugin.GS.MenuMode != Settings.MenuMode.UnlockAll)
+            if (BenchwarpPlugin.ConfigSettings.MenuMode != Settings.MenuMode.UnlockAll)
             {
                 if (Locked)
                 {
@@ -106,6 +108,11 @@ namespace Benchwarp.Components
         {
             Locked = value;
             queueRecolor = true;
+        }
+
+        private void OnNewSettingsLoaded()
+        {
+            QueueRefetchData();
         }
 
         public static Color LockedBenchColor { get; } = Color.Lerp(Color.magenta, Color.black, 0.5f);

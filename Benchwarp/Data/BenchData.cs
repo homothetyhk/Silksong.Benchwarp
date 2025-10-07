@@ -20,7 +20,7 @@
         /// </summary>
         public bool MenuSetBench()
         {
-            switch (BenchwarpPlugin.GS.MenuMode)
+            switch (BenchwarpPlugin.ConfigSettings.MenuMode)
             {
                 case Settings.MenuMode.UnlockAll:
                 case Settings.MenuMode.DoorWarp:
@@ -28,7 +28,7 @@
                 case Settings.MenuMode.WarpOnly:
                     return false;
                 default:
-                    if (BenchwarpPlugin.LS.IsLocked(Key) || !BenchwarpPlugin.LS.IsVisited(Key)) return false;
+                    if (BenchwarpPlugin.SaveSettings.IsLocked(Key) || !BenchwarpPlugin.SaveSettings.IsVisited(Key)) return false;
                     else break;
             }
             RespawnInfo.SetRespawn();

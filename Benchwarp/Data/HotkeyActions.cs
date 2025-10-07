@@ -5,6 +5,12 @@ namespace Benchwarp.Data
 {
     public static class HotkeyActions
     {
+        public const string LastBench = "LB";
+        public const string StartBench = "SB";
+        public const string DoorWarp = "DW";
+        public const string NextPage = "NP";
+
+
         /// <summary>
         /// The current list of letter hotkey codes, accounting for hotkey overrides.
         /// </summary>
@@ -13,17 +19,17 @@ namespace Benchwarp.Data
 
         public static ReadOnlyDictionary<string, Action> BaseHotkeys { get; } = new(new Dictionary<string, Action>
         {
-            ["LB"] = ChangeScene.WarpToRespawn,
-            ["SB"] = (Action)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn,
+            [LastBench] = ChangeScene.WarpToRespawn,
+            [StartBench] = (Action)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn,
             //["WD"], // warp deploy
             //["TM"], // toggle menu
-            ["DW"] = () =>
+            [DoorWarp] = () =>
             {
-                if (BenchwarpPlugin.GS.MenuMode != Settings.MenuMode.DoorWarp) BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.DoorWarp;
-                else BenchwarpPlugin.GS.MenuMode = Settings.MenuMode.StandardBenchwarp;
+                if (BenchwarpPlugin.ConfigSettings.MenuMode != Settings.MenuMode.DoorWarp) BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.DoorWarp;
+                else BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.StandardBenchwarp;
             },
             //["DB"], // deploy bench
-            ["NP"] = () => GUIController.Instance.NextPage(),
+            [NextPage] = () => GUIController.Instance.NextPage(),
         });
 
         static HotkeyActions()
@@ -45,7 +51,7 @@ namespace Benchwarp.Data
 
         internal static void AddHotkey(Dictionary<string, Action> dict, string code, Action a)
         {
-            code = BenchwarpPlugin.GS.GetHotkey(code);
+            code = BenchwarpPlugin.SharedSettings.GetHotkey(code);
             if (code.Length != 2 || !char.IsLetter(code[0]) || !char.IsLetter(code[1]))
             {
                 LogError($"Invalid hotkey {code}: hotkeys must consist of exactly two letters.");
@@ -58,7 +64,7 @@ namespace Benchwarp.Data
         {
             if (BenchList.BenchGroups.Count > groupIndex && BenchList.BenchGroups[groupIndex].Benches.Count > benchIndex)
             {
-                BenchList.BenchGroups[groupIndex].Benches[benchIndex].RespawnInfo.SetRespawn();
+                BenchList.BenchGroups[groupIndex].Benches[benchIndex].MenuSetBench();
                 ChangeScene.WarpToRespawn();
                 return true;
             }

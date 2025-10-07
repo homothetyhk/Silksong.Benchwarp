@@ -16,7 +16,7 @@ namespace Benchwarp.Components
 
         private void DetectHotkeys()
         {
-            if (!(GUIController.Instance.IsDisplaying && BenchwarpPlugin.GS.EnableHotkeys))
+            if (!(GUIController.Instance.IsDisplaying && BenchwarpPlugin.ConfigSettings.EnableHotkeys))
             {
                 return;
             }

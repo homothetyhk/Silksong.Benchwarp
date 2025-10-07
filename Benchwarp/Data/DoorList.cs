@@ -17,14 +17,21 @@ public static class DoorList
     */
     
     public static ReadOnlyCollection<AreaRoomGroup> RoomGroups { get; }
+    public static int RoomCount { get; }
+    public static int DoorCount { get; }
+    public static int MaxRoomsPerArea { get; }
+    public static int MaxDoorsPerRoom { get; }
 
     static DoorList()
     {
         RoomGroups = new([.. typeof(RawData.BaseRoomList).GetProperties(BindingFlags.Public | BindingFlags.Static).Where(p => p.PropertyType == typeof(Room))
             .Select(p => (Room)p.GetValue(null)).GroupBy(r => r.TitledArea).Select(g => new AreaRoomGroup { MenuArea = g.Key, Rooms = new([.. g]) }).OrderBy(g => g.MenuArea)]);
-        Log("Groups: " +  RoomGroups.Count);
-        Log("Max rooms: " + RoomGroups.Max(g => g.Rooms.Count));
-        Log("Max doors: " + RoomGroups.Max(g => g.Rooms.Max(r => r.Gates.Count)));
+        static int CountRooms(AreaRoomGroup g) => g.Rooms.Count;
+        static int CountGates(Room r) => r.Gates.Count;
+        RoomCount = RoomGroups.Sum(CountRooms);
+        DoorCount = RoomGroups.Sum(g => g.Rooms.Sum(CountGates));
+        MaxRoomsPerArea = RoomGroups.Max(CountRooms);
+        MaxDoorsPerRoom = RoomGroups.Max(g => g.Rooms.Max(CountGates));
 
         /*
         SourceLookup = new(JsonUtil.Deserialize<Dictionary<string, string>>("Benchwarp.Resources.Doors.source_lookup.json")

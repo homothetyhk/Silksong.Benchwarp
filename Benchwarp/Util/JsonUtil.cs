@@ -22,7 +22,21 @@ namespace Benchwarp.Util
             return _js.Deserialize<T>(jtr)!;
         }
 
-        public static void Serialize(object o, string fileName)
+        public static T DeserializeFile<T>(string filepath)
+        {
+            using StreamReader sr = new(File.OpenRead(filepath));
+            using JsonTextReader jtr = new(sr);
+            return _js.Deserialize<T>(jtr)!;
+        }
+
+        public static void SerializeFile(object o, string filePath)
+        {
+            using StreamWriter sw = File.CreateText(filePath);
+            using JsonTextWriter jtw = new(sw);
+            _js.Serialize(jtw, o);
+        }
+
+        public static void SerializeFileNearDLL(object o, string fileName)
         {
             File.WriteAllText(Path.Combine(Path.GetDirectoryName(typeof(JsonUtil).Assembly.Location), fileName), Serialize(o));
         }

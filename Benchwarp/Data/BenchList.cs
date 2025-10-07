@@ -37,7 +37,7 @@ namespace Benchwarp.Data
                 if (RespawnInfo.ReferToSameMarker(b.RespawnInfo.GetRespawnInfo(), info))
                 {
                     CurrentBenchRespawn = b;
-                    BenchwarpPlugin.LS.SetVisited(b, true);
+                    BenchwarpPlugin.SaveSettings.SetVisited(b, true);
                     break;
                 }
             }

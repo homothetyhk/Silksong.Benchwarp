@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 
 namespace Benchwarp.Settings
 {
-    public class LocalSettings(LocalSettingsData data)
+    public class SaveSettings(SaveSettingsData data)
     {
-        private readonly LocalSettingsData data = data;
+        private SaveSettingsData data = data;
 
         public bool IsVisited(BenchKey key) => data.visitedBenches.Contains(key);
         public bool IsLocked(BenchKey key) => data.lockedBenches.Contains(key);
@@ -59,6 +59,8 @@ namespace Benchwarp.Settings
         internal static KeyedEvent<BenchKey, Action<bool>> OnSetLockedLocal { get; } = new(out onSetLockedLocalOwner);
         private static readonly KeyedEvent<BenchKey, Action<bool>>.IKeyedEventOwner onSetLockedLocalOwner;
 
+        internal static event Action? OnNewSettingsLoaded;
+
         private static void Invoke<T1, T2>(Action<T1,T2>? a, T1 arg1, T2 arg2, [CallerMemberName] string? caller = "")
         {
             try
@@ -68,6 +70,20 @@ namespace Benchwarp.Settings
             catch (Exception e)
             {
                 LogError($"Error invoking global update event for {caller}:\n{e}");
+            }
+        }
+
+        internal void Save(int profileID) => IO.SaveSaveSettingsData(data, profileID);
+        internal void Load(SaveSettingsData data)
+        {
+            this.data = data;
+            try
+            {
+                OnNewSettingsLoaded?.Invoke();
+            }
+            catch (Exception e)
+            {
+                LogError($"Error invoking OnNewSettingsLoaded:\n{e}");
             }
         }
     }

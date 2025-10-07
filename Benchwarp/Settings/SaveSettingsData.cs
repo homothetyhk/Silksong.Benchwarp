@@ -2,7 +2,7 @@
 
 namespace Benchwarp.Settings
 {
-    public class LocalSettingsData
+    public class SaveSettingsData
     {
         //public bool benchDeployed;
         //public bool atDeployedBench;

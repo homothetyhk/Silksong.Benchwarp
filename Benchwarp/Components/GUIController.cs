@@ -93,12 +93,12 @@ namespace Benchwarp.Components
 
         public static void LateSetup()
         {
-            if (BenchwarpPlugin.GS.AlwaysToggleAll) Instance.ToggleDropdowns(true);
-            Instance.ToggleScenePanel(BenchwarpPlugin.GS.ShowScene);
-            Instance.SelectMenu(BenchwarpPlugin.GS.MenuMode);
-            Settings.GlobalSettings.OnShowSceneChanged += () => Instance.ToggleScenePanel(BenchwarpPlugin.GS.ShowScene);
-            Settings.GlobalSettings.OnAlwaysToggleAllChanged += () => Instance.ToggleDropdowns(BenchwarpPlugin.GS.AlwaysToggleAll);
-            Settings.GlobalSettings.OnMenuModeChanged += () => Instance.SelectMenu(BenchwarpPlugin.GS.MenuMode);
+            if (BenchwarpPlugin.ConfigSettings.AlwaysToggleAll) Instance.ToggleDropdowns(true);
+            Instance.ToggleScenePanel(BenchwarpPlugin.ConfigSettings.ShowScene);
+            Instance.SelectMenu(BenchwarpPlugin.ConfigSettings.MenuMode);
+            Settings.ConfigSettings.OnShowSceneChanged += () => Instance.ToggleScenePanel(BenchwarpPlugin.ConfigSettings.ShowScene);
+            Settings.ConfigSettings.OnAlwaysToggleAllChanged += () => Instance.ToggleDropdowns(BenchwarpPlugin.ConfigSettings.AlwaysToggleAll);
+            Settings.ConfigSettings.OnMenuModeChanged += () => Instance.SelectMenu(BenchwarpPlugin.ConfigSettings.MenuMode);
         }
 
         public static void Unload()
@@ -247,10 +247,10 @@ namespace Benchwarp.Components
 
             ResetBuildParameters();
 
-            warpButton = BuildButton(benchMenuCanvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("LB")); //Warp Button
+            warpButton = BuildButton(benchMenuCanvas, "Warp", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("LB")); //Warp Button
             warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
-            setStartButton = BuildButton(benchMenuCanvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.GS.GetHotkey("SB")); //Set Start
+            setStartButton = BuildButton(benchMenuCanvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("SB")); //Set Start
             setStartButton.GetComponent<Button>().onClick.AddListener(Events.BenchListModifiers.SetToStart);
             setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
 
@@ -269,7 +269,7 @@ namespace Benchwarp.Components
             }
 
 
-            nextPageBtn = BuildButton(benchMenuCanvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.GS.GetHotkey("NP"));
+            nextPageBtn = BuildButton(benchMenuCanvas, "Page ", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.SharedSettings.GetHotkey("NP"));
             nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
 
 

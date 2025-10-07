@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Benchwarp
 {
+    [BepInDependency("com.bepis.bepinex.configurationmanager")]
     [BepInAutoPlugin(id: "io.github.benchwarp")]
     public partial class BenchwarpPlugin : BaseUnityPlugin
     {
@@ -13,19 +14,22 @@ namespace Benchwarp
         public static BenchwarpPlugin Instance => _instance ?? throw new NullReferenceException("Benchwarp has not loaded yet!");
         private static BenchwarpPlugin? _instance;
         
-        public static Settings.GlobalSettings GS = new(new());
-        public static Settings.LocalSettings LS = new(new());
+        public static Settings.ConfigSettings ConfigSettings { get; } = new(new());
+        public static Settings.SaveSettings SaveSettings { get; } = new(new());
+        public static Settings.SharedSettings SharedSettings { get; } = new(new());
 
         private void Awake()
         {
             try
             {
                 _instance = this;
+                SharedSettings.Load(Settings.IO.LoadSharedSettingsData());
                 Log($"Plugin {Name} ({Id}) has loaded!");
                 Log($"BenchList has loaded with {Data.BenchList.Benches.Count} benches in {Data.BenchList.BenchGroups.Count} groups.");
-                Log($"DoorList has loaded with {Data.DoorList.RoomGroups.Count} groups.");
+                Log($"DoorList has loaded with {Data.DoorList.RoomGroups.Count} groups, " +
+                    $"{Data.DoorList.RoomCount} rooms, " +
+                    $"and {Data.DoorList.DoorCount} doors. The largest area has {Data.DoorList.MaxRoomsPerArea} rooms, and the largest room has {Data.DoorList.MaxDoorsPerRoom} doors.");
                 gameObject.AddComponent<RespawnChangeListener>();
-
             }
             catch (Exception e)
             {
@@ -41,6 +45,7 @@ namespace Benchwarp
                 HarmonyLib.Harmony harmony = new(HarmonyID);
                 harmony.PatchAll(GetType().Assembly);
                 Patches.LanguageChangeHook.Hook();
+                Patches.SaveGameHooks.Hook();
 
                 GUIController.Setup();
             }
@@ -71,6 +76,7 @@ namespace Benchwarp
             {
                 HarmonyLib.Harmony.UnpatchID(HarmonyID);
                 Patches.LanguageChangeHook.Unhook();
+                Patches.SaveGameHooks.Unhook();
 
                 GUIController.Unload();
             }
@@ -93,9 +99,9 @@ namespace Benchwarp
             cfgMenuMode.SettingChanged += (o, e) =>
                 {
                     SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                    GS.MenuMode = (Settings.MenuMode)args.ChangedSetting.BoxedValue;
+                    ConfigSettings.MenuMode = (Settings.MenuMode)args.ChangedSetting.BoxedValue;
                 };
-            GS.MenuMode = cfgMenuMode.Value;
+            ConfigSettings.MenuMode = cfgMenuMode.Value;
 
             ConfigEntry<bool> cfgAlwaysToggleAll = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "AlwaysToggleAll"),
@@ -104,9 +110,9 @@ namespace Benchwarp
             cfgAlwaysToggleAll.SettingChanged += (o, e) =>
             {
                 SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                GS.AlwaysToggleAll = (bool)args.ChangedSetting.BoxedValue;
+                ConfigSettings.AlwaysToggleAll = (bool)args.ChangedSetting.BoxedValue;
             };
-            GS.AlwaysToggleAll = cfgAlwaysToggleAll.Value;
+            ConfigSettings.AlwaysToggleAll = cfgAlwaysToggleAll.Value;
 
             ConfigEntry<bool> cfgShowScene = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "ShowScene"),
@@ -115,9 +121,9 @@ namespace Benchwarp
             cfgShowScene.SettingChanged += (o, e) =>
             {
                 SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                GS.ShowScene = (bool)args.ChangedSetting.BoxedValue;
+                ConfigSettings.ShowScene = (bool)args.ChangedSetting.BoxedValue;
             };
-            GS.ShowScene = cfgShowScene.Value;
+            ConfigSettings.ShowScene = cfgShowScene.Value;
 
             ConfigEntry<bool> cfgEnableHotkeys = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "EnableHotkeys"),
@@ -126,9 +132,9 @@ namespace Benchwarp
             cfgEnableHotkeys.SettingChanged += (o, e) =>
             {
                 SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                GS.EnableHotkeys = (bool)args.ChangedSetting.BoxedValue;
+                ConfigSettings.EnableHotkeys = (bool)args.ChangedSetting.BoxedValue;
             };
-            GS.EnableHotkeys = cfgEnableHotkeys.Value;
+            ConfigSettings.EnableHotkeys = cfgEnableHotkeys.Value;
 
             ConfigEntry<bool> cfgOverrideLocalization = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "OverrideLocalization"),
@@ -137,9 +143,9 @@ namespace Benchwarp
             cfgOverrideLocalization.SettingChanged += (o, e) =>
             {
                 SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                GS.OverrideLocalization = (bool)args.ChangedSetting.BoxedValue;
+                ConfigSettings.OverrideLocalization = (bool)args.ChangedSetting.BoxedValue;
             };
-            GS.OverrideLocalization = cfgOverrideLocalization.Value;
+            ConfigSettings.OverrideLocalization = cfgOverrideLocalization.Value;
         }
 
         private bool StartCalled { get; set; } = false;

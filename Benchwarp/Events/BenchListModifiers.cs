@@ -20,7 +20,7 @@ namespace Benchwarp.Events
         /// </summary>
         public static void SetToStart()
         {
-            if (BenchwarpPlugin.GS.MenuMode == Settings.MenuMode.WarpOnly) return;
+            if (BenchwarpPlugin.ConfigSettings.MenuMode == Settings.MenuMode.WarpOnly) return;
             GetStartDef().SetRespawn();
         }
 

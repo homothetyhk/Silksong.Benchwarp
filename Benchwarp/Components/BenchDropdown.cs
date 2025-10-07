@@ -34,7 +34,7 @@ namespace Benchwarp.Components
 
         public void ToggleDropdown()
         {
-            if (BenchwarpPlugin.GS.AlwaysToggleAll) return;
+            if (BenchwarpPlugin.ConfigSettings.AlwaysToggleAll) return;
 
             if (open)
             {

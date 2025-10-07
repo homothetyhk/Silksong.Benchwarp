@@ -26,7 +26,7 @@ public static class Localization
 
     public static string Localize(this string text)
     {
-        if (BenchwarpPlugin.GS.OverrideLocalization) return text;
+        if (BenchwarpPlugin.ConfigSettings.OverrideLocalization) return text;
 
         return _map is not null && _map.TryGetValue(text, out string newText) ? newText : text;
     }

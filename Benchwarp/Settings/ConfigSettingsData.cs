@@ -1,9 +1,9 @@
 ﻿namespace Benchwarp.Settings
 {
-    public class GlobalSettingsData
+    public class ConfigSettingsData
     {
-        public bool ShowMenu = true;
-        public MenuMode MenuMode = MenuMode.StandardBenchwarp;
+        //public bool ShowMenu = true;
+        public MenuMode MenuMode = MenuMode.DoorWarp;
         public bool ShowScene = false;
         //public int MaxSceneNames = 1;
         //public bool SwapNames = false;
