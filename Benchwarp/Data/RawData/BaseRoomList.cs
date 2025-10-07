@@ -176,7 +176,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_02,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_02__left1,
             Ant_02__right1,
@@ -187,7 +187,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_03,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_03__left2,
             Ant_03__right3,
@@ -198,7 +198,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_04,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_04__left1,
             Ant_04__right1,
@@ -209,7 +209,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_04_left,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_04_left__left1,
             Ant_04_left__right1,
@@ -220,7 +220,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_04_mid,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_04_mid__left1,
             Ant_04_mid__right1,
@@ -231,7 +231,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_05b,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_05b__bot1,
             Ant_05b__bot2,
@@ -243,7 +243,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_05c,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_05c__left1,
             Ant_05c__right1,
@@ -254,7 +254,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_08,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_08__top1,
         ]),
@@ -264,7 +264,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_09,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_09__left1,
             Ant_09__right1,
@@ -275,7 +275,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_14,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_14__left1,
             Ant_14__left2,
@@ -291,7 +291,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_17,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_17__right1,
         ]),
@@ -301,7 +301,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_19,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_19__left1,
         ]),
@@ -311,7 +311,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_20,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_20__door1,
             Ant_20__left1,
@@ -322,7 +322,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_21,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_21__right1,
         ]),
@@ -332,7 +332,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_Merchant,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_Merchant__right1,
         ]),
@@ -342,7 +342,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Ant_Queen,
         MapArea = MapAreaNames.Hunter_s_March,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
             Ant_Queen__left1,
         ]),
@@ -616,8 +616,8 @@ public static class BaseRoomList
     public static Room Bellshrine { get; } = new Room
     {
         Name = SceneNames.Bellshrine,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.The_Marrow,
+        TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
             Bellshrine__left1,
             Bellshrine__right1,
@@ -627,8 +627,8 @@ public static class BaseRoomList
     public static Room Bellshrine_02 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_02,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Greymoor,
+        TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
             Bellshrine_02__left1,
             Bellshrine_02__right1,
@@ -638,8 +638,8 @@ public static class BaseRoomList
     public static Room Bellshrine_03 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_03,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Shellwood,
+        TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
             Bellshrine_03__left1,
             Bellshrine_03__right1,
@@ -649,8 +649,8 @@ public static class BaseRoomList
     public static Room Bellshrine_05 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_05,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Far_Fields,
+        TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
             Bellshrine_05__left1,
             Bellshrine_05__right1,
@@ -660,8 +660,8 @@ public static class BaseRoomList
     public static Room Bellshrine_Coral { get; } = new Room
     {
         Name = SceneNames.Bellshrine_Coral,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Bellshrine_Coral__left1,
         ]),
@@ -670,8 +670,8 @@ public static class BaseRoomList
     public static Room Bellshrine_Enclave { get; } = new Room
     {
         Name = SceneNames.Bellshrine_Enclave,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Choral_Chambers,
+        TitledArea = TitledAreaNames.First_Shrine,
         Gates = new([
             Bellshrine_Enclave__left1,
         ]),
@@ -834,8 +834,8 @@ public static class BaseRoomList
     public static Room Bellway_01 { get; } = new Room
     {
         Name = SceneNames.Bellway_01,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Mosslands,
+        TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
             Bellway_01__left1,
         ]),
@@ -844,8 +844,8 @@ public static class BaseRoomList
     public static Room Bellway_02 { get; } = new Room
     {
         Name = SceneNames.Bellway_02,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Deep_Docks,
+        TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
             Bellway_02__left1,
             Bellway_02__right1,
@@ -855,8 +855,8 @@ public static class BaseRoomList
     public static Room Bellway_03 { get; } = new Room
     {
         Name = SceneNames.Bellway_03,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Far_Fields,
+        TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
             Bellway_03__left1,
             Bellway_03__right1,
@@ -866,8 +866,8 @@ public static class BaseRoomList
     public static Room Bellway_04 { get; } = new Room
     {
         Name = SceneNames.Bellway_04,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Greymoor,
+        TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
             Bellway_04__bot1,
             Bellway_04__left1,
@@ -877,8 +877,8 @@ public static class BaseRoomList
     public static Room Bellway_08 { get; } = new Room
     {
         Name = SceneNames.Bellway_08,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Bellway_08__left1,
             Bellway_08__right1,
@@ -888,8 +888,8 @@ public static class BaseRoomList
     public static Room Bellway_Aqueduct { get; } = new Room
     {
         Name = SceneNames.Bellway_Aqueduct,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Putrified_Ducts,
+        TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
             Bellway_Aqueduct__left1,
             Bellway_Aqueduct__right1,
@@ -899,8 +899,8 @@ public static class BaseRoomList
     public static Room Bellway_City { get; } = new Room
     {
         Name = SceneNames.Bellway_City,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Choral_Chambers,
+        TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
             Bellway_City__left1,
             Bellway_City__right1,
@@ -910,8 +910,8 @@ public static class BaseRoomList
     public static Room Bellway_Peak { get; } = new Room
     {
         Name = SceneNames.Bellway_Peak,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Mount_Fay,
+        TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
             Bellway_Peak__left1,
             Bellway_Peak__left2,
@@ -924,8 +924,8 @@ public static class BaseRoomList
     public static Room Bellway_Peak_02 { get; } = new Room
     {
         Name = SceneNames.Bellway_Peak_02,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Mount_Fay,
+        TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
             Bellway_Peak_02__left1,
         ]),
@@ -934,8 +934,8 @@ public static class BaseRoomList
     public static Room Bellway_Shadow { get; } = new Room
     {
         Name = SceneNames.Bellway_Shadow,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Bilewater,
+        TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
             Bellway_Shadow__left1,
         ]),
@@ -1660,8 +1660,8 @@ public static class BaseRoomList
     public static Room Bonegrave { get; } = new Room
     {
         Name = SceneNames.Bonegrave,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Mosslands,
+        TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
             Bonegrave__door1,
             Bonegrave__left1,
@@ -1697,8 +1697,8 @@ public static class BaseRoomList
     public static Room Chapel_Wanderer { get; } = new Room
     {
         Name = SceneNames.Chapel_Wanderer,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Mosslands,
+        TitledArea = TitledAreaNames.Chapel_of_the_Wanderer,
         Gates = new([
             Chapel_Wanderer__left1,
         ]),
@@ -2020,8 +2020,8 @@ public static class BaseRoomList
     public static Room Coral_02 { get; } = new Room
     {
         Name = SceneNames.Coral_02,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_02__bot2,
             Coral_02__right1,
@@ -2031,8 +2031,8 @@ public static class BaseRoomList
     public static Room Coral_03 { get; } = new Room
     {
         Name = SceneNames.Coral_03,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_03__bot1,
             Coral_03__bot2,
@@ -2052,8 +2052,8 @@ public static class BaseRoomList
     public static Room Coral_10 { get; } = new Room
     {
         Name = SceneNames.Coral_10,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Grand_Gate,
+        TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
             Coral_10__left1,
             Coral_10__right1,
@@ -2063,8 +2063,8 @@ public static class BaseRoomList
     public static Room Coral_11 { get; } = new Room
     {
         Name = SceneNames.Coral_11,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_11__left1,
             Coral_11__right1,
@@ -2074,8 +2074,8 @@ public static class BaseRoomList
     public static Room Coral_11b { get; } = new Room
     {
         Name = SceneNames.Coral_11b,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_11b__left1,
             Coral_11b__right1,
@@ -2085,8 +2085,8 @@ public static class BaseRoomList
     public static Room Coral_12 { get; } = new Room
     {
         Name = SceneNames.Coral_12,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_12__left2,
             Coral_12__left3,
@@ -2097,8 +2097,8 @@ public static class BaseRoomList
     public static Room Coral_19 { get; } = new Room
     {
         Name = SceneNames.Coral_19,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_19__bot1,
             Coral_19__bot2,
@@ -2122,8 +2122,8 @@ public static class BaseRoomList
     public static Room Coral_19b { get; } = new Room
     {
         Name = SceneNames.Coral_19b,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_19b__bot1,
         ]),
@@ -2132,8 +2132,8 @@ public static class BaseRoomList
     public static Room Coral_23 { get; } = new Room
     {
         Name = SceneNames.Coral_23,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_23__left1,
             Coral_23__left2,
@@ -2144,8 +2144,8 @@ public static class BaseRoomList
     public static Room Coral_24 { get; } = new Room
     {
         Name = SceneNames.Coral_24,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_24__left1,
             Coral_24__right1,
@@ -2155,8 +2155,8 @@ public static class BaseRoomList
     public static Room Coral_25 { get; } = new Room
     {
         Name = SceneNames.Coral_25,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_25__bot1,
             Coral_25__right1,
@@ -2166,8 +2166,8 @@ public static class BaseRoomList
     public static Room Coral_26 { get; } = new Room
     {
         Name = SceneNames.Coral_26,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_26__left1,
             Coral_26__left2,
@@ -2178,8 +2178,8 @@ public static class BaseRoomList
     public static Room Coral_27 { get; } = new Room
     {
         Name = SceneNames.Coral_27,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_27__left1,
             Coral_27__right1,
@@ -2189,8 +2189,8 @@ public static class BaseRoomList
     public static Room Coral_28 { get; } = new Room
     {
         Name = SceneNames.Coral_28,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_28__door1,
             Coral_28__right1,
@@ -2200,8 +2200,8 @@ public static class BaseRoomList
     public static Room Coral_29 { get; } = new Room
     {
         Name = SceneNames.Coral_29,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Voltnest,
         Gates = new([
             Coral_29__left1,
         ]),
@@ -2210,8 +2210,8 @@ public static class BaseRoomList
     public static Room Coral_32 { get; } = new Room
     {
         Name = SceneNames.Coral_32,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_32__left1,
             Coral_32__right1,
@@ -2222,8 +2222,8 @@ public static class BaseRoomList
     public static Room Coral_33 { get; } = new Room
     {
         Name = SceneNames.Coral_33,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_33__right1,
         ]),
@@ -2232,8 +2232,8 @@ public static class BaseRoomList
     public static Room Coral_34 { get; } = new Room
     {
         Name = SceneNames.Coral_34,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_34__door1,
             Coral_34__right1,
@@ -2244,8 +2244,8 @@ public static class BaseRoomList
     public static Room Coral_35 { get; } = new Room
     {
         Name = SceneNames.Coral_35,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_35__left1,
             Coral_35__left2,
@@ -2258,8 +2258,8 @@ public static class BaseRoomList
     public static Room Coral_35b { get; } = new Room
     {
         Name = SceneNames.Coral_35b,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_35b__bot1,
             Coral_35b__door1,
@@ -2275,8 +2275,8 @@ public static class BaseRoomList
     public static Room Coral_36 { get; } = new Room
     {
         Name = SceneNames.Coral_36,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_36__left1,
         ]),
@@ -2285,8 +2285,8 @@ public static class BaseRoomList
     public static Room Coral_37 { get; } = new Room
     {
         Name = SceneNames.Coral_37,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_37__left1,
         ]),
@@ -2295,8 +2295,8 @@ public static class BaseRoomList
     public static Room Coral_38 { get; } = new Room
     {
         Name = SceneNames.Coral_38,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_38__bot1,
             Coral_38__left1,
@@ -2307,8 +2307,8 @@ public static class BaseRoomList
     public static Room Coral_39 { get; } = new Room
     {
         Name = SceneNames.Coral_39,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_39__right1,
         ]),
@@ -2317,8 +2317,8 @@ public static class BaseRoomList
     public static Room Coral_40 { get; } = new Room
     {
         Name = SceneNames.Coral_40,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_40__right1,
         ]),
@@ -2327,8 +2327,8 @@ public static class BaseRoomList
     public static Room Coral_41 { get; } = new Room
     {
         Name = SceneNames.Coral_41,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_41__right1,
         ]),
@@ -2337,8 +2337,8 @@ public static class BaseRoomList
     public static Room Coral_42 { get; } = new Room
     {
         Name = SceneNames.Coral_42,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_42__right1,
         ]),
@@ -2347,8 +2347,8 @@ public static class BaseRoomList
     public static Room Coral_43 { get; } = new Room
     {
         Name = SceneNames.Coral_43,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_43__left1,
             Coral_43__right1,
@@ -2358,8 +2358,8 @@ public static class BaseRoomList
     public static Room Coral_44 { get; } = new Room
     {
         Name = SceneNames.Coral_44,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_44__left1,
             Coral_44__right1,
@@ -2369,8 +2369,8 @@ public static class BaseRoomList
     public static Room Coral_Judge_Arena { get; } = new Room
     {
         Name = SceneNames.Coral_Judge_Arena,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Coral_Judge_Arena__door2,
             Coral_Judge_Arena__left1,
@@ -2381,8 +2381,8 @@ public static class BaseRoomList
     public static Room Coral_Tower_01 { get; } = new Room
     {
         Name = SceneNames.Coral_Tower_01,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Coral_Tower,
         Gates = new([
             Coral_Tower_01__left1,
         ]),
@@ -2392,7 +2392,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_01,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_01__left1,
             Cradle_01__right1,
@@ -2403,7 +2403,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_01_Destroyed,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_01_Destroyed__bot1,
             Cradle_01_Destroyed__top1,
@@ -2414,7 +2414,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_02,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_02__left2,
             Cradle_02__right1,
@@ -2426,7 +2426,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_02b,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_02b__right1,
         ]),
@@ -2436,7 +2436,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_03,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_03__left2,
             Cradle_03__right2,
@@ -2447,7 +2447,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_03_Destroyed,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_03_Destroyed__bot1,
             Cradle_03_Destroyed__door1,
@@ -2458,7 +2458,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_01,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_Destroyed_Challenge_01__left1,
             Cradle_Destroyed_Challenge_01__top1,
@@ -2469,7 +2469,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_02,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_Destroyed_Challenge_02__left1,
             Cradle_Destroyed_Challenge_02__top1,
@@ -2480,7 +2480,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_Bench,
         MapArea = MapAreaNames.Cradle,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Cradle,
         Gates = new([
             Cradle_Destroyed_Challenge_Bench__bot1,
             Cradle_Destroyed_Challenge_Bench__door1,
@@ -2835,7 +2835,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_01,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_01__left1,
             Dust_01__right1,
@@ -2846,7 +2846,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_02,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_02__left1,
             Dust_02__left2,
@@ -2861,7 +2861,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_03,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_03__bot1,
             Dust_03__left1,
@@ -2873,7 +2873,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_04,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_04__door1,
             Dust_04__left1,
@@ -2886,7 +2886,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_05,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_05__bot1,
             Dust_05__left1,
@@ -2898,7 +2898,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_06,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_06__left1,
             Dust_06__right1,
@@ -2911,7 +2911,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_09,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_09__door1,
             Dust_09__door2,
@@ -2923,7 +2923,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_10,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_10__right1,
         ]),
@@ -2933,7 +2933,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_11,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_11__bot1,
             Dust_11__left1,
@@ -2944,7 +2944,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_12,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_12__left1,
         ]),
@@ -2954,7 +2954,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_Barb,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_Barb__top1,
         ]),
@@ -2964,7 +2964,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_Chef,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_Chef__bot1,
             Dust_Chef__left1,
@@ -2986,7 +2986,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Dust_Shack,
         MapArea = MapAreaNames.Sinner_s_Road,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
             Dust_Shack__left1,
         ]),
@@ -4021,8 +4021,8 @@ public static class BaseRoomList
     public static Room Room_CrowCourt { get; } = new Room
     {
         Name = SceneNames.Room_CrowCourt,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Greymoor,
+        TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
             Room_CrowCourt__bot1,
             Room_CrowCourt__left1,
@@ -4032,8 +4032,8 @@ public static class BaseRoomList
     public static Room Room_CrowCourt_02 { get; } = new Room
     {
         Name = SceneNames.Room_CrowCourt_02,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Greymoor,
+        TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
             Room_CrowCourt_02__top1,
         ]),
@@ -4042,8 +4042,8 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Deep_Docks,
+        TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
             Room_Diving_Bell__left1,
         ]),
@@ -4052,8 +4052,8 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell_Abyss { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell_Abyss,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.The_Abyss,
+        TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
             Room_Diving_Bell_Abyss__left1,
         ]),
@@ -4062,8 +4062,8 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell_Abyss_Fixed { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell_Abyss_Fixed,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.The_Abyss,
+        TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
             Room_Diving_Bell_Abyss_Fixed__left1,
         ]),
@@ -4072,8 +4072,8 @@ public static class BaseRoomList
     public static Room Room_Forge { get; } = new Room
     {
         Name = SceneNames.Room_Forge,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Deep_Docks,
+        TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
             Room_Forge__left1,
             Room_Forge__right1,
@@ -4084,8 +4084,8 @@ public static class BaseRoomList
     public static Room Room_Huntress { get; } = new Room
     {
         Name = SceneNames.Room_Huntress,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Putrified_Ducts,
+        TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
             Room_Huntress__left1,
         ]),
@@ -4094,8 +4094,8 @@ public static class BaseRoomList
     public static Room Room_Pinstress { get; } = new Room
     {
         Name = SceneNames.Room_Pinstress,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Blasted_Steps,
+        TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
             Room_Pinstress__left1,
         ]),
@@ -4104,8 +4104,8 @@ public static class BaseRoomList
     public static Room Room_Witch { get; } = new Room
     {
         Name = SceneNames.Room_Witch,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Shellwood,
+        TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
             Room_Witch__left1,
         ]),
@@ -4434,8 +4434,8 @@ public static class BaseRoomList
     public static Room Shellgrave { get; } = new Room
     {
         Name = SceneNames.Shellgrave,
-        MapArea = MapAreaNames.Unknown,
-        TitledArea = TitledAreaNames.Unknown,
+        MapArea = MapAreaNames.Shellwood,
+        TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
             Shellgrave__bot1,
         ]),
@@ -5947,7 +5947,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_02,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_02__left2,
             Weave_02__left3,
@@ -5962,7 +5962,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_03,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_03__right1,
         ]),
@@ -5972,7 +5972,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_04,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_04__left1,
             Weave_04__right2,
@@ -5983,7 +5983,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_05b,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_05b__left1,
         ]),
@@ -5993,7 +5993,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_07,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_07__left1,
             Weave_07__right1,
@@ -6004,7 +6004,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_08,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_08__left1,
             Weave_08__right1,
@@ -6015,7 +6015,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_10,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_10__left1,
         ]),
@@ -6025,7 +6025,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_11,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_11__right1,
             Weave_11__top1,
@@ -6036,7 +6036,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_12,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_12__left1,
         ]),
@@ -6046,7 +6046,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_13,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_13__left1,
             Weave_13__right1,
@@ -6057,7 +6057,7 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_14,
         MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
             Weave_14__bot1,
         ]),

@@ -5,6 +5,8 @@
   - Note any transition in the room which is not in the door list.
   - Note any transition which cannot be doorwarped to due to a collider that pushes Hornet out of bounds or back into the transition.
   - Note any transition where Hornet is not visible due to a mask or other graphical layer.
+2. Does the Flip button's output match with where each transition actually leads?
+  - Note any transitions where Flip fails. There are some rooms/transitions missing from the data set.
 2. Are there any special transitions?
   - Note any transitions which are made up of multiple objects. For example, note if top1/top2 tile a continguous area, so that these can be marked as aliases of one another.
   - Note nonstandard transitions (e.g. transitions with variable destination such as Room_Caravan_Spa[left1], transitions to memories or silk hearts, and so on).
