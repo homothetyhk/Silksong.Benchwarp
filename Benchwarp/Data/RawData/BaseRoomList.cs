@@ -357,7 +357,7 @@ public static class BaseRoomList
             Aqueduct_01__left1,
             Aqueduct_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_02 { get; } = new Room
     {
@@ -372,7 +372,7 @@ public static class BaseRoomList
             Aqueduct_02__right2,
             Aqueduct_02__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_03 { get; } = new Room
     {
@@ -384,7 +384,7 @@ public static class BaseRoomList
             Aqueduct_03__right1,
             Aqueduct_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_04 { get; } = new Room
     {
@@ -396,7 +396,7 @@ public static class BaseRoomList
             Aqueduct_04__door1,
             Aqueduct_04__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_05 { get; } = new Room
     {
@@ -407,7 +407,7 @@ public static class BaseRoomList
             Aqueduct_05__door2,
             Aqueduct_05__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_06 { get; } = new Room
     {
@@ -419,7 +419,7 @@ public static class BaseRoomList
             Aqueduct_06__left1,
             Aqueduct_06__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_07 { get; } = new Room
     {
@@ -429,7 +429,7 @@ public static class BaseRoomList
         Gates = new([
             Aqueduct_07__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Aqueduct_08 { get; } = new Room
     {
@@ -440,7 +440,7 @@ public static class BaseRoomList
             Aqueduct_08__left1,
             Aqueduct_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Arborium_01 { get; } = new Room
     {
@@ -882,7 +882,7 @@ public static class BaseRoomList
             Bellway_Aqueduct__left1,
             Bellway_Aqueduct__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_City { get; } = new Room
     {
@@ -4065,7 +4065,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Huntress__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Pinstress { get; } = new Room
     {

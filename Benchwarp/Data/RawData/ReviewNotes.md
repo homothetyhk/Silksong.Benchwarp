@@ -92,3 +92,11 @@
     - Peak_07__bot5: hornet glitches through terrain.
     - Peak_08b__bot4: big bot transition.
     - Peak_08b__bot5: big bot transition, but hornet isn't visible.
+
+### Putrified_Ducts
+    - Aqueduct_01__left1: collider obstacle.
+    - Aqueduct_02__left2: collider obstacle.
+    - Aqueduct_02__right3: collider obstacle.
+    - Aqueduct_04__bot1: screen is pitch-black (either collider or camera issue).
+    - Aqueduct_05__door2: arrives at left1 instead if Fleatopia isn't there.
+    - Aqueduct_08__left1: collider obstacle.
