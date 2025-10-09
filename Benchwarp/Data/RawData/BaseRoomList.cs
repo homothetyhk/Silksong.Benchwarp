@@ -26,7 +26,7 @@ public static class BaseRoomList
             Abyss_01__right3,
             Abyss_01__right4,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_02 { get; } = new Room
     {
@@ -37,7 +37,7 @@ public static class BaseRoomList
             Abyss_02__left1,
             Abyss_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_02b { get; } = new Room
     {
@@ -49,7 +49,7 @@ public static class BaseRoomList
             Abyss_02b__right1,
             Abyss_02b__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_03 { get; } = new Room
     {
@@ -62,7 +62,7 @@ public static class BaseRoomList
             Abyss_03__left1,
             Abyss_03__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_04 { get; } = new Room
     {
@@ -72,7 +72,7 @@ public static class BaseRoomList
         Gates = new([
             Abyss_04__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_05 { get; } = new Room
     {
@@ -83,7 +83,7 @@ public static class BaseRoomList
             Abyss_05__left2,
             Abyss_05__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_06 { get; } = new Room
     {
@@ -93,7 +93,7 @@ public static class BaseRoomList
         Gates = new([
             Abyss_06__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_07 { get; } = new Room
     {
@@ -104,7 +104,7 @@ public static class BaseRoomList
             Abyss_07__left1,
             Abyss_07__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_08 { get; } = new Room
     {
@@ -114,7 +114,7 @@ public static class BaseRoomList
         Gates = new([
             Abyss_08__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_09 { get; } = new Room
     {
@@ -125,7 +125,7 @@ public static class BaseRoomList
             Abyss_09__bot1,
             Abyss_09__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_11 { get; } = new Room
     {
@@ -136,7 +136,7 @@ public static class BaseRoomList
             Abyss_11__bot1,
             Abyss_11__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_12 { get; } = new Room
     {
@@ -147,7 +147,7 @@ public static class BaseRoomList
             Abyss_12__left1,
             Abyss_12__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_13 { get; } = new Room
     {
@@ -159,7 +159,7 @@ public static class BaseRoomList
             Abyss_13__right1,
             Abyss_13__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_Cocoon { get; } = new Room
     {
@@ -170,7 +170,7 @@ public static class BaseRoomList
             Abyss_Cocoon__door_entry,
             Abyss_Cocoon__door_test,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Ant_02 { get; } = new Room
     {
@@ -599,7 +599,7 @@ public static class BaseRoomList
             Aspid_01__top6,
             Aspid_01__top7,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellshrine { get; } = new Room
     {
@@ -827,7 +827,7 @@ public static class BaseRoomList
         Gates = new([
             Bellway_01__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_02 { get; } = new Room
     {
@@ -1657,7 +1657,7 @@ public static class BaseRoomList
             Bonegrave__right2,
             Bonegrave__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bonetown { get; } = new Room
     {
@@ -1680,7 +1680,7 @@ public static class BaseRoomList
             Bonetown__top5,
             Bonetown__top6,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Chapel_Wanderer { get; } = new Room
     {
@@ -1701,7 +1701,7 @@ public static class BaseRoomList
             Clover_01__left1,
             Clover_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_01b { get; } = new Room
     {
@@ -1711,7 +1711,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_01b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_02c { get; } = new Room
     {
@@ -1723,7 +1723,7 @@ public static class BaseRoomList
             Clover_02c__left2,
             Clover_02c__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_03 { get; } = new Room
     {
@@ -1735,7 +1735,7 @@ public static class BaseRoomList
             Clover_03__left2,
             Clover_03__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_04b { get; } = new Room
     {
@@ -1748,7 +1748,7 @@ public static class BaseRoomList
             Clover_04b__left2,
             Clover_04b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_05c { get; } = new Room
     {
@@ -1762,7 +1762,7 @@ public static class BaseRoomList
             Clover_05c__right2,
             Clover_05c__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_06 { get; } = new Room
     {
@@ -1773,7 +1773,7 @@ public static class BaseRoomList
             Clover_06__bot1,
             Clover_06__bot2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_10 { get; } = new Room
     {
@@ -1783,7 +1783,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_10__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_10_web { get; } = new Room
     {
@@ -1793,7 +1793,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_10_web__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_11 { get; } = new Room
     {
@@ -1803,7 +1803,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_11__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_16 { get; } = new Room
     {
@@ -1814,7 +1814,7 @@ public static class BaseRoomList
             Clover_16__right1,
             Clover_16__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_18 { get; } = new Room
     {
@@ -1824,7 +1824,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_18__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_19 { get; } = new Room
     {
@@ -1835,7 +1835,7 @@ public static class BaseRoomList
             Clover_19__left1,
             Clover_19__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_20 { get; } = new Room
     {
@@ -1845,7 +1845,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_20__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_21 { get; } = new Room
     {
@@ -1855,7 +1855,7 @@ public static class BaseRoomList
         Gates = new([
             Clover_21__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_04 { get; } = new Room
     {
@@ -4034,7 +4034,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Diving_Bell_Abyss__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Diving_Bell_Abyss_Fixed { get; } = new Room
     {
@@ -4044,7 +4044,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Diving_Bell_Abyss_Fixed__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Forge { get; } = new Room
     {
