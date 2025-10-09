@@ -458,7 +458,6 @@ public static class BaseRoomList
             Arborium_01__right4,
             Arborium_01__right5,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_02 { get; } = new Room
     {
@@ -469,7 +468,6 @@ public static class BaseRoomList
             Arborium_02__left1,
             Arborium_02__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_03 { get; } = new Room
     {
@@ -484,7 +482,6 @@ public static class BaseRoomList
             Arborium_03__right1,
             Arborium_03__right2,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_04 { get; } = new Room
     {
@@ -495,7 +492,6 @@ public static class BaseRoomList
             Arborium_04__left1,
             Arborium_04__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_05 { get; } = new Room
     {
@@ -506,7 +502,6 @@ public static class BaseRoomList
             Arborium_05__right1,
             Arborium_05__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_06 { get; } = new Room
     {
@@ -518,7 +513,6 @@ public static class BaseRoomList
             Arborium_06__left1,
             Arborium_06__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_07 { get; } = new Room
     {
@@ -529,7 +523,6 @@ public static class BaseRoomList
             Arborium_07__left1,
             Arborium_07__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_08 { get; } = new Room
     {
@@ -540,7 +533,6 @@ public static class BaseRoomList
             Arborium_08__bot1,
             Arborium_08__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_09 { get; } = new Room
     {
@@ -551,7 +543,6 @@ public static class BaseRoomList
             Arborium_09__right1,
             Arborium_09__right2,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_10 { get; } = new Room
     {
@@ -561,7 +552,6 @@ public static class BaseRoomList
         Gates = new([
             Arborium_10__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_11 { get; } = new Room
     {
@@ -572,7 +562,6 @@ public static class BaseRoomList
             Arborium_11__left1,
             Arborium_11__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Arborium_Tube { get; } = new Room
     {
@@ -582,7 +571,6 @@ public static class BaseRoomList
         Gates = new([
             Arborium_Tube__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Aspid_01 { get; } = new Room
     {
@@ -2497,7 +2485,6 @@ public static class BaseRoomList
             Crawl_01__left1,
             Crawl_01__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_02 { get; } = new Room
     {
@@ -2511,7 +2498,6 @@ public static class BaseRoomList
             Crawl_02__right2,
             Crawl_02__right3,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_03 { get; } = new Room
     {
@@ -2524,7 +2510,6 @@ public static class BaseRoomList
             Crawl_03__right1,
             Crawl_03__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_03b { get; } = new Room
     {
@@ -2536,7 +2521,6 @@ public static class BaseRoomList
             Crawl_03b__right1,
             Crawl_03b__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_04 { get; } = new Room
     {
@@ -2547,17 +2531,15 @@ public static class BaseRoomList
             Crawl_04__left1,
             Crawl_04__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_05 { get; } = new Room
     {
         Name = SceneNames.Crawl_05,
         MapArea = MapAreaNames.Wormways,
-        TitledArea = TitledAreaNames.Wormways,
+        TitledArea = TitledAreaNames.Weavenest_Karn,
         Gates = new([
             Crawl_05__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_06 { get; } = new Room
     {
@@ -2567,7 +2549,6 @@ public static class BaseRoomList
         Gates = new([
             Crawl_06__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_07 { get; } = new Room
     {
@@ -2579,7 +2560,6 @@ public static class BaseRoomList
             Crawl_07__left1,
             Crawl_07__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_08 { get; } = new Room
     {
@@ -2589,7 +2569,6 @@ public static class BaseRoomList
         Gates = new([
             Crawl_08__bot1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_09 { get; } = new Room
     {
@@ -2600,7 +2579,6 @@ public static class BaseRoomList
             Crawl_09__left1,
             Crawl_09__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Crawl_10 { get; } = new Room
     {
@@ -2610,7 +2588,6 @@ public static class BaseRoomList
         Gates = new([
             Crawl_10__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Dock_01 { get; } = new Room
     {
