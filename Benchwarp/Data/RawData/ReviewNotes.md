@@ -17,3 +17,31 @@
   - Arborium_08__left1: pushed out of bounds if shortcut isn't opened
   - Arborium_09__right2: black screen if vines in middle of room aren't destroyed
   - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
+
+
+### Bone_Bottom
+    - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
+    - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
+    - Aspid_01__right3: collider obstacle.
+    - Aspid_01__top1/top2/top3/top4/top5/top6/top7: big top transition at several different positions.
+    - Bonegrave__door1: visual obstacle (closed after getting Wanderer's Crest).
+    - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough.
+    - Bonegrave_right2: collider obstacle.
+    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1.
+    - Bonetown__left2: collider obstacle.
+    - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions.
+
+### The_Abyss
+    - Abyss_02b__top1: collider obstacle.
+    - Abyss_03__door1/door2: arrives via left2 instead of in front of the diving bell.
+    - Abyss_03__left2: collider obstacle.
+    - Abyss_11__bot1: collider obstacle.
+    - Abyss_13__left1: collider obstacle.
+    - Abyss_Cocoon__door_entry: visual glitch where player is on ground before falling from top.
+    - Abyss_Cocoon__door_test: seems to be effectively the same as door_entry.
+    - Room_Diving_Bell_Abyss__left1: collider obstacle.
+    - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
+    - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.
+
+### Lost_Verdania
+    - Clover_04b__door1: entire door/platform is missing.
