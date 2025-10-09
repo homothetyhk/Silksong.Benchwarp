@@ -3763,6 +3763,7 @@ public static class BaseRoomList
             Organ_01__left2,
             Organ_01__left3,
         ]),
+        ManuallyVerified = false,
     };
     public static Room Peak_01 { get; } = new Room
     {
