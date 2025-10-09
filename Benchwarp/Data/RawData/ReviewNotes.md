@@ -81,3 +81,14 @@
     - Under_27: map/titled area should be Grand Gate.
     - Under_27__right2: collider obstacle.
 
+### Mount_Fay
+    - Bellway_Peak__right2: collider obstacle.
+    - Peak_01__left1: abnormal camera.
+    - Peak_01__top2/top3/top4: big top transition at several different positions.
+    - Peak_04c__right2: collider obstacle.
+    - Peak_05__right3: abnormal camera.
+    - Peak_07__bot2: hornet glitches through terrain and softlocks the game.
+    - Peak_07__bot3/bot4: big bot transition at two different positions.
+    - Peak_07__bot5: hornet glitches through terrain.
+    - Peak_08b__bot4: big bot transition.
+    - Peak_08b__bot5: big bot transition, but hornet isn't visible.

@@ -907,7 +907,7 @@ public static class BaseRoomList
             Bellway_Peak__right2,
             Bellway_Peak__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_Peak_02 { get; } = new Room
     {
@@ -917,7 +917,7 @@ public static class BaseRoomList
         Gates = new([
             Bellway_Peak_02__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_Shadow { get; } = new Room
     {
@@ -3784,7 +3784,7 @@ public static class BaseRoomList
             Peak_01__top3,
             Peak_01__top4,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_02 { get; } = new Room
     {
@@ -3800,7 +3800,7 @@ public static class BaseRoomList
             Peak_02__right3,
             Peak_02__right4,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_04 { get; } = new Room
     {
@@ -3811,7 +3811,7 @@ public static class BaseRoomList
             Peak_04__left1,
             Peak_04__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_04c { get; } = new Room
     {
@@ -3822,7 +3822,7 @@ public static class BaseRoomList
             Peak_04c__right1,
             Peak_04c__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_04d { get; } = new Room
     {
@@ -3833,7 +3833,7 @@ public static class BaseRoomList
             Peak_04d__left1,
             Peak_04d__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_05 { get; } = new Room
     {
@@ -3845,7 +3845,7 @@ public static class BaseRoomList
             Peak_05__right3,
             Peak_05__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_05c { get; } = new Room
     {
@@ -3856,7 +3856,7 @@ public static class BaseRoomList
             Peak_05c__left2,
             Peak_05c__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_05d { get; } = new Room
     {
@@ -3867,7 +3867,7 @@ public static class BaseRoomList
             Peak_05d__bot1,
             Peak_05d__door1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_05e { get; } = new Room
     {
@@ -3879,7 +3879,7 @@ public static class BaseRoomList
             Peak_05e__right1,
             Peak_05e__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_06 { get; } = new Room
     {
@@ -3889,7 +3889,7 @@ public static class BaseRoomList
         Gates = new([
             Peak_06__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_06b { get; } = new Room
     {
@@ -3900,7 +3900,7 @@ public static class BaseRoomList
             Peak_06b__door1,
             Peak_06b__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_07 { get; } = new Room
     {
@@ -3916,7 +3916,7 @@ public static class BaseRoomList
             Peak_07__top1,
             Peak_07__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_08 { get; } = new Room
     {
@@ -3928,7 +3928,7 @@ public static class BaseRoomList
             Peak_08__right1,
             Peak_08__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_08b { get; } = new Room
     {
@@ -3942,7 +3942,7 @@ public static class BaseRoomList
             Peak_08b__left1,
             Peak_08b__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_10 { get; } = new Room
     {
@@ -3952,7 +3952,7 @@ public static class BaseRoomList
         Gates = new([
             Peak_10__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_12 { get; } = new Room
     {
@@ -3962,7 +3962,7 @@ public static class BaseRoomList
         Gates = new([
             Peak_12__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_Mask_Maker { get; } = new Room
     {
@@ -3972,7 +3972,7 @@ public static class BaseRoomList
         Gates = new([
             Peak_Mask_Maker__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Caravan_Interior { get; } = new Room
     {
