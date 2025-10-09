@@ -18,6 +18,17 @@
   - Arborium_09__right2: black screen if vines in middle of room aren't destroyed
   - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
 
+- Bilewater
+  - Shadow_04 missing a transition into the mist
+  - Shadow_05[left1] and Dust_06[right1] put you behind a breakable wall and not visible. You can still break it though
+  - Shadow_08[left1] and Shadow_27[right1] need lots of crap removed
+    - _08 has breakable walls that need to be broken
+    - _27 has a solid wall unless the b-wall in _08 is broken
+  - Shadow_09[left3] puts you behind a breakable wall, you can break but you're invisible
+  - Shadow_10[bot1] you're invisible unless a nearby b-wall is broken
+  - Shadow_15[right2] is fine, but if you go further into the room there's a visual mask unless you've sat on the trap bench. Probably no action needed
+  - Shadow_19[right2] is blocked off, I believe only opened by the Shakra quest
+  - Shadow_22[topi] correctly maps to Library_07[boti] for i=1,2,3 but they're the same one-way drop transition
 
 ### Bone_Bottom
     - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
