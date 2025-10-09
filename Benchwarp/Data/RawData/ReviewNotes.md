@@ -56,3 +56,28 @@
 
 ### Lost_Verdania
     - Clover_04b__door1: entire door/platform is missing.
+
+### Underworks
+    - Under_01: map/titled area should be Grand Gate.
+    - Under_01__left2: collider obstacle.
+    - Under_01__left3: collider obstacle.
+    - Under_01b__right1: collider obstacle.
+    - Under_02__left1: collider obstacle.
+    - Under_04__right1: collider obstacle.
+    - Under_04__top1: collider obstacle.
+    - Under_05__left2: collider obstacle.
+    - Under_06__top1: collider obstacle.
+    - Under_07__top1: arrives via right1 instead.
+    - Under_07b: map/titled area should be Choral Chambers.
+    - Under_07b__bot1: collider obstacle.
+    - Under_07c__bot1: arrives via left2 instead.
+    - Under_07c__top1: collider obstacle.
+    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
+    - Under_17__door1: door is locked if player hasn't opened it before.
+    - Under_18__right1: collider obstacle.
+    - Under_18__top2: collider obstacle.
+    - Under_19c__left1: collider obstacle.
+    - Under_20: titled area should be Chapel of the Architect.
+    - Under_27: map/titled area should be Grand Gate.
+    - Under_27__right2: collider obstacle.
+
