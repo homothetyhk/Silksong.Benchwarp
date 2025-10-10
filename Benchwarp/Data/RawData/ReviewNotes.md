@@ -29,6 +29,19 @@
   - Shadow_15[right2] is fine, but if you go further into the room there's a visual mask unless you've sat on the trap bench. Probably no action needed
   - Shadow_19[right2] is blocked off, I believe only opened by the Shakra quest
   - Shadow_22[topi] correctly maps to Library_07[boti] for i=1,2,3 but they're the same one-way drop transition
+  - Shadow_Weavehome should be Weavenest Murglin titled area-wise
+
+- High Halls
+  - Hang_03[right2] and Hang_10[left1] are blocked unless the b-wall in _10 is broken
+    - _03 puts you behind a gate
+    - _10 puts you behind a b-wall and clipped into the floor
+  - Walking into Hang_06_bank[left1] (when the simple key hasn't been used on the other side) crashed my game, not sure how reproducible this is. Doorwarping to Hang_06[door1] was fine.
+  - Hang_07[left1] and Song_11[right2] are blocked unless the lever in Song_11 has been hit
+  - Hang_07[top1] is blocked unless the lever in Hang_06[bot1] has been hit - doorwarping to Hang_06[bot1] was fine though.
+  - Hang_08[right1] is blocked unless the sentinel quest has started (I believe) - this is a blocked wall, not the metal thingy (which goes away when you catch the clawline ring, and I believe is far enough away from the transition to be fine as-is)
+  - Hang_08[right2] does not exist, and warping there puts you at a different transition. Its partner, Cog_11_Destroyed[left1], softlocks the game when you try to warp there.
+  - Hang_16[door1] needs special handling in act 3 mode
+  - Hang_01 and Hang_07 are in the Choral Chambers titled/map area
 
 ### Bone_Bottom
     - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
