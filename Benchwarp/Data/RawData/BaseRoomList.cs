@@ -838,7 +838,7 @@ public static class BaseRoomList
             Bellway_02__left1,
             Bellway_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_03 { get; } = new Room
     {
@@ -2598,7 +2598,7 @@ public static class BaseRoomList
             Dock_01__right1,
             Dock_01__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_02 { get; } = new Room
     {
@@ -2612,7 +2612,7 @@ public static class BaseRoomList
             Dock_02__right2,
             Dock_02__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_02b { get; } = new Room
     {
@@ -2626,7 +2626,7 @@ public static class BaseRoomList
             Dock_02b__right1,
             Dock_02b__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_03 { get; } = new Room
     {
@@ -2638,7 +2638,7 @@ public static class BaseRoomList
             Dock_03__left1,
             Dock_03__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_03b { get; } = new Room
     {
@@ -2649,7 +2649,7 @@ public static class BaseRoomList
             Dock_03b__left1,
             Dock_03b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_03c { get; } = new Room
     {
@@ -2661,7 +2661,7 @@ public static class BaseRoomList
             Dock_03c__top1,
             Dock_03c__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_03d { get; } = new Room
     {
@@ -2671,7 +2671,7 @@ public static class BaseRoomList
         Gates = new([
             Dock_03d__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_04 { get; } = new Room
     {
@@ -2684,7 +2684,7 @@ public static class BaseRoomList
             Dock_04__right2,
             Dock_04__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_05 { get; } = new Room
     {
@@ -2694,7 +2694,7 @@ public static class BaseRoomList
         Gates = new([
             Dock_05__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_06_Church { get; } = new Room
     {
@@ -2705,7 +2705,7 @@ public static class BaseRoomList
             Dock_06_Church__bot1,
             Dock_06_Church__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_08 { get; } = new Room
     {
@@ -2717,7 +2717,7 @@ public static class BaseRoomList
             Dock_08__left2,
             Dock_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_09 { get; } = new Room
     {
@@ -2728,7 +2728,7 @@ public static class BaseRoomList
             Dock_09__left1,
             Dock_09__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_10 { get; } = new Room
     {
@@ -2739,7 +2739,7 @@ public static class BaseRoomList
             Dock_10__left1,
             Dock_10__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_11 { get; } = new Room
     {
@@ -2750,7 +2750,7 @@ public static class BaseRoomList
             Dock_11__left1,
             Dock_11__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_12 { get; } = new Room
     {
@@ -2761,7 +2761,7 @@ public static class BaseRoomList
             Dock_12__door1,
             Dock_12__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_13 { get; } = new Room
     {
@@ -2771,7 +2771,7 @@ public static class BaseRoomList
         Gates = new([
             Dock_13__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_14 { get; } = new Room
     {
@@ -2781,7 +2781,7 @@ public static class BaseRoomList
         Gates = new([
             Dock_14__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_15 { get; } = new Room
     {
@@ -2795,7 +2795,7 @@ public static class BaseRoomList
             Dock_15__right2,
             Dock_15__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dock_16 { get; } = new Room
     {
@@ -2805,7 +2805,7 @@ public static class BaseRoomList
         Gates = new([
             Dock_16__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_01 { get; } = new Room
     {
@@ -4023,7 +4023,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Diving_Bell__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Diving_Bell_Abyss { get; } = new Room
     {
@@ -4055,7 +4055,7 @@ public static class BaseRoomList
             Room_Forge__right1,
             Room_Forge__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Huntress { get; } = new Room
     {

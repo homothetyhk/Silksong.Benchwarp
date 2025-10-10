@@ -135,3 +135,21 @@
     - Bone_East_16_right1: collider obstacle.
     - Bone_East_17b_left1: collider obstacle.
     - Bone_East_18c_left1: collider obstacle.
+
+## Deep_Docks
+    - Bellway_02__left1: collider obstacle.
+    - Dock_01__right1: collider obstacle.
+    - Dock_02__left1: collider obstacle.
+    - Dock_03__bot1: visual obstacle (hatch isn't open when hornet enters scene).
+    - Dock_03__right1: collider obstacle.
+    - Dock_03b: map/titled area should be Far Fields.
+    - Dock_03b__left1: collider obstacle.
+    - Dock_03c__left2: collider obstacle.
+    - Dock_03c__top1: collider obstacle.
+    - Dock_03c__top2: collider obstacle.
+    - Dock_03d__bot1: visual obstacle (hatch isn't open when hornet enters scene).
+    - Dock_11__right1: collider obstacle.
+    - Dock_12__door1: arrives at left1 instead if Diving Bell isn't unlocked.
+    - Dock_15__left2: collider obstacle.
+    - Room_Forge__right1: collider obstacle (simple key door).
+    - Room_Forge__top1: collider obstacle.
