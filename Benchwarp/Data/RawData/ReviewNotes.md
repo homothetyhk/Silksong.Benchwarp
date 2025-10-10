@@ -56,3 +56,82 @@
 
 ### Lost_Verdania
     - Clover_04b__door1: entire door/platform is missing.
+
+### Underworks
+    - Under_01: map/titled area should be Grand Gate.
+    - Under_01__left2: collider obstacle.
+    - Under_01__left3: collider obstacle.
+    - Under_01b__right1: collider obstacle.
+    - Under_02__left1: collider obstacle.
+    - Under_04__right1: collider obstacle.
+    - Under_04__top1: collider obstacle.
+    - Under_05__left2: collider obstacle.
+    - Under_06__top1: collider obstacle.
+    - Under_07__top1: arrives via right1 instead.
+    - Under_07b: map/titled area should be Choral Chambers.
+    - Under_07b__bot1: collider obstacle.
+    - Under_07c__bot1: arrives via left2 instead.
+    - Under_07c__top1: collider obstacle.
+    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
+    - Under_17__door1: door is locked if player hasn't opened it before.
+    - Under_18__right1: collider obstacle.
+    - Under_18__top2: collider obstacle.
+    - Under_19c__left1: collider obstacle.
+    - Under_20: titled area should be Chapel of the Architect.
+    - Under_27: map/titled area should be Grand Gate.
+    - Under_27__right2: collider obstacle.
+
+### Mount_Fay
+    - Bellway_Peak__right2: collider obstacle.
+    - Peak_01__left1: abnormal camera.
+    - Peak_01__top2/top3/top4: big top transition at several different positions.
+    - Peak_04c__right2: collider obstacle.
+    - Peak_05__right3: abnormal camera.
+    - Peak_07__bot2: hornet glitches through terrain and softlocks the game.
+    - Peak_07__bot3/bot4: big bot transition at two different positions.
+    - Peak_07__bot5: hornet glitches through terrain.
+    - Peak_08b__bot4: big bot transition.
+    - Peak_08b__bot5: big bot transition, but hornet isn't visible.
+
+### Putrified_Ducts
+    - Aqueduct_01__left1: collider obstacle.
+    - Aqueduct_02__left2: collider obstacle.
+    - Aqueduct_02__right3: collider obstacle.
+    - Aqueduct_04__bot1: screen is pitch-black (either collider or camera issue).
+    - Aqueduct_05__door2: arrives at left1 instead if Fleatopia isn't there.
+    - Aqueduct_08__left1: collider obstacle.
+
+### Far_Fields
+    - Bellshrine_05: map/titled area should be Deep Docks.
+    - Bellshrine_05__right1: collider obstacle.
+    - Bone_East_01: map/titled area should be Deep Docks.
+    - Bone_East_02__left1: collider obstacle.
+    - Bone_East_03: map/titled area should be Deep Docks.
+    - Bone_East_03__top1: collider obstacle.
+    - Bone_East_04: map/titled area should be Deep Docks.
+    - Bone_East_04__bot1: collider obstacle.
+    - Bone_East_04__left1: collider obstacle.
+    - Bone_East_04b: map/titled area should be Deep Docks.
+    - Bone_East_04b__right1: collider obstacle.
+    - Bone_East_04c: map/titled area should be Deep Docks.
+    - Bone_East_05: map/titled area should be Deep Docks.
+    - Bone_East_05__left1: collider obstacle.
+    - Bone_East_07__top1: collider obstacle.
+    - Bone_East_09__right2: potential visual obstacle.
+    - Bone_East_09__top1: collider obstacle.
+    - Bone_East_09b__bot1: collider obstacle.
+    - Bone_East_10__door1: Door is closed when hornet enters the scene and the door mechanism hasn't been broken.
+    - Bone_East_10__right1: collider obstacle.
+    - Bone_East_10__right2: collider obstacle.
+    - Bone_East_10_Church__left1: collider obstacle.
+    - Bone_East_10_Room: titled area should be Pilgrim's Rest (?)
+    - Bone_East_11__bot1: collider obstacle.
+    - Bone_East_11__right1: collider obstacle.
+    - Bone_East_11__top1: collider obstacle (forces hornet to enter the transition).
+    - Bone_East_12: map/titled area should be Deep Docks.
+    - Bone_East_12__bot1: visual obstacle (hatch isn't open when hornet enters scene).
+    - Bone_East_13: map/titled area should be Deep Docks.
+    - Bone_East_14_right2: collider obstacle.
+    - Bone_East_16_right1: collider obstacle.
+    - Bone_East_17b_left1: collider obstacle.
+    - Bone_East_18c_left1: collider obstacle.
