@@ -51,7 +51,7 @@
     - Bonegrave__door1: visual obstacle (closed after getting Wanderer's Crest).
     - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough.
     - Bonegrave_right2: collider obstacle.
-    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1.
+    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1. However, the flipped transition is Tut_03__top1_firstExit.
     - Bonetown__left2: collider obstacle.
     - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions.
 
@@ -148,3 +148,88 @@
     - Bone_East_16_right1: collider obstacle.
     - Bone_East_17b_left1: collider obstacle.
     - Bone_East_18c_left1: collider obstacle.
+
+### Deep_Docks
+    - Bellway_02__left1: collider obstacle.
+    - Dock_01__right1: collider obstacle.
+    - Dock_02__left1: collider obstacle.
+    - Dock_03__bot1: visual obstacle (hatch isn't open when hornet enters scene).
+    - Dock_03__right1: collider obstacle.
+    - Dock_03b: map/titled area should be Far Fields.
+    - Dock_03b__left1: collider obstacle.
+    - Dock_03c__left2: collider obstacle.
+    - Dock_03c__top1: collider obstacle.
+    - Dock_03c__top2: collider obstacle.
+    - Dock_03d__bot1: visual obstacle (hatch isn't open when hornet enters scene).
+    - Dock_11__right1: collider obstacle.
+    - Dock_12__door1: arrives at left1 instead if Diving Bell isn't unlocked.
+    - Dock_15__left2: collider obstacle.
+    - Room_Forge__right1: collider obstacle (simple key door).
+    - Room_Forge__top1: collider obstacle.
+
+### Moss_Grotto
+    - Tut_01__left1: collider obstacle.
+    - Tut_01__left3: collider obstacle.
+    - Tut_01__top1: hornet is stuck above the visible area, if the sequence of Hornet passing out when reaching Bone Bottom is not triggered.
+    - Tut_02: credits appear for a split second on the bottom right when entering the scene.
+    - Tut_03: titled area should be Ruined Chapel.
+    - Tut_03__door1: corresponds to the "Ascend" prompt.
+    - Tut_03__door1_firstExit: appears to behave the same as door1. However, the flipped transition is Bonetown__bot1_firstEntry.
+    - Tut_03__door2: arrives at top1 instead if not in Act 3 (Chapel door is closed).
+    - Tut_04: titled area should be Ruined Chapel.
+    - Tut_05: titled area should be Ruined Chapel.
+
+### Greymoor
+    - Bellshrine_02__left1: collider obstacle.
+    - Greymoor_01__bot1: collider obstacle.
+    - Greymoor_01__right2: collider obstacle (lever).
+    - Greymoor_02__right2: collider obstacle.
+    - Greymoor_03__left3: collider obstacle.
+    - Greymoor_03__right5: collider obstacle.
+    - Greymoor_06__top1: may need to handle availability of top1 entry in a unique way (dependent on act 1/2 and 3?).
+    - Greymoor_08__door1: arrives at right1 instead if flea caravan isn't in scene.
+    - Greymoor_08__door2: arrives at right1 instead if flea caravan isn't in scene.
+    - Greymoor_15b__right1: collider obstacle.
+    - Greymoor_17__top1: strange visual bug with the camera.
+    - Greymoor_20b__door1: door closes behind Hornet even if the room wasn't visited before.
+    - Greymoor_20b__right1: same thing happens with the door from here.
+    - Greymoor_20c: titled area should be Chapel of the Reaper.
+    - Room_CrowCourt__bot1: collider obstacle.
+
+### Unknown
+    - Memory_Needolin: map/titled area should be Bellhart.
+    - Memory_Needolin__right1: abnormal camera.
+    - Memory_Red: map area should be Mosslands and titled area should be Ruined Chapel.
+    - Memory_Red: multiple door names in the UI look the same.
+    - Memory_Red__door_enterRedMemory_Beast: background graphics missing.
+    - Memory_Red__door_enterRedMemory_Hive: background graphics missing.
+    - Memory_Red__door_enterRedMemory_Hive: background graphics missing.
+    - Memory_Red__door_wakeInRedMemory_Beast: visual glitch with hornet appearing for a split second before cutscene.
+    - Memory_Red__door_wakeInRedMemory_Hive: visual glitch with hornet appearing for a split second before cutscene.
+    - Memory_Red__door_wakeInRedMemory_Weaver: visual glitch with hornet appearing for a split second before cutscene.
+    - Room_Caravan_Interior__right1: map/titled area should be Greymoor.
+    - Room_Caravan_Spa__left1: map/titled area and flipped transition would depend on current position of flea caravan.
+
+### Exhaust_Organ
+
+### Halfway_Home
+    - Halfway_01__bot1: If the vintage nectar gauntlet hasn't been completed, the hatch will appear and stay open. If the vintage nectar gauntlet was previously cleared, the hatch closes off and the conversation with Creige happens every time.
+    - Halfway_01__right1: collider obstacle.
+
+### Grand_Gate
+    - Coral_10__left1: collider obstacle.
+    - Coral_10__right1: collider obstacle.
+
+### Nameless_Town
+
+### The_Mist
+    - Dust_Maze_08_completed__right1: collider obstacle.
+
+### Chapel_of_the_Wanderer
+    - Name is cut off in the area selection UI.
+
+### Coral_Tower
+
+### First_Shrine
+
+### Voltnest
