@@ -165,3 +165,20 @@
     - Tut_03__door2: arrives at top1 instead if not in Act 3 (Chapel door is closed).
     - Tut_04: titled area should be Ruined Chapel.
     - Tut_05: titled area should be Ruined Chapel.
+
+### Greymoor
+    - Bellshrine_02__left1: collider obstacle.
+    - Greymoor_01__bot1: collider obstacle.
+    - Greymoor_01__right2: collider obstacle (lever).
+    - Greymoor_02__right2: collider obstacle.
+    - Greymoor_03__left3: collider obstacle.
+    - Greymoor_03__right5: collider obstacle.
+    - Greymoor_06__top1: may need to handle availability of top1 entry in a unique way (dependent on act 1/2 and 3?).
+    - Greymoor_08__door1: arrives at right1 instead if flea caravan isn't in scene.
+    - Greymoor_08__door2: arrives at right1 instead if flea caravan isn't in scene.
+    - Greymoor_15b__right1: collider obstacle.
+    - Greymoor_17__top1: strange visual bug with the camera.
+    - Greymoor_20b__door1: door closes behind Hornet even if the room wasn't visited before.
+    - Greymoor_20b__right1: same thing happens with the door from here.
+    - Greymoor_20c: titled area should be Chapel of the Reaper.
+    - Room_CrowCourt__bot1: collider obstacle.
