@@ -194,7 +194,7 @@
     - Memory_Red__door_wakeInRedMemory_Beast: visual glitch with hornet appearing for a split second before cutscene.
     - Memory_Red__door_wakeInRedMemory_Hive: visual glitch with hornet appearing for a split second before cutscene.
     - Memory_Red__door_wakeInRedMemory_Weaver: visual glitch with hornet appearing for a split second before cutscene.
-    - Room_Caravan_Interior__right1: map/titled area and flipped transition would depend on current position of flea caravan.
+    - Room_Caravan_Interior__right1: map/titled area should be Greymoor.
     - Room_Caravan_Spa__left1: map/titled area and flipped transition would depend on current position of flea caravan.
 
 ### Exhaust_Organ
