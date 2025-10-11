@@ -38,7 +38,7 @@
     - Bonegrave__door1: visual obstacle (closed after getting Wanderer's Crest).
     - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough.
     - Bonegrave_right2: collider obstacle.
-    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1.
+    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1. However, the flipped transition is Tut_03__top1_firstExit.
     - Bonetown__left2: collider obstacle.
     - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions.
 
@@ -153,3 +153,15 @@
     - Dock_15__left2: collider obstacle.
     - Room_Forge__right1: collider obstacle (simple key door).
     - Room_Forge__top1: collider obstacle.
+
+### Moss_Grotto
+    - Tut_01__left1: collider obstacle.
+    - Tut_01__left3: collider obstacle.
+    - Tut_01__top1: hornet is stuck above the visible area, if the sequence of Hornet passing out when reaching Bone Bottom is not triggered.
+    - Tut_02: credits appear for a split second on the bottom right when entering the scene.
+    - Tut_03: titled area should be Ruined Chapel.
+    - Tut_03__door1: corresponds to the "Ascend" prompt.
+    - Tut_03__door1_firstExit: appears to behave the same as door1. However, the flipped transition is Bonetown__bot1_firstEntry.
+    - Tut_03__door2: arrives at top1 instead if not in Act 3 (Chapel door is closed).
+    - Tut_04: titled area should be Ruined Chapel.
+    - Tut_05: titled area should be Ruined Chapel.

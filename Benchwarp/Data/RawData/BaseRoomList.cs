@@ -5380,7 +5380,7 @@ public static class BaseRoomList
             Tut_01__right2,
             Tut_01__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_01b { get; } = new Room
     {
@@ -5392,7 +5392,7 @@ public static class BaseRoomList
             Tut_01b__left2,
             Tut_01b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_02 { get; } = new Room
     {
@@ -5403,7 +5403,7 @@ public static class BaseRoomList
             Tut_02__right1,
             Tut_02__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_03 { get; } = new Room
     {
@@ -5417,7 +5417,7 @@ public static class BaseRoomList
             Tut_03__right1,
             Tut_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_04 { get; } = new Room
     {
@@ -5428,7 +5428,7 @@ public static class BaseRoomList
             Tut_04__left1,
             Tut_04__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_05 { get; } = new Room
     {
@@ -5438,7 +5438,7 @@ public static class BaseRoomList
         Gates = new([
             Tut_05__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Under_01 { get; } = new Room
     {
