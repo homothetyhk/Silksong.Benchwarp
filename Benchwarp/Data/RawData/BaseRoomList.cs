@@ -3252,7 +3252,6 @@ public static class BaseRoomList
             Hang_01__right1,
             Hang_01__right2,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_02 { get; } = new Room
     {
@@ -3263,7 +3262,6 @@ public static class BaseRoomList
             Hang_02__left1,
             Hang_02__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_03 { get; } = new Room
     {
@@ -3277,7 +3275,6 @@ public static class BaseRoomList
             Hang_03__right2,
             Hang_03__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_03_top { get; } = new Room
     {
@@ -3287,7 +3284,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_03_top__bot1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_04 { get; } = new Room
     {
@@ -3298,7 +3294,6 @@ public static class BaseRoomList
             Hang_04__left1,
             Hang_04__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_06 { get; } = new Room
     {
@@ -3312,7 +3307,6 @@ public static class BaseRoomList
             Hang_06__right1,
             Hang_06__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_06_bank { get; } = new Room
     {
@@ -3322,7 +3316,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_06_bank__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_06b { get; } = new Room
     {
@@ -3332,7 +3325,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_06b__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_07 { get; } = new Room
     {
@@ -3345,7 +3337,6 @@ public static class BaseRoomList
             Hang_07__right1,
             Hang_07__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_08 { get; } = new Room
     {
@@ -3361,7 +3352,6 @@ public static class BaseRoomList
             Hang_08__right1,
             Hang_08__right2,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_09 { get; } = new Room
     {
@@ -3371,7 +3361,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_09__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_10 { get; } = new Room
     {
@@ -3382,7 +3371,6 @@ public static class BaseRoomList
             Hang_10__left1,
             Hang_10__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_12 { get; } = new Room
     {
@@ -3392,7 +3380,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_12__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_13 { get; } = new Room
     {
@@ -3403,7 +3390,6 @@ public static class BaseRoomList
             Hang_13__left1,
             Hang_13__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_14 { get; } = new Room
     {
@@ -3413,7 +3399,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_14__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_15 { get; } = new Room
     {
@@ -3423,7 +3408,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_15__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_16 { get; } = new Room
     {
@@ -3434,7 +3418,6 @@ public static class BaseRoomList
             Hang_16__door1,
             Hang_16__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Hang_17b { get; } = new Room
     {
@@ -3444,7 +3427,6 @@ public static class BaseRoomList
         Gates = new([
             Hang_17b__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Library_01 { get; } = new Room
     {
