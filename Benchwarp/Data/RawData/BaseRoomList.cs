@@ -3688,7 +3688,7 @@ public static class BaseRoomList
             Memory_Needolin__left1,
             Memory_Needolin__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Memory_Red { get; } = new Room
     {
@@ -3703,7 +3703,7 @@ public static class BaseRoomList
             Memory_Red__door_wakeInRedMemory_Hive,
             Memory_Red__door_wakeInRedMemory_Weaver,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Mosstown_01 { get; } = new Room
     {
@@ -3982,7 +3982,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Caravan_Interior__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Caravan_Spa { get; } = new Room
     {
@@ -3992,7 +3992,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Caravan_Spa__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_CrowCourt { get; } = new Room
     {

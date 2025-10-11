@@ -182,3 +182,17 @@
     - Greymoor_20b__right1: same thing happens with the door from here.
     - Greymoor_20c: titled area should be Chapel of the Reaper.
     - Room_CrowCourt__bot1: collider obstacle.
+
+### Unknown
+    - Memory_Needolin: map/titled area should be Bellhart.
+    - Memory_Needolin__right1: abnormal camera.
+    - Memory_Red: map area should be Mosslands and titled area should be Ruined Chapel.
+    - Memory_Red: multiple door names in the UI look the same.
+    - Memory_Red__door_enterRedMemory_Beast: background graphics missing.
+    - Memory_Red__door_enterRedMemory_Hive: background graphics missing.
+    - Memory_Red__door_enterRedMemory_Hive: background graphics missing.
+    - Memory_Red__door_wakeInRedMemory_Beast: visual glitch with hornet appearing for a split second before cutscene.
+    - Memory_Red__door_wakeInRedMemory_Hive: visual glitch with hornet appearing for a split second before cutscene.
+    - Memory_Red__door_wakeInRedMemory_Weaver: visual glitch with hornet appearing for a split second before cutscene.
+    - Room_Caravan_Interior__right1: map/titled area and flipped transition would depend on current position of flea caravan.
+    - Room_Caravan_Spa__left1: map/titled area and flipped transition would depend on current position of flea caravan.
