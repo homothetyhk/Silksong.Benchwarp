@@ -136,7 +136,7 @@
     - Bone_East_17b_left1: collider obstacle.
     - Bone_East_18c_left1: collider obstacle.
 
-## Deep_Docks
+### Deep_Docks
     - Bellway_02__left1: collider obstacle.
     - Dock_01__right1: collider obstacle.
     - Dock_02__left1: collider obstacle.
@@ -196,3 +196,27 @@
     - Memory_Red__door_wakeInRedMemory_Weaver: visual glitch with hornet appearing for a split second before cutscene.
     - Room_Caravan_Interior__right1: map/titled area and flipped transition would depend on current position of flea caravan.
     - Room_Caravan_Spa__left1: map/titled area and flipped transition would depend on current position of flea caravan.
+
+### Exhaust_Organ
+
+### Halfway_Home
+    - Halfway_01__bot1: If the vintage nectar gauntlet hasn't been completed, the hatch will appear and stay open. If the vintage nectar gauntlet was previously cleared, the hatch closes off and the conversation with Creige happens every time.
+    - Halfway_01__right1: collider obstacle.
+
+### Grand_Gate
+    - Coral_10__left1: collider obstacle.
+    - Coral_10__right1: collider obstacle.
+
+### Nameless_Town
+
+### The_Mist
+    - Dust_Maze_08_completed__right1: collider obstacle.
+
+### Chapel_of_the_Wanderer
+    - Name is cut off in the area selection UI.
+
+### Coral_Tower
+
+### First_Shrine
+
+### Voltnest

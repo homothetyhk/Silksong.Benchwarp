@@ -13,7 +13,7 @@ public static class BaseRoomList
             Abandoned_town__bot1,
             Abandoned_town__door1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Abyss_01 { get; } = new Room
     {
@@ -663,7 +663,7 @@ public static class BaseRoomList
         Gates = new([
             Bellshrine_Enclave__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown { get; } = new Room
     {
@@ -1689,7 +1689,7 @@ public static class BaseRoomList
         Gates = new([
             Chapel_Wanderer__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Clover_01 { get; } = new Room
     {
@@ -2045,7 +2045,7 @@ public static class BaseRoomList
             Coral_10__left1,
             Coral_10__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_11 { get; } = new Room
     {
@@ -2192,7 +2192,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_29__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_32 { get; } = new Room
     {
@@ -2373,7 +2373,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_Tower_01__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_01 { get; } = new Room
     {
@@ -2956,7 +2956,7 @@ public static class BaseRoomList
             Dust_Maze_08_completed__right1,
             Dust_Maze_08_completed__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_Shack { get; } = new Room
     {
@@ -3241,7 +3241,7 @@ public static class BaseRoomList
             Halfway_01__left1,
             Halfway_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Hang_01 { get; } = new Room
     {
@@ -3763,7 +3763,7 @@ public static class BaseRoomList
             Organ_01__left2,
             Organ_01__left3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Peak_01 { get; } = new Room
     {
