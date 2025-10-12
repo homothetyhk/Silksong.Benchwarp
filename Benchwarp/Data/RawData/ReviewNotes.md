@@ -19,6 +19,7 @@
   - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
 
 - Bilewater
+  - Bellway_08: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
   - Shadow_04 missing a transition into the mist
   - Shadow_05[left1] and Dust_06[right1] put you behind a breakable wall and not visible. You can still break it though
   - Shadow_08[left1] and Shadow_27[right1] need lots of crap removed
@@ -48,6 +49,7 @@
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
     - Aspid_01__right3: collider obstacle.
     - Aspid_01__top1/top2/top3/top4/top5/top6/top7: big top transition at several different positions.
+    - Bellway_01: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Bellway_01__left1: collider obstacle in Act 3.
     - Bonegrave__door1: Door closes if the corresponding crest was obtained. It doesn't matter how hornet enters the scene.
     - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough. (possibly always arrives via right1 regardless of steel soul progress, this needs to be checked)
@@ -116,10 +118,12 @@
     - Aqueduct_04__bot1: screen is pitch-black (either collider or camera issue).
     - Aqueduct_05__door2: arrives at left1 instead if Fleatopia isn't there.
     - Aqueduct_08__left1: collider obstacle.
+    - Bellway_Aqueduct: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
 
 ### Far_Fields
     - Bellshrine_05: map/titled area should be Deep Docks.
     - Bellshrine_05__right1: collider obstacle.
+    - Bellway_03: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Bone_East_01: map/titled area should be Deep Docks.
     - Bone_East_02__left1: collider obstacle.
     - Bone_East_03: map/titled area should be Deep Docks.
@@ -153,6 +157,7 @@
     - Bone_East_18c__left1: collider obstacle.
 
 ### Deep_Docks
+    - Bellway_02: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Bellway_02__left1: collider obstacle.
     - Dock_01__right1: collider obstacle.
     - Dock_02__left1: collider obstacle.
@@ -184,6 +189,7 @@
 
 ### Greymoor
     - Bellshrine_02__left1: collider obstacle.
+    - Bellway_04: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Greymoor_01__bot1: collider obstacle.
     - Greymoor_01__right2: collider obstacle (lever).
     - Greymoor_02__right2: collider obstacle.
