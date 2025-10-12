@@ -871,7 +871,7 @@ public static class BaseRoomList
             Bellway_08__left1,
             Bellway_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_Aqueduct { get; } = new Room
     {
@@ -2013,7 +2013,7 @@ public static class BaseRoomList
             Coral_02__bot2,
             Coral_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_03 { get; } = new Room
     {
@@ -2034,7 +2034,7 @@ public static class BaseRoomList
             Coral_03__right2,
             Coral_03__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_10 { get; } = new Room
     {
@@ -2056,7 +2056,7 @@ public static class BaseRoomList
             Coral_11__left1,
             Coral_11__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_11b { get; } = new Room
     {
@@ -2067,7 +2067,7 @@ public static class BaseRoomList
             Coral_11b__left1,
             Coral_11b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_12 { get; } = new Room
     {
@@ -2079,7 +2079,7 @@ public static class BaseRoomList
             Coral_12__left3,
             Coral_12__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_19 { get; } = new Room
     {
@@ -2104,7 +2104,7 @@ public static class BaseRoomList
             Coral_19__top7,
             Coral_19__top8,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_19b { get; } = new Room
     {
@@ -2114,7 +2114,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_19b__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_23 { get; } = new Room
     {
@@ -2204,7 +2204,7 @@ public static class BaseRoomList
             Coral_32__right1,
             Coral_32__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_33 { get; } = new Room
     {
@@ -2214,7 +2214,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_33__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_34 { get; } = new Room
     {
@@ -2226,7 +2226,7 @@ public static class BaseRoomList
             Coral_34__right1,
             Coral_34__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_35 { get; } = new Room
     {
@@ -2240,7 +2240,7 @@ public static class BaseRoomList
             Coral_35__right2,
             Coral_35__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_35b { get; } = new Room
     {
@@ -2267,7 +2267,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_36__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_37 { get; } = new Room
     {
@@ -2277,7 +2277,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_37__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_38 { get; } = new Room
     {
@@ -2329,7 +2329,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_42__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_43 { get; } = new Room
     {
@@ -2340,7 +2340,7 @@ public static class BaseRoomList
             Coral_43__left1,
             Coral_43__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_44 { get; } = new Room
     {
@@ -2363,7 +2363,7 @@ public static class BaseRoomList
             Coral_Judge_Arena__left1,
             Coral_Judge_Arena__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_Tower_01 { get; } = new Room
     {
@@ -4057,7 +4057,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Pinstress__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Room_Witch { get; } = new Room
     {

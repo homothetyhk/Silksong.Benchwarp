@@ -242,3 +242,14 @@
 ### First_Shrine
 
 ### Voltnest
+
+### Blasted_Steps
+    - Bellway_08: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Coral_03__bot1/bot2/bot3/bot4/bot5/bot6: big bot transition at several different positions.
+    - Coral_12__right1: collider obstacle.
+    - Coral_19__bot1/bot2/bot3/bot4/bot5/bot6/bot7: big bot transition at several different positions.
+    - Coral_19__top3/top4/top5/top6/top7/top8: big top transition at several different positions.
+    - Coral_35__right2: collider obstacle.
+    - Coral_35__top1: collider obstacle.
+    - Coral_Judge_Arena__door2: arrives at right1 instead if flea caravan isn't in scene.
+    - Coral_Judge_Arena__right1: collider obstacle.
