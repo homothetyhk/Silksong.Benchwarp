@@ -19,6 +19,7 @@
   - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
 
 - Bilewater
+  - Bellway_08: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
   - Shadow_04 missing a transition into the mist
   - Shadow_05[left1] and Dust_06[right1] put you behind a breakable wall and not visible. You can still break it though
   - Shadow_08[left1] and Shadow_27[right1] need lots of crap removed
@@ -54,10 +55,14 @@
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
     - Aspid_01__right3: collider obstacle.
     - Aspid_01__top1/top2/top3/top4/top5/top6/top7: big top transition at several different positions.
-    - Bonegrave__door1: visual obstacle (closed after getting Wanderer's Crest).
-    - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough.
+    - Bellway_01: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Bellway_01__left1: collider obstacle in Act 3.
+    - Bonegrave__door1: Door closes if the corresponding crest was obtained. It doesn't matter how hornet enters the scene.
+    - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough. (possibly always arrives via right1 regardless of steel soul progress, this needs to be checked)
     - Bonegrave_right2: collider obstacle.
     - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1. However, the flipped transition is Tut_03__top1_firstExit.
+    - Bonetown__bot2: large dark vignette to the left of the transition is there if Chapel Maid isn't encountered.
+    - Bonetown__door1: collider obstacle in Act 3.
     - Bonetown__left2: collider obstacle.
     - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions.
 
@@ -119,10 +124,12 @@
     - Aqueduct_04__bot1: screen is pitch-black (either collider or camera issue).
     - Aqueduct_05__door2: arrives at left1 instead if Fleatopia isn't there.
     - Aqueduct_08__left1: collider obstacle.
+    - Bellway_Aqueduct: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
 
 ### Far_Fields
     - Bellshrine_05: map/titled area should be Deep Docks.
     - Bellshrine_05__right1: collider obstacle.
+    - Bellway_03: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Bone_East_01: map/titled area should be Deep Docks.
     - Bone_East_02__left1: collider obstacle.
     - Bone_East_03: map/titled area should be Deep Docks.
@@ -150,12 +157,13 @@
     - Bone_East_12: map/titled area should be Deep Docks.
     - Bone_East_12__bot1: visual obstacle (hatch isn't open when hornet enters scene).
     - Bone_East_13: map/titled area should be Deep Docks.
-    - Bone_East_14_right2: collider obstacle.
-    - Bone_East_16_right1: collider obstacle.
-    - Bone_East_17b_left1: collider obstacle.
-    - Bone_East_18c_left1: collider obstacle.
+    - Bone_East_14__right2: collider obstacle.
+    - Bone_East_16__right1: collider obstacle.
+    - Bone_East_17b__left1: collider obstacle.
+    - Bone_East_18c__left1: collider obstacle.
 
 ### Deep_Docks
+    - Bellway_02: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Bellway_02__left1: collider obstacle.
     - Dock_01__right1: collider obstacle.
     - Dock_02__left1: collider obstacle.
@@ -181,12 +189,13 @@
     - Tut_03: titled area should be Ruined Chapel.
     - Tut_03__door1: corresponds to the "Ascend" prompt.
     - Tut_03__door1_firstExit: appears to behave the same as door1. However, the flipped transition is Bonetown__bot1_firstEntry.
-    - Tut_03__door2: arrives at top1 instead if not in Act 3 (Chapel door is closed).
+    - Tut_03__door2: Should arrive at the door to the Chapel, but arrives at top1 regardless of whether if in Act 3 or not. Also need to handle door being closed when not Act 3.
     - Tut_04: titled area should be Ruined Chapel.
     - Tut_05: titled area should be Ruined Chapel.
 
 ### Greymoor
     - Bellshrine_02__left1: collider obstacle.
+    - Bellway_04: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
     - Greymoor_01__bot1: collider obstacle.
     - Greymoor_01__right2: collider obstacle (lever).
     - Greymoor_02__right2: collider obstacle.
@@ -197,7 +206,7 @@
     - Greymoor_08__door2: arrives at right1 instead if flea caravan isn't in scene.
     - Greymoor_15b__right1: collider obstacle.
     - Greymoor_17__top1: strange visual bug with the camera.
-    - Greymoor_20b__door1: door closes behind Hornet even if the room wasn't visited before.
+    - Greymoor_20b__door1: Door closes if the corresponding crest was obtained. It doesn't matter how hornet enters the scene.
     - Greymoor_20b__right1: same thing happens with the door from here.
     - Greymoor_20c: titled area should be Chapel of the Reaper.
     - Room_CrowCourt__bot1: collider obstacle.
@@ -239,3 +248,45 @@
 ### First_Shrine
 
 ### Voltnest
+
+### Blasted_Steps
+    - Bellway_08: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Coral_03__bot1/bot2/bot3/bot4/bot5/bot6: big bot transition at several different positions.
+    - Coral_12__right1: collider obstacle.
+    - Coral_19__bot1/bot2/bot3/bot4/bot5/bot6/bot7: big bot transition at several different positions.
+    - Coral_19__top3/top4/top5/top6/top7/top8: big top transition at several different positions.
+    - Coral_35__right2: collider obstacle.
+    - Coral_35__top1: collider obstacle.
+    - Coral_Judge_Arena__door2: arrives at right1 instead if flea caravan isn't in scene.
+    - Coral_Judge_Arena__right1: collider obstacle.
+
+### Mosshome
+    - Mosstown_01__bot1: collider obstacle.
+    - Mosstown_02__left1: collider obstacle.
+    - Mosstown_03: map/titled area should be Shellwood.
+    - Mosstown_03__right1: collider obstacle.
+    - Mosstown_03__top1: collider obstacle.
+
+### Wisp_Thicket
+    - Wisp_02__top1: collider obstacle.
+    - Wisp_03: titled area should be Greymoor.
+    - Wisp_03__door1: door closes behind Hornet. Keep it open as a transition fix?
+    - Wisp_03__top1: collider obstacle.
+    - Wisp_05__left1: collider obstacle.
+    - Wisp_06: titled area should be Greymoor.
+
+### Weavenest_Atla
+    - Typo in the MapAreaNames/TitleAreaNames name ("Weavenest_Alta")
+    - Weave_02__right3: collider obstacle.
+
+### The_Cradle
+    - Cradle_02__left2: collider obstacle.
+    - Tube_Hub: in Act 3 only, all three transition gates are blocked.
+
+### Bellhart
+    - Belltown__door3/door4/door5: Spawns hornet in the middle of the scene. Not sure if this always happens or it depends on saving the town/Act 3 or a combination of both.
+    - Belltown_04__left2: collider obstacle.
+    - Belltown_basement: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Belltown_Room_doctor: map/titled area should be Greymoor.
+    - Belltown_Room_fisher: this room doesn't seem to exist. Attempting to door warp here softlocks the game.
+    - Belltown_Room_shellwood: map/titled area should be Shellwood.
