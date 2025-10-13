@@ -6003,7 +6003,7 @@ public static class BaseRoomList
             Wisp_02__right1,
             Wisp_02__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_03 { get; } = new Room
     {
@@ -6015,7 +6015,7 @@ public static class BaseRoomList
             Wisp_03__right1,
             Wisp_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_04 { get; } = new Room
     {
@@ -6027,7 +6027,7 @@ public static class BaseRoomList
             Wisp_04__left1,
             Wisp_04__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_05 { get; } = new Room
     {
@@ -6038,7 +6038,7 @@ public static class BaseRoomList
             Wisp_05__bot1,
             Wisp_05__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_06 { get; } = new Room
     {
@@ -6048,7 +6048,7 @@ public static class BaseRoomList
         Gates = new([
             Wisp_06__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_07 { get; } = new Room
     {
@@ -6058,7 +6058,7 @@ public static class BaseRoomList
         Gates = new([
             Wisp_07__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_08 { get; } = new Room
     {
@@ -6069,7 +6069,7 @@ public static class BaseRoomList
             Wisp_08__left1,
             Wisp_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_09 { get; } = new Room
     {
@@ -6080,6 +6080,6 @@ public static class BaseRoomList
             Wisp_09__right1,
             Wisp_09__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
 }

@@ -260,3 +260,11 @@
     - Mosstown_03: map/titled area should be Shellwood.
     - Mosstown_03__right1: collider obstacle.
     - Mosstown_03__top1: collider obstacle.
+
+### Wisp_Thicket
+    - Wisp_02__top1: collider obstacle.
+    - Wisp_03: titled area should be Greymoor.
+    - Wisp_03__door1: door closes behind Hornet. Keep it open as a transition fix?
+    - Wisp_03__top1: collider obstacle.
+    - Wisp_05__left1: collider obstacle.
+    - Wisp_06: titled area should be Greymoor.
