@@ -43,6 +43,12 @@
   - Hang_16[door1] needs special handling in act 3 mode
   - Hang_01 and Hang_07 are in the Choral Chambers titled/map area
 
+- Hunter's March
+  - Ant_08 should be Halfway Home / Greymoor 
+  - Ant_Queen should be Far Fields
+  - Ant_19 titled area should be Chapel of the Beast
+  - Note - Ant_20[door1] is fine, even if the chapel has been closed
+
 ### Bone_Bottom
     - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
