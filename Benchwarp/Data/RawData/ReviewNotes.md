@@ -268,3 +268,7 @@
     - Wisp_03__top1: collider obstacle.
     - Wisp_05__left1: collider obstacle.
     - Wisp_06: titled area should be Greymoor.
+
+### Weavenest_Atla
+    - Typo in the MapAreaNames/TitleAreaNames name ("Weavenest_Alta")
+    - Weave_02__right3: collider obstacle.

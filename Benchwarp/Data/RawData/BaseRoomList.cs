@@ -5886,7 +5886,7 @@ public static class BaseRoomList
             Weave_02__right2,
             Weave_02__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_03 { get; } = new Room
     {
@@ -5896,7 +5896,7 @@ public static class BaseRoomList
         Gates = new([
             Weave_03__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_04 { get; } = new Room
     {
@@ -5907,7 +5907,7 @@ public static class BaseRoomList
             Weave_04__left1,
             Weave_04__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_05b { get; } = new Room
     {
@@ -5917,7 +5917,7 @@ public static class BaseRoomList
         Gates = new([
             Weave_05b__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_07 { get; } = new Room
     {
@@ -5928,7 +5928,7 @@ public static class BaseRoomList
             Weave_07__left1,
             Weave_07__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_08 { get; } = new Room
     {
@@ -5939,7 +5939,7 @@ public static class BaseRoomList
             Weave_08__left1,
             Weave_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_10 { get; } = new Room
     {
@@ -5949,7 +5949,7 @@ public static class BaseRoomList
         Gates = new([
             Weave_10__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_11 { get; } = new Room
     {
@@ -5960,7 +5960,7 @@ public static class BaseRoomList
             Weave_11__right1,
             Weave_11__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_12 { get; } = new Room
     {
@@ -5970,7 +5970,7 @@ public static class BaseRoomList
         Gates = new([
             Weave_12__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_13 { get; } = new Room
     {
@@ -5981,7 +5981,7 @@ public static class BaseRoomList
             Weave_13__left1,
             Weave_13__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Weave_14 { get; } = new Room
     {
@@ -5991,7 +5991,7 @@ public static class BaseRoomList
         Gates = new([
             Weave_14__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Wisp_02 { get; } = new Room
     {
