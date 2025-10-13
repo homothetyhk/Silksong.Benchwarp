@@ -678,7 +678,7 @@ public static class BaseRoomList
             Belltown__left3,
             Belltown__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_04 { get; } = new Room
     {
@@ -690,7 +690,7 @@ public static class BaseRoomList
             Belltown_04__left1,
             Belltown_04__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_06 { get; } = new Room
     {
@@ -703,7 +703,7 @@ public static class BaseRoomList
             Belltown_06__left3,
             Belltown_06__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_07 { get; } = new Room
     {
@@ -714,7 +714,7 @@ public static class BaseRoomList
             Belltown_07__left1,
             Belltown_07__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_08 { get; } = new Room
     {
@@ -724,7 +724,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_basement { get; } = new Room
     {
@@ -735,7 +735,7 @@ public static class BaseRoomList
             Belltown_basement__bot1,
             Belltown_basement__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_basement_03 { get; } = new Room
     {
@@ -746,7 +746,7 @@ public static class BaseRoomList
             Belltown_basement_03__left1,
             Belltown_basement_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_doctor { get; } = new Room
     {
@@ -756,7 +756,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_doctor__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_Fisher { get; } = new Room
     {
@@ -766,7 +766,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_Fisher__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_pinsmith { get; } = new Room
     {
@@ -776,7 +776,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_pinsmith__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_Relic { get; } = new Room
     {
@@ -786,7 +786,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_Relic__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_shellwood { get; } = new Room
     {
@@ -796,7 +796,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_shellwood__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Room_Spare { get; } = new Room
     {
@@ -806,7 +806,7 @@ public static class BaseRoomList
         Gates = new([
             Belltown_Room_Spare__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Belltown_Shrine { get; } = new Room
     {
@@ -817,7 +817,7 @@ public static class BaseRoomList
             Belltown_Shrine__right1,
             Belltown_Shrine__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_01 { get; } = new Room
     {

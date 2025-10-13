@@ -276,3 +276,11 @@
 ### The_Cradle
     - Cradle_02__left2: collider obstacle.
     - Tube_Hub: in Act 3 only, all three transition gates are blocked.
+
+### Bellhart
+    - Belltown__door3/door4/door5: Spawns hornet in the middle of the scene. Not sure if this always happens or it depends on saving the town/Act 3 or a combination of both.
+    - Belltown_04__left2: collider obstacle.
+    - Belltown_basement: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Belltown_Room_doctor: map/titled area should be Greymoor.
+    - Belltown_Room_fisher: this room doesn't seem to exist. Attempting to door warp here softlocks the game.
+    - Belltown_Room_shellwood: map/titled area should be Shellwood.
