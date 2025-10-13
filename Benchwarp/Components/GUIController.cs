@@ -154,10 +154,15 @@ namespace Benchwarp.Components
             {
                 if (ScenePanelEnabled)
                 {
-                    if (PlayerData.instance != null)
+                    if (GameManager.UnsafeInstance != null)
                     {
-                        Text debugText = sceneNamePanel.GetComponent<Text>();
-                        debugText.text = $"{PlayerData.instance.respawnMarkerName}, {PlayerData.instance.respawnScene}, {PlayerData.instance.respawnType}, {PlayerData.instance.mapZone}";
+                        string sceneText = Events.TextModifiers.GetSceneName(GameManager.instance.sceneName);
+                        if (HeroController.SilentInstance != null)
+                        {
+                            Vector2 heroPos = HeroController.instance.transform.position;
+                            sceneText += $" {heroPos}";
+                        }
+                        sceneNamePanel.GetComponent<Text>().text = sceneText;
                     }
                 }
 
