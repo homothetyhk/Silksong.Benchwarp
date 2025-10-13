@@ -2384,7 +2384,7 @@ public static class BaseRoomList
             Cradle_01__left1,
             Cradle_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_01_Destroyed { get; } = new Room
     {
@@ -2395,7 +2395,7 @@ public static class BaseRoomList
             Cradle_01_Destroyed__bot1,
             Cradle_01_Destroyed__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_02 { get; } = new Room
     {
@@ -2407,7 +2407,7 @@ public static class BaseRoomList
             Cradle_02__right1,
             Cradle_02__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_02b { get; } = new Room
     {
@@ -2417,7 +2417,7 @@ public static class BaseRoomList
         Gates = new([
             Cradle_02b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_03 { get; } = new Room
     {
@@ -2428,7 +2428,7 @@ public static class BaseRoomList
             Cradle_03__left2,
             Cradle_03__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_03_Destroyed { get; } = new Room
     {
@@ -2439,7 +2439,7 @@ public static class BaseRoomList
             Cradle_03_Destroyed__bot1,
             Cradle_03_Destroyed__door1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_Destroyed_Challenge_01 { get; } = new Room
     {
@@ -2450,7 +2450,7 @@ public static class BaseRoomList
             Cradle_Destroyed_Challenge_01__left1,
             Cradle_Destroyed_Challenge_01__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_Destroyed_Challenge_02 { get; } = new Room
     {
@@ -2461,7 +2461,7 @@ public static class BaseRoomList
             Cradle_Destroyed_Challenge_02__left1,
             Cradle_Destroyed_Challenge_02__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cradle_Destroyed_Challenge_Bench { get; } = new Room
     {
@@ -2473,7 +2473,7 @@ public static class BaseRoomList
             Cradle_Destroyed_Challenge_Bench__door1,
             Cradle_Destroyed_Challenge_Bench__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Crawl_01 { get; } = new Room
     {
@@ -5347,7 +5347,7 @@ public static class BaseRoomList
             Tube_Hub__left3,
             Tube_Hub__left4,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Tut_01 { get; } = new Room
     {

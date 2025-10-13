@@ -272,3 +272,7 @@
 ### Weavenest_Atla
     - Typo in the MapAreaNames/TitleAreaNames name ("Weavenest_Alta")
     - Weave_02__right3: collider obstacle.
+
+### The_Cradle
+    - Cradle_02__left2: collider obstacle.
+    - Tube_Hub: in Act 3 only, all three transition gates are blocked.
