@@ -253,3 +253,10 @@
     - Coral_35__top1: collider obstacle.
     - Coral_Judge_Arena__door2: arrives at right1 instead if flea caravan isn't in scene.
     - Coral_Judge_Arena__right1: collider obstacle.
+
+### Mosshome
+    - Mosstown_01__bot1: collider obstacle.
+    - Mosstown_02__left1: collider obstacle.
+    - Mosstown_03: map/titled area should be Shellwood.
+    - Mosstown_03__right1: collider obstacle.
+    - Mosstown_03__top1: collider obstacle.

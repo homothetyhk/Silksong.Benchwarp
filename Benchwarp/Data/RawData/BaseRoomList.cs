@@ -3698,7 +3698,7 @@ public static class BaseRoomList
             Mosstown_01__right2,
             Mosstown_01__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Mosstown_02 { get; } = new Room
     {
@@ -3711,7 +3711,7 @@ public static class BaseRoomList
             Mosstown_02__left1,
             Mosstown_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Mosstown_02c { get; } = new Room
     {
@@ -3721,7 +3721,7 @@ public static class BaseRoomList
         Gates = new([
             Mosstown_02c__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Mosstown_03 { get; } = new Room
     {
@@ -3733,7 +3733,7 @@ public static class BaseRoomList
             Mosstown_03__right2,
             Mosstown_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Organ_01 { get; } = new Room
     {
