@@ -181,7 +181,6 @@ public static class BaseRoomList
             Ant_02__left1,
             Ant_02__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_03 { get; } = new Room
     {
@@ -192,7 +191,6 @@ public static class BaseRoomList
             Ant_03__left2,
             Ant_03__right3,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_04 { get; } = new Room
     {
@@ -203,7 +201,6 @@ public static class BaseRoomList
             Ant_04__left1,
             Ant_04__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_04_left { get; } = new Room
     {
@@ -214,7 +211,6 @@ public static class BaseRoomList
             Ant_04_left__left1,
             Ant_04_left__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_04_mid { get; } = new Room
     {
@@ -225,7 +221,6 @@ public static class BaseRoomList
             Ant_04_mid__left1,
             Ant_04_mid__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_05b { get; } = new Room
     {
@@ -237,7 +232,6 @@ public static class BaseRoomList
             Ant_05b__bot2,
             Ant_05b__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_05c { get; } = new Room
     {
@@ -248,7 +242,6 @@ public static class BaseRoomList
             Ant_05c__left1,
             Ant_05c__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_08 { get; } = new Room
     {
@@ -258,7 +251,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_08__top1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_09 { get; } = new Room
     {
@@ -269,7 +261,6 @@ public static class BaseRoomList
             Ant_09__left1,
             Ant_09__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_14 { get; } = new Room
     {
@@ -285,7 +276,6 @@ public static class BaseRoomList
             Ant_14__right2,
             Ant_14__right3,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_17 { get; } = new Room
     {
@@ -295,7 +285,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_17__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_19 { get; } = new Room
     {
@@ -305,7 +294,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_19__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_20 { get; } = new Room
     {
@@ -316,7 +304,6 @@ public static class BaseRoomList
             Ant_20__door1,
             Ant_20__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_21 { get; } = new Room
     {
@@ -326,7 +313,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_21__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_Merchant { get; } = new Room
     {
@@ -336,7 +322,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_Merchant__right1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Ant_Queen { get; } = new Room
     {
@@ -346,7 +331,6 @@ public static class BaseRoomList
         Gates = new([
             Ant_Queen__left1,
         ]),
-        ManuallyVerified = false,
     };
     public static Room Aqueduct_01 { get; } = new Room
     {
