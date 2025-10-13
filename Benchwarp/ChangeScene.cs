@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Benchwarp.Data.RawData;
+using UnityEngine;
+using static System.TimeZoneInfo;
 
 namespace Benchwarp
 {
@@ -36,48 +38,52 @@ namespace Benchwarp
                 return;
             }
             Events.ModEvents.InvokeOnDoorwarp(sceneName, gateName);
-            try
-            {
-                // HK code for resetting state
-                UIManager.instance.UIClosePauseMenu();
-                Time.timeScale = 1.0f;
-                GameManager.instance.FadeSceneIn();
-                GameManager.instance.isPaused = false;
-                GameCameras.instance.ResumeCameraShake();
-                if (HeroController.SilentInstance != null) HeroController.instance.UnPause();
-                MenuButtonList.ClearAllLastSelected();
-                TimeManager.TimeScale = 1.0f;
-                GameManager.instance.actorSnapshotUnpaused.TransitionTo(0f);
-                GameManager.instance.ui.AudioGoToGameplay(.2f);
-                if (HeroController.SilentInstance != null) HeroController.instance.UnPause();
-                MenuButtonList.ClearAllLastSelected();
-                PlayerData.instance.atBench = false;
-                if (HeroController.SilentInstance != null)
-                {
-                    if (HeroController.instance.cState.onConveyor || HeroController.instance.cState.onConveyorV || HeroController.instance.cState.inConveyorZone)
-                    {
-                        HeroController.instance.GetComponent<ConveyorMovementHero>()?.StopConveyorMove();
-                        HeroController.instance.cState.inConveyorZone = false;
-                        HeroController.instance.cState.onConveyor = false;
-                        HeroController.instance.cState.onConveyorV = false;
-                    }
-                    HeroController.instance.cState.nearBench = false;
-                }
-                SceneLoad load = GameManager.instance.sceneLoad;
-                if (load != null)
-                {
-                    load.Finish += () => GameManager.instance.ChangeToScene(sceneName, gateName, 0.0f);
-                }
-                else
-                {
-                    GameManager.instance.ChangeToScene(sceneName, gateName, 0.0f);
-                }
-
-            }
-            catch (Exception e)
-            {
-                LogError($"Error during {nameof(WarpToDoor)}:\n{e}");
-            }
+            BenchwarpPlugin.Instance.StartCoroutine(DoWarpToDoor(sceneName, gateName));
         }
+
+        private static System.Collections.IEnumerator DoWarpToDoor(string sceneName, string gateName)
+        {
+            if (GameManager.instance.IsGamePaused())
+            {
+                yield return GameManager.instance.PauseGameToggleByMenu();
+            }
+
+            PlayerData.instance.atBench = false;
+            if (HeroController.SilentInstance != null)
+            {
+                if (HeroController.instance.cState.onConveyor || HeroController.instance.cState.onConveyorV || HeroController.instance.cState.inConveyorZone)
+                {
+                    HeroController.instance.GetComponent<ConveyorMovementHero>()?.StopConveyorMove();
+                    HeroController.instance.cState.inConveyorZone = false;
+                    HeroController.instance.cState.onConveyor = false;
+                    HeroController.instance.cState.onConveyorV = false;
+                }
+                HeroController.instance.cState.nearBench = false;
+            }
+
+            SceneLoad load = GameManager.instance.sceneLoad;
+            if (load != null)
+            {
+                load.Finish += Warp;
+            }
+            else
+            {
+                Warp();
+            }
+
+
+            void Warp() => GameManager.instance.BeginSceneTransition(new GameManager.SceneLoadInfo
+            {
+                SceneName = sceneName,
+                EntryGateName = gateName,
+                PreventCameraFadeOut = false,
+                WaitForSceneTransitionCameraFade = true,
+                Visualization = GameManager.SceneLoadVisualizations.Default,
+                AlwaysUnloadUnusedAssets = true,
+                IsFirstLevelForPlayer = false,
+            });
+
+        }
+
     }
 }
