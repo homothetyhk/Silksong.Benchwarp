@@ -3424,7 +3424,7 @@ public static class BaseRoomList
             Library_01__right1,
             Library_01__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_02 { get; } = new Room
     {
@@ -3437,7 +3437,7 @@ public static class BaseRoomList
             Library_02__right1,
             Library_02__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_03 { get; } = new Room
     {
@@ -3448,7 +3448,7 @@ public static class BaseRoomList
             Library_03__left1,
             Library_03__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_04 { get; } = new Room
     {
@@ -3468,7 +3468,7 @@ public static class BaseRoomList
             Library_04__right6,
             Library_04__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_05 { get; } = new Room
     {
@@ -3481,7 +3481,7 @@ public static class BaseRoomList
             Library_05__right1,
             Library_05__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_06 { get; } = new Room
     {
@@ -3493,7 +3493,7 @@ public static class BaseRoomList
             Library_06__left2,
             Library_06__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_07 { get; } = new Room
     {
@@ -3508,7 +3508,7 @@ public static class BaseRoomList
             Library_07__left2,
             Library_07__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_08 { get; } = new Room
     {
@@ -3519,7 +3519,7 @@ public static class BaseRoomList
             Library_08__left1,
             Library_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_09 { get; } = new Room
     {
@@ -3530,7 +3530,7 @@ public static class BaseRoomList
             Library_09__bot1,
             Library_09__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_10 { get; } = new Room
     {
@@ -3541,7 +3541,7 @@ public static class BaseRoomList
             Library_10__bot1,
             Library_10__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_11 { get; } = new Room
     {
@@ -3555,7 +3555,7 @@ public static class BaseRoomList
             Library_11__right1,
             Library_11__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_11b { get; } = new Room
     {
@@ -3566,7 +3566,7 @@ public static class BaseRoomList
             Library_11b__left3,
             Library_11b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_12 { get; } = new Room
     {
@@ -3579,7 +3579,7 @@ public static class BaseRoomList
             Library_12__left2,
             Library_12__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_12b { get; } = new Room
     {
@@ -3590,7 +3590,7 @@ public static class BaseRoomList
             Library_12b__left1,
             Library_12b__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_13 { get; } = new Room
     {
@@ -3602,7 +3602,7 @@ public static class BaseRoomList
             Library_13__right1,
             Library_13__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_13b { get; } = new Room
     {
@@ -3613,7 +3613,7 @@ public static class BaseRoomList
             Library_13b__left1,
             Library_13b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_14 { get; } = new Room
     {
@@ -3623,7 +3623,7 @@ public static class BaseRoomList
         Gates = new([
             Library_14__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_15 { get; } = new Room
     {
@@ -3633,7 +3633,7 @@ public static class BaseRoomList
         Gates = new([
             Library_15__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Library_16 { get; } = new Room
     {
@@ -3643,7 +3643,7 @@ public static class BaseRoomList
         Gates = new([
             Library_16__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Memory_Needolin { get; } = new Room
     {

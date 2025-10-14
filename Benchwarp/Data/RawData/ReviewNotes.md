@@ -311,3 +311,18 @@ The below areas have been checked when using the new door warp coroutine.
     - Dust_06__right1: collider obstacle.
     - Dust_09: map/titled area should be Bilewater.
     - Dust_Chef__left1: collider obstacle (lever).
+
+### Whispering_Vaults
+    - Library_01__left3: collider obstacle.
+    - Library_03: map/titled area for LEFT SIDE corresponds to Choral Chambers, and RIGHT SIDE is Whispering Vaults.
+    - Library_04__right1: collider obstacle.
+    - Library_04__top1: collider obstacle.
+    - Library_07__bot1/bot2/bot3: big bot transition at three different points.
+    - Library_07__top1: obstacles on floor on entry. Keep or remove?
+    - Library_11: map/titled area should be Underworks.
+    - Library_11__left3: collider obstacle.
+    - Library_11b: map/titled area should be Underworks.
+    - Library_11b__right1: collider obstacle.
+    - Library_12: map/titled area should be Underworks.
+    - Library_12__right1: collider obstacle.
+    - Library_12b: map/titled area should be Underworks.
