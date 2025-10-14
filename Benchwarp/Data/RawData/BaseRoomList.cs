@@ -1854,7 +1854,7 @@ public static class BaseRoomList
             Cog_04__top1,
             Cog_04__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_05 { get; } = new Room
     {
@@ -1866,7 +1866,7 @@ public static class BaseRoomList
             Cog_05__right2,
             Cog_05__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_06 { get; } = new Room
     {
@@ -1877,7 +1877,7 @@ public static class BaseRoomList
             Cog_06__left2,
             Cog_06__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_07 { get; } = new Room
     {
@@ -1887,7 +1887,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_07__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_08 { get; } = new Room
     {
@@ -1898,7 +1898,7 @@ public static class BaseRoomList
             Cog_08__bot1,
             Cog_08__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_09 { get; } = new Room
     {
@@ -1908,7 +1908,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_09__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_09_Destroyed { get; } = new Room
     {
@@ -1919,7 +1919,7 @@ public static class BaseRoomList
             Cog_09_Destroyed__right1,
             Cog_09_Destroyed__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_10 { get; } = new Room
     {
@@ -1929,7 +1929,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_10__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_10_Destroyed { get; } = new Room
     {
@@ -1940,7 +1940,7 @@ public static class BaseRoomList
             Cog_10_Destroyed__bot1,
             Cog_10_Destroyed__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_11_Destroyed { get; } = new Room
     {
@@ -1950,7 +1950,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_11_Destroyed__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_Bench { get; } = new Room
     {
@@ -1960,7 +1960,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_Bench__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_Dancers { get; } = new Room
     {
@@ -1975,7 +1975,7 @@ public static class BaseRoomList
             Cog_Dancers__right1,
             Cog_Dancers__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Cog_Pass { get; } = new Room
     {
@@ -1986,7 +1986,7 @@ public static class BaseRoomList
             Cog_Pass__left1,
             Cog_Pass__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Coral_02 { get; } = new Room
     {

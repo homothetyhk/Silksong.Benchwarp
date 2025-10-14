@@ -50,6 +50,8 @@
   - Ant_19 titled area should be Chapel of the Beast
   - Note - Ant_20[door1] is fine, even if the chapel has been closed
 
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
+
 ### Bone_Bottom
     - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
@@ -290,3 +292,12 @@
     - Belltown_Room_doctor: map/titled area should be Greymoor.
     - Belltown_Room_fisher: this room doesn't seem to exist. Attempting to door warp here softlocks the game.
     - Belltown_Room_shellwood: map/titled area should be Shellwood.
+
+The below areas have been checked when using the new door warp coroutine.
+
+### Cogwork_Core
+    - Cog_06__right1: collider obstacle.
+    - Cog_Dancers__bot1: collider obstacle, only when not in Act 3.
+    - Cog_Dancers__bot2: collider obstacle, only when not in Act 3.
+    - Cog_Dancers__top1: collider obstacle. Different objects in Act 3.
+    - Cog_11_Destroyed__left1: attempting to door warp here softlocks the game, regardless of Act 3 or not. The scene probably doesn't exist.
