@@ -2800,7 +2800,7 @@ public static class BaseRoomList
             Dust_01__left1,
             Dust_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_02 { get; } = new Room
     {
@@ -2815,7 +2815,7 @@ public static class BaseRoomList
             Dust_02__right3,
             Dust_02__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_03 { get; } = new Room
     {
@@ -2827,7 +2827,7 @@ public static class BaseRoomList
             Dust_03__left1,
             Dust_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_04 { get; } = new Room
     {
@@ -2840,7 +2840,7 @@ public static class BaseRoomList
             Dust_04__left2,
             Dust_04__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_05 { get; } = new Room
     {
@@ -2852,7 +2852,7 @@ public static class BaseRoomList
             Dust_05__left1,
             Dust_05__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_06 { get; } = new Room
     {
@@ -2865,7 +2865,7 @@ public static class BaseRoomList
             Dust_06__right2,
             Dust_06__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_09 { get; } = new Room
     {
@@ -2877,7 +2877,7 @@ public static class BaseRoomList
             Dust_09__door2,
             Dust_09__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_10 { get; } = new Room
     {
@@ -2887,7 +2887,7 @@ public static class BaseRoomList
         Gates = new([
             Dust_10__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_11 { get; } = new Room
     {
@@ -2898,7 +2898,7 @@ public static class BaseRoomList
             Dust_11__bot1,
             Dust_11__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_12 { get; } = new Room
     {
@@ -2908,7 +2908,7 @@ public static class BaseRoomList
         Gates = new([
             Dust_12__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_Barb { get; } = new Room
     {
@@ -2918,7 +2918,7 @@ public static class BaseRoomList
         Gates = new([
             Dust_Barb__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_Chef { get; } = new Room
     {
@@ -2929,7 +2929,7 @@ public static class BaseRoomList
             Dust_Chef__bot1,
             Dust_Chef__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Dust_Maze_08_completed { get; } = new Room
     {
@@ -2950,7 +2950,7 @@ public static class BaseRoomList
         Gates = new([
             Dust_Shack__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Greymoor_01 { get; } = new Room
     {

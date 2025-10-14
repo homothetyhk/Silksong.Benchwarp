@@ -301,3 +301,13 @@ The below areas have been checked when using the new door warp coroutine.
     - Cog_Dancers__bot2: collider obstacle, only when not in Act 3.
     - Cog_Dancers__top1: collider obstacle. Different objects in Act 3.
     - Cog_11_Destroyed__left1: attempting to door warp here softlocks the game, regardless of Act 3 or not. The scene probably doesn't exist.
+
+### Sinner's_Road
+    - Dust_02__right1: collider obstacle.
+    - Dust_04__left1: collider obstacle.
+    - Dust_04__right1: collider obstacle.
+    - Dust_05__right1: collider obstacle (lever).
+    - Dust_06__left1: collider obstacle.
+    - Dust_06__right1: collider obstacle.
+    - Dust_09: map/titled area should be Bilewater.
+    - Dust_Chef__left1: collider obstacle (lever).
