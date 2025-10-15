@@ -50,6 +50,8 @@
   - Ant_19 titled area should be Chapel of the Beast
   - Note - Ant_20[door1] is fine, even if the chapel has been closed
 
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
+
 ### Bone_Bottom
     - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
@@ -290,3 +292,37 @@
     - Belltown_Room_doctor: map/titled area should be Greymoor.
     - Belltown_Room_fisher: this room doesn't seem to exist. Attempting to door warp here softlocks the game.
     - Belltown_Room_shellwood: map/titled area should be Shellwood.
+
+The below areas have been checked when using the new door warp coroutine.
+
+### Cogwork_Core
+    - Cog_06__right1: collider obstacle.
+    - Cog_Dancers__bot1: collider obstacle, only when not in Act 3.
+    - Cog_Dancers__bot2: collider obstacle, only when not in Act 3.
+    - Cog_Dancers__top1: collider obstacle. Different objects in Act 3.
+    - Cog_11_Destroyed__left1: attempting to door warp here softlocks the game, regardless of Act 3 or not. The scene probably doesn't exist.
+
+### Sinner's_Road
+    - Dust_02__right1: collider obstacle.
+    - Dust_04__left1: collider obstacle.
+    - Dust_04__right1: collider obstacle.
+    - Dust_05__right1: collider obstacle (lever).
+    - Dust_06__left1: collider obstacle.
+    - Dust_06__right1: collider obstacle.
+    - Dust_09: map/titled area should be Bilewater.
+    - Dust_Chef__left1: collider obstacle (lever).
+
+### Whispering_Vaults
+    - Library_01__left3: collider obstacle.
+    - Library_03: map/titled area for LEFT SIDE corresponds to Choral Chambers, and RIGHT SIDE is Whispering Vaults.
+    - Library_04__right1: collider obstacle.
+    - Library_04__top1: collider obstacle.
+    - Library_07__bot1/bot2/bot3: big bot transition at three different points.
+    - Library_07__top1: obstacles on floor on entry. Keep or remove?
+    - Library_11: map/titled area should be Underworks.
+    - Library_11__left3: collider obstacle.
+    - Library_11b: map/titled area should be Underworks.
+    - Library_11b__right1: collider obstacle.
+    - Library_12: map/titled area should be Underworks.
+    - Library_12__right1: collider obstacle.
+    - Library_12b: map/titled area should be Underworks.
