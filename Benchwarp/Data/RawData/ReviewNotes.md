@@ -326,3 +326,21 @@ The below areas have been checked when using the new door warp coroutine.
     - Library_12: map/titled area should be Underworks.
     - Library_12__right1: collider obstacle.
     - Library_12b: map/titled area should be Underworks.
+
+### Shellwood
+    - Bellshrine_03__right1: collider obstacle.
+    - Shellwood_01__left2: collider obstacle.
+    - Shellwood_01__right1: collider obstacle.
+    - Shellwood_01b__right3: collider obstacle.
+    - Shellwood_02__right2: collider obstacle.
+    - Shellwood_03__bot1: collider obstacle.
+    - Shellwood_04b__left1: collider obstacle.
+    - Shellwood_08c__right1: collider obstacle.
+    - Shellwood_11: map/titled area should be Grand Gate.
+    - Shellwood_13__right1: collider obstacle.
+    - Shellwood_15__left1: collider obstacle.
+    - Shellwood_19__left1: collider obstacle.
+    - Shellwood_22: map/titled area should be Grand Gate.
+    - Shellwood_25__door1: game saves and door closes on entry.
+    - Shellwood_25__left1: collider obstacle.
+    - Shellwood_25b: titled area should be Chapel of the Witch.

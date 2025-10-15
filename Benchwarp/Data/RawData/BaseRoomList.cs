@@ -616,7 +616,7 @@ public static class BaseRoomList
             Bellshrine_03__left1,
             Bellshrine_03__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellshrine_05 { get; } = new Room
     {
@@ -4051,7 +4051,7 @@ public static class BaseRoomList
         Gates = new([
             Room_Witch__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shadow_01 { get; } = new Room
     {
@@ -4353,7 +4353,7 @@ public static class BaseRoomList
         Gates = new([
             Shellgrave__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_01 { get; } = new Room
     {
@@ -4366,7 +4366,7 @@ public static class BaseRoomList
             Shellwood_01__right1,
             Shellwood_01__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_01b { get; } = new Room
     {
@@ -4380,7 +4380,7 @@ public static class BaseRoomList
             Shellwood_01b__right2,
             Shellwood_01b__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_02 { get; } = new Room
     {
@@ -4393,7 +4393,7 @@ public static class BaseRoomList
             Shellwood_02__right1,
             Shellwood_02__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_03 { get; } = new Room
     {
@@ -4408,7 +4408,7 @@ public static class BaseRoomList
             Shellwood_03__right2,
             Shellwood_03__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_04b { get; } = new Room
     {
@@ -4421,7 +4421,7 @@ public static class BaseRoomList
             Shellwood_04b__top1,
             Shellwood_04b__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_04c { get; } = new Room
     {
@@ -4432,7 +4432,7 @@ public static class BaseRoomList
             Shellwood_04c__bot1,
             Shellwood_04c__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_08 { get; } = new Room
     {
@@ -4444,7 +4444,7 @@ public static class BaseRoomList
             Shellwood_08__left1,
             Shellwood_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_08c { get; } = new Room
     {
@@ -4455,7 +4455,7 @@ public static class BaseRoomList
             Shellwood_08c__left1,
             Shellwood_08c__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_10 { get; } = new Room
     {
@@ -4470,7 +4470,7 @@ public static class BaseRoomList
             Shellwood_10__right2,
             Shellwood_10__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_11 { get; } = new Room
     {
@@ -4481,7 +4481,7 @@ public static class BaseRoomList
             Shellwood_11__right1,
             Shellwood_11__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_11b { get; } = new Room
     {
@@ -4491,7 +4491,7 @@ public static class BaseRoomList
         Gates = new([
             Shellwood_11b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_13 { get; } = new Room
     {
@@ -4503,7 +4503,7 @@ public static class BaseRoomList
             Shellwood_13__left2,
             Shellwood_13__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_14 { get; } = new Room
     {
@@ -4513,7 +4513,7 @@ public static class BaseRoomList
         Gates = new([
             Shellwood_14__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_15 { get; } = new Room
     {
@@ -4524,7 +4524,7 @@ public static class BaseRoomList
             Shellwood_15__left1,
             Shellwood_15__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_16 { get; } = new Room
     {
@@ -4535,7 +4535,7 @@ public static class BaseRoomList
             Shellwood_16__left1,
             Shellwood_16__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_18 { get; } = new Room
     {
@@ -4547,7 +4547,7 @@ public static class BaseRoomList
             Shellwood_18__right1,
             Shellwood_18__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_19 { get; } = new Room
     {
@@ -4558,7 +4558,7 @@ public static class BaseRoomList
             Shellwood_19__left1,
             Shellwood_19__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_20 { get; } = new Room
     {
@@ -4569,7 +4569,7 @@ public static class BaseRoomList
             Shellwood_20__left1,
             Shellwood_20__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_22 { get; } = new Room
     {
@@ -4580,7 +4580,7 @@ public static class BaseRoomList
             Shellwood_22__door1,
             Shellwood_22__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_25 { get; } = new Room
     {
@@ -4591,7 +4591,7 @@ public static class BaseRoomList
             Shellwood_25__door1,
             Shellwood_25__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_25b { get; } = new Room
     {
@@ -4601,7 +4601,7 @@ public static class BaseRoomList
         Gates = new([
             Shellwood_25b__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_26 { get; } = new Room
     {
@@ -4612,7 +4612,7 @@ public static class BaseRoomList
             Shellwood_26__bot1,
             Shellwood_26__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Shellwood_Witch { get; } = new Room
     {
@@ -4623,7 +4623,7 @@ public static class BaseRoomList
             Shellwood_Witch__door1,
             Shellwood_Witch__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_01 { get; } = new Room
     {
