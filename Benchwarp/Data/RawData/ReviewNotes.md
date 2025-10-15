@@ -344,3 +344,22 @@ The below areas have been checked when using the new door warp coroutine.
     - Shellwood_25__door1: game saves and door closes on entry.
     - Shellwood_25__left1: collider obstacle.
     - Shellwood_25b: titled area should be Chapel of the Witch.
+
+### The_Slab
+    - Slab_02__left1: collider obstacle.
+    - Slab_03__left6: collider obstacle.
+    - Slab_03__right1: collider obstacle.
+    - Slab_03__right2: collider obstacle.
+    - Slab_03__right5: collider obstacle.
+    - Slab_03__right7: collider obstacle.
+    - Slab_03__right9: collider obstacle.
+    - Slab_04__door1: arrives at right1 instead. The transition gate doesn't seem to exist.
+    - Slab_05__right1: collider obstacle.
+    - Slab_06__door1: arrives at top1 instead. The transition gate doesn't seem to exist.
+    - Slab_10c__door1: collider obstacle (door locked by numerous chains).
+    - Slab_15__top1: visual obstacle (secret area behind breakable wall on right side of room).
+    - Slab_16__door1: arrives at bot1 instead. Existence of door1 seems to depend on Broodmother quest (should be checked).
+    - Slab_18__left1: collider obstacle.
+    - Slab_21__left1: collider obstacle.
+    - Slab_23__right1: collider obstacle. Gate is shut and the arena starts.
+    - Slab_Cell_Quiet__left1: when flipped, it should be Slab_23__door2, not Slab_04__door1.

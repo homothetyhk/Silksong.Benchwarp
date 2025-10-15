@@ -4634,7 +4634,7 @@ public static class BaseRoomList
             Slab_01__left1,
             Slab_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_02 { get; } = new Room
     {
@@ -4645,7 +4645,7 @@ public static class BaseRoomList
             Slab_02__left1,
             Slab_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_03 { get; } = new Room
     {
@@ -4670,7 +4670,7 @@ public static class BaseRoomList
             Slab_03__right8,
             Slab_03__right9,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_04 { get; } = new Room
     {
@@ -4683,7 +4683,7 @@ public static class BaseRoomList
             Slab_04__right1,
             Slab_04__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_05 { get; } = new Room
     {
@@ -4695,7 +4695,7 @@ public static class BaseRoomList
             Slab_05__right1,
             Slab_05__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_06 { get; } = new Room
     {
@@ -4707,7 +4707,7 @@ public static class BaseRoomList
             Slab_06__left1,
             Slab_06__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_07 { get; } = new Room
     {
@@ -4718,7 +4718,7 @@ public static class BaseRoomList
             Slab_07__right1,
             Slab_07__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_08 { get; } = new Room
     {
@@ -4729,7 +4729,7 @@ public static class BaseRoomList
             Slab_08__door1,
             Slab_08__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_10b { get; } = new Room
     {
@@ -4739,7 +4739,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_10b__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_10c { get; } = new Room
     {
@@ -4750,7 +4750,7 @@ public static class BaseRoomList
             Slab_10c__door1,
             Slab_10c__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_12 { get; } = new Room
     {
@@ -4760,7 +4760,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_12__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_13 { get; } = new Room
     {
@@ -4773,7 +4773,7 @@ public static class BaseRoomList
             Slab_13__left1,
             Slab_13__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_14 { get; } = new Room
     {
@@ -4784,7 +4784,7 @@ public static class BaseRoomList
             Slab_14__right1,
             Slab_14__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_15 { get; } = new Room
     {
@@ -4797,7 +4797,7 @@ public static class BaseRoomList
             Slab_15__right1,
             Slab_15__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_16 { get; } = new Room
     {
@@ -4811,7 +4811,7 @@ public static class BaseRoomList
             Slab_16__right1,
             Slab_16__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_16b { get; } = new Room
     {
@@ -4821,7 +4821,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_16b__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_17 { get; } = new Room
     {
@@ -4831,7 +4831,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_17__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_18 { get; } = new Room
     {
@@ -4842,7 +4842,7 @@ public static class BaseRoomList
             Slab_18__left1,
             Slab_18__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_19b { get; } = new Room
     {
@@ -4853,7 +4853,7 @@ public static class BaseRoomList
             Slab_19b__left1,
             Slab_19b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_20 { get; } = new Room
     {
@@ -4863,7 +4863,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_20__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_21 { get; } = new Room
     {
@@ -4875,7 +4875,7 @@ public static class BaseRoomList
             Slab_21__left3,
             Slab_21__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_22 { get; } = new Room
     {
@@ -4886,7 +4886,7 @@ public static class BaseRoomList
             Slab_22__bot1,
             Slab_22__bot2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_23 { get; } = new Room
     {
@@ -4899,7 +4899,7 @@ public static class BaseRoomList
             Slab_23__left1,
             Slab_23__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_Cell { get; } = new Room
     {
@@ -4909,7 +4909,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_Cell__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_Cell_Creature { get; } = new Room
     {
@@ -4919,7 +4919,7 @@ public static class BaseRoomList
         Gates = new([
             Slab_Cell_Creature__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Slab_Cell_Quiet { get; } = new Room
     {
@@ -4930,7 +4930,7 @@ public static class BaseRoomList
             Slab_Cell_Quiet__left1,
             Slab_Cell_Quiet__left2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_01 { get; } = new Room
     {
