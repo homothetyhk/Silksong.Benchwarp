@@ -1,8 +1,4 @@
-﻿using Benchwarp.Data.RawData;
-using UnityEngine;
-using static System.TimeZoneInfo;
-
-namespace Benchwarp
+﻿namespace Benchwarp
 {
     public static class ChangeScene
     {
@@ -71,8 +67,7 @@ namespace Benchwarp
                 Warp();
             }
 
-
-            void Warp() => GameManager.instance.BeginSceneTransition(new GameManager.SceneLoadInfo
+            void Warp() => GameManager.instance.BeginSceneTransition(new DoorwarpSceneLoadInfo
             {
                 SceneName = sceneName,
                 EntryGateName = gateName,
@@ -82,8 +77,9 @@ namespace Benchwarp
                 AlwaysUnloadUnusedAssets = true,
                 IsFirstLevelForPlayer = false,
             });
-
         }
 
+        // using a custom subclass allows other mods to detect and distinguish doorwarps from ordinary transitions
+        private class DoorwarpSceneLoadInfo : GameManager.SceneLoadInfo;
     }
 }
