@@ -363,3 +363,21 @@ The below areas have been checked when using the new door warp coroutine.
     - Slab_21__left1: collider obstacle.
     - Slab_23__right1: collider obstacle. Gate is shut and the arena starts.
     - Slab_Cell_Quiet__left1: when flipped, it should be Slab_23__door2, not Slab_04__door1.
+
+### The_Marrow
+    - Bellshrine__right1: collider obstacle.
+    - Bone_01__right1: collider obstacle.
+    - Bone_01__top2_extra: corresponds to the left side of the same top transition as top2. Never normally enters via this transition.
+    - Bone_01b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_01b__left1: collider obstacle.
+    - Bone_03__left1: collider obstacle.
+    - Bone_05b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_06__left1: collider obstacle.
+    - Bone_10__door2: Not Act 3: arrives in the correct position, but the door/spa caravan is only there if the first flea quest hasn't been completed and Kratt is saved. Act 3: arrives by bot1 instead.
+    - Bone_11: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_11__bot1: collider obstacle.
+    - Bone_11__top1: collider obstacle.
+    - Bone_11b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_11b__top1: collider obstacle.
+    - Bone_16__top1: collider obstacle (hidden area behind breakable wall to the left).
+    - Bone_Steel_Servant: map area should be Mosslands and titled area should be Bone Bottom.
