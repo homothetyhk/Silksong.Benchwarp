@@ -877,7 +877,7 @@ public static class BaseRoomList
             Bellway_City__left1,
             Bellway_City__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Bellway_Peak { get; } = new Room
     {
@@ -4942,7 +4942,7 @@ public static class BaseRoomList
             Song_01__right2,
             Song_01__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_01b { get; } = new Room
     {
@@ -4954,7 +4954,7 @@ public static class BaseRoomList
             Song_01b__right1,
             Song_01b__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_01c { get; } = new Room
     {
@@ -4965,7 +4965,7 @@ public static class BaseRoomList
             Song_01c__left1,
             Song_01c__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_02 { get; } = new Room
     {
@@ -4976,7 +4976,7 @@ public static class BaseRoomList
             Song_02__left2,
             Song_02__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_03 { get; } = new Room
     {
@@ -4987,7 +4987,7 @@ public static class BaseRoomList
             Song_03__bot1,
             Song_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_04 { get; } = new Room
     {
@@ -5000,7 +5000,7 @@ public static class BaseRoomList
             Song_04__right1,
             Song_04__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_05 { get; } = new Room
     {
@@ -5015,7 +5015,7 @@ public static class BaseRoomList
             Song_05__right3,
             Song_05__right4,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_07 { get; } = new Room
     {
@@ -5025,7 +5025,7 @@ public static class BaseRoomList
         Gates = new([
             Song_07__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_08 { get; } = new Room
     {
@@ -5035,7 +5035,7 @@ public static class BaseRoomList
         Gates = new([
             Song_08__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_09 { get; } = new Room
     {
@@ -5047,7 +5047,7 @@ public static class BaseRoomList
             Song_09__right1,
             Song_09__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_09b { get; } = new Room
     {
@@ -5058,7 +5058,7 @@ public static class BaseRoomList
             Song_09b__left1,
             Song_09b__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_10 { get; } = new Room
     {
@@ -5069,7 +5069,7 @@ public static class BaseRoomList
             Song_10__left1,
             Song_10__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_11 { get; } = new Room
     {
@@ -5085,7 +5085,7 @@ public static class BaseRoomList
             Song_11__right2,
             Song_11__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_12 { get; } = new Room
     {
@@ -5101,7 +5101,7 @@ public static class BaseRoomList
             Song_12__right2,
             Song_12__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_13 { get; } = new Room
     {
@@ -5112,7 +5112,7 @@ public static class BaseRoomList
             Song_13__left1,
             Song_13__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_14 { get; } = new Room
     {
@@ -5122,7 +5122,7 @@ public static class BaseRoomList
         Gates = new([
             Song_14__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_15 { get; } = new Room
     {
@@ -5133,7 +5133,7 @@ public static class BaseRoomList
             Song_15__left1,
             Song_15__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_17 { get; } = new Room
     {
@@ -5144,7 +5144,7 @@ public static class BaseRoomList
             Song_17__left1,
             Song_17__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_18 { get; } = new Room
     {
@@ -5155,7 +5155,7 @@ public static class BaseRoomList
             Song_18__bot1,
             Song_18__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_19_entrance { get; } = new Room
     {
@@ -5167,7 +5167,7 @@ public static class BaseRoomList
             Song_19_entrance__right1,
             Song_19_entrance__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_20 { get; } = new Room
     {
@@ -5183,7 +5183,7 @@ public static class BaseRoomList
             Song_20__right6,
             Song_20__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_20b { get; } = new Room
     {
@@ -5198,7 +5198,7 @@ public static class BaseRoomList
             Song_20b__right3,
             Song_20b__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_24 { get; } = new Room
     {
@@ -5208,7 +5208,7 @@ public static class BaseRoomList
         Gates = new([
             Song_24__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_25 { get; } = new Room
     {
@@ -5222,7 +5222,7 @@ public static class BaseRoomList
             Song_25__top1,
             Song_25__top2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_26 { get; } = new Room
     {
@@ -5232,7 +5232,7 @@ public static class BaseRoomList
         Gates = new([
             Song_26__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_27 { get; } = new Room
     {
@@ -5244,7 +5244,7 @@ public static class BaseRoomList
             Song_27__right1,
             Song_27__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_28 { get; } = new Room
     {
@@ -5254,7 +5254,7 @@ public static class BaseRoomList
         Gates = new([
             Song_28__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_29 { get; } = new Room
     {
@@ -5264,7 +5264,7 @@ public static class BaseRoomList
         Gates = new([
             Song_29__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_Enclave { get; } = new Room
     {
@@ -5278,7 +5278,7 @@ public static class BaseRoomList
             Song_Enclave__left2,
             Song_Enclave__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_Enclave_Tube { get; } = new Room
     {
@@ -5288,7 +5288,7 @@ public static class BaseRoomList
         Gates = new([
             Song_Enclave_Tube__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_Tower_01 { get; } = new Room
     {
@@ -5298,7 +5298,7 @@ public static class BaseRoomList
         Gates = new([
             Song_Tower_01__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Song_Tower_Destroyed { get; } = new Room
     {
@@ -5309,7 +5309,7 @@ public static class BaseRoomList
             Song_Tower_Destroyed__bot1,
             Song_Tower_Destroyed__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static Room Sprintmaster_Cave { get; } = new Room
     {
