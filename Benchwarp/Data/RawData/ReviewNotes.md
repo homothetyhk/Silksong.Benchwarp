@@ -326,3 +326,82 @@ The below areas have been checked when using the new door warp coroutine.
     - Library_12: map/titled area should be Underworks.
     - Library_12__right1: collider obstacle.
     - Library_12b: map/titled area should be Underworks.
+
+### Shellwood
+    - Bellshrine_03__right1: collider obstacle.
+    - Shellwood_01__left2: collider obstacle.
+    - Shellwood_01__right1: collider obstacle.
+    - Shellwood_01b__right3: collider obstacle.
+    - Shellwood_02__right2: collider obstacle.
+    - Shellwood_03__bot1: collider obstacle.
+    - Shellwood_04b__left1: collider obstacle.
+    - Shellwood_08c__right1: collider obstacle.
+    - Shellwood_11: map/titled area should be Grand Gate.
+    - Shellwood_13__right1: collider obstacle.
+    - Shellwood_15__left1: collider obstacle.
+    - Shellwood_19__left1: collider obstacle.
+    - Shellwood_22: map/titled area should be Grand Gate.
+    - Shellwood_25__door1: game saves and door closes on entry.
+    - Shellwood_25__left1: collider obstacle.
+    - Shellwood_25b: titled area should be Chapel of the Witch.
+
+### The_Slab
+    - Slab_02__left1: collider obstacle.
+    - Slab_03__left6: collider obstacle.
+    - Slab_03__right1: collider obstacle.
+    - Slab_03__right2: collider obstacle.
+    - Slab_03__right5: collider obstacle.
+    - Slab_03__right7: collider obstacle.
+    - Slab_03__right9: collider obstacle.
+    - Slab_04__door1: arrives at right1 instead. The transition gate doesn't seem to exist.
+    - Slab_05__right1: collider obstacle.
+    - Slab_06__door1: arrives at top1 instead. The transition gate doesn't seem to exist.
+    - Slab_10c__door1: collider obstacle (door locked by numerous chains).
+    - Slab_15__top1: visual obstacle (secret area behind breakable wall on right side of room).
+    - Slab_16__door1: arrives at bot1 instead. Existence of door1 seems to depend on Broodmother quest (should be checked).
+    - Slab_18__left1: collider obstacle.
+    - Slab_21__left1: collider obstacle.
+    - Slab_23__right1: collider obstacle. Gate is shut and the arena starts.
+    - Slab_Cell_Quiet__left1: when flipped, it should be Slab_23__door2, not Slab_04__door1.
+
+### The_Marrow
+    - Bellshrine__right1: collider obstacle.
+    - Bone_01__right1: collider obstacle.
+    - Bone_01__top2_extra: corresponds to the left side of the same top transition as top2. Never normally enters via this transition.
+    - Bone_01b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_01b__left1: collider obstacle.
+    - Bone_03__left1: collider obstacle.
+    - Bone_05b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_06__left1: collider obstacle.
+    - Bone_10__door2: Not Act 3: arrives in the correct position, but the door/spa caravan is only there if the first flea quest hasn't been completed and Kratt is saved. Act 3: arrives by bot1 instead.
+    - Bone_11: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_11__bot1: collider obstacle.
+    - Bone_11__top1: collider obstacle.
+    - Bone_11b: map area should be Mosslands and titled area should be Bone Bottom.
+    - Bone_11b__top1: collider obstacle.
+    - Bone_16__top1: collider obstacle (hidden area behind breakable wall to the left).
+    - Bone_Steel_Servant: map area should be Mosslands and titled area should be Bone Bottom.
+
+### Choral_Chambers
+    - Song_01__bot1: collider obstacle.
+    - Song_01c__left1: collider obstacle.
+    - Song_01c: map/titled area should be Grand Gate.
+    - Song_01c__top1: collider obstacle.
+    - Song_03__top1: collider obstacle.
+    - Song_04__bot1: gate animation doesn't trigger on entering scene.
+    - Song_05__right4: collider obstacle.
+    - Song_10__right1: collider obstacle (entire spa room revealed from breaking wall to the left). Also the lever gate at the transition itself.
+    - Song_11__left4: collider obstacle.
+    - Song_11__right2: collider obstacle.
+    - Song_19_entrance: map/titled area should be Grand Gate.
+    - Song_19_entrance__left1: collider obstacle.
+    - Song_19_entrance__right1: collider obstacle.
+    - Song_20__right_cutsceneEntry: functionally the same as right6, but with a short cutscene.
+    - Song_25__top1: collider obstacle.
+    - Song_25__top2: In Act 3 the sequence of Hornet being weak happens if not previously triggered.
+    - Song_27__left1: collider obstacle.
+    - Song_Enclave__bot1: collider obstacle.
+    - Song_Enclave__door1: In Act 3, arrives by left2 instead. 
+    - Song_Tower_01__right1: collider obstacle. Lace fight immediately starts.
+    - Song_Tower_Destroyed: map/titled area should be The Cradle.
+    - Song_Tower_Destroyed__bot1: breaking animation of object plays, but ideally the object should not be there at all on entry.
