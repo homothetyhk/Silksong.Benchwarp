@@ -1,4 +1,5 @@
-﻿using static Benchwarp.Data.RawData.BaseGateList;
+using GlobalEnums;
+using static Benchwarp.Data.RawData.BaseGateList;
 
 namespace Benchwarp.Data.RawData;
 
@@ -7,6 +8,7 @@ public static class BaseRoomList
     public static Room Abandoned_town { get; } = new Room
     {
         Name = SceneNames.Abandoned_town,
+        MapZone = MapZone.SURFACE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Nameless_Town,
         Gates = new([
@@ -18,6 +20,7 @@ public static class BaseRoomList
     public static Room Abyss_01 { get; } = new Room
     {
         Name = SceneNames.Abyss_01,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -31,6 +34,7 @@ public static class BaseRoomList
     public static Room Abyss_02 { get; } = new Room
     {
         Name = SceneNames.Abyss_02,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -42,6 +46,7 @@ public static class BaseRoomList
     public static Room Abyss_02b { get; } = new Room
     {
         Name = SceneNames.Abyss_02b,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -54,6 +59,7 @@ public static class BaseRoomList
     public static Room Abyss_03 { get; } = new Room
     {
         Name = SceneNames.Abyss_03,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -67,6 +73,7 @@ public static class BaseRoomList
     public static Room Abyss_04 { get; } = new Room
     {
         Name = SceneNames.Abyss_04,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -77,6 +84,7 @@ public static class BaseRoomList
     public static Room Abyss_05 { get; } = new Room
     {
         Name = SceneNames.Abyss_05,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -88,6 +96,7 @@ public static class BaseRoomList
     public static Room Abyss_06 { get; } = new Room
     {
         Name = SceneNames.Abyss_06,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -98,6 +107,7 @@ public static class BaseRoomList
     public static Room Abyss_07 { get; } = new Room
     {
         Name = SceneNames.Abyss_07,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -109,6 +119,7 @@ public static class BaseRoomList
     public static Room Abyss_08 { get; } = new Room
     {
         Name = SceneNames.Abyss_08,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -119,6 +130,7 @@ public static class BaseRoomList
     public static Room Abyss_09 { get; } = new Room
     {
         Name = SceneNames.Abyss_09,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -130,6 +142,7 @@ public static class BaseRoomList
     public static Room Abyss_11 { get; } = new Room
     {
         Name = SceneNames.Abyss_11,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -141,6 +154,7 @@ public static class BaseRoomList
     public static Room Abyss_12 { get; } = new Room
     {
         Name = SceneNames.Abyss_12,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -152,6 +166,7 @@ public static class BaseRoomList
     public static Room Abyss_13 { get; } = new Room
     {
         Name = SceneNames.Abyss_13,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -164,6 +179,7 @@ public static class BaseRoomList
     public static Room Abyss_Cocoon { get; } = new Room
     {
         Name = SceneNames.Abyss_Cocoon,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -175,6 +191,7 @@ public static class BaseRoomList
     public static Room Ant_02 { get; } = new Room
     {
         Name = SceneNames.Ant_02,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -185,6 +202,7 @@ public static class BaseRoomList
     public static Room Ant_03 { get; } = new Room
     {
         Name = SceneNames.Ant_03,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -195,6 +213,7 @@ public static class BaseRoomList
     public static Room Ant_04 { get; } = new Room
     {
         Name = SceneNames.Ant_04,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -205,6 +224,7 @@ public static class BaseRoomList
     public static Room Ant_04_left { get; } = new Room
     {
         Name = SceneNames.Ant_04_left,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -215,6 +235,7 @@ public static class BaseRoomList
     public static Room Ant_04_mid { get; } = new Room
     {
         Name = SceneNames.Ant_04_mid,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -225,6 +246,7 @@ public static class BaseRoomList
     public static Room Ant_05b { get; } = new Room
     {
         Name = SceneNames.Ant_05b,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -236,6 +258,7 @@ public static class BaseRoomList
     public static Room Ant_05c { get; } = new Room
     {
         Name = SceneNames.Ant_05c,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -246,6 +269,7 @@ public static class BaseRoomList
     public static Room Ant_08 { get; } = new Room
     {
         Name = SceneNames.Ant_08,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -255,6 +279,7 @@ public static class BaseRoomList
     public static Room Ant_09 { get; } = new Room
     {
         Name = SceneNames.Ant_09,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -265,6 +290,7 @@ public static class BaseRoomList
     public static Room Ant_14 { get; } = new Room
     {
         Name = SceneNames.Ant_14,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -280,6 +306,7 @@ public static class BaseRoomList
     public static Room Ant_17 { get; } = new Room
     {
         Name = SceneNames.Ant_17,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -289,6 +316,7 @@ public static class BaseRoomList
     public static Room Ant_19 { get; } = new Room
     {
         Name = SceneNames.Ant_19,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -298,6 +326,7 @@ public static class BaseRoomList
     public static Room Ant_20 { get; } = new Room
     {
         Name = SceneNames.Ant_20,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -308,6 +337,7 @@ public static class BaseRoomList
     public static Room Ant_21 { get; } = new Room
     {
         Name = SceneNames.Ant_21,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -317,6 +347,7 @@ public static class BaseRoomList
     public static Room Ant_Merchant { get; } = new Room
     {
         Name = SceneNames.Ant_Merchant,
+        MapZone = MapZone.HUNTERS_NEST,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -326,6 +357,7 @@ public static class BaseRoomList
     public static Room Ant_Queen { get; } = new Room
     {
         Name = SceneNames.Ant_Queen,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
@@ -335,6 +367,7 @@ public static class BaseRoomList
     public static Room Aqueduct_01 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_01,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -346,6 +379,7 @@ public static class BaseRoomList
     public static Room Aqueduct_02 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_02,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -361,6 +395,7 @@ public static class BaseRoomList
     public static Room Aqueduct_03 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_03,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -373,6 +408,7 @@ public static class BaseRoomList
     public static Room Aqueduct_04 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_04,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -385,6 +421,7 @@ public static class BaseRoomList
     public static Room Aqueduct_05 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_05,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -396,6 +433,7 @@ public static class BaseRoomList
     public static Room Aqueduct_06 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_06,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -408,6 +446,7 @@ public static class BaseRoomList
     public static Room Aqueduct_07 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_07,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -418,6 +457,7 @@ public static class BaseRoomList
     public static Room Aqueduct_08 { get; } = new Room
     {
         Name = SceneNames.Aqueduct_08,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -429,6 +469,7 @@ public static class BaseRoomList
     public static Room Arborium_01 { get; } = new Room
     {
         Name = SceneNames.Arborium_01,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -446,6 +487,7 @@ public static class BaseRoomList
     public static Room Arborium_02 { get; } = new Room
     {
         Name = SceneNames.Arborium_02,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -456,6 +498,7 @@ public static class BaseRoomList
     public static Room Arborium_03 { get; } = new Room
     {
         Name = SceneNames.Arborium_03,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -470,6 +513,7 @@ public static class BaseRoomList
     public static Room Arborium_04 { get; } = new Room
     {
         Name = SceneNames.Arborium_04,
+        MapZone = MapZone.ARBORIUM,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -480,6 +524,7 @@ public static class BaseRoomList
     public static Room Arborium_05 { get; } = new Room
     {
         Name = SceneNames.Arborium_05,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -490,6 +535,7 @@ public static class BaseRoomList
     public static Room Arborium_06 { get; } = new Room
     {
         Name = SceneNames.Arborium_06,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -501,6 +547,7 @@ public static class BaseRoomList
     public static Room Arborium_07 { get; } = new Room
     {
         Name = SceneNames.Arborium_07,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -511,6 +558,7 @@ public static class BaseRoomList
     public static Room Arborium_08 { get; } = new Room
     {
         Name = SceneNames.Arborium_08,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -521,6 +569,7 @@ public static class BaseRoomList
     public static Room Arborium_09 { get; } = new Room
     {
         Name = SceneNames.Arborium_09,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -531,6 +580,7 @@ public static class BaseRoomList
     public static Room Arborium_10 { get; } = new Room
     {
         Name = SceneNames.Arborium_10,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -540,6 +590,7 @@ public static class BaseRoomList
     public static Room Arborium_11 { get; } = new Room
     {
         Name = SceneNames.Arborium_11,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -550,6 +601,7 @@ public static class BaseRoomList
     public static Room Arborium_Tube { get; } = new Room
     {
         Name = SceneNames.Arborium_Tube,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
@@ -559,6 +611,7 @@ public static class BaseRoomList
     public static Room Aspid_01 { get; } = new Room
     {
         Name = SceneNames.Aspid_01,
+        MapZone = MapZone.MOSS_CAVE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
@@ -588,6 +641,7 @@ public static class BaseRoomList
     public static Room Bellshrine { get; } = new Room
     {
         Name = SceneNames.Bellshrine,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -599,6 +653,7 @@ public static class BaseRoomList
     public static Room Bellshrine_02 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_02,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -610,6 +665,7 @@ public static class BaseRoomList
     public static Room Bellshrine_03 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_03,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -621,6 +677,7 @@ public static class BaseRoomList
     public static Room Bellshrine_05 { get; } = new Room
     {
         Name = SceneNames.Bellshrine_05,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -632,6 +689,7 @@ public static class BaseRoomList
     public static Room Bellshrine_Coral { get; } = new Room
     {
         Name = SceneNames.Bellshrine_Coral,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -642,6 +700,7 @@ public static class BaseRoomList
     public static Room Bellshrine_Enclave { get; } = new Room
     {
         Name = SceneNames.Bellshrine_Enclave,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.First_Shrine,
         Gates = new([
@@ -652,6 +711,7 @@ public static class BaseRoomList
     public static Room Belltown { get; } = new Room
     {
         Name = SceneNames.Belltown,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -667,6 +727,7 @@ public static class BaseRoomList
     public static Room Belltown_04 { get; } = new Room
     {
         Name = SceneNames.Belltown_04,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -679,6 +740,7 @@ public static class BaseRoomList
     public static Room Belltown_06 { get; } = new Room
     {
         Name = SceneNames.Belltown_06,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -692,6 +754,7 @@ public static class BaseRoomList
     public static Room Belltown_07 { get; } = new Room
     {
         Name = SceneNames.Belltown_07,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -703,6 +766,7 @@ public static class BaseRoomList
     public static Room Belltown_08 { get; } = new Room
     {
         Name = SceneNames.Belltown_08,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -713,6 +777,7 @@ public static class BaseRoomList
     public static Room Belltown_basement { get; } = new Room
     {
         Name = SceneNames.Belltown_basement,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -724,6 +789,7 @@ public static class BaseRoomList
     public static Room Belltown_basement_03 { get; } = new Room
     {
         Name = SceneNames.Belltown_basement_03,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -735,6 +801,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_doctor { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_doctor,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -745,6 +812,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_Fisher { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_Fisher,
+        MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -755,6 +823,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_pinsmith { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_pinsmith,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -765,6 +834,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_Relic { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_Relic,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -775,6 +845,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_shellwood { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_shellwood,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -785,6 +856,7 @@ public static class BaseRoomList
     public static Room Belltown_Room_Spare { get; } = new Room
     {
         Name = SceneNames.Belltown_Room_Spare,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -795,6 +867,7 @@ public static class BaseRoomList
     public static Room Belltown_Shrine { get; } = new Room
     {
         Name = SceneNames.Belltown_Shrine,
+        MapZone = MapZone.BELLTOWN,
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
@@ -806,6 +879,7 @@ public static class BaseRoomList
     public static Room Bellway_01 { get; } = new Room
     {
         Name = SceneNames.Bellway_01,
+        MapZone = MapZone.BONETOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
@@ -816,6 +890,7 @@ public static class BaseRoomList
     public static Room Bellway_02 { get; } = new Room
     {
         Name = SceneNames.Bellway_02,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -827,6 +902,7 @@ public static class BaseRoomList
     public static Room Bellway_03 { get; } = new Room
     {
         Name = SceneNames.Bellway_03,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -838,6 +914,7 @@ public static class BaseRoomList
     public static Room Bellway_04 { get; } = new Room
     {
         Name = SceneNames.Bellway_04,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -849,6 +926,7 @@ public static class BaseRoomList
     public static Room Bellway_08 { get; } = new Room
     {
         Name = SceneNames.Bellway_08,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -860,6 +938,7 @@ public static class BaseRoomList
     public static Room Bellway_Aqueduct { get; } = new Room
     {
         Name = SceneNames.Bellway_Aqueduct,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -871,6 +950,7 @@ public static class BaseRoomList
     public static Room Bellway_City { get; } = new Room
     {
         Name = SceneNames.Bellway_City,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -882,6 +962,7 @@ public static class BaseRoomList
     public static Room Bellway_Peak { get; } = new Room
     {
         Name = SceneNames.Bellway_Peak,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -896,6 +977,7 @@ public static class BaseRoomList
     public static Room Bellway_Peak_02 { get; } = new Room
     {
         Name = SceneNames.Bellway_Peak_02,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -906,6 +988,7 @@ public static class BaseRoomList
     public static Room Bellway_Shadow { get; } = new Room
     {
         Name = SceneNames.Bellway_Shadow,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -915,6 +998,7 @@ public static class BaseRoomList
     public static Room Bone_01 { get; } = new Room
     {
         Name = SceneNames.Bone_01,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -929,6 +1013,7 @@ public static class BaseRoomList
     public static Room Bone_01b { get; } = new Room
     {
         Name = SceneNames.Bone_01b,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -940,6 +1025,7 @@ public static class BaseRoomList
     public static Room Bone_01c { get; } = new Room
     {
         Name = SceneNames.Bone_01c,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -952,6 +1038,7 @@ public static class BaseRoomList
     public static Room Bone_02 { get; } = new Room
     {
         Name = SceneNames.Bone_02,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -965,6 +1052,7 @@ public static class BaseRoomList
     public static Room Bone_03 { get; } = new Room
     {
         Name = SceneNames.Bone_03,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -981,6 +1069,7 @@ public static class BaseRoomList
     public static Room Bone_04 { get; } = new Room
     {
         Name = SceneNames.Bone_04,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -995,6 +1084,7 @@ public static class BaseRoomList
     public static Room Bone_05 { get; } = new Room
     {
         Name = SceneNames.Bone_05,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1007,6 +1097,7 @@ public static class BaseRoomList
     public static Room Bone_05b { get; } = new Room
     {
         Name = SceneNames.Bone_05b,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1018,6 +1109,7 @@ public static class BaseRoomList
     public static Room Bone_06 { get; } = new Room
     {
         Name = SceneNames.Bone_06,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1030,6 +1122,7 @@ public static class BaseRoomList
     public static Room Bone_07 { get; } = new Room
     {
         Name = SceneNames.Bone_07,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1043,6 +1136,7 @@ public static class BaseRoomList
     public static Room Bone_08 { get; } = new Room
     {
         Name = SceneNames.Bone_08,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1058,6 +1152,7 @@ public static class BaseRoomList
     public static Room Bone_09 { get; } = new Room
     {
         Name = SceneNames.Bone_09,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1071,6 +1166,7 @@ public static class BaseRoomList
     public static Room Bone_10 { get; } = new Room
     {
         Name = SceneNames.Bone_10,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1084,6 +1180,7 @@ public static class BaseRoomList
     public static Room Bone_11 { get; } = new Room
     {
         Name = SceneNames.Bone_11,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1098,6 +1195,7 @@ public static class BaseRoomList
     public static Room Bone_11b { get; } = new Room
     {
         Name = SceneNames.Bone_11b,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1109,6 +1207,7 @@ public static class BaseRoomList
     public static Room Bone_12 { get; } = new Room
     {
         Name = SceneNames.Bone_12,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1119,6 +1218,7 @@ public static class BaseRoomList
     public static Room Bone_14 { get; } = new Room
     {
         Name = SceneNames.Bone_14,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1130,6 +1230,7 @@ public static class BaseRoomList
     public static Room Bone_15 { get; } = new Room
     {
         Name = SceneNames.Bone_15,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1141,6 +1242,7 @@ public static class BaseRoomList
     public static Room Bone_16 { get; } = new Room
     {
         Name = SceneNames.Bone_16,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1153,6 +1255,7 @@ public static class BaseRoomList
     public static Room Bone_17 { get; } = new Room
     {
         Name = SceneNames.Bone_17,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1163,6 +1266,7 @@ public static class BaseRoomList
     public static Room Bone_18 { get; } = new Room
     {
         Name = SceneNames.Bone_18,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1173,6 +1277,7 @@ public static class BaseRoomList
     public static Room Bone_19 { get; } = new Room
     {
         Name = SceneNames.Bone_19,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1183,6 +1288,7 @@ public static class BaseRoomList
     public static Room Bone_East_01 { get; } = new Room
     {
         Name = SceneNames.Bone_East_01,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1197,6 +1303,7 @@ public static class BaseRoomList
     public static Room Bone_East_02 { get; } = new Room
     {
         Name = SceneNames.Bone_East_02,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1209,6 +1316,7 @@ public static class BaseRoomList
     public static Room Bone_East_02b { get; } = new Room
     {
         Name = SceneNames.Bone_East_02b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1222,6 +1330,7 @@ public static class BaseRoomList
     public static Room Bone_East_03 { get; } = new Room
     {
         Name = SceneNames.Bone_East_03,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1233,6 +1342,7 @@ public static class BaseRoomList
     public static Room Bone_East_04 { get; } = new Room
     {
         Name = SceneNames.Bone_East_04,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1247,6 +1357,7 @@ public static class BaseRoomList
     public static Room Bone_East_04b { get; } = new Room
     {
         Name = SceneNames.Bone_East_04b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1259,6 +1370,7 @@ public static class BaseRoomList
     public static Room Bone_East_04c { get; } = new Room
     {
         Name = SceneNames.Bone_East_04c,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1269,6 +1381,7 @@ public static class BaseRoomList
     public static Room Bone_East_05 { get; } = new Room
     {
         Name = SceneNames.Bone_East_05,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1280,6 +1393,7 @@ public static class BaseRoomList
     public static Room Bone_East_07 { get; } = new Room
     {
         Name = SceneNames.Bone_East_07,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1299,6 +1413,7 @@ public static class BaseRoomList
     public static Room Bone_East_08 { get; } = new Room
     {
         Name = SceneNames.Bone_East_08,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1310,6 +1425,7 @@ public static class BaseRoomList
     public static Room Bone_East_09 { get; } = new Room
     {
         Name = SceneNames.Bone_East_09,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1325,6 +1441,7 @@ public static class BaseRoomList
     public static Room Bone_East_09b { get; } = new Room
     {
         Name = SceneNames.Bone_East_09b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1337,6 +1454,7 @@ public static class BaseRoomList
     public static Room Bone_East_10 { get; } = new Room
     {
         Name = SceneNames.Bone_East_10,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1351,6 +1469,7 @@ public static class BaseRoomList
     public static Room Bone_East_10_Church { get; } = new Room
     {
         Name = SceneNames.Bone_East_10_Church,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1362,6 +1481,7 @@ public static class BaseRoomList
     public static Room Bone_East_10_Room { get; } = new Room
     {
         Name = SceneNames.Bone_East_10_Room,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1372,6 +1492,7 @@ public static class BaseRoomList
     public static Room Bone_East_11 { get; } = new Room
     {
         Name = SceneNames.Bone_East_11,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1386,6 +1507,7 @@ public static class BaseRoomList
     public static Room Bone_East_12 { get; } = new Room
     {
         Name = SceneNames.Bone_East_12,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1398,6 +1520,7 @@ public static class BaseRoomList
     public static Room Bone_East_13 { get; } = new Room
     {
         Name = SceneNames.Bone_East_13,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1408,6 +1531,7 @@ public static class BaseRoomList
     public static Room Bone_East_14 { get; } = new Room
     {
         Name = SceneNames.Bone_East_14,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1421,6 +1545,7 @@ public static class BaseRoomList
     public static Room Bone_East_14b { get; } = new Room
     {
         Name = SceneNames.Bone_East_14b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1434,6 +1559,7 @@ public static class BaseRoomList
     public static Room Bone_East_15 { get; } = new Room
     {
         Name = SceneNames.Bone_East_15,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1446,6 +1572,7 @@ public static class BaseRoomList
     public static Room Bone_East_16 { get; } = new Room
     {
         Name = SceneNames.Bone_East_16,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1457,6 +1584,7 @@ public static class BaseRoomList
     public static Room Bone_East_17 { get; } = new Room
     {
         Name = SceneNames.Bone_East_17,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1469,6 +1597,7 @@ public static class BaseRoomList
     public static Room Bone_East_17b { get; } = new Room
     {
         Name = SceneNames.Bone_East_17b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1480,6 +1609,7 @@ public static class BaseRoomList
     public static Room Bone_East_18 { get; } = new Room
     {
         Name = SceneNames.Bone_East_18,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1492,6 +1622,7 @@ public static class BaseRoomList
     public static Room Bone_East_18b { get; } = new Room
     {
         Name = SceneNames.Bone_East_18b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1504,6 +1635,7 @@ public static class BaseRoomList
     public static Room Bone_East_18c { get; } = new Room
     {
         Name = SceneNames.Bone_East_18c,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1515,6 +1647,7 @@ public static class BaseRoomList
     public static Room Bone_East_20 { get; } = new Room
     {
         Name = SceneNames.Bone_East_20,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1525,6 +1658,7 @@ public static class BaseRoomList
     public static Room Bone_East_21 { get; } = new Room
     {
         Name = SceneNames.Bone_East_21,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1535,6 +1669,7 @@ public static class BaseRoomList
     public static Room Bone_East_22 { get; } = new Room
     {
         Name = SceneNames.Bone_East_22,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1545,6 +1680,7 @@ public static class BaseRoomList
     public static Room Bone_East_24 { get; } = new Room
     {
         Name = SceneNames.Bone_East_24,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1557,6 +1693,7 @@ public static class BaseRoomList
     public static Room Bone_East_25 { get; } = new Room
     {
         Name = SceneNames.Bone_East_25,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1568,6 +1705,7 @@ public static class BaseRoomList
     public static Room Bone_East_26 { get; } = new Room
     {
         Name = SceneNames.Bone_East_26,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1579,6 +1717,7 @@ public static class BaseRoomList
     public static Room Bone_East_27 { get; } = new Room
     {
         Name = SceneNames.Bone_East_27,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1591,6 +1730,7 @@ public static class BaseRoomList
     public static Room Bone_East_LavaChallenge { get; } = new Room
     {
         Name = SceneNames.Bone_East_LavaChallenge,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1601,6 +1741,7 @@ public static class BaseRoomList
     public static Room Bone_East_Umbrella { get; } = new Room
     {
         Name = SceneNames.Bone_East_Umbrella,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1611,6 +1752,7 @@ public static class BaseRoomList
     public static Room Bone_East_Weavehome { get; } = new Room
     {
         Name = SceneNames.Bone_East_Weavehome,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -1621,6 +1763,7 @@ public static class BaseRoomList
     public static Room Bone_Steel_Servant { get; } = new Room
     {
         Name = SceneNames.Bone_Steel_Servant,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
@@ -1631,6 +1774,7 @@ public static class BaseRoomList
     public static Room Bonegrave { get; } = new Room
     {
         Name = SceneNames.Bonegrave,
+        MapZone = MapZone.BONETOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
@@ -1645,6 +1789,7 @@ public static class BaseRoomList
     public static Room Bonetown { get; } = new Room
     {
         Name = SceneNames.Bonetown,
+        MapZone = MapZone.BONETOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
@@ -1668,6 +1813,7 @@ public static class BaseRoomList
     public static Room Chapel_Wanderer { get; } = new Room
     {
         Name = SceneNames.Chapel_Wanderer,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Chapel_of_the_Wanderer,
         Gates = new([
@@ -1678,6 +1824,7 @@ public static class BaseRoomList
     public static Room Clover_01 { get; } = new Room
     {
         Name = SceneNames.Clover_01,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1689,6 +1836,7 @@ public static class BaseRoomList
     public static Room Clover_01b { get; } = new Room
     {
         Name = SceneNames.Clover_01b,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1699,6 +1847,7 @@ public static class BaseRoomList
     public static Room Clover_02c { get; } = new Room
     {
         Name = SceneNames.Clover_02c,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1711,6 +1860,7 @@ public static class BaseRoomList
     public static Room Clover_03 { get; } = new Room
     {
         Name = SceneNames.Clover_03,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1723,6 +1873,7 @@ public static class BaseRoomList
     public static Room Clover_04b { get; } = new Room
     {
         Name = SceneNames.Clover_04b,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1736,6 +1887,7 @@ public static class BaseRoomList
     public static Room Clover_05c { get; } = new Room
     {
         Name = SceneNames.Clover_05c,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1750,6 +1902,7 @@ public static class BaseRoomList
     public static Room Clover_06 { get; } = new Room
     {
         Name = SceneNames.Clover_06,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1761,6 +1914,7 @@ public static class BaseRoomList
     public static Room Clover_10 { get; } = new Room
     {
         Name = SceneNames.Clover_10,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1771,6 +1925,7 @@ public static class BaseRoomList
     public static Room Clover_10_web { get; } = new Room
     {
         Name = SceneNames.Clover_10_web,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1781,6 +1936,7 @@ public static class BaseRoomList
     public static Room Clover_11 { get; } = new Room
     {
         Name = SceneNames.Clover_11,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1791,6 +1947,7 @@ public static class BaseRoomList
     public static Room Clover_16 { get; } = new Room
     {
         Name = SceneNames.Clover_16,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1802,6 +1959,7 @@ public static class BaseRoomList
     public static Room Clover_18 { get; } = new Room
     {
         Name = SceneNames.Clover_18,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1812,6 +1970,7 @@ public static class BaseRoomList
     public static Room Clover_19 { get; } = new Room
     {
         Name = SceneNames.Clover_19,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1823,6 +1982,7 @@ public static class BaseRoomList
     public static Room Clover_20 { get; } = new Room
     {
         Name = SceneNames.Clover_20,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1833,6 +1993,7 @@ public static class BaseRoomList
     public static Room Clover_21 { get; } = new Room
     {
         Name = SceneNames.Clover_21,
+        MapZone = MapZone.CLOVER,
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
@@ -1843,6 +2004,7 @@ public static class BaseRoomList
     public static Room Cog_04 { get; } = new Room
     {
         Name = SceneNames.Cog_04,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1859,6 +2021,7 @@ public static class BaseRoomList
     public static Room Cog_05 { get; } = new Room
     {
         Name = SceneNames.Cog_05,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1871,6 +2034,7 @@ public static class BaseRoomList
     public static Room Cog_06 { get; } = new Room
     {
         Name = SceneNames.Cog_06,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1882,6 +2046,7 @@ public static class BaseRoomList
     public static Room Cog_07 { get; } = new Room
     {
         Name = SceneNames.Cog_07,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1892,6 +2057,7 @@ public static class BaseRoomList
     public static Room Cog_08 { get; } = new Room
     {
         Name = SceneNames.Cog_08,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1903,6 +2069,7 @@ public static class BaseRoomList
     public static Room Cog_09 { get; } = new Room
     {
         Name = SceneNames.Cog_09,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1913,6 +2080,7 @@ public static class BaseRoomList
     public static Room Cog_09_Destroyed { get; } = new Room
     {
         Name = SceneNames.Cog_09_Destroyed,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1924,6 +2092,7 @@ public static class BaseRoomList
     public static Room Cog_10 { get; } = new Room
     {
         Name = SceneNames.Cog_10,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1934,6 +2103,7 @@ public static class BaseRoomList
     public static Room Cog_10_Destroyed { get; } = new Room
     {
         Name = SceneNames.Cog_10_Destroyed,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1945,6 +2115,7 @@ public static class BaseRoomList
     public static Room Cog_11_Destroyed { get; } = new Room
     {
         Name = SceneNames.Cog_11_Destroyed,
+        MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1955,6 +2126,7 @@ public static class BaseRoomList
     public static Room Cog_Bench { get; } = new Room
     {
         Name = SceneNames.Cog_Bench,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1965,6 +2137,7 @@ public static class BaseRoomList
     public static Room Cog_Dancers { get; } = new Room
     {
         Name = SceneNames.Cog_Dancers,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1980,6 +2153,7 @@ public static class BaseRoomList
     public static Room Cog_Pass { get; } = new Room
     {
         Name = SceneNames.Cog_Pass,
+        MapZone = MapZone.COG_CORE,
         MapArea = MapAreaNames.Cogwork_Core,
         TitledArea = TitledAreaNames.Cogwork_Core,
         Gates = new([
@@ -1991,6 +2165,7 @@ public static class BaseRoomList
     public static Room Coral_02 { get; } = new Room
     {
         Name = SceneNames.Coral_02,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2002,6 +2177,7 @@ public static class BaseRoomList
     public static Room Coral_03 { get; } = new Room
     {
         Name = SceneNames.Coral_03,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2023,6 +2199,7 @@ public static class BaseRoomList
     public static Room Coral_10 { get; } = new Room
     {
         Name = SceneNames.Coral_10,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Grand_Gate,
         TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
@@ -2034,6 +2211,7 @@ public static class BaseRoomList
     public static Room Coral_11 { get; } = new Room
     {
         Name = SceneNames.Coral_11,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2045,6 +2223,7 @@ public static class BaseRoomList
     public static Room Coral_11b { get; } = new Room
     {
         Name = SceneNames.Coral_11b,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2056,6 +2235,7 @@ public static class BaseRoomList
     public static Room Coral_12 { get; } = new Room
     {
         Name = SceneNames.Coral_12,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2068,6 +2248,7 @@ public static class BaseRoomList
     public static Room Coral_19 { get; } = new Room
     {
         Name = SceneNames.Coral_19,
+        MapZone = MapZone.RED_CORAL_GORGE,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2093,6 +2274,7 @@ public static class BaseRoomList
     public static Room Coral_19b { get; } = new Room
     {
         Name = SceneNames.Coral_19b,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2103,6 +2285,7 @@ public static class BaseRoomList
     public static Room Coral_23 { get; } = new Room
     {
         Name = SceneNames.Coral_23,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2115,6 +2298,7 @@ public static class BaseRoomList
     public static Room Coral_24 { get; } = new Room
     {
         Name = SceneNames.Coral_24,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2126,6 +2310,7 @@ public static class BaseRoomList
     public static Room Coral_25 { get; } = new Room
     {
         Name = SceneNames.Coral_25,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2137,6 +2322,7 @@ public static class BaseRoomList
     public static Room Coral_26 { get; } = new Room
     {
         Name = SceneNames.Coral_26,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2149,6 +2335,7 @@ public static class BaseRoomList
     public static Room Coral_27 { get; } = new Room
     {
         Name = SceneNames.Coral_27,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2160,6 +2347,7 @@ public static class BaseRoomList
     public static Room Coral_28 { get; } = new Room
     {
         Name = SceneNames.Coral_28,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2171,6 +2359,7 @@ public static class BaseRoomList
     public static Room Coral_29 { get; } = new Room
     {
         Name = SceneNames.Coral_29,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Voltnest,
         Gates = new([
@@ -2181,6 +2370,7 @@ public static class BaseRoomList
     public static Room Coral_32 { get; } = new Room
     {
         Name = SceneNames.Coral_32,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2193,6 +2383,7 @@ public static class BaseRoomList
     public static Room Coral_33 { get; } = new Room
     {
         Name = SceneNames.Coral_33,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2203,6 +2394,7 @@ public static class BaseRoomList
     public static Room Coral_34 { get; } = new Room
     {
         Name = SceneNames.Coral_34,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2215,6 +2407,7 @@ public static class BaseRoomList
     public static Room Coral_35 { get; } = new Room
     {
         Name = SceneNames.Coral_35,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2229,6 +2422,7 @@ public static class BaseRoomList
     public static Room Coral_35b { get; } = new Room
     {
         Name = SceneNames.Coral_35b,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2246,6 +2440,7 @@ public static class BaseRoomList
     public static Room Coral_36 { get; } = new Room
     {
         Name = SceneNames.Coral_36,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2256,6 +2451,7 @@ public static class BaseRoomList
     public static Room Coral_37 { get; } = new Room
     {
         Name = SceneNames.Coral_37,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2266,6 +2462,7 @@ public static class BaseRoomList
     public static Room Coral_38 { get; } = new Room
     {
         Name = SceneNames.Coral_38,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2278,6 +2475,7 @@ public static class BaseRoomList
     public static Room Coral_39 { get; } = new Room
     {
         Name = SceneNames.Coral_39,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2288,6 +2486,7 @@ public static class BaseRoomList
     public static Room Coral_40 { get; } = new Room
     {
         Name = SceneNames.Coral_40,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2298,6 +2497,7 @@ public static class BaseRoomList
     public static Room Coral_41 { get; } = new Room
     {
         Name = SceneNames.Coral_41,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2308,6 +2508,7 @@ public static class BaseRoomList
     public static Room Coral_42 { get; } = new Room
     {
         Name = SceneNames.Coral_42,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2318,6 +2519,7 @@ public static class BaseRoomList
     public static Room Coral_43 { get; } = new Room
     {
         Name = SceneNames.Coral_43,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2329,6 +2531,7 @@ public static class BaseRoomList
     public static Room Coral_44 { get; } = new Room
     {
         Name = SceneNames.Coral_44,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
@@ -2340,6 +2543,7 @@ public static class BaseRoomList
     public static Room Coral_Judge_Arena { get; } = new Room
     {
         Name = SceneNames.Coral_Judge_Arena,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -2352,6 +2556,7 @@ public static class BaseRoomList
     public static Room Coral_Tower_01 { get; } = new Room
     {
         Name = SceneNames.Coral_Tower_01,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Coral_Tower,
         Gates = new([
@@ -2362,6 +2567,7 @@ public static class BaseRoomList
     public static Room Cradle_01 { get; } = new Room
     {
         Name = SceneNames.Cradle_01,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2373,6 +2579,7 @@ public static class BaseRoomList
     public static Room Cradle_01_Destroyed { get; } = new Room
     {
         Name = SceneNames.Cradle_01_Destroyed,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2384,6 +2591,7 @@ public static class BaseRoomList
     public static Room Cradle_02 { get; } = new Room
     {
         Name = SceneNames.Cradle_02,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2396,6 +2604,7 @@ public static class BaseRoomList
     public static Room Cradle_02b { get; } = new Room
     {
         Name = SceneNames.Cradle_02b,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2406,6 +2615,7 @@ public static class BaseRoomList
     public static Room Cradle_03 { get; } = new Room
     {
         Name = SceneNames.Cradle_03,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2417,6 +2627,7 @@ public static class BaseRoomList
     public static Room Cradle_03_Destroyed { get; } = new Room
     {
         Name = SceneNames.Cradle_03_Destroyed,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2428,6 +2639,7 @@ public static class BaseRoomList
     public static Room Cradle_Destroyed_Challenge_01 { get; } = new Room
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_01,
+        MapZone = MapZone.SURFACE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2439,6 +2651,7 @@ public static class BaseRoomList
     public static Room Cradle_Destroyed_Challenge_02 { get; } = new Room
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_02,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2450,6 +2663,7 @@ public static class BaseRoomList
     public static Room Cradle_Destroyed_Challenge_Bench { get; } = new Room
     {
         Name = SceneNames.Cradle_Destroyed_Challenge_Bench,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -2462,6 +2676,7 @@ public static class BaseRoomList
     public static Room Crawl_01 { get; } = new Room
     {
         Name = SceneNames.Crawl_01,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2472,6 +2687,7 @@ public static class BaseRoomList
     public static Room Crawl_02 { get; } = new Room
     {
         Name = SceneNames.Crawl_02,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2485,6 +2701,7 @@ public static class BaseRoomList
     public static Room Crawl_03 { get; } = new Room
     {
         Name = SceneNames.Crawl_03,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2497,6 +2714,7 @@ public static class BaseRoomList
     public static Room Crawl_03b { get; } = new Room
     {
         Name = SceneNames.Crawl_03b,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2508,6 +2726,7 @@ public static class BaseRoomList
     public static Room Crawl_04 { get; } = new Room
     {
         Name = SceneNames.Crawl_04,
+        MapZone = MapZone.PATH_OF_BONE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2518,6 +2737,7 @@ public static class BaseRoomList
     public static Room Crawl_05 { get; } = new Room
     {
         Name = SceneNames.Crawl_05,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Weavenest_Karn,
         Gates = new([
@@ -2527,6 +2747,7 @@ public static class BaseRoomList
     public static Room Crawl_06 { get; } = new Room
     {
         Name = SceneNames.Crawl_06,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2536,6 +2757,7 @@ public static class BaseRoomList
     public static Room Crawl_07 { get; } = new Room
     {
         Name = SceneNames.Crawl_07,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2547,6 +2769,7 @@ public static class BaseRoomList
     public static Room Crawl_08 { get; } = new Room
     {
         Name = SceneNames.Crawl_08,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2556,6 +2779,7 @@ public static class BaseRoomList
     public static Room Crawl_09 { get; } = new Room
     {
         Name = SceneNames.Crawl_09,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2566,6 +2790,7 @@ public static class BaseRoomList
     public static Room Crawl_10 { get; } = new Room
     {
         Name = SceneNames.Crawl_10,
+        MapZone = MapZone.CRAWLSPACE,
         MapArea = MapAreaNames.Wormways,
         TitledArea = TitledAreaNames.Wormways,
         Gates = new([
@@ -2575,6 +2800,7 @@ public static class BaseRoomList
     public static Room Dock_01 { get; } = new Room
     {
         Name = SceneNames.Dock_01,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2587,6 +2813,7 @@ public static class BaseRoomList
     public static Room Dock_02 { get; } = new Room
     {
         Name = SceneNames.Dock_02,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2601,6 +2828,7 @@ public static class BaseRoomList
     public static Room Dock_02b { get; } = new Room
     {
         Name = SceneNames.Dock_02b,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2615,6 +2843,7 @@ public static class BaseRoomList
     public static Room Dock_03 { get; } = new Room
     {
         Name = SceneNames.Dock_03,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2627,6 +2856,7 @@ public static class BaseRoomList
     public static Room Dock_03b { get; } = new Room
     {
         Name = SceneNames.Dock_03b,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2638,6 +2868,7 @@ public static class BaseRoomList
     public static Room Dock_03c { get; } = new Room
     {
         Name = SceneNames.Dock_03c,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2650,6 +2881,7 @@ public static class BaseRoomList
     public static Room Dock_03d { get; } = new Room
     {
         Name = SceneNames.Dock_03d,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2660,6 +2892,7 @@ public static class BaseRoomList
     public static Room Dock_04 { get; } = new Room
     {
         Name = SceneNames.Dock_04,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2673,6 +2906,7 @@ public static class BaseRoomList
     public static Room Dock_05 { get; } = new Room
     {
         Name = SceneNames.Dock_05,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2683,6 +2917,7 @@ public static class BaseRoomList
     public static Room Dock_06_Church { get; } = new Room
     {
         Name = SceneNames.Dock_06_Church,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2694,6 +2929,7 @@ public static class BaseRoomList
     public static Room Dock_08 { get; } = new Room
     {
         Name = SceneNames.Dock_08,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2706,6 +2942,7 @@ public static class BaseRoomList
     public static Room Dock_09 { get; } = new Room
     {
         Name = SceneNames.Dock_09,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2717,6 +2954,7 @@ public static class BaseRoomList
     public static Room Dock_10 { get; } = new Room
     {
         Name = SceneNames.Dock_10,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2728,6 +2966,7 @@ public static class BaseRoomList
     public static Room Dock_11 { get; } = new Room
     {
         Name = SceneNames.Dock_11,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2739,6 +2978,7 @@ public static class BaseRoomList
     public static Room Dock_12 { get; } = new Room
     {
         Name = SceneNames.Dock_12,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2750,6 +2990,7 @@ public static class BaseRoomList
     public static Room Dock_13 { get; } = new Room
     {
         Name = SceneNames.Dock_13,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2760,6 +3001,7 @@ public static class BaseRoomList
     public static Room Dock_14 { get; } = new Room
     {
         Name = SceneNames.Dock_14,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2770,6 +3012,7 @@ public static class BaseRoomList
     public static Room Dock_15 { get; } = new Room
     {
         Name = SceneNames.Dock_15,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2784,6 +3027,7 @@ public static class BaseRoomList
     public static Room Dock_16 { get; } = new Room
     {
         Name = SceneNames.Dock_16,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -2794,6 +3038,7 @@ public static class BaseRoomList
     public static Room Dust_01 { get; } = new Room
     {
         Name = SceneNames.Dust_01,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2805,6 +3050,7 @@ public static class BaseRoomList
     public static Room Dust_02 { get; } = new Room
     {
         Name = SceneNames.Dust_02,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2820,6 +3066,7 @@ public static class BaseRoomList
     public static Room Dust_03 { get; } = new Room
     {
         Name = SceneNames.Dust_03,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2832,6 +3079,7 @@ public static class BaseRoomList
     public static Room Dust_04 { get; } = new Room
     {
         Name = SceneNames.Dust_04,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2845,6 +3093,7 @@ public static class BaseRoomList
     public static Room Dust_05 { get; } = new Room
     {
         Name = SceneNames.Dust_05,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2857,6 +3106,7 @@ public static class BaseRoomList
     public static Room Dust_06 { get; } = new Room
     {
         Name = SceneNames.Dust_06,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2870,6 +3120,7 @@ public static class BaseRoomList
     public static Room Dust_09 { get; } = new Room
     {
         Name = SceneNames.Dust_09,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2882,6 +3133,7 @@ public static class BaseRoomList
     public static Room Dust_10 { get; } = new Room
     {
         Name = SceneNames.Dust_10,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2892,6 +3144,7 @@ public static class BaseRoomList
     public static Room Dust_11 { get; } = new Room
     {
         Name = SceneNames.Dust_11,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2903,6 +3156,7 @@ public static class BaseRoomList
     public static Room Dust_12 { get; } = new Room
     {
         Name = SceneNames.Dust_12,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2913,6 +3167,7 @@ public static class BaseRoomList
     public static Room Dust_Barb { get; } = new Room
     {
         Name = SceneNames.Dust_Barb,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2923,6 +3178,7 @@ public static class BaseRoomList
     public static Room Dust_Chef { get; } = new Room
     {
         Name = SceneNames.Dust_Chef,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2934,6 +3190,7 @@ public static class BaseRoomList
     public static Room Dust_Maze_08_completed { get; } = new Room
     {
         Name = SceneNames.Dust_Maze_08_completed,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.The_Mist,
         Gates = new([
@@ -2945,6 +3202,7 @@ public static class BaseRoomList
     public static Room Dust_Shack { get; } = new Room
     {
         Name = SceneNames.Dust_Shack,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Sinner_s_Road,
         TitledArea = TitledAreaNames.Sinner_s_Road,
         Gates = new([
@@ -2955,6 +3213,7 @@ public static class BaseRoomList
     public static Room Greymoor_01 { get; } = new Room
     {
         Name = SceneNames.Greymoor_01,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -2970,6 +3229,7 @@ public static class BaseRoomList
     public static Room Greymoor_02 { get; } = new Room
     {
         Name = SceneNames.Greymoor_02,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -2985,6 +3245,7 @@ public static class BaseRoomList
     public static Room Greymoor_03 { get; } = new Room
     {
         Name = SceneNames.Greymoor_03,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3002,6 +3263,7 @@ public static class BaseRoomList
     public static Room Greymoor_04 { get; } = new Room
     {
         Name = SceneNames.Greymoor_04,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3016,6 +3278,7 @@ public static class BaseRoomList
     public static Room Greymoor_05 { get; } = new Room
     {
         Name = SceneNames.Greymoor_05,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3029,6 +3292,7 @@ public static class BaseRoomList
     public static Room Greymoor_06 { get; } = new Room
     {
         Name = SceneNames.Greymoor_06,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3046,6 +3310,7 @@ public static class BaseRoomList
     public static Room Greymoor_07 { get; } = new Room
     {
         Name = SceneNames.Greymoor_07,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3059,6 +3324,7 @@ public static class BaseRoomList
     public static Room Greymoor_08 { get; } = new Room
     {
         Name = SceneNames.Greymoor_08,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3073,6 +3339,7 @@ public static class BaseRoomList
     public static Room Greymoor_10 { get; } = new Room
     {
         Name = SceneNames.Greymoor_10,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3084,6 +3351,7 @@ public static class BaseRoomList
     public static Room Greymoor_11 { get; } = new Room
     {
         Name = SceneNames.Greymoor_11,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3095,6 +3363,7 @@ public static class BaseRoomList
     public static Room Greymoor_12 { get; } = new Room
     {
         Name = SceneNames.Greymoor_12,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3106,6 +3375,7 @@ public static class BaseRoomList
     public static Room Greymoor_13 { get; } = new Room
     {
         Name = SceneNames.Greymoor_13,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3118,6 +3388,7 @@ public static class BaseRoomList
     public static Room Greymoor_15 { get; } = new Room
     {
         Name = SceneNames.Greymoor_15,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3131,6 +3402,7 @@ public static class BaseRoomList
     public static Room Greymoor_15b { get; } = new Room
     {
         Name = SceneNames.Greymoor_15b,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3145,6 +3417,7 @@ public static class BaseRoomList
     public static Room Greymoor_16 { get; } = new Room
     {
         Name = SceneNames.Greymoor_16,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3156,6 +3429,7 @@ public static class BaseRoomList
     public static Room Greymoor_17 { get; } = new Room
     {
         Name = SceneNames.Greymoor_17,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3167,6 +3441,7 @@ public static class BaseRoomList
     public static Room Greymoor_20b { get; } = new Room
     {
         Name = SceneNames.Greymoor_20b,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3178,6 +3453,7 @@ public static class BaseRoomList
     public static Room Greymoor_20c { get; } = new Room
     {
         Name = SceneNames.Greymoor_20c,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3188,6 +3464,7 @@ public static class BaseRoomList
     public static Room Greymoor_21 { get; } = new Room
     {
         Name = SceneNames.Greymoor_21,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3198,6 +3475,7 @@ public static class BaseRoomList
     public static Room Greymoor_22 { get; } = new Room
     {
         Name = SceneNames.Greymoor_22,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3208,6 +3486,7 @@ public static class BaseRoomList
     public static Room Greymoor_24 { get; } = new Room
     {
         Name = SceneNames.Greymoor_24,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3218,6 +3497,7 @@ public static class BaseRoomList
     public static Room Halfway_01 { get; } = new Room
     {
         Name = SceneNames.Halfway_01,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Halfway_Home,
         Gates = new([
@@ -3230,6 +3510,7 @@ public static class BaseRoomList
     public static Room Hang_01 { get; } = new Room
     {
         Name = SceneNames.Hang_01,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3240,6 +3521,7 @@ public static class BaseRoomList
     public static Room Hang_02 { get; } = new Room
     {
         Name = SceneNames.Hang_02,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3250,6 +3532,7 @@ public static class BaseRoomList
     public static Room Hang_03 { get; } = new Room
     {
         Name = SceneNames.Hang_03,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3263,6 +3546,7 @@ public static class BaseRoomList
     public static Room Hang_03_top { get; } = new Room
     {
         Name = SceneNames.Hang_03_top,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3272,6 +3556,7 @@ public static class BaseRoomList
     public static Room Hang_04 { get; } = new Room
     {
         Name = SceneNames.Hang_04,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3282,6 +3567,7 @@ public static class BaseRoomList
     public static Room Hang_06 { get; } = new Room
     {
         Name = SceneNames.Hang_06,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3295,6 +3581,7 @@ public static class BaseRoomList
     public static Room Hang_06_bank { get; } = new Room
     {
         Name = SceneNames.Hang_06_bank,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3304,6 +3591,7 @@ public static class BaseRoomList
     public static Room Hang_06b { get; } = new Room
     {
         Name = SceneNames.Hang_06b,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3313,6 +3601,7 @@ public static class BaseRoomList
     public static Room Hang_07 { get; } = new Room
     {
         Name = SceneNames.Hang_07,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3325,6 +3614,7 @@ public static class BaseRoomList
     public static Room Hang_08 { get; } = new Room
     {
         Name = SceneNames.Hang_08,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3340,6 +3630,7 @@ public static class BaseRoomList
     public static Room Hang_09 { get; } = new Room
     {
         Name = SceneNames.Hang_09,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3349,6 +3640,7 @@ public static class BaseRoomList
     public static Room Hang_10 { get; } = new Room
     {
         Name = SceneNames.Hang_10,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3359,6 +3651,7 @@ public static class BaseRoomList
     public static Room Hang_12 { get; } = new Room
     {
         Name = SceneNames.Hang_12,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3368,6 +3661,7 @@ public static class BaseRoomList
     public static Room Hang_13 { get; } = new Room
     {
         Name = SceneNames.Hang_13,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3378,6 +3672,7 @@ public static class BaseRoomList
     public static Room Hang_14 { get; } = new Room
     {
         Name = SceneNames.Hang_14,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3387,6 +3682,7 @@ public static class BaseRoomList
     public static Room Hang_15 { get; } = new Room
     {
         Name = SceneNames.Hang_15,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3396,6 +3692,7 @@ public static class BaseRoomList
     public static Room Hang_16 { get; } = new Room
     {
         Name = SceneNames.Hang_16,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3406,6 +3703,7 @@ public static class BaseRoomList
     public static Room Hang_17b { get; } = new Room
     {
         Name = SceneNames.Hang_17b,
+        MapZone = MapZone.HANG,
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
@@ -3415,6 +3713,7 @@ public static class BaseRoomList
     public static Room Library_01 { get; } = new Room
     {
         Name = SceneNames.Library_01,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3429,6 +3728,7 @@ public static class BaseRoomList
     public static Room Library_02 { get; } = new Room
     {
         Name = SceneNames.Library_02,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3442,6 +3742,7 @@ public static class BaseRoomList
     public static Room Library_03 { get; } = new Room
     {
         Name = SceneNames.Library_03,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3453,6 +3754,7 @@ public static class BaseRoomList
     public static Room Library_04 { get; } = new Room
     {
         Name = SceneNames.Library_04,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3473,6 +3775,7 @@ public static class BaseRoomList
     public static Room Library_05 { get; } = new Room
     {
         Name = SceneNames.Library_05,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3486,6 +3789,7 @@ public static class BaseRoomList
     public static Room Library_06 { get; } = new Room
     {
         Name = SceneNames.Library_06,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3498,6 +3802,7 @@ public static class BaseRoomList
     public static Room Library_07 { get; } = new Room
     {
         Name = SceneNames.Library_07,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3513,6 +3818,7 @@ public static class BaseRoomList
     public static Room Library_08 { get; } = new Room
     {
         Name = SceneNames.Library_08,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3524,6 +3830,7 @@ public static class BaseRoomList
     public static Room Library_09 { get; } = new Room
     {
         Name = SceneNames.Library_09,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3535,6 +3842,7 @@ public static class BaseRoomList
     public static Room Library_10 { get; } = new Room
     {
         Name = SceneNames.Library_10,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3546,6 +3854,7 @@ public static class BaseRoomList
     public static Room Library_11 { get; } = new Room
     {
         Name = SceneNames.Library_11,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3560,6 +3869,7 @@ public static class BaseRoomList
     public static Room Library_11b { get; } = new Room
     {
         Name = SceneNames.Library_11b,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3571,6 +3881,7 @@ public static class BaseRoomList
     public static Room Library_12 { get; } = new Room
     {
         Name = SceneNames.Library_12,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3584,6 +3895,7 @@ public static class BaseRoomList
     public static Room Library_12b { get; } = new Room
     {
         Name = SceneNames.Library_12b,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3595,6 +3907,7 @@ public static class BaseRoomList
     public static Room Library_13 { get; } = new Room
     {
         Name = SceneNames.Library_13,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3607,6 +3920,7 @@ public static class BaseRoomList
     public static Room Library_13b { get; } = new Room
     {
         Name = SceneNames.Library_13b,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3618,6 +3932,7 @@ public static class BaseRoomList
     public static Room Library_14 { get; } = new Room
     {
         Name = SceneNames.Library_14,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3628,6 +3943,7 @@ public static class BaseRoomList
     public static Room Library_15 { get; } = new Room
     {
         Name = SceneNames.Library_15,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3638,6 +3954,7 @@ public static class BaseRoomList
     public static Room Library_16 { get; } = new Room
     {
         Name = SceneNames.Library_16,
+        MapZone = MapZone.LIBRARY,
         MapArea = MapAreaNames.Whispering_Vaults,
         TitledArea = TitledAreaNames.Whispering_Vaults,
         Gates = new([
@@ -3648,6 +3965,7 @@ public static class BaseRoomList
     public static Room Memory_Needolin { get; } = new Room
     {
         Name = SceneNames.Memory_Needolin,
+        MapZone = MapZone.MEMORY,
         MapArea = MapAreaNames.Unknown,
         TitledArea = TitledAreaNames.Unknown,
         Gates = new([
@@ -3659,6 +3977,7 @@ public static class BaseRoomList
     public static Room Memory_Red { get; } = new Room
     {
         Name = SceneNames.Memory_Red,
+        MapZone = MapZone.MEMORY,
         MapArea = MapAreaNames.Unknown,
         TitledArea = TitledAreaNames.Unknown,
         Gates = new([
@@ -3674,6 +3993,7 @@ public static class BaseRoomList
     public static Room Mosstown_01 { get; } = new Room
     {
         Name = SceneNames.Mosstown_01,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Mosshome,
         Gates = new([
@@ -3687,6 +4007,7 @@ public static class BaseRoomList
     public static Room Mosstown_02 { get; } = new Room
     {
         Name = SceneNames.Mosstown_02,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Mosshome,
         Gates = new([
@@ -3700,6 +4021,7 @@ public static class BaseRoomList
     public static Room Mosstown_02c { get; } = new Room
     {
         Name = SceneNames.Mosstown_02c,
+        MapZone = MapZone.MOSSTOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Mosshome,
         Gates = new([
@@ -3710,6 +4032,7 @@ public static class BaseRoomList
     public static Room Mosstown_03 { get; } = new Room
     {
         Name = SceneNames.Mosstown_03,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Mosshome,
         Gates = new([
@@ -3722,6 +4045,7 @@ public static class BaseRoomList
     public static Room Organ_01 { get; } = new Room
     {
         Name = SceneNames.Organ_01,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Exhaust_Organ,
         Gates = new([
@@ -3734,6 +4058,7 @@ public static class BaseRoomList
     public static Room Peak_01 { get; } = new Room
     {
         Name = SceneNames.Peak_01,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3755,6 +4080,7 @@ public static class BaseRoomList
     public static Room Peak_02 { get; } = new Room
     {
         Name = SceneNames.Peak_02,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3771,6 +4097,7 @@ public static class BaseRoomList
     public static Room Peak_04 { get; } = new Room
     {
         Name = SceneNames.Peak_04,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3782,6 +4109,7 @@ public static class BaseRoomList
     public static Room Peak_04c { get; } = new Room
     {
         Name = SceneNames.Peak_04c,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3793,6 +4121,7 @@ public static class BaseRoomList
     public static Room Peak_04d { get; } = new Room
     {
         Name = SceneNames.Peak_04d,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3804,6 +4133,7 @@ public static class BaseRoomList
     public static Room Peak_05 { get; } = new Room
     {
         Name = SceneNames.Peak_05,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3816,6 +4146,7 @@ public static class BaseRoomList
     public static Room Peak_05c { get; } = new Room
     {
         Name = SceneNames.Peak_05c,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3827,6 +4158,7 @@ public static class BaseRoomList
     public static Room Peak_05d { get; } = new Room
     {
         Name = SceneNames.Peak_05d,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3838,6 +4170,7 @@ public static class BaseRoomList
     public static Room Peak_05e { get; } = new Room
     {
         Name = SceneNames.Peak_05e,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3850,6 +4183,7 @@ public static class BaseRoomList
     public static Room Peak_06 { get; } = new Room
     {
         Name = SceneNames.Peak_06,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3860,6 +4194,7 @@ public static class BaseRoomList
     public static Room Peak_06b { get; } = new Room
     {
         Name = SceneNames.Peak_06b,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3871,6 +4206,7 @@ public static class BaseRoomList
     public static Room Peak_07 { get; } = new Room
     {
         Name = SceneNames.Peak_07,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3887,6 +4223,7 @@ public static class BaseRoomList
     public static Room Peak_08 { get; } = new Room
     {
         Name = SceneNames.Peak_08,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3899,6 +4236,7 @@ public static class BaseRoomList
     public static Room Peak_08b { get; } = new Room
     {
         Name = SceneNames.Peak_08b,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3913,6 +4251,7 @@ public static class BaseRoomList
     public static Room Peak_10 { get; } = new Room
     {
         Name = SceneNames.Peak_10,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3923,6 +4262,7 @@ public static class BaseRoomList
     public static Room Peak_12 { get; } = new Room
     {
         Name = SceneNames.Peak_12,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3933,6 +4273,7 @@ public static class BaseRoomList
     public static Room Peak_Mask_Maker { get; } = new Room
     {
         Name = SceneNames.Peak_Mask_Maker,
+        MapZone = MapZone.PEAK,
         MapArea = MapAreaNames.Mount_Fay,
         TitledArea = TitledAreaNames.Mount_Fay,
         Gates = new([
@@ -3943,6 +4284,7 @@ public static class BaseRoomList
     public static Room Room_Caravan_Interior { get; } = new Room
     {
         Name = SceneNames.Room_Caravan_Interior,
+        MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Unknown,
         TitledArea = TitledAreaNames.Unknown,
         Gates = new([
@@ -3953,6 +4295,7 @@ public static class BaseRoomList
     public static Room Room_Caravan_Spa { get; } = new Room
     {
         Name = SceneNames.Room_Caravan_Spa,
+        MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Unknown,
         TitledArea = TitledAreaNames.Unknown,
         Gates = new([
@@ -3963,6 +4306,7 @@ public static class BaseRoomList
     public static Room Room_CrowCourt { get; } = new Room
     {
         Name = SceneNames.Room_CrowCourt,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3974,6 +4318,7 @@ public static class BaseRoomList
     public static Room Room_CrowCourt_02 { get; } = new Room
     {
         Name = SceneNames.Room_CrowCourt_02,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
@@ -3984,6 +4329,7 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -3994,6 +4340,7 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell_Abyss { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell_Abyss,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -4004,6 +4351,7 @@ public static class BaseRoomList
     public static Room Room_Diving_Bell_Abyss_Fixed { get; } = new Room
     {
         Name = SceneNames.Room_Diving_Bell_Abyss_Fixed,
+        MapZone = MapZone.ABYSS,
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
@@ -4014,6 +4362,7 @@ public static class BaseRoomList
     public static Room Room_Forge { get; } = new Room
     {
         Name = SceneNames.Room_Forge,
+        MapZone = MapZone.DOCKS,
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
@@ -4026,6 +4375,7 @@ public static class BaseRoomList
     public static Room Room_Huntress { get; } = new Room
     {
         Name = SceneNames.Room_Huntress,
+        MapZone = MapZone.AQUEDUCT,
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
@@ -4036,6 +4386,7 @@ public static class BaseRoomList
     public static Room Room_Pinstress { get; } = new Room
     {
         Name = SceneNames.Room_Pinstress,
+        MapZone = MapZone.JUDGE_STEPS,
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
@@ -4046,6 +4397,7 @@ public static class BaseRoomList
     public static Room Room_Witch { get; } = new Room
     {
         Name = SceneNames.Room_Witch,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4056,6 +4408,7 @@ public static class BaseRoomList
     public static Room Shadow_01 { get; } = new Room
     {
         Name = SceneNames.Shadow_01,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4071,6 +4424,7 @@ public static class BaseRoomList
     public static Room Shadow_02 { get; } = new Room
     {
         Name = SceneNames.Shadow_02,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4084,6 +4438,7 @@ public static class BaseRoomList
     public static Room Shadow_03 { get; } = new Room
     {
         Name = SceneNames.Shadow_03,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4095,6 +4450,7 @@ public static class BaseRoomList
     public static Room Shadow_04 { get; } = new Room
     {
         Name = SceneNames.Shadow_04,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4106,6 +4462,7 @@ public static class BaseRoomList
     public static Room Shadow_04b { get; } = new Room
     {
         Name = SceneNames.Shadow_04b,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4116,6 +4473,7 @@ public static class BaseRoomList
     public static Room Shadow_05 { get; } = new Room
     {
         Name = SceneNames.Shadow_05,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4126,6 +4484,7 @@ public static class BaseRoomList
     public static Room Shadow_08 { get; } = new Room
     {
         Name = SceneNames.Shadow_08,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4136,6 +4495,7 @@ public static class BaseRoomList
     public static Room Shadow_09 { get; } = new Room
     {
         Name = SceneNames.Shadow_09,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4148,6 +4508,7 @@ public static class BaseRoomList
     public static Room Shadow_10 { get; } = new Room
     {
         Name = SceneNames.Shadow_10,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4159,6 +4520,7 @@ public static class BaseRoomList
     public static Room Shadow_11 { get; } = new Room
     {
         Name = SceneNames.Shadow_11,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4169,6 +4531,7 @@ public static class BaseRoomList
     public static Room Shadow_12 { get; } = new Room
     {
         Name = SceneNames.Shadow_12,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4179,6 +4542,7 @@ public static class BaseRoomList
     public static Room Shadow_13 { get; } = new Room
     {
         Name = SceneNames.Shadow_13,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4188,6 +4552,7 @@ public static class BaseRoomList
     public static Room Shadow_14 { get; } = new Room
     {
         Name = SceneNames.Shadow_14,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4198,6 +4563,7 @@ public static class BaseRoomList
     public static Room Shadow_15 { get; } = new Room
     {
         Name = SceneNames.Shadow_15,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4208,6 +4574,7 @@ public static class BaseRoomList
     public static Room Shadow_16 { get; } = new Room
     {
         Name = SceneNames.Shadow_16,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4218,6 +4585,7 @@ public static class BaseRoomList
     public static Room Shadow_18 { get; } = new Room
     {
         Name = SceneNames.Shadow_18,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4229,6 +4597,7 @@ public static class BaseRoomList
     public static Room Shadow_19 { get; } = new Room
     {
         Name = SceneNames.Shadow_19,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4241,6 +4610,7 @@ public static class BaseRoomList
     public static Room Shadow_20 { get; } = new Room
     {
         Name = SceneNames.Shadow_20,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4251,6 +4621,7 @@ public static class BaseRoomList
     public static Room Shadow_21 { get; } = new Room
     {
         Name = SceneNames.Shadow_21,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4260,6 +4631,7 @@ public static class BaseRoomList
     public static Room Shadow_22 { get; } = new Room
     {
         Name = SceneNames.Shadow_22,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4272,6 +4644,7 @@ public static class BaseRoomList
     public static Room Shadow_23 { get; } = new Room
     {
         Name = SceneNames.Shadow_23,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4281,6 +4654,7 @@ public static class BaseRoomList
     public static Room Shadow_24 { get; } = new Room
     {
         Name = SceneNames.Shadow_24,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4290,6 +4664,7 @@ public static class BaseRoomList
     public static Room Shadow_25 { get; } = new Room
     {
         Name = SceneNames.Shadow_25,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4299,6 +4674,7 @@ public static class BaseRoomList
     public static Room Shadow_26 { get; } = new Room
     {
         Name = SceneNames.Shadow_26,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4311,6 +4687,7 @@ public static class BaseRoomList
     public static Room Shadow_27 { get; } = new Room
     {
         Name = SceneNames.Shadow_27,
+        MapZone = MapZone.SWAMP,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4321,6 +4698,7 @@ public static class BaseRoomList
     public static Room Shadow_28 { get; } = new Room
     {
         Name = SceneNames.Shadow_28,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4330,6 +4708,7 @@ public static class BaseRoomList
     public static Room Shadow_Bilehaven_Room { get; } = new Room
     {
         Name = SceneNames.Shadow_Bilehaven_Room,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4339,6 +4718,7 @@ public static class BaseRoomList
     public static Room Shadow_Weavehome { get; } = new Room
     {
         Name = SceneNames.Shadow_Weavehome,
+        MapZone = MapZone.DUSTPENS,
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
@@ -4348,6 +4728,7 @@ public static class BaseRoomList
     public static Room Shellgrave { get; } = new Room
     {
         Name = SceneNames.Shellgrave,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4358,6 +4739,7 @@ public static class BaseRoomList
     public static Room Shellwood_01 { get; } = new Room
     {
         Name = SceneNames.Shellwood_01,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4371,6 +4753,7 @@ public static class BaseRoomList
     public static Room Shellwood_01b { get; } = new Room
     {
         Name = SceneNames.Shellwood_01b,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4385,6 +4768,7 @@ public static class BaseRoomList
     public static Room Shellwood_02 { get; } = new Room
     {
         Name = SceneNames.Shellwood_02,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4398,6 +4782,7 @@ public static class BaseRoomList
     public static Room Shellwood_03 { get; } = new Room
     {
         Name = SceneNames.Shellwood_03,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4413,6 +4798,7 @@ public static class BaseRoomList
     public static Room Shellwood_04b { get; } = new Room
     {
         Name = SceneNames.Shellwood_04b,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4426,6 +4812,7 @@ public static class BaseRoomList
     public static Room Shellwood_04c { get; } = new Room
     {
         Name = SceneNames.Shellwood_04c,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4437,6 +4824,7 @@ public static class BaseRoomList
     public static Room Shellwood_08 { get; } = new Room
     {
         Name = SceneNames.Shellwood_08,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4449,6 +4837,7 @@ public static class BaseRoomList
     public static Room Shellwood_08c { get; } = new Room
     {
         Name = SceneNames.Shellwood_08c,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4460,6 +4849,7 @@ public static class BaseRoomList
     public static Room Shellwood_10 { get; } = new Room
     {
         Name = SceneNames.Shellwood_10,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4475,6 +4865,7 @@ public static class BaseRoomList
     public static Room Shellwood_11 { get; } = new Room
     {
         Name = SceneNames.Shellwood_11,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4486,6 +4877,7 @@ public static class BaseRoomList
     public static Room Shellwood_11b { get; } = new Room
     {
         Name = SceneNames.Shellwood_11b,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4496,6 +4888,7 @@ public static class BaseRoomList
     public static Room Shellwood_13 { get; } = new Room
     {
         Name = SceneNames.Shellwood_13,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4508,6 +4901,7 @@ public static class BaseRoomList
     public static Room Shellwood_14 { get; } = new Room
     {
         Name = SceneNames.Shellwood_14,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4518,6 +4912,7 @@ public static class BaseRoomList
     public static Room Shellwood_15 { get; } = new Room
     {
         Name = SceneNames.Shellwood_15,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4529,6 +4924,7 @@ public static class BaseRoomList
     public static Room Shellwood_16 { get; } = new Room
     {
         Name = SceneNames.Shellwood_16,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4540,6 +4936,7 @@ public static class BaseRoomList
     public static Room Shellwood_18 { get; } = new Room
     {
         Name = SceneNames.Shellwood_18,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4552,6 +4949,7 @@ public static class BaseRoomList
     public static Room Shellwood_19 { get; } = new Room
     {
         Name = SceneNames.Shellwood_19,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4563,6 +4961,7 @@ public static class BaseRoomList
     public static Room Shellwood_20 { get; } = new Room
     {
         Name = SceneNames.Shellwood_20,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4574,6 +4973,7 @@ public static class BaseRoomList
     public static Room Shellwood_22 { get; } = new Room
     {
         Name = SceneNames.Shellwood_22,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4585,6 +4985,7 @@ public static class BaseRoomList
     public static Room Shellwood_25 { get; } = new Room
     {
         Name = SceneNames.Shellwood_25,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4596,6 +4997,7 @@ public static class BaseRoomList
     public static Room Shellwood_25b { get; } = new Room
     {
         Name = SceneNames.Shellwood_25b,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4606,6 +5008,7 @@ public static class BaseRoomList
     public static Room Shellwood_26 { get; } = new Room
     {
         Name = SceneNames.Shellwood_26,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4617,6 +5020,7 @@ public static class BaseRoomList
     public static Room Shellwood_Witch { get; } = new Room
     {
         Name = SceneNames.Shellwood_Witch,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
@@ -4628,6 +5032,7 @@ public static class BaseRoomList
     public static Room Slab_01 { get; } = new Room
     {
         Name = SceneNames.Slab_01,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4639,6 +5044,7 @@ public static class BaseRoomList
     public static Room Slab_02 { get; } = new Room
     {
         Name = SceneNames.Slab_02,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4650,6 +5056,7 @@ public static class BaseRoomList
     public static Room Slab_03 { get; } = new Room
     {
         Name = SceneNames.Slab_03,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4675,6 +5082,7 @@ public static class BaseRoomList
     public static Room Slab_04 { get; } = new Room
     {
         Name = SceneNames.Slab_04,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4688,6 +5096,7 @@ public static class BaseRoomList
     public static Room Slab_05 { get; } = new Room
     {
         Name = SceneNames.Slab_05,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4700,6 +5109,7 @@ public static class BaseRoomList
     public static Room Slab_06 { get; } = new Room
     {
         Name = SceneNames.Slab_06,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4712,6 +5122,7 @@ public static class BaseRoomList
     public static Room Slab_07 { get; } = new Room
     {
         Name = SceneNames.Slab_07,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4723,6 +5134,7 @@ public static class BaseRoomList
     public static Room Slab_08 { get; } = new Room
     {
         Name = SceneNames.Slab_08,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4734,6 +5146,7 @@ public static class BaseRoomList
     public static Room Slab_10b { get; } = new Room
     {
         Name = SceneNames.Slab_10b,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4744,6 +5157,7 @@ public static class BaseRoomList
     public static Room Slab_10c { get; } = new Room
     {
         Name = SceneNames.Slab_10c,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4755,6 +5169,7 @@ public static class BaseRoomList
     public static Room Slab_12 { get; } = new Room
     {
         Name = SceneNames.Slab_12,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4765,6 +5180,7 @@ public static class BaseRoomList
     public static Room Slab_13 { get; } = new Room
     {
         Name = SceneNames.Slab_13,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4778,6 +5194,7 @@ public static class BaseRoomList
     public static Room Slab_14 { get; } = new Room
     {
         Name = SceneNames.Slab_14,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4789,6 +5206,7 @@ public static class BaseRoomList
     public static Room Slab_15 { get; } = new Room
     {
         Name = SceneNames.Slab_15,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4802,6 +5220,7 @@ public static class BaseRoomList
     public static Room Slab_16 { get; } = new Room
     {
         Name = SceneNames.Slab_16,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4816,6 +5235,7 @@ public static class BaseRoomList
     public static Room Slab_16b { get; } = new Room
     {
         Name = SceneNames.Slab_16b,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4826,6 +5246,7 @@ public static class BaseRoomList
     public static Room Slab_17 { get; } = new Room
     {
         Name = SceneNames.Slab_17,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4836,6 +5257,7 @@ public static class BaseRoomList
     public static Room Slab_18 { get; } = new Room
     {
         Name = SceneNames.Slab_18,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4847,6 +5269,7 @@ public static class BaseRoomList
     public static Room Slab_19b { get; } = new Room
     {
         Name = SceneNames.Slab_19b,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4858,6 +5281,7 @@ public static class BaseRoomList
     public static Room Slab_20 { get; } = new Room
     {
         Name = SceneNames.Slab_20,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4868,6 +5292,7 @@ public static class BaseRoomList
     public static Room Slab_21 { get; } = new Room
     {
         Name = SceneNames.Slab_21,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4880,6 +5305,7 @@ public static class BaseRoomList
     public static Room Slab_22 { get; } = new Room
     {
         Name = SceneNames.Slab_22,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4891,6 +5317,7 @@ public static class BaseRoomList
     public static Room Slab_23 { get; } = new Room
     {
         Name = SceneNames.Slab_23,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4904,6 +5331,7 @@ public static class BaseRoomList
     public static Room Slab_Cell { get; } = new Room
     {
         Name = SceneNames.Slab_Cell,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4914,6 +5342,7 @@ public static class BaseRoomList
     public static Room Slab_Cell_Creature { get; } = new Room
     {
         Name = SceneNames.Slab_Cell_Creature,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4924,6 +5353,7 @@ public static class BaseRoomList
     public static Room Slab_Cell_Quiet { get; } = new Room
     {
         Name = SceneNames.Slab_Cell_Quiet,
+        MapZone = MapZone.THE_SLAB,
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
@@ -4935,6 +5365,7 @@ public static class BaseRoomList
     public static Room Song_01 { get; } = new Room
     {
         Name = SceneNames.Song_01,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -4947,6 +5378,7 @@ public static class BaseRoomList
     public static Room Song_01b { get; } = new Room
     {
         Name = SceneNames.Song_01b,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -4959,6 +5391,7 @@ public static class BaseRoomList
     public static Room Song_01c { get; } = new Room
     {
         Name = SceneNames.Song_01c,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -4970,6 +5403,7 @@ public static class BaseRoomList
     public static Room Song_02 { get; } = new Room
     {
         Name = SceneNames.Song_02,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -4981,6 +5415,7 @@ public static class BaseRoomList
     public static Room Song_03 { get; } = new Room
     {
         Name = SceneNames.Song_03,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -4992,6 +5427,7 @@ public static class BaseRoomList
     public static Room Song_04 { get; } = new Room
     {
         Name = SceneNames.Song_04,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5005,6 +5441,7 @@ public static class BaseRoomList
     public static Room Song_05 { get; } = new Room
     {
         Name = SceneNames.Song_05,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5020,6 +5457,7 @@ public static class BaseRoomList
     public static Room Song_07 { get; } = new Room
     {
         Name = SceneNames.Song_07,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5030,6 +5468,7 @@ public static class BaseRoomList
     public static Room Song_08 { get; } = new Room
     {
         Name = SceneNames.Song_08,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5040,6 +5479,7 @@ public static class BaseRoomList
     public static Room Song_09 { get; } = new Room
     {
         Name = SceneNames.Song_09,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5052,6 +5492,7 @@ public static class BaseRoomList
     public static Room Song_09b { get; } = new Room
     {
         Name = SceneNames.Song_09b,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5063,6 +5504,7 @@ public static class BaseRoomList
     public static Room Song_10 { get; } = new Room
     {
         Name = SceneNames.Song_10,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5074,6 +5516,7 @@ public static class BaseRoomList
     public static Room Song_11 { get; } = new Room
     {
         Name = SceneNames.Song_11,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5090,6 +5533,7 @@ public static class BaseRoomList
     public static Room Song_12 { get; } = new Room
     {
         Name = SceneNames.Song_12,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5106,6 +5550,7 @@ public static class BaseRoomList
     public static Room Song_13 { get; } = new Room
     {
         Name = SceneNames.Song_13,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5117,6 +5562,7 @@ public static class BaseRoomList
     public static Room Song_14 { get; } = new Room
     {
         Name = SceneNames.Song_14,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5127,6 +5573,7 @@ public static class BaseRoomList
     public static Room Song_15 { get; } = new Room
     {
         Name = SceneNames.Song_15,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5138,6 +5585,7 @@ public static class BaseRoomList
     public static Room Song_17 { get; } = new Room
     {
         Name = SceneNames.Song_17,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5149,6 +5597,7 @@ public static class BaseRoomList
     public static Room Song_18 { get; } = new Room
     {
         Name = SceneNames.Song_18,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5160,6 +5609,7 @@ public static class BaseRoomList
     public static Room Song_19_entrance { get; } = new Room
     {
         Name = SceneNames.Song_19_entrance,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5172,6 +5622,7 @@ public static class BaseRoomList
     public static Room Song_20 { get; } = new Room
     {
         Name = SceneNames.Song_20,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5188,6 +5639,7 @@ public static class BaseRoomList
     public static Room Song_20b { get; } = new Room
     {
         Name = SceneNames.Song_20b,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5203,6 +5655,7 @@ public static class BaseRoomList
     public static Room Song_24 { get; } = new Room
     {
         Name = SceneNames.Song_24,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5213,6 +5666,7 @@ public static class BaseRoomList
     public static Room Song_25 { get; } = new Room
     {
         Name = SceneNames.Song_25,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5227,6 +5681,7 @@ public static class BaseRoomList
     public static Room Song_26 { get; } = new Room
     {
         Name = SceneNames.Song_26,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5237,6 +5692,7 @@ public static class BaseRoomList
     public static Room Song_27 { get; } = new Room
     {
         Name = SceneNames.Song_27,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5249,6 +5705,7 @@ public static class BaseRoomList
     public static Room Song_28 { get; } = new Room
     {
         Name = SceneNames.Song_28,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5259,6 +5716,7 @@ public static class BaseRoomList
     public static Room Song_29 { get; } = new Room
     {
         Name = SceneNames.Song_29,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5269,6 +5727,7 @@ public static class BaseRoomList
     public static Room Song_Enclave { get; } = new Room
     {
         Name = SceneNames.Song_Enclave,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5283,6 +5742,7 @@ public static class BaseRoomList
     public static Room Song_Enclave_Tube { get; } = new Room
     {
         Name = SceneNames.Song_Enclave_Tube,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5293,6 +5753,7 @@ public static class BaseRoomList
     public static Room Song_Tower_01 { get; } = new Room
     {
         Name = SceneNames.Song_Tower_01,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5303,6 +5764,7 @@ public static class BaseRoomList
     public static Room Song_Tower_Destroyed { get; } = new Room
     {
         Name = SceneNames.Song_Tower_Destroyed,
+        MapZone = MapZone.CRADLE,
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
@@ -5314,6 +5776,7 @@ public static class BaseRoomList
     public static Room Sprintmaster_Cave { get; } = new Room
     {
         Name = SceneNames.Sprintmaster_Cave,
+        MapZone = MapZone.WILDS,
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
@@ -5324,6 +5787,7 @@ public static class BaseRoomList
     public static Room Tube_Hub { get; } = new Room
     {
         Name = SceneNames.Tube_Hub,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
@@ -5336,6 +5800,7 @@ public static class BaseRoomList
     public static Room Tut_01 { get; } = new Room
     {
         Name = SceneNames.Tut_01,
+        MapZone = MapZone.MOSS_CAVE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5351,6 +5816,7 @@ public static class BaseRoomList
     public static Room Tut_01b { get; } = new Room
     {
         Name = SceneNames.Tut_01b,
+        MapZone = MapZone.MOSS_CAVE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5363,6 +5829,7 @@ public static class BaseRoomList
     public static Room Tut_02 { get; } = new Room
     {
         Name = SceneNames.Tut_02,
+        MapZone = MapZone.MOSS_CAVE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5374,6 +5841,7 @@ public static class BaseRoomList
     public static Room Tut_03 { get; } = new Room
     {
         Name = SceneNames.Tut_03,
+        MapZone = MapZone.BONETOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5388,6 +5856,7 @@ public static class BaseRoomList
     public static Room Tut_04 { get; } = new Room
     {
         Name = SceneNames.Tut_04,
+        MapZone = MapZone.BONETOWN,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5399,6 +5868,7 @@ public static class BaseRoomList
     public static Room Tut_05 { get; } = new Room
     {
         Name = SceneNames.Tut_05,
+        MapZone = MapZone.MOSS_CAVE,
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
@@ -5409,6 +5879,7 @@ public static class BaseRoomList
     public static Room Under_01 { get; } = new Room
     {
         Name = SceneNames.Under_01,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5422,6 +5893,7 @@ public static class BaseRoomList
     public static Room Under_01b { get; } = new Room
     {
         Name = SceneNames.Under_01b,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5433,6 +5905,7 @@ public static class BaseRoomList
     public static Room Under_02 { get; } = new Room
     {
         Name = SceneNames.Under_02,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5448,6 +5921,7 @@ public static class BaseRoomList
     public static Room Under_03 { get; } = new Room
     {
         Name = SceneNames.Under_03,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5458,6 +5932,7 @@ public static class BaseRoomList
     public static Room Under_03b { get; } = new Room
     {
         Name = SceneNames.Under_03b,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5469,6 +5944,7 @@ public static class BaseRoomList
     public static Room Under_03c { get; } = new Room
     {
         Name = SceneNames.Under_03c,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5481,6 +5957,7 @@ public static class BaseRoomList
     public static Room Under_03d { get; } = new Room
     {
         Name = SceneNames.Under_03d,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5491,6 +5968,7 @@ public static class BaseRoomList
     public static Room Under_04 { get; } = new Room
     {
         Name = SceneNames.Under_04,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5503,6 +5981,7 @@ public static class BaseRoomList
     public static Room Under_05 { get; } = new Room
     {
         Name = SceneNames.Under_05,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5518,6 +5997,7 @@ public static class BaseRoomList
     public static Room Under_06 { get; } = new Room
     {
         Name = SceneNames.Under_06,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5530,6 +6010,7 @@ public static class BaseRoomList
     public static Room Under_07 { get; } = new Room
     {
         Name = SceneNames.Under_07,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5542,6 +6023,7 @@ public static class BaseRoomList
     public static Room Under_07b { get; } = new Room
     {
         Name = SceneNames.Under_07b,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5553,6 +6035,7 @@ public static class BaseRoomList
     public static Room Under_07c { get; } = new Room
     {
         Name = SceneNames.Under_07c,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5565,6 +6048,7 @@ public static class BaseRoomList
     public static Room Under_08 { get; } = new Room
     {
         Name = SceneNames.Under_08,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5576,6 +6060,7 @@ public static class BaseRoomList
     public static Room Under_10 { get; } = new Room
     {
         Name = SceneNames.Under_10,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5587,6 +6072,7 @@ public static class BaseRoomList
     public static Room Under_11 { get; } = new Room
     {
         Name = SceneNames.Under_11,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5598,6 +6084,7 @@ public static class BaseRoomList
     public static Room Under_12 { get; } = new Room
     {
         Name = SceneNames.Under_12,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5608,6 +6095,7 @@ public static class BaseRoomList
     public static Room Under_13 { get; } = new Room
     {
         Name = SceneNames.Under_13,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5624,6 +6112,7 @@ public static class BaseRoomList
     public static Room Under_14 { get; } = new Room
     {
         Name = SceneNames.Under_14,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5634,6 +6123,7 @@ public static class BaseRoomList
     public static Room Under_16 { get; } = new Room
     {
         Name = SceneNames.Under_16,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5644,6 +6134,7 @@ public static class BaseRoomList
     public static Room Under_17 { get; } = new Room
     {
         Name = SceneNames.Under_17,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5659,6 +6150,7 @@ public static class BaseRoomList
     public static Room Under_18 { get; } = new Room
     {
         Name = SceneNames.Under_18,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5672,6 +6164,7 @@ public static class BaseRoomList
     public static Room Under_19 { get; } = new Room
     {
         Name = SceneNames.Under_19,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5683,6 +6176,7 @@ public static class BaseRoomList
     public static Room Under_19b { get; } = new Room
     {
         Name = SceneNames.Under_19b,
+        MapZone = MapZone.CITY_OF_SONG,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5693,6 +6187,7 @@ public static class BaseRoomList
     public static Room Under_19c { get; } = new Room
     {
         Name = SceneNames.Under_19c,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5705,6 +6200,7 @@ public static class BaseRoomList
     public static Room Under_20 { get; } = new Room
     {
         Name = SceneNames.Under_20,
+        MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5715,6 +6211,7 @@ public static class BaseRoomList
     public static Room Under_21 { get; } = new Room
     {
         Name = SceneNames.Under_21,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5725,6 +6222,7 @@ public static class BaseRoomList
     public static Room Under_22 { get; } = new Room
     {
         Name = SceneNames.Under_22,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5735,6 +6233,7 @@ public static class BaseRoomList
     public static Room Under_23 { get; } = new Room
     {
         Name = SceneNames.Under_23,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5746,6 +6245,7 @@ public static class BaseRoomList
     public static Room Under_27 { get; } = new Room
     {
         Name = SceneNames.Under_27,
+        MapZone = MapZone.SHELLWOOD_THICKET,
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
@@ -5758,6 +6258,7 @@ public static class BaseRoomList
     public static Room Ward_01 { get; } = new Room
     {
         Name = SceneNames.Ward_01,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5773,6 +6274,7 @@ public static class BaseRoomList
     public static Room Ward_02 { get; } = new Room
     {
         Name = SceneNames.Ward_02,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5785,6 +6287,7 @@ public static class BaseRoomList
     public static Room Ward_02b { get; } = new Room
     {
         Name = SceneNames.Ward_02b,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5796,6 +6299,7 @@ public static class BaseRoomList
     public static Room Ward_03 { get; } = new Room
     {
         Name = SceneNames.Ward_03,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5809,6 +6313,7 @@ public static class BaseRoomList
     public static Room Ward_04 { get; } = new Room
     {
         Name = SceneNames.Ward_04,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5819,6 +6324,7 @@ public static class BaseRoomList
     public static Room Ward_05 { get; } = new Room
     {
         Name = SceneNames.Ward_05,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5829,6 +6335,7 @@ public static class BaseRoomList
     public static Room Ward_06 { get; } = new Room
     {
         Name = SceneNames.Ward_06,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5840,6 +6347,7 @@ public static class BaseRoomList
     public static Room Ward_07 { get; } = new Room
     {
         Name = SceneNames.Ward_07,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5850,6 +6358,7 @@ public static class BaseRoomList
     public static Room Ward_09 { get; } = new Room
     {
         Name = SceneNames.Ward_09,
+        MapZone = MapZone.WARD,
         MapArea = MapAreaNames.Whiteward,
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
@@ -5860,6 +6369,7 @@ public static class BaseRoomList
     public static Room Weave_02 { get; } = new Room
     {
         Name = SceneNames.Weave_02,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5875,6 +6385,7 @@ public static class BaseRoomList
     public static Room Weave_03 { get; } = new Room
     {
         Name = SceneNames.Weave_03,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5885,6 +6396,7 @@ public static class BaseRoomList
     public static Room Weave_04 { get; } = new Room
     {
         Name = SceneNames.Weave_04,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5896,6 +6408,7 @@ public static class BaseRoomList
     public static Room Weave_05b { get; } = new Room
     {
         Name = SceneNames.Weave_05b,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5906,6 +6419,7 @@ public static class BaseRoomList
     public static Room Weave_07 { get; } = new Room
     {
         Name = SceneNames.Weave_07,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5917,6 +6431,7 @@ public static class BaseRoomList
     public static Room Weave_08 { get; } = new Room
     {
         Name = SceneNames.Weave_08,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5928,6 +6443,7 @@ public static class BaseRoomList
     public static Room Weave_10 { get; } = new Room
     {
         Name = SceneNames.Weave_10,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5938,6 +6454,7 @@ public static class BaseRoomList
     public static Room Weave_11 { get; } = new Room
     {
         Name = SceneNames.Weave_11,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5949,6 +6466,7 @@ public static class BaseRoomList
     public static Room Weave_12 { get; } = new Room
     {
         Name = SceneNames.Weave_12,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5959,6 +6477,7 @@ public static class BaseRoomList
     public static Room Weave_13 { get; } = new Room
     {
         Name = SceneNames.Weave_13,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5970,6 +6489,7 @@ public static class BaseRoomList
     public static Room Weave_14 { get; } = new Room
     {
         Name = SceneNames.Weave_14,
+        MapZone = MapZone.WEAVER_SHRINE,
         MapArea = MapAreaNames.Weavenest_Alta,
         TitledArea = TitledAreaNames.Weavenest_Alta,
         Gates = new([
@@ -5980,6 +6500,7 @@ public static class BaseRoomList
     public static Room Wisp_02 { get; } = new Room
     {
         Name = SceneNames.Wisp_02,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -5992,6 +6513,7 @@ public static class BaseRoomList
     public static Room Wisp_03 { get; } = new Room
     {
         Name = SceneNames.Wisp_03,
+        MapZone = MapZone.GREYMOOR,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6004,6 +6526,7 @@ public static class BaseRoomList
     public static Room Wisp_04 { get; } = new Room
     {
         Name = SceneNames.Wisp_04,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6016,6 +6539,7 @@ public static class BaseRoomList
     public static Room Wisp_05 { get; } = new Room
     {
         Name = SceneNames.Wisp_05,
+        MapZone = MapZone.UNDERSTORE,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6027,6 +6551,7 @@ public static class BaseRoomList
     public static Room Wisp_06 { get; } = new Room
     {
         Name = SceneNames.Wisp_06,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6037,6 +6562,7 @@ public static class BaseRoomList
     public static Room Wisp_07 { get; } = new Room
     {
         Name = SceneNames.Wisp_07,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6047,6 +6573,7 @@ public static class BaseRoomList
     public static Room Wisp_08 { get; } = new Room
     {
         Name = SceneNames.Wisp_08,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
@@ -6058,6 +6585,7 @@ public static class BaseRoomList
     public static Room Wisp_09 { get; } = new Room
     {
         Name = SceneNames.Wisp_09,
+        MapZone = MapZone.WISP,
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Wisp_Thicket,
         Gates = new([
