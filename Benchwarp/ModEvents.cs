@@ -1,6 +1,7 @@
 ﻿using Benchwarp.Data;
+using Benchwarp.Events;
 
-namespace Benchwarp.Events
+namespace Benchwarp
 {
     public static class ModEvents
     {
@@ -32,9 +33,6 @@ namespace Benchwarp.Events
             try { OnDoorwarp?.Invoke(sceneName, gateName); }
             catch (Exception e) { LogError(e); }
         }
-        
-
-        
 
         /// <summary>
         /// Event invoked to define new hotkey commands. The action will be invoked if the code is entered while the game is paused.
@@ -42,43 +40,14 @@ namespace Benchwarp.Events
         /// <br/>Invalid codes will be ignored, logging an error message. A null code will be silently ignored.
         /// <br/>Duplicate codes will overwrite the existing code. A code with null action will remove any existing action bound to that code.
         /// </summary>
-        public static event Func<(string, Action?)> HotkeyRequests
-        {
-            add
-            {
-                _hotkeyRequests.Add(value);
-                HotkeyActions.RefreshHotkeys();
-            }
-            remove
-            {
-                _hotkeyRequests.Remove(value);
-                HotkeyActions.RefreshHotkeys();
-            }
-        }
-        /// <summary>
-        /// Add many subscribers to HotkeyRequests, refreshing the hotkey list at the end.
-        /// </summary>
-        public static void AddHotkeyRequests(IEnumerable<Func<(string, Action?)>> fs)
-        {
-            _hotkeyRequests.AddRange(fs);
-            HotkeyActions.RefreshHotkeys();
-        }
-        /// <summary>
-        /// Remove many subscribers from HotkeyRequests, refreshing the hotkey list at the end.
-        /// </summary>
-        public static void RemoveHotkeyRequests(IEnumerable<Func<(string, Action?)>> fs)
-        {
-            foreach (var f in fs) _hotkeyRequests.Remove(f);
-            HotkeyActions.RefreshHotkeys();
-        }
+        public static SequentialEvent<Func<(string, Action?)>> HotkeyRequests { get; } = new(out hotkeyRequestsOwner);
+        private static readonly SequentialEvent<Func<(string, Action?)>>.ISequentialEventOwner hotkeyRequestsOwner;
 
-        private static readonly List<Func<(string, Action?)>> _hotkeyRequests = [];
-        internal static IEnumerable<(string, Action?)> GetHotkeyRequests()
+        internal static IEnumerable<(string, Action?)> GetHotkeyRequests() => hotkeyRequestsOwner.InvokeAndCollect();
+
+        static ModEvents()
         {
-            return _hotkeyRequests.Select(f => f());
+            hotkeyRequestsOwner.OnSubscribersChanged += HotkeyActions.RefreshHotkeys;
         }
-
-
-        
     }
 }

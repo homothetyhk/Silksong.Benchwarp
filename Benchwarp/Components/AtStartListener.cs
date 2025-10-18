@@ -13,12 +13,12 @@ namespace Benchwarp.Components
 
         private void Start()
         {
-            Events.WorldEvents.OnRespawnChanged += OnRespawnChanged;
+            WorldEvents.OnRespawnChanged += OnRespawnChanged;
         }
 
         private void OnDestroy()
         {
-            Events.WorldEvents.OnRespawnChanged -= OnRespawnChanged;
+            WorldEvents.OnRespawnChanged -= OnRespawnChanged;
         }
 
         private void Update()
@@ -38,7 +38,7 @@ namespace Benchwarp.Components
 
         private void RefetchData()
         {
-            AtStart = Events.BenchListModifiers.AtStart();
+            AtStart = BenchListModifiers.AtStart();
         }
 
         private void Recolor()

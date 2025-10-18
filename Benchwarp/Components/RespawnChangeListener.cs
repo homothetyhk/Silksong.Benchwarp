@@ -12,7 +12,7 @@ namespace Benchwarp.Components
             if (Current is null || !Current.IsCurrentRespawn())
             {
                 Current = RespawnInfo.FromPlayerData();
-                Events.WorldEvents.InvokeOnRespawnChanged(Current);
+                WorldEvents.InvokeOnRespawnChanged(Current);
             }
         }
     }

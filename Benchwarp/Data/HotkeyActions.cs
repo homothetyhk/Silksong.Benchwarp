@@ -20,7 +20,7 @@ namespace Benchwarp.Data
         public static ReadOnlyDictionary<string, Action> BaseHotkeys { get; } = new(new Dictionary<string, Action>
         {
             [LastBench] = ChangeScene.WarpToRespawn,
-            [StartBench] = (Action)Events.BenchListModifiers.SetToStart + ChangeScene.WarpToRespawn,
+            [StartBench] = (Action)BenchListModifiers.MenuSetToStart + ChangeScene.WarpToRespawn,
             //["WD"], // warp deploy
             //["TM"], // toggle menu
             [DoorWarp] = () =>
@@ -42,7 +42,7 @@ namespace Benchwarp.Data
             _hotkeys.Clear();
             foreach ((string code, Action a) in BaseHotkeys) AddHotkey(_hotkeys, code, a);
 
-            foreach ((string code, Action? a) in Events.ModEvents.GetHotkeyRequests())
+            foreach ((string code, Action? a) in ModEvents.GetHotkeyRequests())
             {
                 if (a is null) _hotkeys.Remove(code);
                 else AddHotkey(_hotkeys, code, a);

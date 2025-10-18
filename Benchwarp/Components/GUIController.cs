@@ -103,8 +103,9 @@ namespace Benchwarp.Components
 
         public static void Unload()
         {
-            if (_instance.benchMenuCanvas) Destroy(_instance.benchMenuCanvas);
-            if (_instance) Destroy(_instance);
+            if (_instance.menuCanvasParent) Destroy(_instance.menuCanvasParent);
+            if (_instance.sceneNameCanvas) Destroy(_instance.sceneNameCanvas);
+            if (_instance) Destroy(_instance.gameObject);
         }
 
         public void LoadResources()
@@ -156,7 +157,7 @@ namespace Benchwarp.Components
                 {
                     if (GameManager.UnsafeInstance != null)
                     {
-                        string sceneText = Events.TextModifiers.GetSceneName(GameManager.instance.sceneName);
+                        string sceneText = TextModifiers.GetSceneName(GameManager.instance.sceneName);
                         if (HeroController.SilentInstance != null)
                         {
                             Vector2 heroPos = HeroController.instance.transform.position;
@@ -256,7 +257,7 @@ namespace Benchwarp.Components
             warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
             setStartButton = BuildButton(benchMenuCanvas, "Set Start", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("SB")); //Set Start
-            setStartButton.GetComponent<Button>().onClick.AddListener(Events.BenchListModifiers.SetToStart);
+            setStartButton.GetComponent<Button>().onClick.AddListener(BenchListModifiers.MenuSetToStart);
             setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
 
             btnOffsetX += btnWidth + 20;

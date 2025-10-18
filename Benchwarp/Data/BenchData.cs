@@ -32,7 +32,7 @@
                     else break;
             }
             RespawnInfo.SetRespawn();
-            Events.ModEvents.InvokeOnBenchSelected();
+            ModEvents.InvokeOnBenchSelected();
             return true;
         }
     }

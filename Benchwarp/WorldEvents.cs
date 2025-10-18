@@ -1,6 +1,6 @@
 ﻿using Benchwarp.Data;
 
-namespace Benchwarp.Events
+namespace Benchwarp
 {
     public static class WorldEvents
     {

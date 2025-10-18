@@ -17,7 +17,7 @@ namespace Benchwarp.Components
 
         private void Start()
         {
-            Events.WorldEvents.OnRespawnChanged += OnRespawnChanged;
+            WorldEvents.OnRespawnChanged += OnRespawnChanged;
             Settings.SaveSettings.OnSetVisitedLocal.Add(data, OnSetVisited);
             Settings.SaveSettings.OnSetLockedLocal.Add(data, OnSetLocked);
             Settings.SaveSettings.OnNewSettingsLoaded += OnNewSettingsLoaded;
@@ -26,7 +26,7 @@ namespace Benchwarp.Components
 
         private void OnDestroy()
         {
-            Events.WorldEvents.OnRespawnChanged -= OnRespawnChanged;
+            WorldEvents.OnRespawnChanged -= OnRespawnChanged;
             Settings.SaveSettings.OnSetVisitedLocal.Remove(data, OnSetVisited);
             Settings.SaveSettings.OnSetLockedLocal.Remove(data, OnSetLocked);
             Settings.SaveSettings.OnNewSettingsLoaded -= OnNewSettingsLoaded;

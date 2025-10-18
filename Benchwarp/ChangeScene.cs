@@ -10,7 +10,7 @@
                 LogError($"{nameof(WarpToRespawn)} called while GameManager is null, aborting...");
                 return;
             }
-            Events.ModEvents.InvokeOnBenchwarp();
+            ModEvents.InvokeOnBenchwarp();
             
             PlayerData.instance.atBench = false;
 
@@ -33,7 +33,7 @@
                 LogError($"{nameof(WarpToRespawn)} called while GameManager is null, aborting...");
                 return;
             }
-            Events.ModEvents.InvokeOnDoorwarp(sceneName, gateName);
+            ModEvents.InvokeOnDoorwarp(sceneName, gateName);
             BenchwarpPlugin.Instance.StartCoroutine(DoWarpToDoor(sceneName, gateName));
         }
 

@@ -17,6 +17,7 @@
       <!--Allow access of private members at runtime.-->
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Platforms>x64</Platforms>
+    <ThunderstoreAuthor>homothety</ThunderstoreAuthor>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -75,7 +76,7 @@
           <Binaries Include="$(TargetDir)/$(TargetName).pdb" />
       </ItemGroup>
 
-      <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongFolder)/BepInEx/plugins/$(TargetName)" />
+      <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongFolder)/BepInEx/plugins/$(ThunderstoreAuthor)-$(TargetName)" />
 
       <PropertyGroup>
           <ExportFolder>bin/Publish</ExportFolder>

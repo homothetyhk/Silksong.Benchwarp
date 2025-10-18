@@ -20,9 +20,9 @@ namespace Benchwarp.Data
         {
             _benchList.Clear();
             _benchList.AddRange(BaseBenchList.BaseBenches);
-            _benchList.AddRange(Events.BenchListModifiers.GetInjectedBenches());
-            _benchList.RemoveAll(Events.BenchListModifiers.ShouldSuppressBench);
-            Events.BenchListModifiers.SortBenchList(_benchList);
+            _benchList.AddRange(BenchListModifiers.GetInjectedBenches());
+            _benchList.RemoveAll(BenchListModifiers.ShouldSuppressBench);
+            BenchListModifiers.SortBenchList(_benchList);
             _groupList.Clear();
             _groupList.AddRange(_benchList.GroupBy(b => b.MenuArea).Select(g => new AreaBenchGroup { MenuArea = g.Key, Benches = new([.. g]) }));
             

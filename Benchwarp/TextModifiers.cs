@@ -1,6 +1,7 @@
 ﻿using Benchwarp.Data;
+using Benchwarp.Events;
 
-namespace Benchwarp.Events
+namespace Benchwarp
 {
     public delegate void BenchTextModifier(BenchData bench, ref string text);
 
@@ -49,7 +50,8 @@ namespace Benchwarp.Events
         /// Event invoked to determine the displayed name of a scene. Runs before OnGetBenchSceneName, when relevant.
         /// The initial value is the unlocalized scene name. The final value is passed to localization before <see cref="GetSceneName(string)"/> returns.
         /// </summary>
-        public static readonly SequentialEventHandler<string> OnGetSceneName = new();
-        public static string GetSceneName(string sceneName) => OnGetSceneName.Invoke(sceneName).Localize();
+        public static SequentialEvent<Func<string, string>> OnGetSceneName { get; } = new(out onGetSceneNameOwner);
+        private static readonly SequentialEvent<Func<string, string>>.ISequentialEventOwner onGetSceneNameOwner;
+        public static string GetSceneName(string sceneName) => onGetSceneNameOwner.InvokeToTransform(sceneName).Localize();
     }
 }
