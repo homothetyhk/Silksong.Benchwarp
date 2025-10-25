@@ -1,23 +1,22 @@
-﻿using Benchwarp.Data;
+﻿using Benchwarp.Hotkeys;
 
-namespace Benchwarp.Settings
+namespace Benchwarp.Settings;
+
+public class SharedSettingsData
 {
-    public class SharedSettingsData
+    internal static SharedSettingsData CreateDefault()
     {
-        internal static SharedSettingsData CreateDefault()
+        return new()
         {
-            return new()
+            HotkeyOverrides = new()
             {
-                HotkeyOverrides = new()
-                {
-                    [HotkeyActions.LastBench] = HotkeyActions.LastBench,
-                    [HotkeyActions.StartBench] = HotkeyActions.StartBench,
-                    [HotkeyActions.DoorWarp] = HotkeyActions.DoorWarp,
-                    [HotkeyActions.NextPage] = HotkeyActions.NextPage,
-                }
-            };
-        }
-
-        public Dictionary<string, string> HotkeyOverrides = [];
+                [HotkeyActions.LastBench] = HotkeyActions.LastBench,
+                [HotkeyActions.StartBench] = HotkeyActions.StartBench,
+                [HotkeyActions.DoorWarp] = HotkeyActions.DoorWarp,
+                [HotkeyActions.NextPage] = HotkeyActions.NextPage,
+            }
+        };
     }
+
+    public Dictionary<string, string> HotkeyOverrides = [];
 }

@@ -1,19 +1,19 @@
-﻿using Benchwarp.Data;
+﻿using Benchwarp.Benches;
+using Benchwarp.Events;
 using UnityEngine;
 
-namespace Benchwarp.Components
-{
-    internal class RespawnChangeListener : MonoBehaviour
-    {
-        public RespawnInfo? Current { get; private set; }
+namespace Benchwarp.Components;
 
-        private void Update()
+internal class RespawnChangeListener : MonoBehaviour
+{
+    public RespawnInfo? Current { get; private set; }
+
+    private void Update()
+    {
+        if (Current is null || !Current.IsCurrentRespawn())
         {
-            if (Current is null || !Current.IsCurrentRespawn())
-            {
-                Current = RespawnInfo.FromPlayerData();
-                WorldEvents.InvokeOnRespawnChanged(Current);
-            }
+            Current = RespawnInfo.FromPlayerData();
+            WorldEvents.InvokeOnRespawnChanged(Current);
         }
     }
 }

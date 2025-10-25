@@ -1,54 +1,55 @@
-﻿using UnityEngine;
+﻿using Benchwarp.Benches;
+using Benchwarp.Events;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Benchwarp.Components
+namespace Benchwarp.Components;
+
+public class AtStartListener : MonoBehaviour
 {
-    public class AtStartListener : MonoBehaviour
+    public required Text buttonText;
+
+    public bool AtStart { get; private set; }
+    private bool queueRefetchData = true;
+    private bool queueRecolor = true;
+
+    private void Start()
     {
-        public required Text buttonText;
+        WorldEvents.OnRespawnChanged += OnRespawnChanged;
+    }
 
-        public bool AtStart { get; private set; }
-        private bool queueRefetchData = true;
-        private bool queueRecolor = true;
+    private void OnDestroy()
+    {
+        WorldEvents.OnRespawnChanged -= OnRespawnChanged;
+    }
 
-        private void Start()
+    private void Update()
+    {
+        if (queueRefetchData)
         {
-            WorldEvents.OnRespawnChanged += OnRespawnChanged;
+            RefetchData();
+            queueRefetchData = false;
+            queueRecolor = true;
         }
-
-        private void OnDestroy()
+        if (queueRecolor)
         {
-            WorldEvents.OnRespawnChanged -= OnRespawnChanged;
+            Recolor();
+            queueRecolor = false;
         }
+    }
 
-        private void Update()
-        {
-            if (queueRefetchData)
-            {
-                RefetchData();
-                queueRefetchData = false;
-                queueRecolor = true;
-            }
-            if (queueRecolor)
-            {
-                Recolor();
-                queueRecolor = false;
-            }
-        }
+    private void RefetchData()
+    {
+        AtStart = BenchListModifiers.AtStart();
+    }
 
-        private void RefetchData()
-        {
-            AtStart = BenchListModifiers.AtStart();
-        }
+    private void Recolor()
+    {
+        buttonText.color = AtStart ? BenchComponent.CurrentBenchColor : BenchComponent.AvailableBenchColor;
+    }
 
-        private void Recolor()
-        {
-            buttonText.color = AtStart ? BenchComponent.CurrentBenchColor : BenchComponent.AvailableBenchColor;
-        }
-
-        private void OnRespawnChanged(Data.RespawnInfo arg1, Data.BenchData? arg2)
-        {
-            queueRefetchData = true;
-        }
+    private void OnRespawnChanged(RespawnInfo arg1, BenchData? arg2)
+    {
+        queueRefetchData = true;
     }
 }

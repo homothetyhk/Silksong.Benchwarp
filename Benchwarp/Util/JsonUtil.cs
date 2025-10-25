@@ -2,149 +2,148 @@
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 
-namespace Benchwarp.Util
+namespace Benchwarp.Util;
+
+public static class JsonUtil
 {
-    public static class JsonUtil
+    public static readonly JsonSerializer _js;
+
+    public static T Deserialize<T>(string embeddedResourcePath)
     {
-        public static readonly JsonSerializer _js;
+        using StreamReader sr = new(typeof(JsonUtil).Assembly.GetManifestResourceStream(embeddedResourcePath));
+        using JsonTextReader jtr = new(sr);
+        return _js.Deserialize<T>(jtr)!;
+    }
 
-        public static T Deserialize<T>(string embeddedResourcePath)
-        {
-            using StreamReader sr = new(typeof(JsonUtil).Assembly.GetManifestResourceStream(embeddedResourcePath));
-            using JsonTextReader jtr = new(sr);
-            return _js.Deserialize<T>(jtr)!;
-        }
+    public static T DeserializeString<T>(string json)
+    {
+        using StringReader sr = new(json);
+        using JsonTextReader jtr = new(sr);
+        return _js.Deserialize<T>(jtr)!;
+    }
 
-        public static T DeserializeString<T>(string json)
-        {
-            using StringReader sr = new(json);
-            using JsonTextReader jtr = new(sr);
-            return _js.Deserialize<T>(jtr)!;
-        }
+    public static T DeserializeFile<T>(string filepath)
+    {
+        using StreamReader sr = new(File.OpenRead(filepath));
+        using JsonTextReader jtr = new(sr);
+        return _js.Deserialize<T>(jtr)!;
+    }
 
-        public static T DeserializeFile<T>(string filepath)
-        {
-            using StreamReader sr = new(File.OpenRead(filepath));
-            using JsonTextReader jtr = new(sr);
-            return _js.Deserialize<T>(jtr)!;
-        }
+    public static void SerializeFile(object o, string filePath)
+    {
+        using StreamWriter sw = File.CreateText(filePath);
+        using JsonTextWriter jtw = new(sw);
+        _js.Serialize(jtw, o);
+    }
 
-        public static void SerializeFile(object o, string filePath)
-        {
-            using StreamWriter sw = File.CreateText(filePath);
-            using JsonTextWriter jtw = new(sw);
-            _js.Serialize(jtw, o);
-        }
+    public static void SerializeFileNearDLL(object o, string fileName)
+    {
+        File.WriteAllText(Path.Combine(Path.GetDirectoryName(typeof(JsonUtil).Assembly.Location), fileName), Serialize(o));
+    }
 
-        public static void SerializeFileNearDLL(object o, string fileName)
-        {
-            File.WriteAllText(Path.Combine(Path.GetDirectoryName(typeof(JsonUtil).Assembly.Location), fileName), Serialize(o));
-        }
+    public static string Serialize(object o)
+    {
+        using StringWriter sw = new();
+        _js.Serialize(sw, o);
+        sw.Flush();
+        return sw.ToString();
+    }
 
-        public static string Serialize(object o)
+    private class Vector2Converter : JsonConverter<Vector2>
+    {
+        public override Vector2 ReadJson(JsonReader reader, Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            using StringWriter sw = new();
-            _js.Serialize(sw, o);
-            sw.Flush();
-            return sw.ToString();
-        }
+            float x = 0;
+            float y = 0;
 
-        private class Vector2Converter : JsonConverter<Vector2>
-        {
-            public override Vector2 ReadJson(JsonReader reader, Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)
+            while (reader.Read())
             {
-                float x = 0;
-                float y = 0;
-
-                while (reader.Read())
+                if (reader.TokenType == JsonToken.PropertyName)
                 {
-                    if (reader.TokenType == JsonToken.PropertyName)
+                    string propertyName = (string)reader.Value!;
+                    switch (propertyName)
                     {
-                        string propertyName = (string)reader.Value!;
-                        switch (propertyName)
-                        {
-                            case "x":
-                                x = (float)reader.ReadAsDouble()!;
-                                break;
-                            case "y":
-                                y = (float)reader.ReadAsDouble()!;
-                                break;
-                        }
+                        case "x":
+                            x = (float)reader.ReadAsDouble()!;
+                            break;
+                        case "y":
+                            y = (float)reader.ReadAsDouble()!;
+                            break;
                     }
-                    else if (reader.TokenType == JsonToken.EndObject) break;
                 }
-
-                return new Vector2(x, y);
+                else if (reader.TokenType == JsonToken.EndObject) break;
             }
 
-            public override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)
-            {
-                writer.WriteStartObject();
-                writer.WritePropertyName("x");
-                writer.WriteValue(value.x);
-                writer.WritePropertyName("y");
-                writer.WriteValue(value.y);
-                writer.WriteEndObject();
-            }
+            return new Vector2(x, y);
         }
 
-        private class Vector3Converter : JsonConverter<Vector3>
+        public override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)
         {
-            public override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)
-            {
-                float x = 0;
-                float y = 0;
-                float z = 0;
+            writer.WriteStartObject();
+            writer.WritePropertyName("x");
+            writer.WriteValue(value.x);
+            writer.WritePropertyName("y");
+            writer.WriteValue(value.y);
+            writer.WriteEndObject();
+        }
+    }
 
-                while (reader.Read())
+    private class Vector3Converter : JsonConverter<Vector3>
+    {
+        public override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            float x = 0;
+            float y = 0;
+            float z = 0;
+
+            while (reader.Read())
+            {
+                if (reader.TokenType == JsonToken.PropertyName)
                 {
-                    if (reader.TokenType == JsonToken.PropertyName)
+                    string propertyName = (string)reader.Value!;
+                    switch (propertyName)
                     {
-                        string propertyName = (string)reader.Value!;
-                        switch (propertyName)
-                        {
-                            case "x":
-                                x = (float)reader.ReadAsDouble()!;
-                                break;
-                            case "y":
-                                y = (float)reader.ReadAsDouble()!;
-                                break;
-                            case "z":
-                                z = (float)reader.ReadAsDouble()!;
-                                break;
-                        }
+                        case "x":
+                            x = (float)reader.ReadAsDouble()!;
+                            break;
+                        case "y":
+                            y = (float)reader.ReadAsDouble()!;
+                            break;
+                        case "z":
+                            z = (float)reader.ReadAsDouble()!;
+                            break;
                     }
-                    else if (reader.TokenType == JsonToken.EndObject) break;
                 }
-
-                return new Vector3(x, y, z);
+                else if (reader.TokenType == JsonToken.EndObject) break;
             }
 
-            public override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)
-            {
-                writer.WriteStartObject();
-                writer.WritePropertyName("x");
-                writer.WriteValue(value.x);
-                writer.WritePropertyName("y");
-                writer.WriteValue(value.y);
-                writer.WritePropertyName("z");
-                writer.WriteValue(value.z);
-                writer.WriteEndObject();
-            }
+            return new Vector3(x, y, z);
         }
 
-        static JsonUtil()
+        public override void WriteJson(JsonWriter writer, Vector3 value, JsonSerializer serializer)
         {
-            _js = new JsonSerializer
-            {
-                DefaultValueHandling = DefaultValueHandling.Ignore,
-                Formatting = Formatting.Indented,
-                TypeNameHandling = TypeNameHandling.Auto,
-            };
-
-            _js.Converters.Add(new StringEnumConverter());
-            _js.Converters.Add(new Vector2Converter());
-            _js.Converters.Add(new Vector3Converter());
+            writer.WriteStartObject();
+            writer.WritePropertyName("x");
+            writer.WriteValue(value.x);
+            writer.WritePropertyName("y");
+            writer.WriteValue(value.y);
+            writer.WritePropertyName("z");
+            writer.WriteValue(value.z);
+            writer.WriteEndObject();
         }
+    }
+
+    static JsonUtil()
+    {
+        _js = new JsonSerializer
+        {
+            DefaultValueHandling = DefaultValueHandling.Ignore,
+            Formatting = Formatting.Indented,
+            TypeNameHandling = TypeNameHandling.Auto,
+        };
+
+        _js.Converters.Add(new StringEnumConverter());
+        _js.Converters.Add(new Vector2Converter());
+        _js.Converters.Add(new Vector3Converter());
     }
 }

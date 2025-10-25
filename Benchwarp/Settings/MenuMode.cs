@@ -1,10 +1,9 @@
-﻿namespace Benchwarp.Settings
+﻿namespace Benchwarp.Settings;
+
+public enum MenuMode
 {
-    public enum MenuMode
-    {
-        StandardBenchwarp,
-        WarpOnly,
-        UnlockAll,
-        DoorWarp,
-    }
+    StandardBenchwarp,
+    WarpOnly,
+    UnlockAll,
+    DoorWarp,
 }
