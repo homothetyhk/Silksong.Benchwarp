@@ -29,7 +29,7 @@ public static class MapAreaNames
     public const string The_Slab = "The Slab";
     public const string Underworks = "Underworks";
     public const string Verdania = "Verdania";
-    public const string Weavenest_Alta = "Weavenest Alta";
+    public const string Weavenest_Atla = "Weavenest Atla";
     public const string Whispering_Vaults = "Whispering Vaults";
     public const string Whiteward = "Whiteward";
     public const string Wormways = "Wormways";

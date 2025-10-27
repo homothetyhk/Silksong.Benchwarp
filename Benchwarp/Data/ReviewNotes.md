@@ -279,7 +279,6 @@ The below areas have been checked when using the old door warp coroutine - many 
     - Wisp_06: titled area should be Greymoor.
 
 ### Weavenest_Atla
-    - Typo in the MapAreaNames/TitleAreaNames name ("Weavenest_Alta")
     - Weave_02__right3: collider obstacle.
 
 ### The_Cradle

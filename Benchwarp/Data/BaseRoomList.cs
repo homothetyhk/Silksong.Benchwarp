@@ -6371,8 +6371,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_02,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_02__left2,
             Weave_02__left3,
@@ -6387,8 +6387,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_03,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_03__right1,
         ]),
@@ -6398,8 +6398,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_04,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_04__left1,
             Weave_04__right2,
@@ -6410,8 +6410,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_05b,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_05b__left1,
         ]),
@@ -6421,8 +6421,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_07,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_07__left1,
             Weave_07__right1,
@@ -6433,8 +6433,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_08,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_08__left1,
             Weave_08__right1,
@@ -6445,8 +6445,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_10,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_10__left1,
         ]),
@@ -6456,8 +6456,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_11,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_11__right1,
             Weave_11__top1,
@@ -6468,8 +6468,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_12,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_12__left1,
         ]),
@@ -6479,8 +6479,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_13,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_13__left1,
             Weave_13__right1,
@@ -6491,8 +6491,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_14,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_14__bot1,
         ]),

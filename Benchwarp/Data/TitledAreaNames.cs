@@ -49,7 +49,7 @@ public static class TitledAreaNames
     public const string Underworks = "Underworks";
     public const string Voltnest = "Voltnest";
     public const string Weavenest_Absolom = "Weavenest Absolom";
-    public const string Weavenest_Alta = "Weavenest Atla";
+    public const string Weavenest_Atla = "Weavenest Atla";
     public const string Weavenest_Cindril = "Weavenest Cindril";
     public const string Weavenest_Karn = "Weavenest Karn";
     public const string Weavenest_Murglin = "Weavenest Murglin";
@@ -109,7 +109,7 @@ public static class TitledAreaNames
         [Underworks] = MapAreaNames.Underworks,
         [Voltnest] = MapAreaNames.Sands_of_Karak,
         [Weavenest_Absolom] = MapAreaNames.The_Abyss,
-        [Weavenest_Alta] = MapAreaNames.Weavenest_Alta,
+        [Weavenest_Atla] = MapAreaNames.Weavenest_Atla,
         [Weavenest_Cindril] = MapAreaNames.Far_Fields,
         [Weavenest_Karn] = MapAreaNames.Wormways,
         [Weavenest_Murglin] = MapAreaNames.Bilewater,
