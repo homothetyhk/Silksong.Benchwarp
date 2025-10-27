@@ -407,7 +407,21 @@ The below areas have been checked when using the new door warp coroutine.
     - Song_Tower_Destroyed: map/titled area should be The Cradle.
     - Song_Tower_Destroyed__bot1: breaking animation of object plays, but ideally the object should not be there at all on entry.
 
+### Whiteward
+    - Ward_01__right2: Collider obstacle.
+    - Ward_02__bot1: Works fine. Note-worthy: Unravelled can't be fought coming from here.
+    - Ward_03__door1: Door1 is not recognized - warps to bot1 instead.
+    - Ward_06__bot1: Automatically flings you into a hazard with invincibility. Funny softlock.
+    - Ward_09__left1: Leads to Ward_03__bot1 instead of the door if it hasn't been unlocked.
+
+### Sands of Karak
+    - Coral_23__left1/left2: Camera shows partial black screen.
     ## Resolved Notes
+    - Coral_24__right1: Collider obstacle.
+    - Coral_26__right1: Collider obstacle.
+    - Coral_35b__bot1: One-way wall from Coral_35 - warping is possible but can't enter the transition.
+    - Coral_35b__left5: Collider obstacle.
+    - Coral_38__right1: Collider obstacle - bypassable by taking damage.
 
     ### Wormways
     - Crawl_09__left1: black screen if breakable wall in middle of room isn't destroyed
