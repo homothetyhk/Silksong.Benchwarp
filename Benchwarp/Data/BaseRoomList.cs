@@ -700,7 +700,7 @@ public static class BaseRoomList
         Gates = new([
             Bellshrine_Coral__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Bellshrine_Enclave { get; } = new RoomData
     {
@@ -2328,7 +2328,7 @@ public static class BaseRoomList
             Coral_23__left2,
             Coral_23__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_24 { get; } = new RoomData
     {
@@ -2340,19 +2340,19 @@ public static class BaseRoomList
             Coral_24__left1,
             Coral_24__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_25 { get; } = new RoomData
     {
         Name = SceneNames.Coral_25,
-        MapZone = MapZone.JUDGE_STEPS,
+        MapZone = MapZone.CORAL_CAVERNS,
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Sands_of_Karak,
         Gates = new([
             Coral_25__bot1,
             Coral_25__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_26 { get; } = new RoomData
     {
@@ -2365,7 +2365,7 @@ public static class BaseRoomList
             Coral_26__left2,
             Coral_26__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_27 { get; } = new RoomData
     {
@@ -2377,7 +2377,7 @@ public static class BaseRoomList
             Coral_27__left1,
             Coral_27__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_28 { get; } = new RoomData
     {
@@ -2389,7 +2389,7 @@ public static class BaseRoomList
             Coral_28__door1,
             Coral_28__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_29 { get; } = new RoomData
     {
@@ -2470,7 +2470,7 @@ public static class BaseRoomList
             Coral_35b__right1,
             Coral_35b__right2,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_36 { get; } = new RoomData
     {
@@ -2505,7 +2505,7 @@ public static class BaseRoomList
             Coral_38__left1,
             Coral_38__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_39 { get; } = new RoomData
     {
@@ -2516,7 +2516,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_39__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_40 { get; } = new RoomData
     {
@@ -2527,7 +2527,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_40__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_41 { get; } = new RoomData
     {
@@ -2538,7 +2538,7 @@ public static class BaseRoomList
         Gates = new([
             Coral_41__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_42 { get; } = new RoomData
     {
@@ -2573,7 +2573,7 @@ public static class BaseRoomList
             Coral_44__left1,
             Coral_44__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Coral_Judge_Arena { get; } = new RoomData
     {
@@ -6432,7 +6432,7 @@ public static class BaseRoomList
             Ward_01__right2,
             Ward_01__right3,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_02 { get; } = new RoomData
     {
@@ -6446,7 +6446,7 @@ public static class BaseRoomList
             Ward_02__right1,
             Ward_02__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_02b { get; } = new RoomData
     {
@@ -6458,7 +6458,7 @@ public static class BaseRoomList
             Ward_02b__bot1,
             Ward_02b__right1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_03 { get; } = new RoomData
     {
@@ -6472,7 +6472,7 @@ public static class BaseRoomList
             Ward_03__left1,
             Ward_03__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_04 { get; } = new RoomData
     {
@@ -6483,7 +6483,7 @@ public static class BaseRoomList
         Gates = new([
             Ward_04__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_05 { get; } = new RoomData
     {
@@ -6494,7 +6494,7 @@ public static class BaseRoomList
         Gates = new([
             Ward_05__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_06 { get; } = new RoomData
     {
@@ -6506,7 +6506,7 @@ public static class BaseRoomList
             Ward_06__bot1,
             Ward_06__top1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_07 { get; } = new RoomData
     {
@@ -6517,7 +6517,7 @@ public static class BaseRoomList
         Gates = new([
             Ward_07__bot1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Ward_09 { get; } = new RoomData
     {
@@ -6528,7 +6528,7 @@ public static class BaseRoomList
         Gates = new([
             Ward_09__left1,
         ]),
-        ManuallyVerified = false,
+        ManuallyVerified = true,
     };
     public static RoomData Weave_02 { get; } = new RoomData
     {
