@@ -172,7 +172,7 @@ public static class BaseBenchList
                 RespawnInfo: new RespawnInfo(SceneName: "Abyss_12", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.ABYSS));
     public static BenchData TopAbyss { get; } = new(BenchName: "Top Abyss", MenuArea: "Abyss",
                 RespawnInfo: new RespawnInfo(SceneName: "Abyss_09", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.ABYSS));
-    public static BenchData WeavenestAlta { get; } = new(BenchName: "Alta", MenuArea: "Weavenest",
+    public static BenchData WeavenestAtla { get; } = new(BenchName: "Atla", MenuArea: "Weavenest",
                 RespawnInfo: new RespawnInfo(SceneName: "Weave_07", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.WEAVER_SHRINE));
     public static BenchData WeavenestCindril { get; } = new(BenchName: "Cindril", MenuArea: "Weavenest",
                 RespawnInfo: new RespawnInfo(SceneName: "Bone_East_Weavehome", RespawnMarkerName: "RestBench", RespawnType: 1, MapZone: MapZone.WILDS));
@@ -256,7 +256,7 @@ public static class BaseBenchList
         MrMushroom,
         VoidTendrils,
         TopAbyss,
-        WeavenestAlta,
+        WeavenestAtla,
         WeavenestCindril,
         ]);
 }

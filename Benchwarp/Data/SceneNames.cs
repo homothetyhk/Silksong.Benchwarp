@@ -80,6 +80,7 @@ public static class SceneNames
     public const string Bellway_04 = "Bellway_04";
     public const string Bellway_08 = "Bellway_08";
     public const string Bellway_Aqueduct = "Bellway_Aqueduct";
+    public const string Bellway_Centipede_Arena = "Bellway_Centipede_Arena";
     public const string Bellway_City = "Bellway_City";
     public const string Bellway_Peak = "Bellway_Peak";
     public const string Bellway_Peak_02 = "Bellway_Peak_02";
@@ -299,6 +300,8 @@ public static class SceneNames
     public const string Hang_15 = "Hang_15";
     public const string Hang_16 = "Hang_16";
     public const string Hang_17b = "Hang_17b";
+    public const string Last_Dive = "Last_Dive";
+    public const string Last_Dive_Return = "Last_Dive_Return";
     public const string Library_01 = "Library_01";
     public const string Library_02 = "Library_02";
     public const string Library_03 = "Library_03";
@@ -318,7 +321,13 @@ public static class SceneNames
     public const string Library_14 = "Library_14";
     public const string Library_15 = "Library_15";
     public const string Library_16 = "Library_16";
+    public const string Memory_Ant_Queen = "Memory_Ant_Queen";
+    public const string Memory_Coral_Tower = "Memory_Coral_Tower";
+    public const string Memory_First_Sinner = "Memory_First_Sinner";
     public const string Memory_Needolin = "Memory_Needolin";
+    public const string Memory_Silk_Heart_BellBeast = "Memory_Silk_Heart_BellBeast";
+    public const string Memory_Silk_Heart_LaceTower = "Memory_Silk_Heart_LaceTower";
+    public const string Memory_Silk_Heart_WardBoss = "Memory_Silk_Heart_WardBoss";
     public const string Memory_Red = "Memory_Red";
     public const string Mosstown_01 = "Mosstown_01";
     public const string Mosstown_02 = "Mosstown_02";
@@ -393,6 +402,7 @@ public static class SceneNames
     public const string Shellwood_10 = "Shellwood_10";
     public const string Shellwood_11 = "Shellwood_11";
     public const string Shellwood_11b = "Shellwood_11b";
+    public const string Shellwood_11b_Memory = "Shellwood_11b_Memory";
     public const string Shellwood_13 = "Shellwood_13";
     public const string Shellwood_14 = "Shellwood_14";
     public const string Shellwood_15 = "Shellwood_15";

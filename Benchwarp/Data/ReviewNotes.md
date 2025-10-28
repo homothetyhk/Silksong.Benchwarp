@@ -279,7 +279,6 @@ The below areas have been checked when using the old door warp coroutine - many 
     - Wisp_06: titled area should be Greymoor.
 
 ### Weavenest_Atla
-    - Typo in the MapAreaNames/TitleAreaNames name ("Weavenest_Alta")
     - Weave_02__right3: collider obstacle.
 
 ### The_Cradle
@@ -416,12 +415,49 @@ The below areas have been checked when using the new door warp coroutine.
 
 ### Sands of Karak
     - Coral_23__left1/left2: Camera shows partial black screen.
-    ## Resolved Notes
     - Coral_24__right1: Collider obstacle.
     - Coral_26__right1: Collider obstacle.
     - Coral_35b__bot1: One-way wall from Coral_35 - warping is possible but can't enter the transition.
     - Coral_35b__left5: Collider obstacle.
     - Coral_38__right1: Collider obstacle - bypassable by taking damage.
 
-    ### Wormways
+### Doors with missing targets
+    The following was all done from a fresh save state.
+
+    - Ant_19__door_memoryEnd: Gives the player Beast Crest and saves the game. The HUD isn't correct (doesn't show Beast Crest flair), but the crest is active and also appears in inventory. The screen is black if you already have Beast Crest.
+    - Ant_Queen__door_wakeOnGround: the game saves.
+    - Aqueduct_05__door_caravanTravelEnd: Arrives at left1 instead, because the door is in the "caravan" additive scene.
+    - Arborium_Tube__door_tubeEnter, and every other Ventrica arrival: Visual bug where the pedestal before buying the Ventrica overlaps with the arriving elevator.
+    - Belltown_basement__door_fastTravelExit, and every other Bell Beast arrival: Instead of the animation of Hornet leaping out of the bells, she appears in front of the pedestal.
+    - Belltown_Shrine__door_wakeOnGround: the game saves.
+    - Bone_05__door_cinematicEnd: Hornet is stuck on the ground and cannot get up.
+    - Bone_East_08__door_cinematicEnd: Hornet instantly takes damage in lava and hazard respawns.
+    - Chapel_Wanderer__door_memoryEnd: Gives the player Wanderer's Crest and saves the game. The HUD isn't correct (doesn't show Wanderer's Crest flair), but the crest is active and also appears in inventory. The screen is black if the player already have Wanderer's Crest.
+    - Clover_01__door_wakeOnGround: Immediately enters conversation with Green Prince if not already triggered. Enters a funny state where Hornet can move during conversation. The game saves.
+    - Cog_Dancers__door_arriveFromTower: black screen.
+    - Coral_10__left_firstEntrance: Collider obstacle.
+    - Coral_Judge_Arena__door_caravanTravelEnd: Hornet appears in the middle of the room and cannot move.
+    - Coral_Tower_01__door_wakeOnGround: the game saves.
+    - Greymoor_08__door_caravanTravelEnd: arrives via right1 instead, because the door is in the "caravan" additive scene.
+    - Greymoor_20c__door_memoryEnd: Gives the player Reaper Crest and saves the game. The HUD isn't correct (doesn't show Reaper Crest flair), but the crest is active and also appears in inventory. The screen is black if the player already has Reaper Crest.
+    - Last_Dive__door_cutscenePosition: cutscene plays and player arrives in Abyss_Cocoon, as per normal.
+    - Last_Dive_Return__door_cutscenePosition: cutscene plays and player arrives in Abyss_Cocoon, as per normal.
+    - Memory_Red__door_wakeInRedMemory_Root: plays a cutscene, gives the player Everbloom and arrives in Tut_04 like usual.
+    - Memory_Red__top1: saves the game. If already entered Red Memory previously, the game softlocks with Hornet unable to get up.
+    - Shellwood_11b__door_wakeOnGround: the game saves.
+    - Shellwood_25b__door_curseSequenceEnd: Gives the player the cursed Crest and saves the game.
+    - Slab_03__door_slabCaged: Hornet appears in the cage as per getting captured normally, but isn't naked when broken out of the cage. The game then saves. The screen is black if the cage sequence was already triggered before.
+    - Slab_10b__door_wakeOnGround: The game saves.
+    - Song_Enclave__door_act3_wakeUp: Hornet talks with an invisible Sherma, then quest progress is advanced and the game is saved.
+    - Song_Tower_01__door_cinematicEnd: Hornet wakes up in the middle of the Lace fight, quest progress is advanced and the game is saved. Game seems to softlock if you die in the scene under certain conditions.
+    - Song_Tower_01__door_cutsceneEndLaceTower: Plays cutscene (first time only) and enters Lace fight.
+    - Tut_04__door_memoryEnd: Gives and equips the Shaman crest, then saves the game. The screen is black if the player already has Shaman Crest.
+    - Tut_04__door_ritualEnd: Arrives at right1 instead.
+    - Tut_05__door_memoryEnd: Gives and equips the Shaman crest, then saves the game. The screen is black. The HUD isn't correct (doesn't show Reaper Crest flair), but the crest is active and also appears in inventory.
+    - Under_20__door_memoryEnd: Gives the player Architect Crest and saves the game. The HUD isn't correct (doesn't show Architect Crest flair), but the crest is active and also appears in inventory. The screen is black if the player already has Architect Crest.
+    - Ward_02__door_cinematicEnd: Hornet never gets up
+
+## Resolved Notes
+
+### Wormways
     - Crawl_09__left1: black screen if breakable wall in middle of room isn't destroyed

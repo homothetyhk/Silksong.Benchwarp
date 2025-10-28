@@ -321,6 +321,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
+            Ant_19__door_memoryEnd,
             Ant_19__left1,
         ]),
     };
@@ -362,6 +363,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Hunter_s_March,
         TitledArea = TitledAreaNames.Hunter_s_March,
         Gates = new([
+            Ant_Queen__door_wakeOnGround,
             Ant_Queen__left1,
         ]),
     };
@@ -426,6 +428,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
+            Aqueduct_05__door_caravanTravelEnd,
             Aqueduct_05__door2,
             Aqueduct_05__left1,
         ]),
@@ -606,6 +609,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Memorium,
         TitledArea = TitledAreaNames.Memorium,
         Gates = new([
+            Arborium_Tube__door_tubeEnter,
             Arborium_Tube__right1,
         ]),
     };
@@ -782,6 +786,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
+            Belltown_basement__door_fastTravelExit,
             Belltown_basement__bot1,
             Belltown_basement__left1,
         ]),
@@ -872,6 +877,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
+            Belltown_Shrine__door_wakeOnGround,
             Belltown_Shrine__right1,
             Belltown_Shrine__top1,
         ]),
@@ -884,6 +890,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
+            Bellway_01__door_fastTravelExit,
             Bellway_01__left1,
         ]),
         ManuallyVerified = true,
@@ -895,6 +902,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
+            Bellway_02__door_fastTravelExit,
             Bellway_02__left1,
             Bellway_02__right1,
         ]),
@@ -907,6 +915,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
+            Bellway_03__door_fastTravelExit,
             Bellway_03__left1,
             Bellway_03__right1,
         ]),
@@ -919,6 +928,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
+            Bellway_04__door_fastTravelExit,
             Bellway_04__bot1,
             Bellway_04__left1,
         ]),
@@ -931,6 +941,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
+            Bellway_08__door_fastTravelExit,
             Bellway_08__left1,
             Bellway_08__right1,
         ]),
@@ -943,8 +954,20 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Putrified_Ducts,
         TitledArea = TitledAreaNames.Putrified_Ducts,
         Gates = new([
+            Bellway_Aqueduct__door_fastTravelExit,
             Bellway_Aqueduct__left1,
             Bellway_Aqueduct__right1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Bellway_Centipede_Arena { get; } = new RoomData
+    {
+        Name = SceneNames.Bellway_Centipede_Arena,
+        MapZone = MapZone.BELLTOWN,
+        MapArea = MapAreaNames.Unknown,
+        TitledArea = TitledAreaNames.Unknown,
+        Gates = new([
+            Bellway_Centipede_Arena__top1,
         ]),
         ManuallyVerified = true,
     };
@@ -955,6 +978,8 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
+            Bellway_City__door_fastTravelExit,
+            Bellway_City__door_tubeEnter,
             Bellway_City__left1,
             Bellway_City__right1,
         ]),
@@ -993,6 +1018,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
+            Bellway_Shadow__door_fastTravelExit,
             Bellway_Shadow__left1,
         ]),
     };
@@ -1089,6 +1115,8 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Marrow,
         TitledArea = TitledAreaNames.The_Marrow,
         Gates = new([
+            Bone_05__door_cinematicEnd,
+            Bone_05__door_fastTravelExit,
             Bone_05__bot1,
             Bone_05__left1,
             Bone_05__right1,
@@ -1418,6 +1446,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Far_Fields,
         TitledArea = TitledAreaNames.Far_Fields,
         Gates = new([
+            Bone_East_08__door_cinematicEnd,
             Bone_East_08__left1,
             Bone_East_08__right1,
         ]),
@@ -1818,6 +1847,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Chapel_of_the_Wanderer,
         Gates = new([
+            Chapel_Wanderer__door_memoryEnd,
             Chapel_Wanderer__left1,
         ]),
         ManuallyVerified = true,
@@ -1829,6 +1859,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
+            Clover_01__door_wakeOnGround,
             Clover_01__left1,
             Clover_01__right1,
         ]),
@@ -1841,6 +1872,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Verdania,
         TitledArea = TitledAreaNames.Lost_Verdania,
         Gates = new([
+            Clover_01b__door_wakeInMemory,
             Clover_01b__right1,
         ]),
         ManuallyVerified = true,
@@ -2144,6 +2176,7 @@ public static class BaseRoomList
         Gates = new([
             Cog_Dancers__bot1,
             Cog_Dancers__bot2,
+            Cog_Dancers__door_arriveFromTower,
             Cog_Dancers__door1,
             Cog_Dancers__left1,
             Cog_Dancers__right1,
@@ -2204,6 +2237,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Grand_Gate,
         TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
+            Coral_10__left_firstEntrance,
             Coral_10__left1,
             Coral_10__right1,
         ]),
@@ -2548,6 +2582,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Blasted_Steps,
         TitledArea = TitledAreaNames.Blasted_Steps,
         Gates = new([
+            Coral_Judge_Arena__door_caravanTravelEnd,
             Coral_Judge_Arena__door2,
             Coral_Judge_Arena__left1,
             Coral_Judge_Arena__right1,
@@ -2561,6 +2596,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Sands_of_Karak,
         TitledArea = TitledAreaNames.Coral_Tower,
         Gates = new([
+            Coral_Tower_01__door_wakeOnGround,
             Coral_Tower_01__left1,
         ]),
         ManuallyVerified = true,
@@ -3329,6 +3365,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
+            Greymoor_08__door_caravanTravelEnd,
             Greymoor_08__door1,
             Greymoor_08__door2,
             Greymoor_08__left2,
@@ -3458,6 +3495,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Greymoor,
         TitledArea = TitledAreaNames.Greymoor,
         Gates = new([
+            Greymoor_20c__door_memoryEnd,
             Greymoor_20c__left1,
         ]),
         ManuallyVerified = true,
@@ -3596,6 +3634,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.High_Halls,
         TitledArea = TitledAreaNames.High_Halls,
         Gates = new([
+            Hang_06b__door_tubeEnter,
             Hang_06b__left1,
         ]),
     };
@@ -3710,6 +3749,28 @@ public static class BaseRoomList
         Gates = new([
             Hang_17b__left1,
         ]),
+    };
+    public static RoomData Last_Dive { get; } = new RoomData
+    {
+        Name = SceneNames.Last_Dive,
+        MapZone = MapZone.ABYSS,
+        MapArea = MapAreaNames.The_Abyss,
+        TitledArea = TitledAreaNames.The_Abyss,
+        Gates = new([
+            Last_Dive__door_cutscenePosition,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Last_Dive_Return { get; } = new RoomData
+    {
+        Name = SceneNames.Last_Dive_Return,
+        MapZone = MapZone.ABYSS,
+        MapArea = MapAreaNames.The_Abyss,
+        TitledArea = TitledAreaNames.The_Abyss,
+        Gates = new([
+            Last_Dive_Return__door_cutscenePosition,
+        ]),
+        ManuallyVerified = true,
     };
     public static RoomData Library_01 { get; } = new RoomData
     {
@@ -3963,6 +4024,39 @@ public static class BaseRoomList
         ]),
         ManuallyVerified = true,
     };
+    public static RoomData Memory_Ant_Queen { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_Ant_Queen,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.Far_Fields,
+        TitledArea = TitledAreaNames.Far_Fields,
+        Gates = new([
+            Memory_Ant_Queen__door_wakeInMemory,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Memory_Coral_Tower { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_Coral_Tower,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.Sands_of_Karak,
+        TitledArea = TitledAreaNames.Coral_Tower,
+        Gates = new([
+            Memory_Coral_Tower__door_wakeInMemory,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Memory_First_Sinner { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_First_Sinner,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.The_Slab,
+        TitledArea = TitledAreaNames.The_Slab,
+        Gates = new([
+            Memory_First_Sinner__door_wakeOnGround,
+        ]),
+        ManuallyVerified = true,
+    };
     public static RoomData Memory_Needolin { get; } = new RoomData
     {
         Name = SceneNames.Memory_Needolin,
@@ -3970,6 +4064,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Unknown,
         TitledArea = TitledAreaNames.Unknown,
         Gates = new([
+            Memory_Needolin__door_wakeOnGround,
             Memory_Needolin__left1,
             Memory_Needolin__right1,
         ]),
@@ -3985,9 +4080,45 @@ public static class BaseRoomList
             Memory_Red__door_enterRedMemory_Beast,
             Memory_Red__door_enterRedMemory_Hive,
             Memory_Red__door_enterRedMemory_Weaver,
+            Memory_Red__door_wakeInMemory,
             Memory_Red__door_wakeInRedMemory_Beast,
             Memory_Red__door_wakeInRedMemory_Hive,
+            Memory_Red__door_wakeInRedMemory_Root,
             Memory_Red__door_wakeInRedMemory_Weaver,
+            Memory_Red__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Memory_Silk_Heart_BellBeast { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_Silk_Heart_BellBeast,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.The_Marrow,
+        TitledArea = TitledAreaNames.The_Marrow,
+        Gates = new([
+            Memory_Silk_Heart_BellBeast__door_wakeOnGround,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Memory_Silk_Heart_LaceTower { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_Silk_Heart_BellBeast,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.Cradle,
+        TitledArea = TitledAreaNames.Cradle,
+        Gates = new([
+            Memory_Silk_Heart_LaceTower__door_wakeOnGround,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Memory_Silk_Heart_WardBoss { get; } = new RoomData
+    {
+        Name = SceneNames.Memory_Silk_Heart_WardBoss,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.Whiteward,
+        TitledArea = TitledAreaNames.Whiteward,
+        Gates = new([
+            Memory_Silk_Heart_WardBoss__door_wakeOnGround,
         ]),
         ManuallyVerified = true,
     };
@@ -4334,6 +4465,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Deep_Docks,
         TitledArea = TitledAreaNames.Deep_Docks,
         Gates = new([
+            Room_Diving_Bell__door_cinematicEnd,
             Room_Diving_Bell__left1,
         ]),
         ManuallyVerified = true,
@@ -4345,6 +4477,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
+            Room_Diving_Bell_Abyss__door_wakeOnGround,
             Room_Diving_Bell_Abyss__left1,
         ]),
         ManuallyVerified = true,
@@ -4356,6 +4489,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Abyss,
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
+            Room_Diving_Bell_Abyss_Fixed__door_cinematicEnd,
             Room_Diving_Bell_Abyss_Fixed__left1,
         ]),
         ManuallyVerified = true,
@@ -4882,7 +5016,19 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
+            Shellwood_11b__door_wakeOnGround,
             Shellwood_11b__right1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Shellwood_11b_Memory { get; } = new RoomData
+    {
+        Name = SceneNames.Shellwood_11b_Memory,
+        MapZone = MapZone.MEMORY,
+        MapArea = MapAreaNames.Shellwood,
+        TitledArea = TitledAreaNames.Shellwood,
+        Gates = new([
+            Shellwood_11b_Memory__door_wakeInMemory
         ]),
         ManuallyVerified = true,
     };
@@ -4954,6 +5100,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
+            Shellwood_19__door_fastTravelExit,
             Shellwood_19__left1,
             Shellwood_19__right1,
         ]),
@@ -5002,6 +5149,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Shellwood,
         TitledArea = TitledAreaNames.Shellwood,
         Gates = new([
+            Shellwood_25b__door_curseSequenceEnd,
             Shellwood_25b__left1,
         ]),
         ManuallyVerified = true,
@@ -5061,6 +5209,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
+            Slab_03__door_slabCaged,
             Slab_03__left1,
             Slab_03__left2,
             Slab_03__left3,
@@ -5114,6 +5263,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
+            Slab_06__door_fastTravelExit,
             Slab_06__door1,
             Slab_06__left1,
             Slab_06__top1,
@@ -5151,6 +5301,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.The_Slab,
         TitledArea = TitledAreaNames.The_Slab,
         Gates = new([
+            Slab_10b__door_wakeOnGround,
             Slab_10b__left1,
         ]),
         ManuallyVerified = true,
@@ -5383,6 +5534,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
+            Song_01b__door_tubeEnter,
             Song_01b__bot1,
             Song_01b__right1,
             Song_01b__top1,
@@ -5733,6 +5885,7 @@ public static class BaseRoomList
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
             Song_Enclave__bot1,
+            Song_Enclave__door_act3_wakeUp,
             Song_Enclave__door1,
             Song_Enclave__left1,
             Song_Enclave__left2,
@@ -5748,6 +5901,7 @@ public static class BaseRoomList
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
             Song_Enclave_Tube__bot1,
+            Song_Enclave_Tube__door_tubeEnter,
         ]),
         ManuallyVerified = true,
     };
@@ -5758,6 +5912,8 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Choral_Chambers,
         TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
+            Song_Tower_01__door_cinematicEnd,
+            Song_Tower_01__door_cutsceneEndLaceTower,
             Song_Tower_01__right1,
         ]),
         ManuallyVerified = true,
@@ -5792,6 +5948,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Cradle,
         TitledArea = TitledAreaNames.Cradle,
         Gates = new([
+            Tube_Hub__door_tubeEnter,
             Tube_Hub__left1,
             Tube_Hub__left3,
             Tube_Hub__left4,
@@ -5861,6 +6018,8 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
+            Tut_04__door_memoryEnd,
+            Tut_04__door_ritualEnd,
             Tut_04__left1,
             Tut_04__right1,
         ]),
@@ -5873,6 +6032,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Mosslands,
         TitledArea = TitledAreaNames.Moss_Grotto,
         Gates = new([
+            Tut_05__door_memoryEnd,
             Tut_05__left1,
         ]),
         ManuallyVerified = true,
@@ -6205,6 +6365,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
+            Under_20__door_memoryEnd,
             Under_20__left1,
         ]),
         ManuallyVerified = true,
@@ -6227,6 +6388,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
+            Under_22__door_tubeEnter,
             Under_22__right1,
         ]),
         ManuallyVerified = true,
@@ -6280,6 +6442,7 @@ public static class BaseRoomList
         TitledArea = TitledAreaNames.Whiteward,
         Gates = new([
             Ward_02__bot1,
+            Ward_02__door_cinematicEnd,
             Ward_02__right1,
             Ward_02__top1,
         ]),
@@ -6371,8 +6534,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_02,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_02__left2,
             Weave_02__left3,
@@ -6387,8 +6550,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_03,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_03__right1,
         ]),
@@ -6398,8 +6561,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_04,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_04__left1,
             Weave_04__right2,
@@ -6410,8 +6573,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_05b,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_05b__left1,
         ]),
@@ -6421,8 +6584,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_07,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_07__left1,
             Weave_07__right1,
@@ -6433,8 +6596,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_08,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_08__left1,
             Weave_08__right1,
@@ -6445,8 +6608,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_10,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_10__left1,
         ]),
@@ -6456,8 +6619,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_11,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_11__right1,
             Weave_11__top1,
@@ -6468,8 +6631,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_12,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_12__left1,
         ]),
@@ -6479,8 +6642,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_13,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_13__left1,
             Weave_13__right1,
@@ -6491,8 +6654,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Weave_14,
         MapZone = MapZone.WEAVER_SHRINE,
-        MapArea = MapAreaNames.Weavenest_Alta,
-        TitledArea = TitledAreaNames.Weavenest_Alta,
+        MapArea = MapAreaNames.Weavenest_Atla,
+        TitledArea = TitledAreaNames.Weavenest_Atla,
         Gates = new([
             Weave_14__bot1,
         ]),
