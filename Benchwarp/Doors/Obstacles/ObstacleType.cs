@@ -4,7 +4,7 @@ public enum ObstacleType
 {
     Mask,
     BreakableWall,
-    OneWayBreakableSide,
-    OneWayNonbreakableSide,
+    NonbreakableWall,
+    Cutscene,
     Other
 }
