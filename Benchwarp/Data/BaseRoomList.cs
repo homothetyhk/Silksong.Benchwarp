@@ -1824,7 +1824,7 @@ public static class BaseRoomList
         TitledArea = TitledAreaNames.Bone_Bottom,
         Gates = new([
             Bonetown__bot1,
-            Bonetown__bot1_firstEntry,
+            // Bonetown__bot1_firstEntry,
             Bonetown__bot2,
             Bonetown__door1,
             Bonetown__left1,
