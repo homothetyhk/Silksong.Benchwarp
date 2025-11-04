@@ -16,11 +16,32 @@ public static class BaseGateList
     public static DoorData Abyss_02__right1 { get; } = new(new(Abyss_02, right1), new(Abyss_03, left1));
     public static DoorData Abyss_02b__left2 { get; } = new(new(Abyss_02b, left2), new(Abyss_01, right2));
     public static DoorData Abyss_02b__right1 { get; } = new(new(Abyss_02b, right1), new(Abyss_02, left1));
-    public static DoorData Abyss_02b__top1 { get; } = new(new(Abyss_02b, top1), new(Abyss_11, bot1));
-    public static DoorData Abyss_03__door1 { get; } = new(new(Abyss_03, door1), new(Room_Diving_Bell_Abyss, left1));
-    public static DoorData Abyss_03__door2 { get; } = new(new(Abyss_03, door2), new(Room_Diving_Bell_Abyss_Fixed, left1));
+    public static DoorData Abyss_02b__top1 { get; } = new(new(Abyss_02b, top1), new(Abyss_11, bot1))
+    {
+        Obstacles = new([
+            new BreakableWallInfo("top_blocker_set", BreakableWallType.OneWayNonbreakableSide, ObstacleSeverity.InterruptsEntry)
+        ])
+    };
+    public static DoorData Abyss_03__door1 { get; } = new(new(Abyss_03, door1), new(Room_Diving_Bell_Abyss, left1))
+    {
+        Obstacles = new([
+            new TestObjObstacleInfo("Diving Bell States", ObstacleType.Other, ObstacleSeverity.WrongEntry, true)
+        ])
+    };
+    public static DoorData Abyss_03__door2 { get; } = new(new(Abyss_03, door2), new(Room_Diving_Bell_Abyss_Fixed, left1))
+    {
+        Obstacles = new([
+            new TestObjObstacleInfo("Diving Bell States", ObstacleType.Other, ObstacleSeverity.WrongEntry),
+            new TestObjObstacleInfo("Diving Bell States/Gone", ObstacleType.Other, ObstacleSeverity.WrongEntry)
+        ])
+    };
     public static DoorData Abyss_03__left1 { get; } = new(new(Abyss_03, left1), new(Abyss_02, right1));
-    public static DoorData Abyss_03__left2 { get; } = new(new(Abyss_03, left2), new(Abyss_13, right1));
+    public static DoorData Abyss_03__left2 { get; } = new(new(Abyss_03, left2), new(Abyss_13, right1))
+    {
+        Obstacles = new([
+            new BreakableWallInfo("Shaman_Collapse_Wall", BreakableWallType.OneWayBreakableSide, ObstacleSeverity.VisualAndLimitsRoomAccess)
+        ])
+    };
     public static DoorData Abyss_04__left1 { get; } = new(new(Abyss_04, left1), new(Abyss_01, right3));
     public static DoorData Abyss_05__left2 { get; } = new(new(Abyss_05, left2), new(Abyss_12, right2));
     public static DoorData Abyss_05__right1 { get; } = new(new(Abyss_05, right1), new(Abyss_08, left1));
@@ -30,15 +51,25 @@ public static class BaseGateList
     public static DoorData Abyss_08__left1 { get; } = new(new(Abyss_08, left1), new(Abyss_05, right1));
     public static DoorData Abyss_09__bot1 { get; } = new(new(Abyss_09, bot1), new(Abyss_13, top1));
     public static DoorData Abyss_09__top1 { get; } = new(new(Abyss_09, top1), new(Dock_06_Church, bot1));
-    public static DoorData Abyss_11__bot1 { get; } = new(new(Abyss_11, bot1), new(Abyss_02b, top1));
+    public static DoorData Abyss_11__bot1 { get; } = new(new(Abyss_11, bot1), new(Abyss_02b, top1))
+    {
+        Obstacles = new([
+            new BreakableWallInfo("Abyss_Collapse_Wall (1)", BreakableWallType.OneWayBreakableSide, ObstacleSeverity.VisualAndLimitsRoomAccess)
+        ])
+    };
     public static DoorData Abyss_11__right1 { get; } = new(new(Abyss_11, right1), new(Abyss_13, left1));
     public static DoorData Abyss_12__left1 { get; } = new(new(Abyss_12, left1), new(Abyss_07, right1));
     public static DoorData Abyss_12__right2 { get; } = new(new(Abyss_12, right2), new(Abyss_05, left2));
-    public static DoorData Abyss_13__left1 { get; } = new(new(Abyss_13, left1), new(Abyss_11, right1));
+    public static DoorData Abyss_13__left1 { get; } = new(new(Abyss_13, left1), new(Abyss_11, right1))
+    {
+        Obstacles = new([
+            new BreakableWallInfo("Abyss_Collapse_Wall", BreakableWallType.OneWayBreakableSide, ObstacleSeverity.VisualAndLimitsRoomAccess)
+        ])
+    };
     public static DoorData Abyss_13__right1 { get; } = new(new(Abyss_13, right1), new(Abyss_03, left2));
     public static DoorData Abyss_13__top1 { get; } = new(new(Abyss_13, top1), new(Abyss_09, bot1));
-    public static DoorData Abyss_Cocoon__door_entry { get; } = new(new(Abyss_Cocoon, door_entry), null, new(Abyss_Cocoon, door_test));
-    public static DoorData Abyss_Cocoon__door_test { get; } = new(new(Abyss_Cocoon, door_test), new(Abyss_Cocoon, door_entry), null);
+    public static DoorData Abyss_Cocoon__door_entry { get; } = new(new(Abyss_Cocoon, door_entry), null, new(Abyss_Cocoon, door_entry));
+    // public static DoorData Abyss_Cocoon__door_test { get; } = new(new(Abyss_Cocoon, door_test), new(Abyss_Cocoon, door_entry), null);
     public static DoorData Ant_02__left1 { get; } = new(new(Ant_02, left1), new(Bone_08, right3));
     public static DoorData Ant_02__right1 { get; } = new(new(Ant_02, right1), new(Ant_03, left2));
     public static DoorData Ant_03__left2 { get; } = new(new(Ant_03, left2), new(Ant_02, right1));
@@ -1089,7 +1120,12 @@ public static class BaseGateList
     public static DoorData Room_Diving_Bell__door_cinematicEnd { get; } = new(new(Room_Diving_Bell, door_cinematicEnd), null, new(Room_Diving_Bell, door_cinematicEnd));
     public static DoorData Room_Diving_Bell__left1 { get; } = new(new(Room_Diving_Bell, left1), new(Dock_12, door1));
     public static DoorData Room_Diving_Bell_Abyss__door_wakeOnGround { get; } = new(new(Room_Diving_Bell_Abyss, door_wakeOnGround), null, new(Room_Diving_Bell_Abyss, door_wakeOnGround));
-    public static DoorData Room_Diving_Bell_Abyss__left1 { get; } = new(new(Room_Diving_Bell_Abyss, left1), new(Abyss_03, door1));
+    public static DoorData Room_Diving_Bell_Abyss__left1 { get; } = new(new(Room_Diving_Bell_Abyss, left1), new(Abyss_03, door1))
+    {
+        Obstacles = new([
+            new BreakableWallInfo("diving_bell_door_breakable", BreakableWallType.OneWayBreakableSide, ObstacleSeverity.Visual)
+        ])
+    };
     public static DoorData Room_Diving_Bell_Abyss_Fixed__door_cinematicEnd { get; } = new(new(Room_Diving_Bell_Abyss_Fixed, door_cinematicEnd), null, new(Room_Diving_Bell_Abyss_Fixed, door_cinematicEnd));
     public static DoorData Room_Diving_Bell_Abyss_Fixed__left1 { get; } = new(new(Room_Diving_Bell_Abyss_Fixed, left1), new(Abyss_03, door2));
     public static DoorData Room_Forge__left1 { get; } = new(new(Room_Forge, left1), new(Dock_04, right1));

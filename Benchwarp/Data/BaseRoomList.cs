@@ -185,7 +185,7 @@ public static class BaseRoomList
         TitledArea = TitledAreaNames.The_Abyss,
         Gates = new([
             Abyss_Cocoon__door_entry,
-            Abyss_Cocoon__door_test,
+            // Abyss_Cocoon__door_test,
         ]),
         ManuallyVerified = true,
     };

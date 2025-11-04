@@ -55,19 +55,11 @@
     - Bonegrave__door1: Still needs permanent obstacle handling. Need to handle door staying open when entering from any transition.
     - Bonegrave__left1: Still needs permanent obstacle handling.
 
-The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
-
 ### The_Abyss
-    - Abyss_02b__top1: collider obstacle.
-    - Abyss_03__door1/door2: arrives via left2 instead of in front of the diving bell.
-    - Abyss_03__left2: collider obstacle.
-    - Abyss_11__bot1: collider obstacle.
-    - Abyss_13__left1: collider obstacle.
-    - Abyss_Cocoon__door_entry: visual glitch where player is on ground before falling from top.
-    - Abyss_Cocoon__door_test: seems to be effectively the same as door_entry.
-    - Room_Diving_Bell_Abyss__left1: collider obstacle.
-    - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
-    - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.
+    - Abyss_02b__top1: Missing permanent obstacle handling (the PersistentBoolItem uses the ID of an object in Abyss_11).
+    - Abyss_03__door1/door2: Still need permanent obstacle handling.
+
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
 
 ### Lost_Verdania
     - Clover_04b__door1: entire door/platform is missing.
@@ -464,3 +456,14 @@ The below areas have been checked when using the new door warp coroutine.
     - Bonetown__door1: collider obstacle in Act 3.
     - Bonetown__left2: collider obstacle.
     - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions. All of them are targetless.
+
+### The_Abyss
+    - Abyss_02b__top1: collider obstacle.
+    - Abyss_03__door1/door2: arrives via left2 instead of in front of the diving bell, depending on Act 3 progress.
+    - Abyss_03__left2: collider obstacle.
+    - Abyss_11__bot1: collider obstacle.
+    - Abyss_13__left1: collider obstacle.
+    - Abyss_Cocoon__door_test: seems to be effectively the same as door_entry (because that TP/object is not active/enabled)
+    - Room_Diving_Bell_Abyss__left1: collider obstacle.
+    - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
+    - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.

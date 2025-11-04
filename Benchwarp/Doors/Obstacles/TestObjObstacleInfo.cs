@@ -6,7 +6,7 @@ namespace Benchwarp.Doors.Obstacles;
 /// <summary>
 /// <see cref="ObstacleInfo"/> with a TestGameObjectActivator that controls its state.
 /// </summary>
-public record TestObjObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSeverity Severity) : ObstacleInfo(ObjPath, Type, Severity)
+public record TestObjObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSeverity Severity, bool Reverse = false) : ObstacleInfo(ObjPath, Type, Severity)
 {
     public TestGameObjectActivator? GetTestGameObjectActivator(Scene scene) => scene.FindGameObject(ObjPath)?.GetComponent<TestGameObjectActivator>();
 
@@ -15,8 +15,9 @@ public record TestObjObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSev
         if (GetTestGameObjectActivator(scene) is TestGameObjectActivator tgoa)
         {
             tgoa.enabled = false;
-            tgoa.activateGameObject?.SetActive(true);
-            tgoa.deactivateGameObject?.SetActive(false);
+
+            tgoa.activateGameObject?.SetActive(!Reverse);
+            tgoa.deactivateGameObject?.SetActive(Reverse);
         }
     }
 }
