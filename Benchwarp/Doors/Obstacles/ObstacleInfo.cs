@@ -11,4 +11,9 @@ public record ObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSeverity S
     public void DestroyObj(Scene scene) => UnityEngine.Object.Destroy(FindObj(scene));
     public void DeactivateObj(Scene scene) => FindObj(scene)?.SetActive(false);
     public void SavePersistentBool(RoomData room) => SceneData.instance.persistentBools.SetValue(new() { SceneName = room.Name, ID = GetObjName(), IsSemiPersistent = false, Mutator = SceneData.PersistentMutatorTypes.None, Value = true });
+
+    public virtual void Open(Scene scene)
+    {
+        DestroyObj(scene);
+    }
 }
