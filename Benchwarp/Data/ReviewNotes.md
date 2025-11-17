@@ -51,35 +51,15 @@
   - Ant_19 titled area should be Chapel of the Beast
   - Note - Ant_20[door1] is fine, even if the chapel has been closed
 
-The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
-
 ### Bone_Bottom
-    - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions.
-    - Aspid_01__bot1: flip gives Aspid_01__top1 but should be Bonetown__top1.
-    - Aspid_01__right3: collider obstacle.
-    - Aspid_01__top1/top2/top3/top4/top5/top6/top7: big top transition at several different positions.
-    - Bellway_01: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
-    - Bellway_01__left1: collider obstacle in Act 3.
-    - Bonegrave__door1: Door closes if the corresponding crest was obtained. It doesn't matter how hornet enters the scene.
-    - Bonegrave__left1: arrives via right1 instead if Steel Soul questline is not advanced enough. (possibly always arrives via right1 regardless of steel soul progress, this needs to be checked)
-    - Bonegrave_right2: collider obstacle.
-    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1. However, the flipped transition is Tut_03__top1_firstExit.
-    - Bonetown__bot2: large dark vignette to the left of the transition is there if Chapel Maid isn't encountered.
-    - Bonetown__door1: collider obstacle in Act 3.
-    - Bonetown__left2: collider obstacle.
-    - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions.
+    - Bonegrave__door1: Still needs permanent obstacle handling. Need to handle door staying open when entering from any transition.
+    - Bonegrave__left1: Still needs permanent obstacle handling.
 
 ### The_Abyss
-    - Abyss_02b__top1: collider obstacle.
-    - Abyss_03__door1/door2: arrives via left2 instead of in front of the diving bell.
-    - Abyss_03__left2: collider obstacle.
-    - Abyss_11__bot1: collider obstacle.
-    - Abyss_13__left1: collider obstacle.
-    - Abyss_Cocoon__door_entry: visual glitch where player is on ground before falling from top.
-    - Abyss_Cocoon__door_test: seems to be effectively the same as door_entry.
-    - Room_Diving_Bell_Abyss__left1: collider obstacle.
-    - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
-    - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.
+    - Abyss_02b__top1: Missing permanent obstacle handling (the PersistentBoolItem uses the ID of an object in Abyss_11).
+    - Abyss_03__door1/door2: Still need permanent obstacle handling.
+
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
 
 ### Lost_Verdania
     - Clover_04b__door1: entire door/platform is missing.
@@ -461,3 +441,29 @@ The below areas have been checked when using the new door warp coroutine.
 
 ### Wormways
     - Crawl_09__left1: black screen if breakable wall in middle of room isn't destroyed
+
+### Bone_Bottom
+    - Aspid_01__bot1: flip gives Aspid_01__top1 but should be *Bonetown__top3*. 
+    - Aspid_01__bot1/bot3/bot4/bot5/bot6/bot7/bot8 (NOT bot2): big bot transition at several different positions. All of them are sourceless.
+    - Aspid_01__right3: collider obstacle.
+    - Aspid_01__top1/top2/top3/top4/top5/top6/top7: big top transition at several different positions. All of them are targetless.
+    - Bellway_01: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
+    - Bellway_01__left1: collider obstacle in Act 3.
+    - Bonegrave__door1: Door closes if the corresponding crest was obtained. It doesn't matter how hornet enters the scene.
+    - Bonegrave_right2: collider obstacle.
+    - Bonetown__bot1_firstEntry: seems to be effectively the same as bot1. However, the flipped transition is Tut_03__top1_firstExit. The gate is removed for now.
+    - Bonetown__bot2: large dark vignette to the left of the transition is there if Chapel Maid isn't encountered.
+    - Bonetown__door1: collider obstacle in Act 3.
+    - Bonetown__left2: collider obstacle.
+    - Bonetown__top1/top3/top4/top5/top6 (NOT bot2): big top transition at several different positions. All of them are targetless.
+
+### The_Abyss
+    - Abyss_02b__top1: collider obstacle.
+    - Abyss_03__door1/door2: arrives via left2 instead of in front of the diving bell, depending on Act 3 progress.
+    - Abyss_03__left2: collider obstacle.
+    - Abyss_11__bot1: collider obstacle.
+    - Abyss_13__left1: collider obstacle.
+    - Abyss_Cocoon__door_test: seems to be effectively the same as door_entry (because that TP/object is not active/enabled)
+    - Room_Diving_Bell_Abyss__left1: collider obstacle.
+    - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
+    - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.

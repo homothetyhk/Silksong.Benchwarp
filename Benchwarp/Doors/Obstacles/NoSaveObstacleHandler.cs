@@ -14,12 +14,8 @@ public class NoSaveObstacleHandler : ObstacleHandler
 
     public static bool HandleObstacle(Scene scene, RoomData room, DoorData gate, ObstacleInfo o)
     {
-        switch (o)
-        {
-            default:
-                o.DestroyObj(scene);
-                return true;
-        }
+        o.Open(scene);
+        return true;
     }
 
 }
