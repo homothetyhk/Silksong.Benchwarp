@@ -13,8 +13,8 @@ public class DoorSelectorComponent : MonoBehaviour
     private DropdownRadioSwitch? roomSwitch;
     private DropdownRadioSwitch? doorSwitch;
 
-    private Dictionary<string, AreaRoomGroup> groups;
-    private Dictionary<string, Dictionary<string, RoomData>> roomsByGroup;
+    private Dictionary<string, AreaRoomGroup> groups = new();
+    private Dictionary<string, Dictionary<string, RoomData>> roomsByGroup = new();
 
     public void Warp()
     {
