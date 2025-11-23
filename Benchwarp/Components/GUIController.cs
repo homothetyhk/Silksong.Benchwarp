@@ -10,31 +10,31 @@ namespace Benchwarp.Components;
 
 public class GUIController : MonoBehaviour
 {
-    private GameObject menuCanvasParent;
-    private GameObject benchMenuCanvas;
-    private GameObject doorMenuCanvas;
-    private GameObject sceneNameCanvas;
+    private GameObject menuCanvasParent = null!;
+    private GameObject benchMenuCanvas = null!;
+    private GameObject doorMenuCanvas = null!;
+    private GameObject sceneNameCanvas = null!;
 
-    private static GUIController _instance;
-    internal static FontManager FontManager;
-    private static Texture2D buttonRectImage;
+    private static GUIController _instance = null!;
+    internal static FontManager FontManager = null!;
+    private static Texture2D buttonRectImage = null!;
 
     public static readonly Vector2 TopLeftCorner = new Vector2(0, 1);
 
-    public GameObject warpButton;
-    public GameObject setStartButton;
-    public GameObject cfgmgrBtn;
-    public GameObject nextPageBtn;
+    public GameObject warpButton = null!;
+    public GameObject setStartButton = null!;
+    public GameObject cfgmgrBtn = null!;
+    public GameObject nextPageBtn = null!;
     public List<GameObject> dropdowns = new([]);
-    public GameObject sceneNamePanel;
+    public GameObject sceneNamePanel = null!;
 
-    public GameObject doorWarpButton;
-    public GameObject doorFlipButton;
-    public GameObject doorSelectPrevButton;
-    public GameObject doorAreaDropdown;
-    public GameObject doorRoomDropdown;
-    public GameObject doorDoorDropdown;
-    public GameObject doorConfigButton;
+    public GameObject doorWarpButton = null!;
+    public GameObject doorFlipButton = null!;
+    public GameObject doorSelectPrevButton = null!;
+    public GameObject doorAreaDropdown = null!;
+    public GameObject doorRoomDropdown = null!;
+    public GameObject doorDoorDropdown = null!;
+    public GameObject doorConfigButton = null!;
 
     public int page = 1;
     public static int maxPages = 2;
