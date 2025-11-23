@@ -6041,8 +6041,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_01,
         MapZone = MapZone.UNDERSTORE,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Grand_Gate,
+        TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
             Under_01__left1,
             Under_01__left2,
@@ -6177,7 +6177,7 @@ public static class BaseRoomList
         Gates = new([
             Under_07__left3,
             Under_07__right2,
-            Under_07__top1,
+            // Under_07__top1,
         ]),
         ManuallyVerified = true,
     };
@@ -6185,8 +6185,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_07b,
         MapZone = MapZone.CITY_OF_SONG,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Choral_Chambers,
+        TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
             Under_07b__bot1,
             Under_07b__left1,
@@ -6200,7 +6200,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
-            Under_07c__bot1,
+            // Under_07c__bot1,
             Under_07c__left2,
             Under_07c__top1,
         ]),
@@ -6363,7 +6363,7 @@ public static class BaseRoomList
         Name = SceneNames.Under_20,
         MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        TitledArea = TitledAreaNames.Chapel_of_the_Architect,
         Gates = new([
             Under_20__door_memoryEnd,
             Under_20__left1,
@@ -6409,8 +6409,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_27,
         MapZone = MapZone.SHELLWOOD_THICKET,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Grand_Gate,
+        TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
             Under_27__left1,
             Under_27__right1,

@@ -59,34 +59,12 @@
     - Abyss_02b__top1: Missing permanent obstacle handling (the PersistentBoolItem uses the ID of an object in Abyss_11).
     - Abyss_03__door1/door2: Still need permanent obstacle handling.
 
-The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
-
 ### Lost_Verdania
-    - Clover_04b__door1: entire door/platform is missing.
+    - Clover_04b__door1: Still needs permanent obstacle handling.
 
-### Underworks
-    - Under_01: map/titled area should be Grand Gate.
-    - Under_01__left2: collider obstacle.
-    - Under_01__left3: collider obstacle.
-    - Under_01b__right1: collider obstacle.
-    - Under_02__left1: collider obstacle.
-    - Under_04__right1: collider obstacle.
-    - Under_04__top1: collider obstacle.
-    - Under_05__left2: collider obstacle.
-    - Under_06__top1: collider obstacle.
-    - Under_07__top1: arrives via right1 instead.
-    - Under_07b: map/titled area should be Choral Chambers.
-    - Under_07b__bot1: collider obstacle.
-    - Under_07c__bot1: arrives via left2 instead.
-    - Under_07c__top1: collider obstacle.
-    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
-    - Under_17__door1: door is locked if player hasn't opened it before.
-    - Under_18__right1: collider obstacle.
-    - Under_18__top2: collider obstacle.
-    - Under_19c__left1: collider obstacle.
-    - Under_20: titled area should be Chapel of the Architect.
-    - Under_27: map/titled area should be Grand Gate.
-    - Under_27__right2: collider obstacle.
+(I got lazy with documenting permanent obstacle handling - basically anything that doesn't implement ISaveableObstacle needs to be reverified).
+
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
 
 ### Mount_Fay
     - Bellway_Peak__right2: collider obstacle.
@@ -467,3 +445,30 @@ The below areas have been checked when using the new door warp coroutine.
     - Room_Diving_Bell_Abyss__left1: collider obstacle.
     - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
     - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.
+
+### Lost_Verdania
+    - Clover_04b__door1: entire door/platform is missing.
+
+### Underworks
+    - Under_01: map/titled area should be Grand Gate.
+    - Under_01__left2: collider obstacle.
+    - Under_01__left3: collider obstacle.
+    - Under_01b__right1: collider obstacle.
+    - Under_02__left1: collider obstacle.
+    - Under_04__right1: collider obstacle.
+    - Under_04__top1: collider obstacle.
+    - Under_05__left2: collider obstacle.
+    - Under_06__top1: collider obstacle.
+    - Under_07__top1: arrives via right1 instead.
+    - Under_07b: map/titled area should be Choral Chambers.
+    - Under_07b__bot1: collider obstacle.
+    - Under_07c__bot1: arrives via left2 instead.
+    - Under_07c__top1: collider obstacle.
+    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
+    - Under_17__door1: door is locked if player hasn't opened it before.
+    - Under_18__right1: collider obstacle.
+    - Under_18__top2: collider obstacle.
+    - Under_19c__left1: collider obstacle.
+    - Under_20: titled area should be Chapel of the Architect.
+    - Under_27: map/titled area should be Grand Gate.
+    - Under_27__right2: collider obstacle.
