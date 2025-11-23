@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Benchwarp.Benches;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 
@@ -145,5 +146,6 @@ public static class JsonUtil
         _js.Converters.Add(new StringEnumConverter());
         _js.Converters.Add(new Vector2Converter());
         _js.Converters.Add(new Vector3Converter());
+        _js.Converters.Add(new BenchKeyJsonConverter());
     }
 }
