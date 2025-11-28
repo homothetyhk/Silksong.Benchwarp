@@ -132,9 +132,21 @@ public static class BaseGateList
     public static DoorData Aqueduct_08__right1 { get; } = new(new(Aqueduct_08, right1), new(Aqueduct_06, left2));
     public static DoorData Arborium_01__bot1 { get; } = new(new(Arborium_01, bot1), new(Song_25, top1));
     public static DoorData Arborium_01__left1 { get; } = new(new(Arborium_01, left1), new(Arborium_09, right1));
-    public static DoorData Arborium_01__left2 { get; } = new(new(Arborium_01, left2), new(Arborium_09, right2));
+    public static DoorData Arborium_01__left2 { get; } = new(new(Arborium_01, left2), new(Arborium_09, right2))
+    {
+        Obstacles = new([
+            new BehaviourObstacleInfo("Arborium 09 Break Wall", "PlayerDataTestResponse", false, ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess),
+            new GameObjectActiveObstacleInfo("Arborium 09 Break Wall/Unbroken", false, ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess),
+            new GameObjectActiveObstacleInfo("Arborium 09 Break Wall/Broken", true, ObstacleType.Other, ObstacleSeverity.AbnormalVisual)
+        ])
+    };
     public static DoorData Arborium_01__left3 { get; } = new(new(Arborium_01, left3), new(Arborium_Tube, right1));
-    public static DoorData Arborium_01__right1 { get; } = new(new(Arborium_01, right1), new(Arborium_08, left1));
+    public static DoorData Arborium_01__right1 { get; } = new(new(Arborium_01, right1), new(Arborium_08, left1))
+    {
+        Obstacles = new([
+            new PdBoolObstacleInfo("one_way_inner_craw", "arborium_08_oneWay", ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Arborium_01__right2 { get; } = new(new(Arborium_01, right2), new(Arborium_07, left1));
     public static DoorData Arborium_01__right3 { get; } = new(new(Arborium_01, right3), new(Arborium_06, left1));
     public static DoorData Arborium_01__right4 { get; } = new(new(Arborium_01, right4), new(Arborium_02, left1));
@@ -150,19 +162,50 @@ public static class BaseGateList
     public static DoorData Arborium_04__left1 { get; } = new(new(Arborium_04, left1), new(Arborium_01, right5));
     public static DoorData Arborium_04__right1 { get; } = new(new(Arborium_04, right1), new(Arborium_03, left4));
     public static DoorData Arborium_05__right1 { get; } = new(new(Arborium_05, right1), new(Arborium_03, left2));
-    public static DoorData Arborium_05__top1 { get; } = new(new(Arborium_05, top1), new(Arborium_06, bot1));
+    public static DoorData Arborium_05__top1 { get; } = new(new(Arborium_05, top1), new(Arborium_06, bot1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Coral Crust Wall Sphere", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.InterruptsEntry)
+        ])
+    };
     public static DoorData Arborium_06__bot1 { get; } = new(new(Arborium_06, bot1), new(Arborium_05, top1));
     public static DoorData Arborium_06__left1 { get; } = new(new(Arborium_06, left1), new(Arborium_01, right3));
-    public static DoorData Arborium_06__right1 { get; } = new(new(Arborium_06, right1), new(Arborium_03, left1));
+    public static DoorData Arborium_06__right1 { get; } = new(new(Arborium_06, right1), new(Arborium_03, left1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Coral Crust Wall Tall (3)", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility),
+            new PersistentBoolObstacleInfo("Coral Crust Wall Small (1)", ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
+            new PersistentBoolObstacleInfo("Coral Goomba Ambush/Crust Wall", ObstacleType.Mask, ObstacleSeverity.LimitsVisibility),
+            new PersistentBoolObstacleInfo("Coral Goomba Ambush/Coral Goomba Large (1)", ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
+            new PersistentBoolObstacleInfo("Coral Crust Wall Tall (1)", ObstacleType.Mask, ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Arborium_07__left1 { get; } = new(new(Arborium_07, left1), new(Arborium_01, right2));
     public static DoorData Arborium_07__top1 { get; } = new(new(Arborium_07, top1), new(Arborium_08, bot1));
     public static DoorData Arborium_08__bot1 { get; } = new(new(Arborium_08, bot1), new(Arborium_07, top1));
-    public static DoorData Arborium_08__left1 { get; } = new(new(Arborium_08, left1), new(Arborium_01, right1));
+    public static DoorData Arborium_08__left1 { get; } = new(new(Arborium_08, left1), new(Arborium_01, right1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("One Way Wall", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Arborium_09__right1 { get; } = new(new(Arborium_09, right1), new(Arborium_01, left1));
-    public static DoorData Arborium_09__right2 { get; } = new(new(Arborium_09, right2), new(Arborium_01, left2));
+    public static DoorData Arborium_09__right2 { get; } = new(new(Arborium_09, right2), new(Arborium_01, left2))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Moss Vine Cluster", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility),
+            new PersistentBoolObstacleInfo("Moss Vine Cluster (1)", ObstacleType.Mask, ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Arborium_10__left1 { get; } = new(new(Arborium_10, left1), new(Arborium_03, right1));
     public static DoorData Arborium_11__left1 { get; } = new(new(Arborium_11, left1), new(Arborium_03, right2));
-    public static DoorData Arborium_11__right1 { get; } = new(new(Arborium_11, right1), new(Aqueduct_01, left1));
+    public static DoorData Arborium_11__right1 { get; } = new(new(Arborium_11, right1), new(Aqueduct_01, left1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Breakable Wall (1)", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility),
+            new UnmaskerInfo("Masks")
+        ])
+    };
     public static DoorData Arborium_Tube__door_tubeEnter { get; } = new(new(Arborium_Tube, door_tubeEnter), null, new(Arborium_Tube, door_tubeEnter));
     public static DoorData Arborium_Tube__right1 { get; } = new(new(Arborium_Tube, right1), new(Arborium_01, left3));
     public static DoorData Aspid_01__bot1 { get; } = new(new(Aspid_01, bot1), null, new(Bonetown, top3));
@@ -737,14 +780,34 @@ public static class BaseGateList
     public static DoorData Cradle_Destroyed_Challenge_Bench__right1 { get; } = new(new(Cradle_Destroyed_Challenge_Bench, right1), new(Cradle_Destroyed_Challenge_01, left1));
     public static DoorData Crawl_01__left1 { get; } = new(new(Crawl_01, left1), new(Crawl_02, right1));
     public static DoorData Crawl_01__right1 { get; } = new(new(Crawl_01, right1), new(Aspid_01, left1));
-    public static DoorData Crawl_02__left1 { get; } = new(new(Crawl_02, left1), new(Crawl_03, right1));
-    public static DoorData Crawl_02__left2 { get; } = new(new(Crawl_02, left2), new(Crawl_03b, right1));
+    public static DoorData Crawl_02__left1 { get; } = new(new(Crawl_02, left1), new(Crawl_03, right1))
+    {
+        Obstacles = new([
+            new PdBoolObstacleInfo("One Way Wall", "crawl03_oneWayWall", ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
+    public static DoorData Crawl_02__left2 { get; } = new(new(Crawl_02, left2), new(Crawl_03b, right1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("aspid_sealed_gate_stone", ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Crawl_02__right1 { get; } = new(new(Crawl_02, right1), new(Crawl_01, left1));
     public static DoorData Crawl_02__right2 { get; } = new(new(Crawl_02, right2), new(Crawl_04, left1));
-    public static DoorData Crawl_02__right3 { get; } = new(new(Crawl_02, right3), new(Crawl_06, left1));
+    public static DoorData Crawl_02__right3 { get; } = new(new(Crawl_02, right3), new(Crawl_06, left1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Breakable Wall (1)", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Crawl_03__bot1 { get; } = new(new(Crawl_03, bot1), new(Crawl_03b, top1));
     public static DoorData Crawl_03__left1 { get; } = new(new(Crawl_03, left1), new(Crawl_05, right1));
-    public static DoorData Crawl_03__right1 { get; } = new(new(Crawl_03, right1), new(Crawl_02, left1));
+    public static DoorData Crawl_03__right1 { get; } = new(new(Crawl_03, right1), new(Crawl_02, left1))
+    {
+        Obstacles = new([
+            new PersistentBoolObstacleInfo("Breakable Wall (1)", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility)
+        ])
+    };
     public static DoorData Crawl_03__top1 { get; } = new(new(Crawl_03, top1), new(Crawl_08, bot1));
     public static DoorData Crawl_03b__bot1 { get; } = new(new(Crawl_03b, bot1), new(Crawl_07, top1));
     public static DoorData Crawl_03b__right1 { get; } = new(new(Crawl_03b, right1), new(Crawl_02, left2));
