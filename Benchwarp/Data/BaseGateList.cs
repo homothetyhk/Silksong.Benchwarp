@@ -604,8 +604,12 @@ public static class BaseGateList
     public static DoorData Clover_03__left1 { get; } = new(new(Clover_03, left1), new(Clover_04b, right1));
     public static DoorData Clover_03__left2 { get; } = new(new(Clover_03, left2), new(Clover_02c, right1));
     public static DoorData Clover_03__right1 { get; } = new(new(Clover_03, right1), new(Clover_18, left1));
-    public static DoorData Clover_04b__door1 { get; } = new(new(Clover_04b, door1), null, new(Clover_10, left1))
+    public static DoorData Clover_04b__door1 { get; } = new(new(Clover_04b, door1), null, new(Clover_04b, door1))
     {
+        DynamicTargets = new([
+            new(Clover_10, left1),
+            new(Clover_10_web, left1)
+        ]),
         Obstacles = new([
             new BehaviourObstacleInfo("palace_control", nameof(PlayMakerFSM), false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
             new BehaviourObstacleInfo("palace_control/palace_top/door1", nameof(DoorTargetCondition), false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
@@ -894,7 +898,13 @@ public static class BaseGateList
     public static DoorData Dust_04__left2 { get; } = new(new(Dust_04, left2), new(Dust_02, right2));
     public static DoorData Dust_04__right1 { get; } = new(new(Dust_04, right1), new(Dust_Chef, left1));
     public static DoorData Dust_05__bot1 { get; } = new(new(Dust_05, bot1), new(Dust_02, top1));
-    public static DoorData Dust_05__left1 { get; } = new(new(Dust_05, left1), null, new(Dust_Maze_08_completed, right1));
+    public static DoorData Dust_05__left1 { get; } = new(new(Dust_05, left1), null, new(Dust_05, left1))
+    {
+        DynamicTargets = new([
+            new(Dust_Maze_09_entrance, right1),
+            new(Dust_Maze_08_completed, right1)
+        ])
+    };
     public static DoorData Dust_05__right1 { get; } = new(new(Dust_05, right1), new(Dust_06, left1));
     public static DoorData Dust_06__left1 { get; } = new(new(Dust_06, left1), new(Dust_05, right1));
     public static DoorData Dust_06__right1 { get; } = new(new(Dust_06, right1), new(Shadow_05, left1));
@@ -902,7 +912,20 @@ public static class BaseGateList
     public static DoorData Dust_06__right3 { get; } = new(new(Dust_06, right3), new(Dust_12, left1));
     public static DoorData Dust_09__door1 { get; } = new(new(Dust_09, door1), new(Organ_01, left1));
     public static DoorData Dust_09__door2 { get; } = new(new(Dust_09, door2), new(Organ_01, left2));
-    public static DoorData Dust_09__left2 { get; } = new(new(Dust_09, left2), null, new(Dust_Maze_08_completed, right2));
+    public static DoorData Dust_09__left2 { get; } = new(new(Dust_09, left2), null, new(Dust_09, left2))
+    {
+        DynamicTargets = new([
+            new(Dust_Maze_Last_Hall, right1),
+            new(Dust_Maze_08_completed, right2)
+        ])
+    };
+    public static DoorData Dust_09__right1 { get; } = new(new(Dust_09, right1), null, new(Dust_09, right1))
+    {
+        DynamicTargets = new([
+            new(Dust_Maze_Last_Hall, left1),
+            new(Shadow_04, left1)
+        ])
+    };
     public static DoorData Dust_10__right1 { get; } = new(new(Dust_10, right1), new(Dust_02, left1));
     public static DoorData Dust_11__bot1 { get; } = new(new(Dust_11, bot1), new(Greymoor_17, top1));
     public static DoorData Dust_11__left1 { get; } = new(new(Dust_11, left1), new(Dust_06, right2));
@@ -910,8 +933,46 @@ public static class BaseGateList
     public static DoorData Dust_Barb__top1 { get; } = new(new(Dust_Barb, top1), new(Dust_03, bot1));
     public static DoorData Dust_Chef__bot1 { get; } = new(new(Dust_Chef, bot1), new(Dust_03, top1));
     public static DoorData Dust_Chef__left1 { get; } = new(new(Dust_Chef, left1), new(Dust_04, right1));
+    public static DoorData Dust_Maze_01__left1 { get; } = new(new(Dust_Maze_01, left1), null, new(Dust_Maze_01, left1));
+    public static DoorData Dust_Maze_01__right1 { get; } = new(new(Dust_Maze_01, right1), null, new(Dust_Maze_01, right1));
+    public static DoorData Dust_Maze_01__top1 { get; } = new(new(Dust_Maze_01, top1), null, new(Dust_Maze_01, top1));
+    public static DoorData Dust_Maze_02__bot1 { get; } = new(new(Dust_Maze_02, bot1), null, new(Dust_Maze_02, bot1));
+    public static DoorData Dust_Maze_02__left1 { get; } = new(new(Dust_Maze_02, left1), null, new(Dust_Maze_02, left1));
+    public static DoorData Dust_Maze_02__left2 { get; } = new(new(Dust_Maze_02, left2), null, new(Dust_Maze_02, left2));
+    public static DoorData Dust_Maze_02__right1 { get; } = new(new(Dust_Maze_02, right1), null, new(Dust_Maze_02, right1));
+    public static DoorData Dust_Maze_02__top1 { get; } = new(new(Dust_Maze_02, top1), null, new(Dust_Maze_02, top1));
+    public static DoorData Dust_Maze_03__left1 { get; } = new(new(Dust_Maze_03, left1), null, new(Dust_Maze_03, left1));
+    public static DoorData Dust_Maze_03__left2 { get; } = new(new(Dust_Maze_03, left2), null, new(Dust_Maze_03, left2));
+    public static DoorData Dust_Maze_03__right1 { get; } = new(new(Dust_Maze_03, right1), null, new(Dust_Maze_03, right1));
+    public static DoorData Dust_Maze_03__top1 { get; } = new(new(Dust_Maze_03, top1), null, new(Dust_Maze_03, top1));
+    public static DoorData Dust_Maze_04__bot1 { get; } = new(new(Dust_Maze_04, bot1), null, new(Dust_Maze_04, bot1));
+    public static DoorData Dust_Maze_04__left1 { get; } = new(new(Dust_Maze_04, left1), null, new(Dust_Maze_04, left1));
+    public static DoorData Dust_Maze_04__right1 { get; } = new(new(Dust_Maze_04, right1), null, new(Dust_Maze_04, right1));
+    public static DoorData Dust_Maze_04__top1 { get; } = new(new(Dust_Maze_04, top1), null, new(Dust_Maze_04, top1));
+    public static DoorData Dust_Maze_04__top1_1 { get; } = new(new(Dust_Maze_04, top1_1), null, new(Dust_Maze_04, top1_1));
+    public static DoorData Dust_Maze_05__bot1 { get; } = new(new(Dust_Maze_05, bot1), null, new(Dust_Maze_05, bot1));
+    public static DoorData Dust_Maze_05__left1 { get; } = new(new(Dust_Maze_05, left1), null, new(Dust_Maze_05, left1));
+    public static DoorData Dust_Maze_05__right1 { get; } = new(new(Dust_Maze_05, right1), null, new(Dust_Maze_05, right1));
+    public static DoorData Dust_Maze_05__right2 { get; } = new(new(Dust_Maze_05, right2), null, new(Dust_Maze_05, right2));
+    public static DoorData Dust_Maze_05__top1 { get; } = new(new(Dust_Maze_05, top1), null, new(Dust_Maze_05, top1));
+    public static DoorData Dust_Maze_06__left1 { get; } = new(new(Dust_Maze_06, left1), null, new(Dust_Maze_06, left1));
+    public static DoorData Dust_Maze_06__right1 { get; } = new(new(Dust_Maze_06, right1), null, new(Dust_Maze_06, right1));
+    public static DoorData Dust_Maze_06__top1 { get; } = new(new(Dust_Maze_06, top1), null, new(Dust_Maze_06, top1));
+    public static DoorData Dust_Maze_07__bot1 { get; } = new(new(Dust_Maze_07, bot1), null, new(Dust_Maze_07, bot1));
+    public static DoorData Dust_Maze_07__left1 { get; } = new(new(Dust_Maze_07, left1), null, new(Dust_Maze_07, left1));
+    public static DoorData Dust_Maze_07__top1 { get; } = new(new(Dust_Maze_07, top1), null, new(Dust_Maze_07, top1));
+    public static DoorData Dust_Maze_08__left1 { get; } = new(new(Dust_Maze_08, left1), null, new(Dust_Maze_08, left1));
+    public static DoorData Dust_Maze_08__right2 { get; } = new(new(Dust_Maze_08, right2), null, new(Dust_Maze_08, right2));
+    public static DoorData Dust_Maze_08__right3 { get; } = new(new(Dust_Maze_08, right3), null, new(Dust_Maze_08, right3));
+    public static DoorData Dust_Maze_08__top1 { get; } = new(new(Dust_Maze_08, top1), null, new(Dust_Maze_08, top1));
     public static DoorData Dust_Maze_08_completed__right1 { get; } = new(new(Dust_Maze_08_completed, right1), new(Dust_05, left1), null);
     public static DoorData Dust_Maze_08_completed__right2 { get; } = new(new(Dust_Maze_08_completed, right2), new(Dust_09, left2), null);
+    public static DoorData Dust_Maze_09_entrance__left1 { get; } = new(new(Dust_Maze_09_entrance, left1), null, new(Dust_Maze_09_entrance, left1));
+    public static DoorData Dust_Maze_09_entrance__right1 { get; } = new(new(Dust_Maze_09_entrance, right1), null, new(Dust_Maze_09_entrance, right1));
+    public static DoorData Dust_Maze_crossing__left1 { get; } = new(new(Dust_Maze_crossing, left1), null, new(Dust_Maze_crossing, left1));
+    public static DoorData Dust_Maze_crossing__right1 { get; } = new(new(Dust_Maze_crossing, right1), null, new(Dust_Maze_crossing, right1));
+    public static DoorData Dust_Maze_Last_Hall__left1 { get; } = new(new(Dust_Maze_Last_Hall, left1), null, new(Dust_Maze_Last_Hall, left1));
+    public static DoorData Dust_Maze_Last_Hall__right1 { get; } = new(new(Dust_Maze_Last_Hall, right1), null, new(Dust_Maze_Last_Hall, right1));
     public static DoorData Dust_Shack__left1 { get; } = new(new(Dust_Shack, left1), new(Dust_04, door1));
     public static DoorData Greymoor_01__bot1 { get; } = new(new(Greymoor_01, bot1), new(Bone_East_11, top1));
     public static DoorData Greymoor_01__left1 { get; } = new(new(Greymoor_01, left1), new(Greymoor_12, right1));
@@ -1188,7 +1249,15 @@ public static class BaseGateList
     public static DoorData Peak_12__right1 { get; } = new(new(Peak_12, right1), new(Peak_08b, left2));
     public static DoorData Peak_Mask_Maker__right1 { get; } = new(new(Peak_Mask_Maker, right1), new(Peak_05d, door1));
     public static DoorData Room_Caravan_Interior__right1 { get; } = new(new(Room_Caravan_Interior, right1), new(Greymoor_08, door1));
-    public static DoorData Room_Caravan_Spa__left1 { get; } = new(new(Room_Caravan_Spa, left1), null, new(Aqueduct_05, door2));
+    public static DoorData Room_Caravan_Spa__left1 { get; } = new(new(Room_Caravan_Spa, left1), null, new(Room_Caravan_Spa, left1))
+    {
+        DynamicTargets = new([
+            new("Bone_10", door2),
+            new("Greymoor_08", door2),
+            new("Coral_Judge_Arena", door2),
+            new("Aqueduct_05", door2)
+        ])
+    };
     public static DoorData Room_CrowCourt__bot1 { get; } = new(new(Room_CrowCourt, bot1), new(Room_CrowCourt_02, top1));
     public static DoorData Room_CrowCourt__left1 { get; } = new(new(Room_CrowCourt, left1), new(Greymoor_15b, door1));
     public static DoorData Room_CrowCourt_02__top1 { get; } = new(new(Room_CrowCourt_02, top1), new(Room_CrowCourt, bot1));
@@ -1224,6 +1293,13 @@ public static class BaseGateList
     public static DoorData Shadow_03__left1 { get; } = new(new(Shadow_03, left1), new(Shadow_02, right2));
     public static DoorData Shadow_03__right1 { get; } = new(new(Shadow_03, right1), new(Shadow_09, left1));
     public static DoorData Shadow_03__top1 { get; } = new(new(Shadow_03, top1), new(Shadow_21, bot1));
+    public static DoorData Shadow_04__left1 { get; } = new(new(Shadow_04, left1), null, new(Shadow_04, left1))
+    {
+        DynamicTargets = new([
+            new(Dust_Maze_09_entrance, right1),
+            new(Dust_09, right1)
+        ])
+    };
     public static DoorData Shadow_04__right1 { get; } = new(new(Shadow_04, right1), new(Shadow_04b, left1));
     public static DoorData Shadow_04__right2 { get; } = new(new(Shadow_04, right2), new(Bellway_Shadow, left1));
     public static DoorData Shadow_04__top1 { get; } = new(new(Shadow_04, top1), new(Shadow_20, bot1));

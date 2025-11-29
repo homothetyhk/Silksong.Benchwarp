@@ -398,6 +398,10 @@ The below areas have been checked when using the new door warp coroutine.
     - Under_20__door_memoryEnd: Gives the player Architect Crest and saves the game. The HUD isn't correct (doesn't show Architect Crest flair), but the crest is active and also appears in inventory. The screen is black if the player already has Architect Crest.
     - Ward_02__door_cinematicEnd: Hornet never gets up
 
+### Doors with dynamic targets
+    - Dust_09__right1: collider obstacle.
+    - Shadow_04__left1: collider obstacle.
+
 ## Resolved Notes
 
 ### Wormways
