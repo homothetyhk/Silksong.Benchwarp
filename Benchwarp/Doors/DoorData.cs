@@ -5,6 +5,12 @@ namespace Benchwarp.Doors;
 
 public class DoorData
 {
+    public DoorData (TransitionKey self)
+    {
+        Self = self;
+        Target = self;
+    }
+
     public DoorData(TransitionKey self, TransitionKey sourcetarget)
     {
         Self = self;
