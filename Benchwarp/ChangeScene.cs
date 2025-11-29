@@ -27,7 +27,7 @@ public static class ChangeScene
             }
         });
 
-        gm.PauseGameToggle(false);
+        gm.StartCoroutine(gm.PauseGameToggle(false));
     }
 
     public static void WarpToDoor(RoomData room, Doors.DoorData gate)
