@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 namespace Benchwarp.Doors.Obstacles;
 
 /// <summary>
-/// <see cref="ObstacleInfo"/> with a TestGameObjectActivator that controls its state.
+/// An <see cref="ObstacleInfo"/> of which toggling a TestGameObjectActivator's GameObjects affects the obstacle.
 /// </summary>
-public record TestObjObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSeverity Severity, bool Reverse = false) : ObstacleInfo(ObjPath, Type, Severity)
+public record TestObjObstacleInfo(string ObjPath, bool Activate, ObstacleType Type, ObstacleSeverity Severity) : BehaviourObstacleInfo(ObjPath, nameof(TestGameObjectActivator), Activate, Type, Severity)
 {
     public TestGameObjectActivator? GetTestGameObjectActivator(Scene scene) => scene.FindGameObject(ObjPath)?.GetComponent<TestGameObjectActivator>();
 
@@ -16,8 +16,8 @@ public record TestObjObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSev
         {
             tgoa.enabled = false;
 
-            tgoa.activateGameObject?.SetActive(!Reverse);
-            tgoa.deactivateGameObject?.SetActive(Reverse);
+            tgoa.activateGameObject?.SetActive(Activate);
+            tgoa.deactivateGameObject?.SetActive(!Activate);
         }
     }
 }

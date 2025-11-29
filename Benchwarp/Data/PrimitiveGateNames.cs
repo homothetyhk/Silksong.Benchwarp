@@ -60,6 +60,7 @@ public static class PrimitiveGateNames
     public const string right8 = "right8";
     public const string right9 = "right9";
     public const string top1 = "top1";
+    public const string top1_1 = "top1 (1)";
     public const string top2 = "top2";
     public const string top2_extra = "top2 extra";
     public const string top3 = "top3";

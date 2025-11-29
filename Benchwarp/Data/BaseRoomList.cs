@@ -3164,6 +3164,7 @@ public static class BaseRoomList
             Dust_09__door1,
             Dust_09__door2,
             Dust_09__left2,
+            Dust_09__right1,
         ]),
         ManuallyVerified = true,
     };
@@ -3224,6 +3225,118 @@ public static class BaseRoomList
         ]),
         ManuallyVerified = true,
     };
+    public static RoomData Dust_Maze_01 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_01,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_01__left1,
+            Dust_Maze_01__right1,
+            Dust_Maze_01__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_02 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_02,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_02__bot1,
+            Dust_Maze_02__left1,
+            Dust_Maze_02__left2,
+            Dust_Maze_02__right1,
+            Dust_Maze_02__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_03 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_03,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_03__left1,
+            Dust_Maze_03__left2,
+            Dust_Maze_03__right1,
+            Dust_Maze_03__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_04 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_04,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_04__bot1,
+            Dust_Maze_04__left1,
+            Dust_Maze_04__right1,
+            Dust_Maze_04__top1,
+            Dust_Maze_04__top1_1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_05 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_05,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_05__bot1,
+            Dust_Maze_05__left1,
+            Dust_Maze_05__right1,
+            Dust_Maze_05__right2,
+            Dust_Maze_05__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_06 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_06,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_06__left1,
+            Dust_Maze_06__right1,
+            Dust_Maze_06__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_07 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_07,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_07__bot1,
+            Dust_Maze_07__left1,
+            Dust_Maze_07__top1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_08 { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_08,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_08__left1,
+            Dust_Maze_08__right2,
+            Dust_Maze_08__right3,
+            Dust_Maze_08__top1,
+        ]),
+        ManuallyVerified = true,
+    };
     public static RoomData Dust_Maze_08_completed { get; } = new RoomData
     {
         Name = SceneNames.Dust_Maze_08_completed,
@@ -3235,6 +3348,42 @@ public static class BaseRoomList
             Dust_Maze_08_completed__right2,
         ]),
         ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_09_entrance { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_09_entrance,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_09_entrance__left1,
+            Dust_Maze_09_entrance__right1,
+        ]),
+        ManuallyVerified = true,
+    };
+    public static RoomData Dust_Maze_crossing { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_crossing,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_crossing__left1,
+            Dust_Maze_crossing__right1,
+        ]),
+        ManuallyVerified = true
+    };
+    public static RoomData Dust_Maze_Last_Hall { get; } = new RoomData
+    {
+        Name = SceneNames.Dust_Maze_Last_Hall,
+        MapZone = MapZone.DUST_MAZE,
+        MapArea = MapAreaNames.Sinner_s_Road,
+        TitledArea = TitledAreaNames.The_Mist,
+        Gates = new([
+            Dust_Maze_Last_Hall__left1,
+            Dust_Maze_Last_Hall__right1,
+        ]),
+        ManuallyVerified = true
     };
     public static RoomData Dust_Shack { get; } = new RoomData
     {
@@ -4589,6 +4738,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Bilewater,
         TitledArea = TitledAreaNames.Bilewater,
         Gates = new([
+            Shadow_04__left1,
             Shadow_04__right1,
             Shadow_04__right2,
             Shadow_04__top1,
@@ -6041,8 +6191,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_01,
         MapZone = MapZone.UNDERSTORE,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Grand_Gate,
+        TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
             Under_01__left1,
             Under_01__left2,
@@ -6177,7 +6327,7 @@ public static class BaseRoomList
         Gates = new([
             Under_07__left3,
             Under_07__right2,
-            Under_07__top1,
+            // Under_07__top1,
         ]),
         ManuallyVerified = true,
     };
@@ -6185,8 +6335,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_07b,
         MapZone = MapZone.CITY_OF_SONG,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Choral_Chambers,
+        TitledArea = TitledAreaNames.Choral_Chambers,
         Gates = new([
             Under_07b__bot1,
             Under_07b__left1,
@@ -6200,7 +6350,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Underworks,
         TitledArea = TitledAreaNames.Underworks,
         Gates = new([
-            Under_07c__bot1,
+            // Under_07c__bot1,
             Under_07c__left2,
             Under_07c__top1,
         ]),
@@ -6363,7 +6513,7 @@ public static class BaseRoomList
         Name = SceneNames.Under_20,
         MapZone = MapZone.NONE,
         MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        TitledArea = TitledAreaNames.Chapel_of_the_Architect,
         Gates = new([
             Under_20__door_memoryEnd,
             Under_20__left1,
@@ -6409,8 +6559,8 @@ public static class BaseRoomList
     {
         Name = SceneNames.Under_27,
         MapZone = MapZone.SHELLWOOD_THICKET,
-        MapArea = MapAreaNames.Underworks,
-        TitledArea = TitledAreaNames.Underworks,
+        MapArea = MapAreaNames.Grand_Gate,
+        TitledArea = TitledAreaNames.Grand_Gate,
         Gates = new([
             Under_27__left1,
             Under_27__right1,
