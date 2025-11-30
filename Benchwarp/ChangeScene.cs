@@ -1,6 +1,8 @@
 ﻿using Benchwarp.Doors;
 using Benchwarp.Doors.Obstacles;
 using Benchwarp.Events;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Benchwarp;
@@ -74,6 +76,13 @@ public static class ChangeScene
 
         void Warp()
         {
+            if (!CanLoadScene(gate.Self.SceneName))
+            {
+                LogWarn($"Doorwarp aborted: scene {gate.Self.SceneName} is not available. Warping to respawn to avoid a softlock.");
+                ChangeScene.WarpToRespawn();
+                return;
+            }
+
             IObstacleHandler handler = ModEvents.DoorwarpObstacleHandler;
             handler.BeforeTransition(room, gate);
             
@@ -90,7 +99,7 @@ public static class ChangeScene
         }
     }
 
-    private class DoorwarpSceneLoadInfo(IObstacleHandler handler, RoomData room, Doors.DoorData gate) : GameManager.SceneLoadInfo
+    private sealed class DoorwarpSceneLoadInfo(IObstacleHandler handler, RoomData room, Doors.DoorData gate) : GameManager.SceneLoadInfo
     {
         public override void NotifyFetchComplete()
         {
@@ -102,7 +111,54 @@ public static class ChangeScene
         {
             GameManager.instance.sceneLoad.ActivationComplete -= ActivationComplete;
             Scene newScene = SceneManager.GetActiveScene();
+            if (!GateExistsInScene(newScene, gate))
+            {
+                LogWarn($"Doorwarp aborted: gate {gate.Self} was not found in scene {newScene.name}. Warping to respawn to avoid a softlock.");
+                ChangeScene.WarpToRespawn();
+                return;
+            }
             handler.OnSceneChange(newScene, room, gate);
         }
+
+        private static readonly List<GameObject> gateSearchRoots = new(64);
+        private static bool GateExistsInScene(Scene scene, Doors.DoorData gate)
+        {
+            try
+            {
+                gateSearchRoots.Clear();
+                scene.GetRootGameObjects(gateSearchRoots);
+                foreach (GameObject root in gateSearchRoots)
+                {
+                    foreach (TransitionPoint tp in root.GetComponentsInChildren<TransitionPoint>(includeInactive: true))
+                    {
+                        if (tp.gameObject.name == gate.Self.GateName) return true;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                LogError($"Error while checking for gate {gate.Self} in scene {scene.name}:\n{e}");
+                return true; // If unsure, allow the warp rather than blocking it outright.
+            }
+            finally
+            {
+                gateSearchRoots.Clear();
+            }
+            return false;
+        }
+    }
+
+    private static bool CanLoadScene(string sceneName)
+    {
+        static bool IsLoadable(string name)
+        {
+            return Application.CanStreamedLevelBeLoaded(name) || SceneUtility.GetBuildIndexByScenePath(name) >= 0;
+        }
+
+        if (IsLoadable(sceneName)) return true;
+
+        // Many scene addressables are prefixed with "Scenes/".
+        string prefixed = $"Scenes/{sceneName}";
+        return IsLoadable(prefixed);
     }
 }
