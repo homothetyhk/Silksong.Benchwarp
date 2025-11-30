@@ -5,7 +5,7 @@ namespace Benchwarp.Doors.Obstacles;
 /// <summary>
 /// An <see cref="ObstacleInfo"/> of which enabling/disabling a TransitionPoint affects the obstacle.
 /// </summary>
-public record TransitionObstacleInfo(string ObjPath, bool Enabled, ObstacleType Type, ObstacleSeverity Severity) : BehaviourObstacleInfo(ObjPath, nameof(TransitionPoint), Enabled, Type, Severity)
+public record TransitionObstacleInfo(string ObjPath, bool Enabled, ObstacleType Type, ObstacleSeverity Severity) : BehaviourObstacleInfo<TransitionPoint>(ObjPath, Enabled, Type, Severity)
 {
     public override void Open(Scene scene)
     {

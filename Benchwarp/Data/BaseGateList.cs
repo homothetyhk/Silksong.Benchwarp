@@ -135,7 +135,7 @@ public static class BaseGateList
     public static DoorData Arborium_01__left2 { get; } = new(new(Arborium_01, left2), new(Arborium_09, right2))
     {
         Obstacles = new([
-            new BehaviourObstacleInfo("Arborium 09 Break Wall", "PlayerDataTestResponse", false, ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess),
+            new BehaviourObstacleInfo<PlayerDataTestResponse>("Arborium 09 Break Wall", false, ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess),
             new GameObjectActiveObstacleInfo("Arborium 09 Break Wall/Unbroken", false, ObstacleType.OneWayBreakableExit, ObstacleSeverity.LimitsRoomAccess),
             new GameObjectActiveObstacleInfo("Arborium 09 Break Wall/Broken", true, ObstacleType.Other, ObstacleSeverity.AbnormalVisual)
         ])
@@ -490,7 +490,7 @@ public static class BaseGateList
     public static DoorData Bonegrave__door1 { get; } = new(new(Bonegrave, door1), new(Chapel_Wanderer, left1))
     {
         Obstacles = new([
-            new BehaviourObstacleInfo("Chapel Door Control", nameof(PlayMakerFSM), false, ObstacleType.ClosedAfterProgression, ObstacleSeverity.ModifiesSaveData | ObstacleSeverity.LimitsExitAccess),
+            new BehaviourObstacleInfo<PlayMakerFSM>("Chapel Door Control", false, ObstacleType.ClosedAfterProgression, ObstacleSeverity.ModifiesSaveData | ObstacleSeverity.LimitsExitAccess),
             new TransitionObstacleInfo("Chapel Door Control/door1", true, ObstacleType.ClosedAfterProgression, ObstacleSeverity.LimitsExitAccess),
         ])
     };
@@ -611,8 +611,8 @@ public static class BaseGateList
             new(Clover_10_web, left1)
         ]),
         Obstacles = new([
-            new BehaviourObstacleInfo("palace_control", nameof(PlayMakerFSM), false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
-            new BehaviourObstacleInfo("palace_control/palace_top/door1", nameof(DoorTargetCondition), false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
+            new BehaviourObstacleInfo<PlayMakerFSM>("palace_control", false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
+            new BehaviourObstacleInfo<DoorTargetCondition>("palace_control/palace_top/door1", false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess | ObstacleSeverity.AbnormalVisual),
             new GameObjectActiveObstacleInfo("palace_control/palace_missing", false, ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
         ])
     };
@@ -1706,7 +1706,7 @@ public static class BaseGateList
     {
         Obstacles = new([
             new PersistentBoolObstacleInfo("Bot Blocker", ObstacleType.OneWayMechanismEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility),
-            new BehaviourObstacleInfo("top1", nameof(NestedFadeGroup), false, ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
+            new BehaviourObstacleInfo<NestedFadeGroup>("top1", false, ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
         ])
     };
     public static DoorData Under_08__bot1 { get; } = new(new(Under_08, bot1), new(Under_06, top1));
@@ -1731,8 +1731,8 @@ public static class BaseGateList
     {
         Obstacles = new([
             new GameObjectActiveObstacleInfo("Architect Shrine Door/door", false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess),
-            new BehaviourObstacleInfo("Architect Shrine Door", nameof(ItemReceptacle), false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess),
-            new BehaviourObstacleInfo("Architect Shrine Door/door1", nameof(BoxCollider2D), true, ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
+            new BehaviourObstacleInfo<ItemReceptacle>("Architect Shrine Door", false, ObstacleType.OpenAfterProgression, ObstacleSeverity.LimitsExitAccess),
+            new BehaviourObstacleInfo<BoxCollider2D>("Architect Shrine Door/door1", true, ObstacleType.Other, ObstacleSeverity.AbnormalVisual),
         ])
     };
     public static DoorData Under_17__left1 { get; } = new(new(Under_17, left1), new(Under_13, right1));
@@ -1767,7 +1767,7 @@ public static class BaseGateList
         Obstacles = new([
             new PersistentBoolObstacleInfo("Group (1)/Shellwood Twig Wall (1)", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility),
             new TransitionObstacleInfo("Group (1)/right2", true, ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsExitAccess),
-            new BehaviourObstacleInfo("Group (1)/right2", nameof(BoxCollider2D), true, ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsExitAccess)
+            new BehaviourObstacleInfo<BoxCollider2D>("Group (1)/right2", true, ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsExitAccess)
         ])
     };
     public static DoorData Ward_01__left1 { get; } = new(new(Ward_01, left1), new(Song_05, right3));
