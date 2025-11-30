@@ -2,23 +2,6 @@
 
 ## Unresolved Notes
 
-### Wormways
-  - Crawl_02__left1: puts you behind wall if Crawl_03__right1 breakable wall isn't destroyed
-  - Crawl_02__left2: puts you behind simple key door, which can't be interacted with from behind 
-  - Crawl_02__right3: pushed out of bounds if breakable wall isn't destroyed
-  - Crawl_03__right1: pushed out of bounds if breakable wall isn't destroyed
-
-### Memorium
-  - Arborium_01__left2: puts you behind glass if Arborium_09__right2 vines aren't destroyed
-  - Arborium_01__right1: pushed out of bounds if Arborium_08__left1 shortcut isn't opened
-  - Arborium_05__top1: pushed back through transition if coral isn't destroyed
-  - Arborium_06__right1: black screen if coral in the middle of room isn't destroyed
-  - Arborium_07__top1: closed vent door pushes you back through transition
-  - Arborium_08__bot1: slight visual weirdness from being pushed through door
-  - Arborium_08__left1: pushed out of bounds if shortcut isn't opened
-  - Arborium_09__right2: black screen if vines in middle of room aren't destroyed
-  - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
-
 ### Bilewater
   - Bellway_08: game softlocks if door warping to this scene during Act 3 if bell beast fast travel isn't unlocked.
   - Shadow_04 missing a transition into the mist
@@ -59,34 +42,12 @@
     - Abyss_02b__top1: Missing permanent obstacle handling (the PersistentBoolItem uses the ID of an object in Abyss_11).
     - Abyss_03__door1/door2: Still need permanent obstacle handling.
 
-The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
-
 ### Lost_Verdania
-    - Clover_04b__door1: entire door/platform is missing.
+    - Clover_04b__door1: Still needs permanent obstacle handling.
 
-### Underworks
-    - Under_01: map/titled area should be Grand Gate.
-    - Under_01__left2: collider obstacle.
-    - Under_01__left3: collider obstacle.
-    - Under_01b__right1: collider obstacle.
-    - Under_02__left1: collider obstacle.
-    - Under_04__right1: collider obstacle.
-    - Under_04__top1: collider obstacle.
-    - Under_05__left2: collider obstacle.
-    - Under_06__top1: collider obstacle.
-    - Under_07__top1: arrives via right1 instead.
-    - Under_07b: map/titled area should be Choral Chambers.
-    - Under_07b__bot1: collider obstacle.
-    - Under_07c__bot1: arrives via left2 instead.
-    - Under_07c__top1: collider obstacle.
-    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
-    - Under_17__door1: door is locked if player hasn't opened it before.
-    - Under_18__right1: collider obstacle.
-    - Under_18__top2: collider obstacle.
-    - Under_19c__left1: collider obstacle.
-    - Under_20: titled area should be Chapel of the Architect.
-    - Under_27: map/titled area should be Grand Gate.
-    - Under_27__right2: collider obstacle.
+(I got lazy with documenting permanent obstacle handling - basically anything that doesn't implement ISaveableObstacle needs to be reverified).
+
+The below areas have been checked when using the old door warp coroutine - many issues with softlocks/camera are likely already fixed with the new coroutine.
 
 ### Mount_Fay
     - Bellway_Peak__right2: collider obstacle.
@@ -437,10 +398,29 @@ The below areas have been checked when using the new door warp coroutine.
     - Under_20__door_memoryEnd: Gives the player Architect Crest and saves the game. The HUD isn't correct (doesn't show Architect Crest flair), but the crest is active and also appears in inventory. The screen is black if the player already has Architect Crest.
     - Ward_02__door_cinematicEnd: Hornet never gets up
 
+### Doors with dynamic targets
+    - Dust_09__right1: collider obstacle.
+    - Shadow_04__left1: collider obstacle.
+
 ## Resolved Notes
 
 ### Wormways
-    - Crawl_09__left1: black screen if breakable wall in middle of room isn't destroyed
+  - Crawl_02__left1: puts you behind wall if Crawl_03__right1 breakable wall isn't destroyed
+  - Crawl_02__left2: puts you behind simple key door, which can't be interacted with from behind 
+  - Crawl_02__right3: pushed out of bounds if breakable wall isn't destroyed
+  - Crawl_03__right1: pushed out of bounds if breakable wall isn't destroyed
+  - Crawl_09__left1: black screen if breakable wall in middle of room isn't destroyed
+
+### Memorium
+  - Arborium_01__left2: puts you behind glass if Arborium_09__right2 vines aren't destroyed
+  - Arborium_01__right1: pushed out of bounds if Arborium_08__left1 shortcut isn't opened
+  - Arborium_05__top1: pushed back through transition if coral isn't destroyed
+  - Arborium_06__right1: black screen if coral in the middle of room isn't destroyed
+  - Arborium_07__top1: closed vent door pushes you back through transition
+  - Arborium_08__bot1: slight visual weirdness from being pushed through door
+  - Arborium_08__left1: pushed out of bounds if shortcut isn't opened
+  - Arborium_09__right2: black screen if vines in middle of room aren't destroyed
+  - Arborium_11__right1: hornet hidden if breakable wall isn't destroyed
 
 ### Bone_Bottom
     - Aspid_01__bot1: flip gives Aspid_01__top1 but should be *Bonetown__top3*. 
@@ -467,3 +447,30 @@ The below areas have been checked when using the new door warp coroutine.
     - Room_Diving_Bell_Abyss__left1: collider obstacle.
     - Room_Diving_Bell_Abyss__left1: missing Abyss_03__door1 as flip target.
     - Room_Diving_Bell_Abyss_Fixed__left1: missing Abyss_03__door2 as flip target.
+
+### Lost_Verdania
+    - Clover_04b__door1: entire door/platform is missing.
+
+### Underworks
+    - Under_01: map/titled area should be Grand Gate.
+    - Under_01__left2: collider obstacle.
+    - Under_01__left3: collider obstacle.
+    - Under_01b__right1: collider obstacle.
+    - Under_02__left1: collider obstacle.
+    - Under_04__right1: collider obstacle.
+    - Under_04__top1: collider obstacle.
+    - Under_05__left2: collider obstacle.
+    - Under_06__top1: collider obstacle.
+    - Under_07__top1: arrives via right1 instead.
+    - Under_07b: map/titled area should be Choral Chambers.
+    - Under_07b__bot1: collider obstacle.
+    - Under_07c__bot1: arrives via left2 instead.
+    - Under_07c__top1: collider obstacle.
+    - Under_08__bot1: visual obstacle (hatch isn't open on entering scene).
+    - Under_17__door1: door is locked if player hasn't opened it before.
+    - Under_18__right1: collider obstacle.
+    - Under_18__top2: collider obstacle.
+    - Under_19c__left1: collider obstacle.
+    - Under_20: titled area should be Chapel of the Architect.
+    - Under_27: map/titled area should be Grand Gate.
+    - Under_27__right2: collider obstacle.

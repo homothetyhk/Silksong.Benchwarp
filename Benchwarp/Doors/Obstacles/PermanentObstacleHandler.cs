@@ -20,13 +20,6 @@ public class PermanentObstacleHandler : ObstacleHandler
 
     public static bool HandleObstacle(RoomData room, DoorData gate, ObstacleInfo o)
     {
-        switch (o)
-        {
-            case ISaveableObstacle iso:
-                iso.Save(room, gate);
-                return true;
-            default:
-                return false;
-        }
+        return o.TrySave(room, gate);
     }
 }
