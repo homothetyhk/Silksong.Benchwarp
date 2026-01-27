@@ -15,7 +15,13 @@ Benchwarp supports hotkeys which can be used in place of menu buttons while the 
 - **LB**: **L**ast **B**ench (equivalent to just clicking Warp).
 - **SB**: **S**tart **B**ench (equivalent to clicking Set Start, then Warp).
 - **DW**: **D**oor **W**arp (equivalent to selecting Door Warp as the menu mode). If used while Door Warp is enabled, switches the mode to Standard Benchwarp.
+- **WD**: Warp to the currently selected door.
+- **DF**: Flip between the linked door pair.
+- **DL**: Select the door you most recently entered.
+- **DA/DR/DD**: Toggle the Area, Room, or Door dropdowns while in Door Warp mode.
 - **NP**: **N**ext **P**age (equivalent to clicking the pages button).
+
+When the Door Warp menu mode is active, letter+number combinations operate the door selector dropdowns instead of bench lists. The letter picks a column (A is the leftmost column on the dropdown grid) and the number picks the row, letting you navigate areas, rooms, and doors without the mouse.
 
 Tip: by default, some letters such as **A** are bound to actions that can cancel the menu. To enter the hotkeys including these letters, you can move the mouse to deselect the Resume button. Alternatively, you can input the hotkey by pressing the buttons nearly simultaneously.
 

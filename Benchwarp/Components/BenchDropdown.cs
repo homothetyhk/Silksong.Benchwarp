@@ -14,10 +14,8 @@ public class BenchDropdown : MonoBehaviour
     public void Init(GameObject canvas, string name, IReadOnlyList<BenchData> benches)
     {
         dropdownName = name;
-
-        int btnOffsetX = GUIController.btnOffsetX;
-        int btnOffsetY = GUIController.baseDropdownYOffset;
-        int btnHeight = GUIController.btnHeight;
+        int btnOffsetY = GUIController.BaseDropdownYOffset;
+        int btnHeight = GUIController.BtnHeight;
 
         for (int i = 0; i < benches.Count; i++)
         {

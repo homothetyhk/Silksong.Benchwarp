@@ -5,8 +5,8 @@ namespace Benchwarp.Components;
 
 public class DropdownRadioSwitch : MonoBehaviour
 {
-    private List<(GameObject go, Text text)> buttons = [];
-    private List<string> options = [];
+    private readonly List<(GameObject go, Text text)> buttons = [];
+    private readonly List<string> options = [];
     private bool open = false;
     private int columns = 1;
     private int maxRows = 6;
@@ -21,10 +21,9 @@ public class DropdownRadioSwitch : MonoBehaviour
         this.columns = columns;
         this.maxRows = maxRows;
 
-        int btnOffsetX = GUIController.btnOffsetX;
-        int btnOffsetY = GUIController.baseDropdownYOffset;
-        int btnHeight = GUIController.btnHeight;
-        int btnWidth = GUIController.btnWidth;
+        int btnOffsetY = GUIController.BaseDropdownYOffset;
+        int btnHeight = GUIController.BtnHeight;
+        int btnWidth = GUIController.BtnWidth;
 
         int HorizontalOffset(int column)
         {
@@ -100,7 +99,8 @@ public class DropdownRadioSwitch : MonoBehaviour
             foreach (string str in strs)
             {
                 options.Add(str);
-                buttons[i++].text.text = str;
+                buttons[i].text.text = $"{HotkeyLabel(i)}: {str}";
+                i++;
             }
         }
         catch (Exception e)
@@ -110,6 +110,26 @@ public class DropdownRadioSwitch : MonoBehaviour
         }
         
         if (autoOpen) Show();
+    }
+
+    private string HotkeyLabel(int index)
+    {
+        int column = index % columns;
+        int row = index / columns;
+        char letter = (char)('A' + column);
+        return $"{letter}{row}";
+    }
+
+    public bool TrySelectByGridPosition(int columnIndex, int rowIndex)
+    {
+        if (columnIndex < 0 || columnIndex >= columns) return false;
+        if (rowIndex < 0 || rowIndex >= maxRows) return false;
+        int index = rowIndex * columns + columnIndex;
+        if (index < 0 || index >= options.Count) return false;
+
+        if (!open) Show();
+        Select(index);
+        return true;
     }
 
     public void HideAll()

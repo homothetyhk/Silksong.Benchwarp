@@ -10,14 +10,20 @@ public static class HotkeyActions
     public const string LastBench = "LB";
     public const string StartBench = "SB";
     public const string DoorWarp = "DW";
+    public const string DoorWarpGo = "WD";
+    public const string DoorWarpFlip = "DF";
+    public const string DoorWarpLast = "DL";
+    public const string DoorAreaDropdown = "DA";
+    public const string DoorRoomDropdown = "DR";
+    public const string DoorDoorDropdown = "DD";
     public const string NextPage = "NP";
 
 
     /// <summary>
     /// The current list of letter hotkey codes, accounting for hotkey overrides.
     /// </summary>
-    public static ReadOnlyDictionary<string, Action> CurrentHotkeys { get; } = new(_hotkeys = []);
-    private static readonly Dictionary<string, Action> _hotkeys;
+    public static ReadOnlyDictionary<string, Action> CurrentHotkeys { get; }
+    private static readonly Dictionary<string, Action> _hotkeys = [];
 
     public static ReadOnlyDictionary<string, Action> BaseHotkeys { get; } = new(new Dictionary<string, Action>
     {
@@ -30,12 +36,19 @@ public static class HotkeyActions
             if (BenchwarpPlugin.ConfigSettings.MenuMode != Settings.MenuMode.DoorWarp) BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.DoorWarp;
             else BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.StandardBenchwarp;
         },
+        [DoorWarpGo] = DoorHotkeyActions.WarpSelectedDoor,
+        [DoorWarpFlip] = DoorHotkeyActions.FlipSelectedDoor,
+        [DoorWarpLast] = DoorHotkeyActions.SelectLastDoor,
+        [DoorAreaDropdown] = DoorHotkeyActions.ToggleAreaDropdown,
+        [DoorRoomDropdown] = DoorHotkeyActions.ToggleRoomDropdown,
+        [DoorDoorDropdown] = DoorHotkeyActions.ToggleDoorDropdown,
         //["DB"], // deploy bench
         [NextPage] = () => GUIController.Instance.NextPage(),
     });
 
     static HotkeyActions()
     {
+        CurrentHotkeys = new(_hotkeys);
         RefreshHotkeys();
     }
 
@@ -64,6 +77,11 @@ public static class HotkeyActions
 
     public static bool TryDoHotkeyAction(int groupIndex, int benchIndex)
     {
+        if (BenchwarpPlugin.ConfigSettings.MenuMode == Settings.MenuMode.DoorWarp && DoorHotkeyActions.TryHandleDoorGridHotkey(groupIndex, benchIndex))
+        {
+            return true;
+        }
+
         if (BenchList.BenchGroups.Count > groupIndex && BenchList.BenchGroups[groupIndex].Benches.Count > benchIndex)
         {
             BenchList.BenchGroups[groupIndex].Benches[benchIndex].MenuSetBench();
