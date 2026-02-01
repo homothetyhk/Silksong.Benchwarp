@@ -36,6 +36,7 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
             HarmonyLib.Harmony harmony = new(HarmonyID);
             harmony.PatchAll(GetType().Assembly);
             Patches.ShakraPDHook.Hook();
+            Patches.DataManagerFix.Hook();
             Components.GUIController.Setup();
         }
         catch (Exception e)
@@ -65,6 +66,7 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
         {
             HarmonyLib.Harmony.UnpatchID(HarmonyID);
             Patches.ShakraPDHook.Unhook();
+            Patches.DataManagerFix.Unhook();
             Components.GUIController.Unload();
         }
         catch (Exception e)

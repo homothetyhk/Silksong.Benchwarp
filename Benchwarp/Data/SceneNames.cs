@@ -340,6 +340,7 @@ public static class SceneNames
     public const string Memory_Silk_Heart_LaceTower = "Memory_Silk_Heart_LaceTower";
     public const string Memory_Silk_Heart_WardBoss = "Memory_Silk_Heart_WardBoss";
     public const string Memory_Red = "Memory_Red";
+    public const string Menu_Title = "Menu_Title";
     public const string Mosstown_01 = "Mosstown_01";
     public const string Mosstown_02 = "Mosstown_02";
     public const string Mosstown_02c = "Mosstown_02c";
