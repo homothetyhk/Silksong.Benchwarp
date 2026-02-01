@@ -17,8 +17,8 @@ namespace Benchwarp.Patches
                 && PlayerDataAccess.CaravanTroupeLocation != GlobalEnums.CaravanTroupeLocations.Aqueduct)
             {
                 LogWarn("Unable to safely enter Aqueduct_05: the bench will not be loaded since the caravan is away. Redirecting to Tut_01...");
-                scene = "Tut_01";
-                marker = "Death Respawn Marker Init";
+                scene = SceneNames.Tut_01;
+                marker = RespawnMarkerNames.Death_Respawn_Marker_Init;
                 return false;
             }
 
@@ -44,7 +44,7 @@ namespace Benchwarp.Patches
         [HarmonyPostfix]
         private static void RecordGetRespawnInfoFallthrough(GameManager __instance, ref string scene, ref string marker)
         {
-            if (scene == "Tut_01" && __instance.playerData.respawnScene != "Tut_01")
+            if (scene == SceneNames.Tut_01 && __instance.playerData.respawnScene != SceneNames.Tut_01)
             {
                 BenchwarpPlugin.Instance.Logger.LogWarning($"Unrecognized respawn at " +
                     $"{__instance.playerData.respawnMarkerName} in {__instance.playerData.respawnScene}, " +
