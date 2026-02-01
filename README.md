@@ -33,6 +33,10 @@ Benchwarp supports hotkeys which can be used in place of menu buttons while the 
 
 Tip: by default, some letters such as **A** are bound to actions that can cancel the menu. To enter the hotkeys including these letters, you can move the mouse to deselect the Resume button. Alternatively, you can input the hotkey by pressing the buttons nearly simultaneously.
 
+## Compatibility
+- If DebugMod's *NoClip* mode is enabled, Warping may cause Hornet to become immobile. This can be fixed by toggling *NoClip* again.
+- If a save file ends up nonloadable (e.g. respawn is set to a nonexistent respawn point), activate RecoveryMode in the Benchwarp Config (or Mod Menu). While active, any existing save file loaded from the main menu will load into Tut_01 (Moss Grotto, the first room in the game). This allows you to save your game at a safe bench, after which you should deactivate RecoveryMode.
+
 ## Credits
 
 - Huge special thanks to **Phenomenol** for leading the effort to clean transition data and handle obstacles for Doorwarp mode.

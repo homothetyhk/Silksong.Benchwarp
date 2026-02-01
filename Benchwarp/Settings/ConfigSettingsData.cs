@@ -20,7 +20,5 @@ public class ConfigSettingsData
 
     //public bool NoPreload = false;
     public bool EnableHotkeys = false;
-    public bool OverrideLocalization = false;
-
-    public Dictionary<string, string> HotkeyOverrides = [];
+    public bool RecoveryMode = false;
 }

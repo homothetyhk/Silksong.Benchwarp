@@ -64,17 +64,16 @@ public class ConfigSettings(ConfigSettingsData data)
     }
     internal static event Action? OnEnableHotkeysChanged;
 
-    public bool OverrideLocalization
+    public bool RecoveryMode
     {
-        get => data.OverrideLocalization;
+        get => data.RecoveryMode;
         set
         {
-            data.OverrideLocalization = value;
-            Invoke(OnOverrideLocalizationChanged);
+            data.RecoveryMode = value;
+            Invoke(OnRecoveryModeChanged);
         }
     }
-    internal static event Action? OnOverrideLocalizationChanged;
-
+    internal static event Action? OnRecoveryModeChanged;
     
 
 

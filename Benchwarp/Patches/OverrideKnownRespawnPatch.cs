@@ -1,14 +1,27 @@
 ﻿using Benchwarp.Benches;
+using Benchwarp.Data;
 using HarmonyLib;
+using PrepatcherPlugin;
 
 namespace Benchwarp.Patches
 {
     [HarmonyPatch(typeof(GameManager), nameof(GameManager.GetRespawnInfo))]
     internal static class OverrideKnownRespawnPatch
     {
+        internal static bool OverrideFleatopiaBenchWhenCaravanAway = true;
+
         [HarmonyPrefix]
         private static bool OverrideGetRespawnInfo(ref string scene, ref string marker)
         {
+            if (OverrideFleatopiaBenchWhenCaravanAway && ReferenceEquals(BenchList.CurrentBenchRespawn, BaseBenchList.Fleatopia)
+                && PlayerDataAccess.CaravanTroupeLocation != GlobalEnums.CaravanTroupeLocations.Aqueduct)
+            {
+                LogWarn("Unable to safely enter Aqueduct_05: the bench will not be loaded since the caravan is away. Redirecting to Tut_01...");
+                scene = "Tut_01";
+                marker = "Death Respawn Marker Init";
+                return false;
+            }
+
             if (BenchList.CurrentBenchRespawn is BenchData bd)
             {
                 RespawnInfo benchRespawn = bd.RespawnInfo.GetRespawnInfo();
@@ -24,6 +37,7 @@ namespace Benchwarp.Patches
                 marker = startRespawn.RespawnMarkerName;
                 return false;
             }
+
             return true;
         }
 

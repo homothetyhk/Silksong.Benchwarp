@@ -73,6 +73,17 @@ namespace Benchwarp
                 ConfigSettings.EnableHotkeys = (bool)args.ChangedSetting.BoxedValue;
             };
             ConfigSettings.EnableHotkeys = cfgEnableHotkeys.Value;
+
+            ConfigEntry<bool> cfgRecoveryMode = Config.Bind(
+                configDefinition: new ConfigDefinition(section: "Menu", key: "RecoveryMode"),
+                defaultValue: false,
+                configDescription: new ConfigDescription(description: "Use if you get stuck. While active, any file loaded will spawn into the starting area in Moss Grotto."));
+            cfgRecoveryMode.SettingChanged += (o, e) =>
+            {
+                SettingChangedEventArgs args = (SettingChangedEventArgs)e;
+                ConfigSettings.RecoveryMode = (bool)args.ChangedSetting.BoxedValue;
+            };
+            ConfigSettings.RecoveryMode = cfgRecoveryMode.Value;
         }
     }
 }
