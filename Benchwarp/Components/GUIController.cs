@@ -13,6 +13,7 @@ public class GUIController : MonoBehaviour
     private GameObject menuCanvasParent = null!;
     private GameObject benchMenuCanvas = null!;
     private GameObject doorMenuCanvas = null!;
+    private GameObject warpOnlyMenuCanvas = null!;
     private GameObject sceneNameCanvas = null!;
 
     private static GUIController _instance = null!;
@@ -129,15 +130,29 @@ public class GUIController : MonoBehaviour
 
     public void SelectMenu(Settings.MenuMode mode)
     {
-        if (mode == Settings.MenuMode.DoorWarp)
+        switch (mode)
         {
+            case Settings.MenuMode.DoorWarp:
             benchMenuCanvas.SetActive(false);
+                warpOnlyMenuCanvas.SetActive(false);
             doorMenuCanvas.SetActive(true);
-        }
-        else
-        {
+                //deployMenuCanvas.SetActive(false);
+                break;
+            case Settings.MenuMode.WarpOnly:
+                benchMenuCanvas.SetActive(false);
+                warpOnlyMenuCanvas.SetActive(true);
+                doorMenuCanvas.SetActive(false);
+                //deployMenuCanvas.SetActive(false);
+                break;
+            case Settings.MenuMode.StandardBenchwarp:
+            case Settings.MenuMode.UnlockAll:
             benchMenuCanvas.SetActive(true);
+                warpOnlyMenuCanvas.SetActive(true);
             doorMenuCanvas.SetActive(false);
+                //deployMenuCanvas.SetActive(BenchwarpPlugin.ConfigSettings.EnableDeploy);
+                break;
+            default:
+                throw new NotImplementedException(mode.ToString());
         }
     }
 
@@ -208,6 +223,7 @@ public class GUIController : MonoBehaviour
             LoadResources();
 
             menuCanvasParent = new("BenchwarpGUI");
+            BuildWarpOnlyMenu();
             BuildBenchMenu();
             BuildDoorMenu();
             BuildSceneNameCanvas();
@@ -249,23 +265,16 @@ public class GUIController : MonoBehaviour
         return canvas;
     }
 
-    private void BuildBenchMenu()
+    private void BuildWarpOnlyMenu()
     {
-        benchMenuCanvas = BuildCanvas("Bench Menu Canvas");
+        warpOnlyMenuCanvas = BuildCanvas("Warp Only Canvas");
 
         ResetBuildParameters();
 
-        warpButton = BuildButton(benchMenuCanvas, "Warp", "BUTTON_LABEL(Warp)", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("LB")); //Warp Button
+        warpButton = BuildButton(warpOnlyMenuCanvas, "Warp", "BUTTON_LABEL(Warp)", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("LB")); //Warp Button
         warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
-        setStartButton = BuildButton(benchMenuCanvas, "Set Start", "BUTTON_LABEL(Set Start)", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("SB")); //Set Start
-        setStartButton.GetComponent<Button>().onClick.AddListener(BenchListModifiers.MenuSetToStart);
-        setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
-
-        btnOffsetX += btnWidth + 20;
-
-
-        cfgmenuBtn = BuildButton(benchMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
+        cfgmenuBtn = BuildButton(warpOnlyMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
         try
         {
             cfgmenuBtn.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton.OnSubmit!.Invoke());
@@ -274,7 +283,19 @@ public class GUIController : MonoBehaviour
         {
             LogError(e);
         }
+    }
 
+    private void BuildBenchMenu()
+    {
+        benchMenuCanvas = BuildCanvas("Bench Menu Canvas");
+
+        ResetBuildParameters();
+
+        setStartButton = BuildButton(benchMenuCanvas, "Set Start", "BUTTON_LABEL(Set Start)", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("SB")); //Set Start
+        setStartButton.GetComponent<Button>().onClick.AddListener(BenchListModifiers.MenuSetToStart);
+        setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
+
+        btnOffsetX += btnWidth + 20;
 
         nextPageBtn = BuildButton(benchMenuCanvas, "Page ", "BUTTON_LABEL(Page)", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.SharedSettings.GetHotkey("NP"));
         nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
