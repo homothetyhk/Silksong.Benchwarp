@@ -5,13 +5,22 @@ namespace Benchwarp
 {
     public partial class BenchwarpPlugin : IModMenuCustomElement
     {
-        internal TextButton? ModMenuEntryButton { get; private set; }
+        internal TextButton ModMenuEntryButton
+        {
+            get
+            {
+                if (field is null || !field.MenuButton)
+                {
+                    new ConfigEntryFactory().GenerateEntryButton("Benchwarp", this, out SelectableElement? sel);
+                    field = (TextButton)sel!;
+                }
+                return field;
+            }
+        }
 
         SelectableElement IModMenuCustomElement.BuildCustomElement()
         {
-            new ConfigEntryFactory().GenerateEntryButton("Benchwarp", this, out SelectableElement? sel);
-            ModMenuEntryButton = (TextButton?)sel;
-            return sel!;
+            return ModMenuEntryButton;
         }
 
         string IModMenuInterface.ModMenuName()

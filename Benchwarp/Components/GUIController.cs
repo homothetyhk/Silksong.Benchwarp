@@ -268,7 +268,7 @@ public class GUIController : MonoBehaviour
         cfgmenuBtn = BuildButton(benchMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
         try
         {
-            cfgmenuBtn.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton?.OnSubmit?.Invoke());
+            cfgmenuBtn.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton.OnSubmit!.Invoke());
         }
         catch (Exception e)
         {
@@ -322,7 +322,7 @@ public class GUIController : MonoBehaviour
         doorConfigButton = BuildButton(doorMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
         try
         {
-            doorConfigButton.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton?.OnSubmit?.Invoke());
+            doorConfigButton.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton.OnSubmit!.Invoke());
         }
         catch (Exception e)
         {
