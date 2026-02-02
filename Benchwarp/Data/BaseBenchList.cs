@@ -18,7 +18,7 @@ public static class BaseBenchList
     public static BenchData SnailShamans { get; } = new(BenchName: "Snail Shamans", MenuArea: "Moss Grotto",
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Tut_04, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.BONECHURCH));
-    public static BenchData TollBenchMarrow { get; } = new(BenchName: "Toll Bench", MenuArea: "The Marrow",
+    public static BenchData TollMarrow { get; } = new(BenchName: "Toll", MenuArea: "The Marrow",
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Bone_01c, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.PATH_OF_BONE));
     public static BenchData MosshomeGate { get; } = new(BenchName: "Mosshome Gate", MenuArea: "The Marrow",
@@ -37,7 +37,7 @@ public static class BaseBenchList
     public static BenchData FleaCaravanMarrow { get; } = new(BenchName: "Flea Caravan", MenuArea: "The Marrow",
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Bone_10, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.PATH_OF_BONE));
-    public static BenchData TrapBenchMarch { get; } = new(BenchName: "Trap Bench", MenuArea: "Hunter's March",
+    public static BenchData TrapMarch { get; } = new(BenchName: "Trap", MenuArea: "Hunter's March",
         RespawnInfo: new PDConditionalRespawnInfo(
             PlayerDataBoolName: nameof(PlayerData.antBenchTrapDefused),
             TrueRespawn: new RespawnInfo(SceneName: SceneNames.Ant_17, RespawnMarkerName: RespawnMarkerNames.RestBench,
@@ -45,7 +45,7 @@ public static class BaseBenchList
             FalseRespawn: new RespawnInfo(SceneName: SceneNames.Ant_17, RespawnMarkerName: RespawnMarkerNames.RestBench,
                 RespawnType: RespawnTypes.Floor, MapZone: MapZone.HUNTERS_NEST)
             ));
-    public static BenchData TollBenchDocks { get; } = new(BenchName: "Toll Bench", MenuArea: "Deep Docks",
+    public static BenchData TollDocks { get; } = new(BenchName: "Toll", MenuArea: "Deep Docks",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Dock_01, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.DOCKS));
     public static BenchData Forge { get; } = new(BenchName: "Forge", MenuArea: "Deep Docks",
@@ -120,7 +120,7 @@ public static class BaseBenchList
     public static BenchData ChapelExit { get; } = new(BenchName: "Chapel Exit", MenuArea: "Shellwood",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Mosstown_03, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.SHELLWOOD_THICKET));
-    public static BenchData TollBenchSteps { get; } = new(BenchName: "Toll Bench", MenuArea: "Blasted Steps",
+    public static BenchData TollSteps { get; } = new(BenchName: "Toll", MenuArea: "Blasted Steps",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Coral_02, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.JUDGE_STEPS));
     public static BenchData BellwaySteps { get; } = new(BenchName: "Bellway", MenuArea: "Blasted Steps",
@@ -229,7 +229,7 @@ public static class BaseBenchList
     public static BenchData ShakraMountFay { get; } = new(BenchName: "Shakra", MenuArea: "Mount Fay",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Peak_02, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.PEAK));
-    public static BenchData TollBenchMountFay { get; } = new(BenchName: "Toll Bench", MenuArea: "Mount Fay",
+    public static BenchData TollMountFay { get; } = new(BenchName: "Toll", MenuArea: "Mount Fay",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Bellway_Peak, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.PEAK));
     public static BenchData FinalClimbMountFay { get; } = new(BenchName: "Final Climb", MenuArea: "Mount Fay",
@@ -253,7 +253,7 @@ public static class BaseBenchList
     public static BenchData VoidTendrils { get; } = new(BenchName: "Void Tendrils", MenuArea: "Abyss",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Abyss_12, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.ABYSS));
-    public static BenchData UpperAbyss { get; } = new(BenchName: "Upper Abyss", MenuArea: "Abyss",
+    public static BenchData EscapeAbyss { get; } = new(BenchName: "Escape", MenuArea: "Abyss",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Abyss_09, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.ABYSS));
     public static BenchData WeavenestAtla { get; } = new(BenchName: "Atla", MenuArea: "Weavenest",
@@ -268,13 +268,13 @@ public static class BaseBenchList
         BoneBottom,
         MossDruid,
         SnailShamans,
-        TollBenchMarrow,
+        TollMarrow,
         MosshomeGate,
         BellshrineMarrow,
         ShootingGallery,
         FleaCaravanMarrow,
-        TrapBenchMarch,
-        TollBenchDocks,
+        TrapMarch,
+        TollDocks,
         Forge,
         BellshrineDocks,
         Sauna,
@@ -299,7 +299,7 @@ public static class BaseBenchList
         BellshrineShellwood,
         OvergrownWest,
         ChapelExit,
-        TollBenchSteps,
+        TollSteps,
         BellwaySteps,
         FleaCaravanSteps,
         Pinstress,
@@ -334,7 +334,7 @@ public static class BaseBenchList
         WindowSlab,
         HereticKeyArena,
         ShakraMountFay,
-        TollBenchMountFay,
+        TollMountFay,
         FinalClimbMountFay,
         WorkbenchMountFay,
         SandsOfKarak,
@@ -342,7 +342,7 @@ public static class BaseBenchList
         Terminus,
         SurfaceAscent,
         VoidTendrils,
-        UpperAbyss,
+        EscapeAbyss,
         WeavenestAtla,
         WeavenestCindril,
         ]);
