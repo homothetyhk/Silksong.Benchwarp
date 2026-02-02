@@ -53,6 +53,17 @@ public class ConfigSettings(ConfigSettingsData data)
     }
     internal static event Action? OnAlwaysToggleAllChanged;
     
+    public bool EnableDeploy
+    {
+        get => data.EnableDeploy;
+        set
+        {
+            data.EnableDeploy = value;
+            Invoke(OnEnableDeployChanged);
+        }
+    }
+    internal static event Action? OnEnableDeployChanged;
+
     public bool EnableHotkeys
     {
         get => data.EnableHotkeys;

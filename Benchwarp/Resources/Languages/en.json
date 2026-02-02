@@ -9,6 +9,9 @@
   "BUTTON_LABEL(Rooms)": "Rooms",
   "BUTTON_LABEL(Doors)": "Doors",
   "BUTTON_LABEL(Deploy)": "Deploy",
+  "BUTTON_LABEL(Set)": "Set",
+  "BUTTON_LABEL(Destroy)": "Destroy",
+  "BUTTON_LABEL(Style)": "Style",
 
   "BENCH_AREA_LABEL(Moss Grotto)": "Moss Grotto",
   "BENCH_AREA_LABEL(The Marrow)": "The Marrow",
@@ -148,5 +151,8 @@
   "RADIO_SWITCH_LABEL(Whispering Vaults)": "Whispering Vaults",
   "RADIO_SWITCH_LABEL(Whiteward)": "Whiteward",
   "RADIO_SWITCH_LABEL(Wisp Thicket)": "Wisp Thicket",
-  "RADIO_SWITCH_LABEL(Wormways)": "Wormways"
+  "RADIO_SWITCH_LABEL(Wormways)": "Wormways",
+
+  "RADIO_SWITCH_LABEL(Marker)": "Floor",
+  "RADIO_SWITCH_LABEL(Bone)": "Bone Bench"
 }

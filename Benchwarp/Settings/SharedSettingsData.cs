@@ -1,4 +1,5 @@
-﻿using Benchwarp.Hotkeys;
+﻿using Benchwarp.Deploy;
+using Benchwarp.Hotkeys;
 
 namespace Benchwarp.Settings;
 
@@ -18,5 +19,6 @@ public class SharedSettingsData
         };
     }
 
+    public DeployStyles DeployStyle = DeployStyles.Bone;
     public Dictionary<string, string> HotkeyOverrides = [];
 }

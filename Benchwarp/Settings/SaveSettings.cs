@@ -8,8 +8,8 @@ public class SaveSettings(SaveSettingsData data)
 {
     private SaveSettingsData data = data;
 
-    public bool IsVisited(BenchKey key) => data.visitedBenches.Contains(key);
-    public bool IsLocked(BenchKey key) => data.lockedBenches.Contains(key);
+    public bool IsVisited(BenchKey key) => data.VisitedBenches.Contains(key);
+    public bool IsLocked(BenchKey key) => data.LockedBenches.Contains(key);
 
     public void SetVisited(BenchKey key, bool value)
     {
@@ -17,7 +17,7 @@ public class SaveSettings(SaveSettingsData data)
 
         if (value)
         {
-            if (data.visitedBenches.Add(key))
+            if (data.VisitedBenches.Add(key))
             {
                 Invoke(OnSetVisitedGlobal, key, value);
                 onSetVisitedLocalOwner.Invoke(key, value);
@@ -25,7 +25,7 @@ public class SaveSettings(SaveSettingsData data)
         }
         else
         {
-            if (data.visitedBenches.Remove(key))
+            if (data.VisitedBenches.Remove(key))
             {
                 Invoke(OnSetVisitedGlobal, key, value);
                 onSetVisitedLocalOwner.Invoke(key, value);
@@ -40,7 +40,7 @@ public class SaveSettings(SaveSettingsData data)
     {
         if (value)
         {
-            if (data.lockedBenches.Add(key))
+            if (data.LockedBenches.Add(key))
             {
                 Invoke(OnSetLocked, key, value);
                 onSetLockedLocalOwner.Invoke(key, value);
@@ -48,7 +48,7 @@ public class SaveSettings(SaveSettingsData data)
         }
         else
         {
-            if (data.lockedBenches.Remove(key))
+            if (data.LockedBenches.Remove(key))
             {
                 Invoke(OnSetLocked, key, value);
                 onSetLockedLocalOwner.Invoke(key, value);
@@ -59,7 +59,30 @@ public class SaveSettings(SaveSettingsData data)
     internal static KeyedEvent<BenchKey, Action<bool>> OnSetLockedLocal { get; } = new(out onSetLockedLocalOwner);
     private static readonly KeyedEvent<BenchKey, Action<bool>>.IKeyedEventOwner onSetLockedLocalOwner;
 
+    public Deploy.DeployInfo? DeployInfo
+    {
+        get => data.DeployInfo;
+        set
+        {
+            data.DeployInfo = value;
+            Invoke(OnDeployInfoChanged);
+        }
+    }
+    internal static event Action? OnDeployInfoChanged;
+
     internal static event Action? OnNewSettingsLoaded;
+
+    private static void Invoke(Action? a, [CallerMemberName] string? caller = "")
+    {
+        try
+        {
+            a?.Invoke();
+        }
+        catch (Exception e)
+        {
+            LogError($"Error in update event for {caller}:\n{e}");
+        }
+    }
 
     private static void Invoke<T1, T2>(Action<T1,T2>? a, T1 arg1, T2 arg2, [CallerMemberName] string? caller = "")
     {

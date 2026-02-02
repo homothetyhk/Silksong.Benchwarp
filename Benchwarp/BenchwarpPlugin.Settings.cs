@@ -10,10 +10,10 @@ namespace Benchwarp
         public static SaveSettings SaveSettings { get; } = new(new());
         public static SharedSettings SharedSettings { get; } = new(new());
 
-        SaveSettingsData? ISaveDataMod<SaveSettingsData>.SaveData 
-        { 
+        SaveSettingsData? ISaveDataMod<SaveSettingsData>.SaveData
+        {
             get => SaveSettings.GetSerializationData(); 
-            set => SaveSettings.Load(value ?? new()); 
+            set => SaveSettings.Load(value ?? new());
         }
 
         SharedSettingsData? IGlobalDataMod<SharedSettingsData>.GlobalData 
@@ -41,6 +41,17 @@ namespace Benchwarp
             };
             ConfigSettings.MenuMode = cfgMenuMode.Value;
 
+            ConfigEntry<bool> cfgShowScene = Config.Bind(
+                    configDefinition: new ConfigDefinition(section: "Menu", key: "ShowScene"),
+                    defaultValue: false,
+                    configDescription: new ConfigDescription(description: "Displays a panel in the bottom-left with the active scene name."));
+            cfgShowScene.SettingChanged += (o, e) =>
+            {
+                SettingChangedEventArgs args = (SettingChangedEventArgs)e;
+                ConfigSettings.ShowScene = (bool)args.ChangedSetting.BoxedValue;
+            };
+            ConfigSettings.ShowScene = cfgShowScene.Value;
+
             ConfigEntry<bool> cfgAlwaysToggleAll = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "AlwaysToggleAll"),
                     defaultValue: false,
@@ -52,16 +63,16 @@ namespace Benchwarp
             };
             ConfigSettings.AlwaysToggleAll = cfgAlwaysToggleAll.Value;
 
-            ConfigEntry<bool> cfgShowScene = Config.Bind(
-                    configDefinition: new ConfigDefinition(section: "Menu", key: "ShowScene"),
-                    defaultValue: false,
-                    configDescription: new ConfigDescription(description: "Displays a panel in the bottom-left with the active scene name."));
-            cfgShowScene.SettingChanged += (o, e) =>
+            ConfigEntry<bool> cfgEnableDeploy = Config.Bind(
+                    configDefinition: new ConfigDefinition(section: "Menu", key: "EnableDeploy"),
+                    defaultValue: true,
+                    configDescription: new ConfigDescription(description: "Enables placing a bench at the current location through the menu."));
+            cfgEnableDeploy.SettingChanged += (o, e) =>
             {
                 SettingChangedEventArgs args = (SettingChangedEventArgs)e;
-                ConfigSettings.ShowScene = (bool)args.ChangedSetting.BoxedValue;
+                ConfigSettings.EnableDeploy = (bool)args.ChangedSetting.BoxedValue;
             };
-            ConfigSettings.ShowScene = cfgShowScene.Value;
+            ConfigSettings.EnableDeploy = cfgEnableDeploy.Value;
 
             ConfigEntry<bool> cfgEnableHotkeys = Config.Bind(
                     configDefinition: new ConfigDefinition(section: "Menu", key: "EnableHotkeys"),

@@ -10,8 +10,8 @@ public class DropdownRadioSwitch : MonoBehaviour
     private bool open = false;
     private int columns = 1;
     private int maxRows = 6;
-    public Action<string>? onSelectionChanged;
-    public Action? onSelectionCanceled;
+    public event Action<string>? onSelectionChanged;
+    public event Action? onSelectionCanceled;
     public int SelectedIndex { get; private set; }
     public bool Open => open;
     public int Capacity => maxRows * columns;
@@ -21,8 +21,6 @@ public class DropdownRadioSwitch : MonoBehaviour
         this.columns = columns;
         this.maxRows = maxRows;
 
-        int btnOffsetX = GUIController.btnOffsetX;
-        int btnOffsetY = GUIController.baseDropdownYOffset;
         int btnHeight = GUIController.btnHeight;
         int btnWidth = GUIController.btnWidth;
 
@@ -41,7 +39,7 @@ public class DropdownRadioSwitch : MonoBehaviour
 
         int VerticalOffset(int row)
         {
-            return -(btnHeight + btnOffsetY + (btnOffsetY + btnHeight) * row);
+            return -((10 + btnHeight) * (row + 1));
         }
 
         for (int r = 0; r < maxRows; r++)

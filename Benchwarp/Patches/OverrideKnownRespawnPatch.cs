@@ -22,6 +22,13 @@ namespace Benchwarp.Patches
                 return false;
             }
 
+            if (BenchwarpPlugin.SaveSettings.DeployInfo is Deploy.DeployInfo deploy && deploy.IsCurrentRespawn())
+            {
+                scene = deploy.RespawnInfo.SceneName;
+                marker = deploy.RespawnInfo.RespawnMarkerName;
+                return false;
+            }
+
             if (BenchList.CurrentBenchRespawn is BenchData bd)
             {
                 RespawnInfo benchRespawn = bd.RespawnInfo.GetRespawnInfo();

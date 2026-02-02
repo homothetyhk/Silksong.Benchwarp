@@ -1,4 +1,5 @@
 ﻿using Benchwarp.Benches;
+using Benchwarp.Deploy;
 using Benchwarp.Doors;
 using Benchwarp.Events;
 using Benchwarp.Util;
@@ -14,6 +15,7 @@ public class GUIController : MonoBehaviour
     private GameObject benchMenuCanvas = null!;
     private GameObject doorMenuCanvas = null!;
     private GameObject warpOnlyMenuCanvas = null!;
+    private GameObject deployMenuCanvas = null!;
     private GameObject sceneNameCanvas = null!;
 
     private static GUIController _instance = null!;
@@ -36,6 +38,11 @@ public class GUIController : MonoBehaviour
     public GameObject doorRoomDropdown = null!;
     public GameObject doorDoorDropdown = null!;
     public GameObject doorConfigButton = null!;
+
+    public GameObject deployBenchButton = null!;
+    public GameObject setDeployButton = null!;
+    public GameObject destroyDeployButton = null!;
+    public GameObject styleDeployDropdown = null!;
 
     public int page = 1;
     public static int maxPages = 2;
@@ -133,23 +140,23 @@ public class GUIController : MonoBehaviour
         switch (mode)
         {
             case Settings.MenuMode.DoorWarp:
-            benchMenuCanvas.SetActive(false);
+                benchMenuCanvas.SetActive(false);
                 warpOnlyMenuCanvas.SetActive(false);
-            doorMenuCanvas.SetActive(true);
-                //deployMenuCanvas.SetActive(false);
+                doorMenuCanvas.SetActive(true);
+                deployMenuCanvas.SetActive(false);
                 break;
             case Settings.MenuMode.WarpOnly:
                 benchMenuCanvas.SetActive(false);
                 warpOnlyMenuCanvas.SetActive(true);
                 doorMenuCanvas.SetActive(false);
-                //deployMenuCanvas.SetActive(false);
+                deployMenuCanvas.SetActive(false);
                 break;
             case Settings.MenuMode.StandardBenchwarp:
             case Settings.MenuMode.UnlockAll:
-            benchMenuCanvas.SetActive(true);
+                benchMenuCanvas.SetActive(true);
                 warpOnlyMenuCanvas.SetActive(true);
-            doorMenuCanvas.SetActive(false);
-                //deployMenuCanvas.SetActive(BenchwarpPlugin.ConfigSettings.EnableDeploy);
+                doorMenuCanvas.SetActive(false);
+                deployMenuCanvas.SetActive(BenchwarpPlugin.ConfigSettings.EnableDeploy);
                 break;
             default:
                 throw new NotImplementedException(mode.ToString());
@@ -226,6 +233,7 @@ public class GUIController : MonoBehaviour
             BuildWarpOnlyMenu();
             BuildBenchMenu();
             BuildDoorMenu();
+            BuildDeployMenu();
             BuildSceneNameCanvas();
             menuCanvasParent.AddComponent<HotkeyListener>();
 
@@ -350,23 +358,59 @@ public class GUIController : MonoBehaviour
             LogError(e);
         }
 
-        GameObject areaDropdown = BuildButton(doorMenuCanvas, "Areas", "BUTTON_LABEL(Areas)", btnOffsetX + (int)(11.25f * btnWidth), -btnOffsetY, TopLeftCorner);
-        DropdownRadioSwitch areaSwitch = areaDropdown.AddComponent<DropdownRadioSwitch>();
-        areaSwitch.Init(areaDropdown, "Areas", 5, 10);
+        doorAreaDropdown = BuildButton(doorMenuCanvas, "Areas", "BUTTON_LABEL(Areas)", btnOffsetX + (int)(11.25f * btnWidth), -btnOffsetY, TopLeftCorner);
+        DropdownRadioSwitch areaSwitch = doorAreaDropdown.AddComponent<DropdownRadioSwitch>();
+        areaSwitch.Init(doorAreaDropdown, "Areas", 5, 10);
         areaSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
         areaSwitch.Populate(DoorList.RoomGroups.Select(g => g.MenuArea), autoOpen: false, localizable: true);
 
-        GameObject roomDropdown = BuildButton(doorMenuCanvas, "Rooms", "BUTTON_LABEL(Rooms)", btnOffsetX + (int)(5.5f * btnWidth), -btnOffsetY, TopLeftCorner);
-        DropdownRadioSwitch roomSwitch = roomDropdown.AddComponent<DropdownRadioSwitch>();
-        roomSwitch.Init(roomDropdown, "Rooms", 6, 10);
-        roomSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
+        doorRoomDropdown = BuildButton(doorMenuCanvas, "Rooms", "BUTTON_LABEL(Rooms)", btnOffsetX + (int)(5.5f * btnWidth), -btnOffsetY, TopLeftCorner);
+        DropdownRadioSwitch roomSwitch = doorRoomDropdown.AddComponent<DropdownRadioSwitch>();
+        roomSwitch.Init(doorRoomDropdown, "Rooms", 6, 10);
+        roomSwitch.GetComponent<Button>().onClick.AddListener(roomSwitch.ToggleDropdown);
         
-        GameObject doorDropdown = BuildButton(doorMenuCanvas, "Doors", "BUTTON_LABEL(Doors)", btnOffsetX + (int)(1.5f * btnWidth), -btnOffsetY, TopLeftCorner);
-        DropdownRadioSwitch doorSwitch = doorDropdown.AddComponent<DropdownRadioSwitch>();
-        doorSwitch.Init(doorDropdown, "Doors", 2, 10);
-        roomSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
+        doorDoorDropdown = BuildButton(doorMenuCanvas, "Doors", "BUTTON_LABEL(Doors)", btnOffsetX + (int)(1.5f * btnWidth), -btnOffsetY, TopLeftCorner);
+        DropdownRadioSwitch doorSwitch = doorDoorDropdown.AddComponent<DropdownRadioSwitch>();
+        doorSwitch.Init(doorDoorDropdown, "Doors", 2, 10);
+        doorSwitch.GetComponent<Button>().onClick.AddListener(doorSwitch.ToggleDropdown);
 
         doorSelector.Setup(areaSwitch, roomSwitch, doorSwitch, DoorList.RoomGroups);
+    }
+
+    private void BuildDeployMenu()
+    {
+        deployMenuCanvas = BuildCanvas("Deploy Menu Canvas");
+        ResetBuildParameters();
+
+        deployBenchButton = BuildButton(deployMenuCanvas, "Deploy", "BUTTON_LABEL(Deploy)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        deployBenchButton.GetComponent<Button>().onClick.AddListener(() => DeployManager.DeployAtHero());
+
+        btnOffsetX += btnWidth + 10;
+
+        setDeployButton = BuildButton(deployMenuCanvas, "Set", "BUTTON_LABEL(Set)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        setDeployButton.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.SaveSettings.DeployInfo?.SetRespawn());
+        setDeployButton.AddComponent<DeploySetColorComponent>().buttonText = setDeployButton.transform.Find("ButtonText").GetComponent<Text>();
+
+        btnOffsetX += btnWidth + 10;
+
+        destroyDeployButton = BuildButton(deployMenuCanvas, "Destroy", "BUTTON_LABEL(Destroy)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        destroyDeployButton.GetComponent<Button>().onClick.AddListener(() => DeployManager.Undeploy());
+        destroyDeployButton.AddComponent<DeployDestroyColorComponent>().buttonText = destroyDeployButton.transform.Find("ButtonText").GetComponent<Text>();
+
+        btnOffsetX += btnWidth + 10;
+        baseDropdownYOffset = btnOffsetY + 500;
+
+        styleDeployDropdown = BuildButton(deployMenuCanvas, "Style", "BUTTON_LABEL(Style)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        DropdownRadioSwitch styleSwitch = styleDeployDropdown.AddComponent<DropdownRadioSwitch>();
+        styleSwitch.Init(styleDeployDropdown, "Style", 1, 10);
+        styleSwitch.GetComponent<Button>().onClick.AddListener(styleSwitch.ToggleDropdown);
+        styleSwitch.Populate(Enum.GetNames(typeof(DeployStyles)), autoOpen: false, localizable: true);
+        styleSwitch.Select(BenchwarpPlugin.SharedSettings.DeployStyle.ToString());
+        styleSwitch.onSelectionChanged += s =>
+        {
+            BenchwarpPlugin.SharedSettings.DeployStyle = Enum.Parse<DeployStyles>(s);
+            DeployManager.Redeploy();
+        };
     }
 
     private void BuildSceneNameCanvas()
