@@ -2,6 +2,7 @@
 using Benchwarp.Deploy;
 using Benchwarp.Doors;
 using Benchwarp.Events;
+using Benchwarp.Hotkeys;
 using Benchwarp.Util;
 using System.Collections.ObjectModel;
 using UnityEngine;
@@ -279,7 +280,7 @@ public class GUIController : MonoBehaviour
 
         ResetBuildParameters();
 
-        warpButton = BuildButton(warpOnlyMenuCanvas, "Warp", "BUTTON_LABEL(Warp)", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("LB")); //Warp Button
+        warpButton = BuildButton(warpOnlyMenuCanvas, "Warp", "BUTTON_LABEL(Warp)", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.LastBench)); //Warp Button
         warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
         cfgmenuBtn = BuildButton(warpOnlyMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
@@ -299,13 +300,13 @@ public class GUIController : MonoBehaviour
 
         ResetBuildParameters();
 
-        setStartButton = BuildButton(benchMenuCanvas, "Set Start", "BUTTON_LABEL(Set Start)", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey("SB")); //Set Start
+        setStartButton = BuildButton(benchMenuCanvas, "Set Start", "BUTTON_LABEL(Set Start)", btnOffsetX, -btnOffsetY * 2 - btnHeight, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.StartBench));
         setStartButton.GetComponent<Button>().onClick.AddListener(BenchListModifiers.MenuSetToStart);
         setStartButton.AddComponent<AtStartListener>().buttonText = setStartButton.transform.Find("ButtonText").GetComponent<Text>();
 
         btnOffsetX += btnWidth + 20;
 
-        nextPageBtn = BuildButton(benchMenuCanvas, "Page ", "BUTTON_LABEL(Page)", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.SharedSettings.GetHotkey("NP"));
+        nextPageBtn = BuildButton(benchMenuCanvas, "Page ", "BUTTON_LABEL(Page)", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.NextPage));
         nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
 
 
@@ -382,12 +383,12 @@ public class GUIController : MonoBehaviour
         deployMenuCanvas = BuildCanvas("Deploy Menu Canvas");
         ResetBuildParameters();
 
-        deployBenchButton = BuildButton(deployMenuCanvas, "Deploy", "BUTTON_LABEL(Deploy)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        deployBenchButton = BuildButton(deployMenuCanvas, "Deploy", "BUTTON_LABEL(Deploy)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.DeployBench));
         deployBenchButton.GetComponent<Button>().onClick.AddListener(() => DeployManager.DeployAtHero());
 
         btnOffsetX += btnWidth + 10;
 
-        setDeployButton = BuildButton(deployMenuCanvas, "Set", "BUTTON_LABEL(Set)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner);
+        setDeployButton = BuildButton(deployMenuCanvas, "Set", "BUTTON_LABEL(Set)", btnOffsetX, -btnOffsetY - 500, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.WarpDeploy));
         setDeployButton.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.SaveSettings.DeployInfo?.SetRespawn());
         setDeployButton.AddComponent<DeploySetColorComponent>().buttonText = setDeployButton.transform.Find("ButtonText").GetComponent<Text>();
 

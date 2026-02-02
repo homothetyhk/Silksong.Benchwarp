@@ -1,5 +1,6 @@
 ﻿using Benchwarp.Benches;
 using Benchwarp.Components;
+using Benchwarp.Deploy;
 using Benchwarp.Events;
 using System.Collections.ObjectModel;
 
@@ -11,7 +12,8 @@ public static class HotkeyActions
     public const string StartBench = "SB";
     public const string DoorWarp = "DW";
     public const string NextPage = "NP";
-
+    public const string WarpDeploy = "WD";
+    public const string DeployBench = "DB";
 
     /// <summary>
     /// The current list of letter hotkey codes, accounting for hotkey overrides.
@@ -23,14 +25,14 @@ public static class HotkeyActions
     {
         [LastBench] = ChangeScene.WarpToRespawn,
         [StartBench] = (Action)BenchListModifiers.MenuSetToStart + ChangeScene.WarpToRespawn,
-        //["WD"], // warp deploy
+        [WarpDeploy] = (Action)DeployManager.MenuSetRespawnToDeploy + ChangeScene.WarpToRespawn,
         //["TM"], // toggle menu
         [DoorWarp] = () =>
         {
             if (BenchwarpPlugin.ConfigSettings.MenuMode != Settings.MenuMode.DoorWarp) BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.DoorWarp;
             else BenchwarpPlugin.ConfigSettings.MenuMode = Settings.MenuMode.StandardBenchwarp;
         },
-        //["DB"], // deploy bench
+        [DeployBench] = () => DeployManager.DeployAtHero(), // deploy bench
         [NextPage] = () => GUIController.Instance.NextPage(),
     });
 

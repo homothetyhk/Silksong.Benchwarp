@@ -87,5 +87,15 @@ namespace Benchwarp.Deploy
             }
             BenchwarpPlugin.SaveSettings.DeployInfo = null;
         }
+
+        /// <summary>
+        /// Sets the current respawn to the deployed respawn, doing nothing if the mode is WarpOnly or if no respawn is deployed.
+        /// <br/>Used in the warp-deploy hotkey.
+        /// </summary>
+        public static void MenuSetRespawnToDeploy()
+        {
+            if (BenchwarpPlugin.ConfigSettings.MenuMode == Settings.MenuMode.WarpOnly) return;
+            BenchwarpPlugin.SaveSettings.DeployInfo?.SetRespawn();
+        }
     }
 }

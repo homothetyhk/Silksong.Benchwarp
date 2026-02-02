@@ -15,6 +15,8 @@ public class SharedSettingsData
                 [HotkeyActions.StartBench] = HotkeyActions.StartBench,
                 [HotkeyActions.DoorWarp] = HotkeyActions.DoorWarp,
                 [HotkeyActions.NextPage] = HotkeyActions.NextPage,
+                [HotkeyActions.WarpDeploy] = HotkeyActions.WarpDeploy,
+                [HotkeyActions.DeployBench] = HotkeyActions.DeployBench,
             }
         };
     }

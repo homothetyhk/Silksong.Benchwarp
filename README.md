@@ -30,6 +30,8 @@ Benchwarp supports hotkeys which can be used in place of menu buttons while the 
 - **SB**: **S**tart **B**ench (equivalent to clicking Set Start, then Warp).
 - **DW**: **D**oor **W**arp (equivalent to selecting Door Warp as the menu mode). If used while Door Warp is enabled, switches the mode to Standard Benchwarp.
 - **NP**: **N**ext **P**age (equivalent to clicking the pages button).
+- **DB**: **D**eploy **B**ench (equivalent to clicking the Deploy button).
+- **WD**: **W**arp **D**eploy (equivalent to clicking the Set Deploy button, then Warp).
 
 Tip: by default, some letters such as **A** are bound to actions that can cancel the menu. To enter the hotkeys including these letters, you can move the mouse to deselect the Resume button. Alternatively, you can input the hotkey by pressing the buttons nearly simultaneously.
 
