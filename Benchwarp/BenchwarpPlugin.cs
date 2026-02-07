@@ -17,14 +17,19 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
     public static BenchwarpPlugin Instance => _instance ?? throw new NullReferenceException("Benchwarp has not loaded yet!");
     private static BenchwarpPlugin? _instance;
     
+    private BenchwarpPlugin()
+    {
+        _instance = this;
+        ConfigSettings = DefineConfig(); // Refer to BenchwarpPlugin.Settings.cs
+    }
+
     private void Awake()
     {
         try
         {
-            _instance = this;
-            Log($"Plugin {Name} ({Id}) has loaded!");
             gameObject.AddComponent<Components.RespawnChangeListener>();
             LoadAssets();
+            Log($"Plugin {Name} ({Id}) has loaded!");
         }
         catch (Exception e)
         {
@@ -56,7 +61,6 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
         try
         {
             OnEnable();
-            DefineConfig(); // Refer to BenchwarpPlugin.Settings.cs
             Components.GUIController.LateSetup();
         }
         catch (Exception e)

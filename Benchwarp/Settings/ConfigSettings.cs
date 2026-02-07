@@ -1,88 +1,61 @@
-﻿using System.Collections.ObjectModel;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
 namespace Benchwarp.Settings;
 
-public class ConfigSettings(ConfigSettingsData data)
+public class ConfigSettings
 {
-    private readonly ConfigSettingsData data = data;
+    private readonly ConfigSettingsData data;
 
-    /*
-    public bool ShowMenu
+    public ConfigSettings(ConfigSettingsData data)
     {
-        get => data.ShowMenu;
-        set
-        {
-            data.ShowMenu = value;
-            Invoke(OnShowMenuChanged);
-        }
+        this.data = data;
+        data.MenuMode.SettingChanged += (_, _) => Invoke(OnMenuModeChanged);
+        data.ShowScene.SettingChanged += (_, _) => Invoke(OnShowSceneChanged);
+        data.AlwaysToggleAll.SettingChanged += (_, _) => Invoke(OnAlwaysToggleAllChanged);
+        data.EnableHotkeys.SettingChanged += (_, _) => Invoke(OnEnableHotkeysChanged);
+        data.EnableDeploy.SettingChanged += (_, _) => Invoke(OnEnableDeployChanged);
+        data.RecoveryMode.SettingChanged += (_, _) => Invoke(OnRecoveryModeChanged);
     }
-    internal static event Action? OnShowMenuChanged;
-    */
 
     public MenuMode MenuMode
     {
-        get => data.MenuMode;
-        set
-        {
-            data.MenuMode = value;
-            Invoke(OnMenuModeChanged);
-        }
+        get => data.MenuMode.Value;
+        set => data.MenuMode.Value = value;
     }
     internal static event Action? OnMenuModeChanged;
 
     public bool ShowScene
     {
-        get => data.ShowScene;
-        set
-        {
-            data.ShowScene = value;
-            Invoke(OnShowSceneChanged);
-        }
+        get => data.ShowScene.Value;
+        set => data.ShowScene.Value = value;
     }
     internal static event Action? OnShowSceneChanged;
 
     public bool AlwaysToggleAll
     {
-        get => data.AlwaysToggleAll;
-        set
-        {
-            data.AlwaysToggleAll = value;
-            Invoke(OnAlwaysToggleAllChanged);
-        }
+        get => data.AlwaysToggleAll.Value;
+        set => data.AlwaysToggleAll.Value = value;
     }
     internal static event Action? OnAlwaysToggleAllChanged;
     
     public bool EnableDeploy
     {
-        get => data.EnableDeploy;
-        set
-        {
-            data.EnableDeploy = value;
-            Invoke(OnEnableDeployChanged);
-        }
+        get => data.EnableDeploy.Value;
+        set => data.EnableDeploy.Value = value;
     }
     internal static event Action? OnEnableDeployChanged;
 
     public bool EnableHotkeys
     {
-        get => data.EnableHotkeys;
-        set
-        {
-            data.EnableHotkeys = value;
-            Invoke(OnEnableHotkeysChanged);
-        }
+        get => data.EnableHotkeys.Value;
+        set => data.EnableHotkeys.Value = value;
     }
     internal static event Action? OnEnableHotkeysChanged;
 
     public bool RecoveryMode
     {
-        get => data.RecoveryMode;
-        set
-        {
-            data.RecoveryMode = value;
-            Invoke(OnRecoveryModeChanged);
-        }
+        get => data.RecoveryMode.Value;
+        set => data.RecoveryMode.Value = value;
     }
     internal static event Action? OnRecoveryModeChanged;
     

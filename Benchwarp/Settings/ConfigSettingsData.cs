@@ -1,24 +1,13 @@
-﻿namespace Benchwarp.Settings;
+﻿using BepInEx.Configuration;
+
+namespace Benchwarp.Settings;
 
 public class ConfigSettingsData
 {
-    //public bool ShowMenu = true;
-    public MenuMode MenuMode = MenuMode.DoorWarp;
-    public bool ShowScene = false;
-    //public int MaxSceneNames = 1;
-    //public bool SwapNames = false;
-    public bool AlwaysToggleAll = false;
-
-    public bool EnableDeploy = true;
-    //public bool DeployInUnsafeRooms = false;
-    //public bool ModifyVanillaBenchStyles = false;
-    //public string nearStyle = "Right";
-    //public string farStyle = "Right";
-    //public bool DeployCooldown = true;
-    //public bool Noninteractive = true;
-    //public bool NoMidAirDeploy = true;
-
-    //public bool NoPreload = false;
-    public bool EnableHotkeys = false;
-    public bool RecoveryMode = false;
+    public required ConfigEntry<MenuMode> MenuMode { get; init; }
+    public required ConfigEntry<bool> ShowScene { get; init; }
+    public required ConfigEntry<bool> AlwaysToggleAll { get; init; }
+    public required ConfigEntry<bool> EnableDeploy { get; init; }
+    public required ConfigEntry<bool> EnableHotkeys { get; init; }
+    public required ConfigEntry<bool> RecoveryMode { get; init; }
 }
