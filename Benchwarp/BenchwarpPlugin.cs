@@ -10,7 +10,7 @@ namespace Benchwarp;
 [BepInDependency("org.silksong-modding.i18n")]
 [BepInDependency("org.silksong-modding.modmenu")]
 [BepInDependency("org.silksong-modding.datamanager")]
-[BepInAutoPlugin(id: "io.github.benchwarp")]
+[BepInAutoPlugin(id: "io.github.homothetyhk.benchwarp")]
 public partial class BenchwarpPlugin : BaseUnityPlugin
 {
     new public ManualLogSource Logger => base.Logger;

@@ -19,7 +19,7 @@ In the menu, bench status is displayed as follows:
 
 ## Dependencies
 
-- Core Silksong modding libraries: DataManager, I18N, ModMenu.
+- Core Silksong modding libraries: DataManager, I18N, ModMenu, Prepatcher, FsmUtil, AssetHelper.
 
 ## Features
 ### Hotkeys
