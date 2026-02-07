@@ -30,7 +30,7 @@ jobs:
       version: ${{ steps.version.outputs.version }}
       attestation-url: ${{ steps.attest.outputs.attestation-url }}
       # when you are ready to publish your first release, change this to 'true'
-      allow-release: 'false'
+      allow-release: 'true'
       is-new-version: ${{ !fromJSON(steps.needs-release.outputs.exists || 'true') }}
 
     steps:
@@ -137,10 +137,6 @@ jobs:
           github.event.inputs.force_nuget == 'true'
         )
       )
-    # Do not substitute your NuGet API key in this workflow! Instead, add a secret to your repository
-    # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
-    env:
-      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
     steps:
     - name: Setup .NET
@@ -152,10 +148,18 @@ jobs:
       with:
         name: nuget
         path: nuget/
-    - name: Publish to NuGet
-      run: |-
+      # Get a short-lived NuGet API key
+    - name: NuGet login (OIDC → temp API key)
+      uses: NuGet/login@v1
+      id: login
+      with:
+        user: ${{ secrets.NUGET_USER }}
+    
+      # Push the package
+    - name: NuGet push
+      run: |- 
         dotnet nuget push nuget/*.nupkg \
-          --api-key $NUGET_API_KEY \
+          --api-key ${{steps.login.outputs.NUGET_API_KEY}} \
           --source https://api.nuget.org/v3/index.json
 
   # Publish to GitHub releases to keep release history on the repository (needed for this workflow to work properly
@@ -187,7 +191,7 @@ jobs:
   secret-check:
     runs-on: ubuntu-latest
     outputs:
-      has-nuget-secret: ${{ secrets.NUGET_API_KEY != '' }}
+      has-nuget-secret: ${{ secrets.NUGET_USER != '' }}
       has-thunderstore-secret: ${{ secrets.THUNDERSTORE_API_KEY != '' }}
     steps:
       - run: echo no-op
