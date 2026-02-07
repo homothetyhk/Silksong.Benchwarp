@@ -386,7 +386,7 @@ public static class BaseGateList
     {
         Obstacles = new([
             new ObstacleInfo("Breakable Wall", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess, new PersistentBoolSaveInfo()),
-            new UnmaskerInfo("Masks")
+            new UnmaskerInfo("Masks") // seems that its parent may be set to Breakable Wall in time to not be needed.
         ])
     };
     public static DoorData Bellway_02__right1 { get; } = new(new(Bellway_02, right1), new(Bone_East_01, left2));

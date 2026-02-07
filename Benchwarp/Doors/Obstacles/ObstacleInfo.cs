@@ -10,8 +10,8 @@ namespace Benchwarp.Doors.Obstacles;
 public record ObstacleInfo(string ObjPath, ObstacleType Type, ObstacleSeverity Severity, ObstacleSaveInfo? SaveInfo = null)
 {
     public string GetObjName() => ObjPath.Split('/').Last();
-    public GameObject? FindObj(Scene scene) => scene.FindGameObject(ObjPath)!;
-    public void DestroyObj(Scene scene) => UnityEngine.Object.Destroy(FindObj(scene));
+    public GameObject? FindObj(Scene scene, bool warnIfNotFound = false) => scene.FindGameObject(ObjPath, warnIfNotFound);
+    public void DestroyObj(Scene scene, bool warnIfNotFound = false) => UnityEngine.Object.Destroy(FindObj(scene, warnIfNotFound));
 
     /// <summary>
     /// To be called by an <see cref="IObstacleHandler"/> on active scene change.

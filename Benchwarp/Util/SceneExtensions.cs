@@ -10,7 +10,7 @@ namespace Benchwarp.Util
     {
         private static readonly List<GameObject> rootObjects = new(500);
 
-        public static GameObject? FindGameObject(this Scene s, string path)
+        public static GameObject? FindGameObject(this Scene s, string path, bool warnIfNotFound)
         {
             s.GetRootGameObjects(rootObjects);
             int index = path.IndexOf('/');
@@ -29,7 +29,7 @@ namespace Benchwarp.Util
             {
                 result = rootObjects.FirstOrDefault(g => g.name == path);
             }
-            if (!result)
+            if (!result && warnIfNotFound)
             {
                 LogWarn($"Failed to find object {path} in scene {s.name}. Existing objects are {s.Dump()}.");
             }
