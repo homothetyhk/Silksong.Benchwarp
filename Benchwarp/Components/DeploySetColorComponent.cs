@@ -71,7 +71,6 @@ internal class DeploySetColorComponent : MonoBehaviour
 
     private void OnRespawnChanged(RespawnInfo info, BenchData? data)
     {
-        Log("Checking changed respawn to " + info);
         IsCurrentBench = BenchwarpPlugin.SaveSettings.DeployInfo?.IsCurrentRespawn() ?? false;
         queueRecolor = true;
     }

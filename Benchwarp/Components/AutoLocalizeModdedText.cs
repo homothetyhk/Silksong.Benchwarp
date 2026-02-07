@@ -29,7 +29,7 @@ namespace Benchwarp.Components
 
         private void OnDestroy()
         {
-            GameManager.instance.RefreshLanguageText -= RefreshText;
+            if (GameManager.SilentInstance is GameManager gm && gm) gm.RefreshLanguageText -= RefreshText;
         }
 
         private void RefreshText()
