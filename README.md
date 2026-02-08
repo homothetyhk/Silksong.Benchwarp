@@ -56,4 +56,4 @@ Tip: by default, some letters such as **A** are bound to actions that can cancel
 
 ## License
 
-Benchwarp is licensed under LGPL. Source code and license can be found at https://github.com/homothetyhk/Silksong.BenchwarpMod/.
+Benchwarp is licensed under LGPL. Source code and license can be found at https://github.com/homothetyhk/Silksong.Benchwarp/.
