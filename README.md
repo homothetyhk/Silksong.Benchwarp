@@ -19,7 +19,8 @@ In the menu, bench status is displayed as follows:
 
 ## Dependencies
 
-- Core Silksong modding libraries: DataManager, I18N, ModMenu, Prepatcher, FsmUtil, AssetHelper.
+- Bepinex and core Silksong modding libraries: DataManager, I18N, ModMenu, Prepatcher, FsmUtil, AssetHelper.
+- Benchwarp releases on [Thunderstore](https://thunderstore.io/c/hollow-knight-silksong/p/homothety/Benchwarp/). It is recommended to use a Thunderstore-based installer to manage dependencies and updates.
 
 ## Features
 ### Hotkeys
