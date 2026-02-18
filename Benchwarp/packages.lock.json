@@ -96,9 +96,9 @@
       },
       "Silksong.ModMenu": {
         "type": "Direct",
-        "requested": "[0.2.0, )",
-        "resolved": "0.2.0",
-        "contentHash": "4DPSOVaF7mZoHPyfF+hqI0BCm+OAZJpj9566ZwE93YmUZADf/6OlmI1jGY3/mHkRFrshwUpVdhE8okPZ06hpUQ==",
+        "requested": "[0.4.2, )",
+        "resolved": "0.4.2",
+        "contentHash": "xNVRIXngSK63v0+8+yTPRJZaFKo1qHJYNprJIa5pu80CfiCQDCi9oQTid3vYVOekijuiUcO7A67fq8iucGON3g==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "HarmonyX": "2.9.0",
