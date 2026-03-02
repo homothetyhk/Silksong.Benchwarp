@@ -24,7 +24,7 @@ namespace Benchwarp.Deploy
                 };
                 BenchwarpPlugin.SaveSettings.DeployInfo = new()
                 {
-                    RespawnInfo = new(GameManager.instance.sceneName, DeployAssets.DeployedRespawnMarkerName, style.ToRespawnType(), GameManager.instance.sm.mapZone),
+                    RespawnInfo = new(GameManager.instance.GetSceneNameString(), DeployAssets.DeployedRespawnMarkerName, style.ToRespawnType(), GameManager.instance.sm.mapZone),
                     HeroX = heroPos.x, 
                     HeroY = heroPos.y, 
                     HeroZ = heroPos.z,
@@ -44,7 +44,7 @@ namespace Benchwarp.Deploy
         /// </summary>
         public static GameObject? Redeploy()
         {
-            if (BenchwarpPlugin.SaveSettings.DeployInfo is not DeployInfo info || GameManager.instance.sceneName != info.SceneName) return null;
+            if (BenchwarpPlugin.SaveSettings.DeployInfo is not DeployInfo info || GameManager.instance.GetSceneNameString() != info.SceneName) return null;
 
             try
             {
