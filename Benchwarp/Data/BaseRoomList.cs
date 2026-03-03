@@ -749,7 +749,7 @@ public static class BaseRoomList
         MapArea = MapAreaNames.Bellhart,
         TitledArea = TitledAreaNames.Bellhart,
         Gates = new([
-            Belltown_06__door1,
+            //Belltown_06__door1, // out of bounds gate, destination scene does not exist
             Belltown_06__left1,
             Belltown_06__left3,
             Belltown_06__right1,

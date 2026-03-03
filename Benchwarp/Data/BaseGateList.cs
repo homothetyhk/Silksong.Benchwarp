@@ -353,7 +353,7 @@ public static class BaseGateList
                 new ObstacleInfo("Bell Wall Tall", ObstacleType.OneWayBreakableEntry, ObstacleSeverity.LimitsRoomAccess | ObstacleSeverity.LimitsVisibility, new PersistentBoolSaveInfo()),
             ]),
     };
-    public static DoorData Belltown_06__door1 { get; } = new(new(Belltown_06, door1), new(Belltown_Room_Fisher, right1), null);
+    //public static DoorData Belltown_06__door1 { get; } = new(new(Belltown_06, door1), new(Belltown_Room_Fisher, right1), null); // out of bounds gate, destination scene does not exist.
     public static DoorData Belltown_06__left1 { get; } = new(new(Belltown_06, left1), new(Belltown, right2));
     public static DoorData Belltown_06__left3 { get; } = new(new(Belltown_06, left3), new(Belltown_Shrine, right1));
     public static DoorData Belltown_06__right1 { get; } = new(new(Belltown_06, right1), new(Greymoor_08, left2));
