@@ -2,7 +2,7 @@
 
 namespace Benchwarp.Util;
 
-public static class Localization
+internal static class Localization
 {
     private const string Sheet = $"Mods.{BenchwarpPlugin.Id}";
 

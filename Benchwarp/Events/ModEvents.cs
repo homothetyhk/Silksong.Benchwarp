@@ -37,7 +37,7 @@ public static class ModEvents
     }
 
     /// <summary>
-    /// The <see cref="IObstacleHandler"/> used to remove obstacles when warping to a transition by <see cref="ChangeScene.WarpToDoor(string, string)"/>.
+    /// The <see cref="IObstacleHandler"/> used to remove obstacles when warping to a transition by <see cref="ChangeScene.WarpToDoor(RoomData, DoorData)"/>.
     /// </summary>
     public static IObstacleHandler DoorwarpObstacleHandler { get; set; } = new NoSaveObstacleHandler();
 

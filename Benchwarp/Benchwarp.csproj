@@ -15,6 +15,7 @@
     <AnalysisMode>recommended</AnalysisMode>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
 
     <RestorePackagesWithLockFile>True</RestorePackagesWithLockFile>
     <RestoreLockedMode Condition="'$(CI)' == 'true'">True</RestoreLockedMode>
