@@ -91,20 +91,19 @@
       "Silksong.GameLibs": {
         "type": "Direct",
         "requested": "[*-*, )",
-        "resolved": "1.2.0-silksong1.0.29315",
-        "contentHash": "MwcUC0FMUn7aCwYHWgQegOBxNGgNBDie9nfg0GeodqbnfrHOjUZ06sZjq+0Iiz9/WBL8yd511YZujFS91FgVMw=="
+        "resolved": "1.2.0-silksong1.0.30000",
+        "contentHash": "2JPRsmFO5dBwLeIHA3kLlEYtu4BQ0Swdp3E4+J35IQGEujW3npMPot83BvY9wd3N7/Ycy2IfWilWC7fx6Sa3bg=="
       },
       "Silksong.ModMenu": {
         "type": "Direct",
-        "requested": "[0.4.3, )",
-        "resolved": "0.4.3",
-        "contentHash": "uRI5SS6NIX3ivv/eLFLD9elYdLEfg6s6yHX/SY2N7ps4Ijdt28KMMlRyNI09Z0oXRULRIUSl02nasFUxEB+RPg==",
+        "requested": "[0.5.0, )",
+        "resolved": "0.5.0",
+        "contentHash": "t7Of10Nsv1GVmx1sEMLM8+8WQ1/GElfDqKGEZ8DWL50mw1oqf6ktPiuwBNUzwq5Bvav9TWYMcVtm2lAKNB0+NQ==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "HarmonyX": "2.9.0",
-          "MonoDetour": "0.7.5",
-          "MonoDetour.HookGen": "0.7.3",
-          "Silksong.UnityHelper": "1.0.1",
+          "MonoDetour": "0.7.13",
+          "Silksong.UnityHelper": "1.2.0",
           "UnityEngine.Modules": "6000.0.50"
         }
       },
@@ -157,18 +156,10 @@
       },
       "MonoDetour": {
         "type": "Transitive",
-        "resolved": "0.7.10",
-        "contentHash": "st/61d+jjzIN/TfxU8gwTiD9NWhG36yiIRdo3ANcV1bpQhOr/i2WYUJ3j/Omi00+yX+kfwzMu43ygDufELWw/g==",
+        "resolved": "0.7.13",
+        "contentHash": "A1v0WMKfTbRv3O1l6Myel56AGWfC1SRaXvkXqhLgHL31sttxwMww/ncJS9jpsclqs4hPx8zqcM29AkrqM8WDAg==",
         "dependencies": {
           "MonoMod.RuntimeDetour": "21.12.13.1"
-        }
-      },
-      "MonoDetour.HookGen": {
-        "type": "Transitive",
-        "resolved": "0.7.3",
-        "contentHash": "82nNksQf2HHpoTt0QhWY+uWCkA9gYE4H+7fbBI2IOa+TVe4In838/XogX/5Lx6EhXXF58qV4XWvwFxmmdg/YQw==",
-        "dependencies": {
-          "MonoDetour": "0.5.0"
         }
       },
       "MonoMod.RuntimeDetour": {
@@ -202,8 +193,8 @@
       },
       "Silksong.UnityHelper": {
         "type": "Transitive",
-        "resolved": "1.0.1",
-        "contentHash": "e9pIwaIKjEjtV+gzvTXKiI3i/0qxSdCgOV6sMGlm6U4f2HeSSIgmhi0DVLJ7qU2LaAUTpLqQEt9q5duPUouK0g==",
+        "resolved": "1.2.0",
+        "contentHash": "qneRu5HQnYPM9o4u3G09Ir4Xj2yIwIz80OREZqBko9WFVTvZcu+wKiFzGS3PoNbN8gGJIAW42s/3HPO+nQhCzQ==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "HarmonyX": "2.9.0",
