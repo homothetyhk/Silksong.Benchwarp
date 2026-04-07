@@ -1,6 +1,6 @@
-﻿using System.Collections.ObjectModel;
-using Benchwarp.Benches;
+﻿using Benchwarp.Benches;
 using GlobalEnums;
+using System.Collections.ObjectModel;
 
 namespace Benchwarp.Data;
 
@@ -208,12 +208,22 @@ public static class BaseBenchList
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Room_Huntress, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT));
     public static BenchData Fleatopia { get; } = new(BenchName: "Fleatopia", MenuArea: "Putrified Ducts",
-                RespawnInfo: new PDConditionalRespawnInfo(
-                    PlayerDataBoolName: nameof(PlayerData.act3_wokeUp),
-                    TrueRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: "RestBench Festival", 
+                RespawnInfo: new PDTestRespawnInfo(
+                    Test: new PlayerDataTest.Test
+                    {
+                        FieldName = nameof(PlayerData.CaravanTroupeLocation),
+                        IntValue = (int)CaravanTroupeLocations.Aqueduct,
+                        NumType = PlayerDataTest.NumTestType.NotEqual,
+                        Type = PlayerDataTest.TestType.Enum,
+                    },
+                    SuccessRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench,
                         RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT),
-                    FalseRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench,
-                        RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT)));
+                    FailRespawn: new PDConditionalRespawnInfo(
+                        PlayerDataBoolName: nameof(PlayerData.FleaGamesStarted),
+                        TrueRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench_Festival,
+                            RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT),
+                        FalseRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench,
+                            RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT))));
     public static BenchData BellwaySlab { get; } = new(BenchName: "Bellway", MenuArea: "The Slab",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Slab_06, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.THE_SLAB));
