@@ -250,7 +250,7 @@ public class GUIController : MonoBehaviour
     private void ResetBuildParameters()
     {
         btnWidth = 125; //Controls Button Size Universally
-        btnHeight = 45; //Controls Button Size Universally
+        btnHeight = 40; //Controls Button Size Universally
         btnOffsetX = 125; //Initial X Offset
         baseDropdownRowXOffset = btnOffsetX + btnWidth + 20; //For Reset on Row Drop
         btnOffsetY = 10; //Y Offset for Dropdowns
