@@ -22,10 +22,5 @@ namespace Benchwarp
         {
             return ModMenuEntryButton;
         }
-
-        string IModMenuInterface.ModMenuName()
-        {
-            return "Benchwarp";
-        }
     }
 }
