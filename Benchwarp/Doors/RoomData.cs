@@ -10,5 +10,4 @@ public class RoomData
     public required string MapArea { get; init; }
     public required string TitledArea { get; init; }
     public required ReadOnlyCollection<DoorData> Gates { get; init; }
-    public bool ManuallyVerified { get; init; } = true;
 }
