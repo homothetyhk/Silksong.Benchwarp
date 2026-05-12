@@ -47,6 +47,7 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
             Patches.ShakraPDHook.Hook();
             Patches.DataManagerFix.Hook();
             Patches.RedeployPatch.Hook();
+            Patches.StyxBenchFix.Hook();
             Components.GUIController.Setup();
         }
         catch (Exception e)
@@ -77,6 +78,7 @@ public partial class BenchwarpPlugin : BaseUnityPlugin
             Patches.ShakraPDHook.Unhook();
             Patches.DataManagerFix.Unhook();
             Patches.RedeployPatch.Unhook();
+            Patches.StyxBenchFix.Unhook();
             Components.GUIController.Unload();
         }
         catch (Exception e)

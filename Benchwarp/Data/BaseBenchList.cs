@@ -139,8 +139,19 @@ public static class BaseBenchList
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Dust_10, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.DUSTPENS));
     public static BenchData Styx { get; } = new(BenchName: "Styx", MenuArea: "Sinner's Road",
-                RespawnInfo: new RespawnInfo(SceneName: SceneNames.Dust_11, RespawnMarkerName: RespawnMarkerNames.RestBench,
-                    RespawnType: RespawnTypes.Bench, MapZone: MapZone.DUSTPENS));
+                RespawnInfo: new PDTestRespawnInfo(
+                    Test: new PlayerDataTest.Test
+                    {
+                        FieldName = nameof(PlayerData.permadeathMode),
+                        IntValue = (int)PermadeathModes.Off,
+                        NumType = PlayerDataTest.NumTestType.Equal,
+                        Type = PlayerDataTest.TestType.Enum,
+                    },
+                    SuccessRespawn: new RespawnInfo(SceneName: SceneNames.Dust_11, RespawnMarkerName: RespawnMarkerNames.RestBench,
+                        RespawnType: RespawnTypes.Bench, MapZone: MapZone.DUSTPENS),
+                    FailRespawn: new RespawnInfo(SceneName: SceneNames.Dust_11, RespawnMarkerName: RespawnMarkerNames.RestBench__1_,
+                        RespawnType: RespawnTypes.Bench, MapZone: MapZone.DUSTPENS)
+                    ));
     public static BenchData BrokenElevator { get; } = new(BenchName: "Broken Elevator", MenuArea: "Underworks & Whiteward",
                 RespawnInfo: new RespawnInfo(SceneName: SceneNames.Under_01b, RespawnMarkerName: RespawnMarkerNames.RestBench,
                     RespawnType: RespawnTypes.Bench, MapZone: MapZone.UNDERSTORE));
