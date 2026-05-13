@@ -23,7 +23,8 @@ public class GUIController : MonoBehaviour
     internal static FontManager FontManager = null!;
     private static Texture2D buttonRectImage = null!;
 
-    public static readonly Vector2 TopLeftCorner = new Vector2(0, 1);
+    public static readonly Vector2 TopLeftCorner = new(0, 1);
+    public static readonly Vector2 TopRightCorner = new(1, 1);
 
     public GameObject warpButton = null!;
     public GameObject setStartButton = null!;
@@ -269,6 +270,7 @@ public class GUIController : MonoBehaviour
         CanvasScaler scaler = canvas.AddComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1920f, 1080f);
+        scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
         canvas.AddComponent<GraphicRaycaster>();
 
         return canvas;
@@ -283,7 +285,7 @@ public class GUIController : MonoBehaviour
         warpButton = BuildButton(warpOnlyMenuCanvas, "Warp", "BUTTON_LABEL(Warp)", btnOffsetX, -btnOffsetY, TopLeftCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.LastBench)); //Warp Button
         warpButton.GetComponent<Button>().onClick.AddListener(ChangeScene.WarpToRespawn);
 
-        cfgmenuBtn = BuildButton(warpOnlyMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
+        cfgmenuBtn = BuildButton(warpOnlyMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, TopRightCorner);
         try
         {
             cfgmenuBtn.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton.OnSubmit!.Invoke());
@@ -306,7 +308,7 @@ public class GUIController : MonoBehaviour
 
         btnOffsetX += btnWidth + 20;
 
-        nextPageBtn = BuildButton(benchMenuCanvas, "Page ", "BUTTON_LABEL(Page)", -10, -(20 + btnHeight), new Vector2(1, 1), true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.NextPage));
+        nextPageBtn = BuildButton(benchMenuCanvas, "Page ", "BUTTON_LABEL(Page)", -10, -(20 + btnHeight), TopRightCorner, true, BenchwarpPlugin.SharedSettings.GetHotkey(HotkeyActions.NextPage));
         nextPageBtn.GetComponent<Button>().onClick.AddListener(NextPage);
 
 
@@ -349,7 +351,7 @@ public class GUIController : MonoBehaviour
         doorSelectPrevButton = BuildButton(doorMenuCanvas, "Last Entered", "BUTTON_LABEL(Last Entered)", btnOffsetX, -btnOffsetY * 3 - btnHeight * 2, TopLeftCorner, true); // Prev Door Button
         doorSelectPrevButton.GetComponent<Button>().onClick.AddListener(doorSelector.LastEntered);
 
-        doorConfigButton = BuildButton(doorMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, new Vector2(1, 1));
+        doorConfigButton = BuildButton(doorMenuCanvas, "Config", "BUTTON_LABEL(Config)", -10, -10, TopRightCorner);
         try
         {
             doorConfigButton.GetComponent<Button>().onClick.AddListener(() => BenchwarpPlugin.Instance.ModMenuEntryButton.OnSubmit!.Invoke());
@@ -359,7 +361,7 @@ public class GUIController : MonoBehaviour
             LogError(e);
         }
 
-        doorAreaDropdown = BuildButton(doorMenuCanvas, "Areas", "BUTTON_LABEL(Areas)", btnOffsetX + (int)(11.25f * btnWidth), -btnOffsetY, TopLeftCorner);
+        doorAreaDropdown = BuildButton(doorMenuCanvas, "Areas", "BUTTON_LABEL(Areas)", -255, -btnOffsetY, TopRightCorner);
         DropdownRadioSwitch areaSwitch = doorAreaDropdown.AddComponent<DropdownRadioSwitch>();
         areaSwitch.Init(doorAreaDropdown, "Areas", 5, 10);
         areaSwitch.GetComponent<Button>().onClick.AddListener(areaSwitch.ToggleDropdown);
