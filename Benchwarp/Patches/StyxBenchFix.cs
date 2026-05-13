@@ -31,9 +31,12 @@ internal class StyxBenchFix
             {
                 GameObject? styx = to.FindGameObject("Steel Soul States/Regular/NPC Control/Grub Farmer NPC", warnIfNotFound: true);
                 if (!styx) return;
-                styx!.LocateMyFSM("Control")
-                     .GetState("Battle Active")
-                    !.RemoveFirstActionOfType<SetPosition>(); // sets bench y to -100f, reverted to 2.778f on battle end
+
+                PlayMakerFSM fsm = styx!.LocateMyFSM("Control");
+                foreach (string state in (string[])["Battle Active", "Abyss Battle Active"])
+                {
+                     fsm.MustGetState(state).RemoveFirstActionOfType<SetPosition>(); // sets bench y to -100f, reverted to 2.778f on battle end
+                }
             }
         }
     }
