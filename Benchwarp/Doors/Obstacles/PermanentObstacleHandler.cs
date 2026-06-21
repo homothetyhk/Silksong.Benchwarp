@@ -7,14 +7,14 @@ namespace Benchwarp.Doors.Obstacles;
 /// </summary>
 public class PermanentObstacleHandler : ObstacleHandler
 {
-    public override bool HandleObstacleBeforeTransition(RoomData room, DoorData gate, ObstacleInfo o)
+    protected override bool HandleObstacleBeforeTransition(RoomData room, DoorData gate, ObstacleInfo o)
     {
         return HandleObstacle(room, gate, o);
     }
 
-    public override bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o)
+    protected override bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o, bool handledBeforeTransition)
     {
-        if (handledObstacles.Contains(o)) return false;
+        if (handledBeforeTransition) return false;
         return NoSaveObstacleHandler.HandleObstacle(scene, room, gate, o);
     }
 

@@ -7,7 +7,7 @@ namespace Benchwarp.Doors.Obstacles;
 /// </summary>
 public class NoSaveObstacleHandler : ObstacleHandler
 {
-    public override bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o)
+    protected override bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o, bool handledBeforeTransition)
     {
         return HandleObstacle(scene, room, gate, o);
     }
@@ -17,5 +17,4 @@ public class NoSaveObstacleHandler : ObstacleHandler
         o.Open(scene);
         return true;
     }
-
 }

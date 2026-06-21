@@ -10,9 +10,9 @@ public interface IObstacleHandler
     /// <summary>
     /// Called immediately before GameManager.BeginSceneTransition.
     /// </summary>
-    void BeforeTransition(RoomData room, DoorData gate);
+    void BeforeTransition(RoomData room, DoorData gate, IObstacleProvider obstacleProvider);
     /// <summary>
     /// Called immediately after the new scene is activated.
     /// </summary>
-    void OnSceneChange(Scene scene, RoomData room, DoorData gate);
+    void OnSceneChange(Scene scene, RoomData room, DoorData gate, IObstacleProvider obstacleProvider);
 }

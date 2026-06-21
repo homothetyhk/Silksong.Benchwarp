@@ -76,9 +76,10 @@ public static class ChangeScene
         void Warp()
         {
             IObstacleHandler handler = ModEvents.DoorwarpObstacleHandler;
-            handler.BeforeTransition(room, gate);
+            IObstacleProvider provider = ModEvents.DoorwarpObstacleProvider;
+            handler.BeforeTransition(room, gate, provider);
             
-            GameManager.instance.BeginSceneTransition(new DoorwarpSceneLoadInfo(handler, room, gate)
+            GameManager.instance.BeginSceneTransition(new DoorwarpSceneLoadInfo(handler, room, gate, provider)
             {
                 SceneName = gate.Self.SceneName,
                 EntryGateName = gate.Self.GateName,
@@ -91,7 +92,7 @@ public static class ChangeScene
         }
     }
 
-    private class DoorwarpSceneLoadInfo(IObstacleHandler handler, RoomData room, Doors.DoorData gate) : GameManager.SceneLoadInfo
+    private class DoorwarpSceneLoadInfo(IObstacleHandler handler, RoomData room, Doors.DoorData gate, IObstacleProvider provider) : GameManager.SceneLoadInfo
     {
         public override void NotifyFetchComplete()
         {
@@ -103,7 +104,7 @@ public static class ChangeScene
         {
             GameManager.instance.sceneLoad.ActivationComplete -= ActivationComplete;
             Scene newScene = SceneManager.GetActiveScene();
-            handler.OnSceneChange(newScene, room, gate);
+            handler.OnSceneChange(newScene, room, gate, provider);
         }
     }
 }

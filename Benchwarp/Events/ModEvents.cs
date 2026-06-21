@@ -40,7 +40,10 @@ public static class ModEvents
     /// The <see cref="IObstacleHandler"/> used to remove obstacles when warping to a transition by <see cref="ChangeScene.WarpToDoor(RoomData, DoorData)"/>.
     /// </summary>
     public static IObstacleHandler DoorwarpObstacleHandler { get; set; } = new NoSaveObstacleHandler();
-
+    /// <summary>
+    /// The <see cref="IObstacleProvider"/> used to provide obstacles to <see cref="DoorwarpObstacleHandler"/>.
+    /// </summary>
+    public static IObstacleProvider DoorwarpObstacleProvider { get; set; } = new BaseObstacleProvider();
 
     /// <summary>
     /// Event invoked to define new hotkey commands. The action will be invoked if the code is entered while the game is paused.

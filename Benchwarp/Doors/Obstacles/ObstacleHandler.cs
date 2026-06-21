@@ -13,10 +13,10 @@ public abstract class ObstacleHandler : IObstacleHandler
     /// </summary>
     protected readonly HashSet<ObstacleInfo> handledObstacles = [];
 
-    public void BeforeTransition(RoomData room, DoorData gate)
+    public void BeforeTransition(RoomData room, DoorData gate, IObstacleProvider obstacleProvider)
     {
         handledObstacles.Clear();
-        foreach (ObstacleInfo o in gate.Obstacles)
+        foreach (ObstacleInfo o in obstacleProvider.GetGateObstacles(room, gate))
         {
             try
             {
@@ -29,14 +29,13 @@ public abstract class ObstacleHandler : IObstacleHandler
         }
     }
 
-    public void OnSceneChange(Scene scene, RoomData room, DoorData gate)
+    public void OnSceneChange(Scene scene, RoomData room, DoorData gate, IObstacleProvider obstacleProvider)
     {
-        foreach (ObstacleInfo o in gate.Obstacles)
+        foreach (ObstacleInfo o in obstacleProvider.GetGateObstacles(room, gate))
         {
-
             try
             {
-                if (HandleObstacleOnActiveSceneChange(scene, room, gate, o)) handledObstacles.Add(o);
+                if (HandleObstacleOnActiveSceneChange(scene, room, gate, o, handledObstacles.Contains(o))) handledObstacles.Add(o);
             }
             catch (Exception e)
             {
@@ -51,6 +50,6 @@ public abstract class ObstacleHandler : IObstacleHandler
         handledObstacles.Clear();
     }
 
-    public virtual bool HandleObstacleBeforeTransition(RoomData room, DoorData gate, ObstacleInfo o) => false;
-    public virtual bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o) => false;
+    protected virtual bool HandleObstacleBeforeTransition(RoomData room, DoorData gate, ObstacleInfo o) => false;
+    protected virtual bool HandleObstacleOnActiveSceneChange(Scene scene, RoomData room, DoorData gate, ObstacleInfo o, bool handledBeforeTransition) => false;
 }
