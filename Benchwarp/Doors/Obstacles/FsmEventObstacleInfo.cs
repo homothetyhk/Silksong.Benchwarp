@@ -1,18 +1,14 @@
-using UnityEngine.SceneManagement;
+﻿using HutongGames.PlayMaker;
+using Silksong.FsmUtil;
 
 namespace Benchwarp.Doors.Obstacles;
 
-/// <summary>
-/// An <see cref="ObstacleInfo"/> of which sending an FsmEvent on a PlayMakerFSM affects the obstacle.
-/// </summary>
-public record FsmEventObstacleInfo(string ObjPath, string FsmEventName, ObstacleType Type, ObstacleSeverity Severity, ObstacleSaveInfo? SaveInfo = null)
-    : BehaviourObstacleInfo<PlayMakerFSM>(ObjPath, true, Type, Severity, SaveInfo)
+public record FsmEventObstacleInfo(string ObjPath, string FsmName, string FsmEventName, ObstacleType Type, ObstacleSeverity Severity, ObstacleSaveInfo? SaveInfo = null)
+    : FsmObstacleInfo(ObjPath, FsmName, Type, Severity, SaveInfo)
 {
-    public override void Open(Scene scene)
+    public override void Open(PlayMakerFSM fsm)
     {
-        if (FindBehaviour(scene) is PlayMakerFSM fsm && fsm)
-        {
-            fsm.SendEvent(FsmEventName);
-        }
+        fsm.SendEvent(FsmEventName);
     }
 }
+
