@@ -6,16 +6,16 @@ namespace Benchwarp.Data;
 
 public static class BaseBenchList
 {
-    public static BenchData RuinedChapel { get; } = new(BenchName: "Ruined Chapel", MenuArea: "Moss Grotto", 
+    public static BenchData RuinedChapel { get; } = new(BenchName: "Ruined Chapel", MenuArea: "Mosslands", 
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Tut_03, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.BONECHURCH));
-    public static BenchData BoneBottom { get; } = new(BenchName: "Bone Bottom", MenuArea: "Moss Grotto", 
+    public static BenchData BoneBottom { get; } = new(BenchName: "Bone Bottom", MenuArea: "Mosslands", 
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Bonetown, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.BONETOWN));
-    public static BenchData MossDruid { get; } = new(BenchName: "Moss Druid", MenuArea: "Moss Grotto",
+    public static BenchData MossDruid { get; } = new(BenchName: "Moss Druid", MenuArea: "Mosslands",
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Mosstown_02c, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.MOSSTOWN));
-    public static BenchData SnailShamans { get; } = new(BenchName: "Snail Shamans", MenuArea: "Moss Grotto",
+    public static BenchData SnailShamans { get; } = new(BenchName: "Snail Shamans", MenuArea: "Mosslands",
         RespawnInfo: new RespawnInfo(SceneName: SceneNames.Tut_04, RespawnMarkerName: RespawnMarkerNames.RestBench,
             RespawnType: RespawnTypes.Bench, MapZone: MapZone.BONECHURCH));
     public static BenchData TollMarrow { get; } = new(BenchName: "Toll", MenuArea: "The Marrow",
