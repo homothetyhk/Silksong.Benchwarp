@@ -230,7 +230,7 @@ public static class BaseBenchList
                     SuccessRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench,
                         RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT),
                     FailRespawn: new PDConditionalRespawnInfo(
-                        PlayerDataBoolName: nameof(PlayerData.FleaGamesStarted),
+                        PlayerDataBoolName: nameof(PlayerData.FleaGamesCanStart),
                         TrueRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench_Festival,
                             RespawnType: RespawnTypes.Bench, MapZone: MapZone.AQUEDUCT),
                         FalseRespawn: new RespawnInfo(SceneName: SceneNames.Aqueduct_05, RespawnMarkerName: RespawnMarkerNames.RestBench,
